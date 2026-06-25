@@ -1,0 +1,192 @@
+"use client";
+
+import { useState } from "react";
+import Image from "next/image";
+import { Phone, Mail, MapPin } from "lucide-react";
+import { useLang } from "@/contexts/LanguageContext";
+import { translations } from "@/i18n/translations";
+
+interface FormState {
+  from: string;
+  to: string;
+  date: string;
+  moveType: string;
+  apartmentSize: string;
+  notes: string;
+  name: string;
+  phone: string;
+  email: string;
+}
+
+const inputClass =
+  "border border-[#E5E7EB] rounded-lg px-4 py-3 w-full focus:border-[#DC2626] focus:ring-1 focus:ring-[#DC2626] focus:outline-none";
+const inputStyle = { fontSize: "15px" } as const;
+const labelStyle = { fontSize: "13px", fontWeight: 600, color: "#374151" } as const;
+
+export function QuoteFormSection() {
+  const { lang } = useLang();
+  const t = translations[lang];
+
+  const MOVE_TYPES = [t.move_type1, t.move_type2, t.move_type3, t.move_type4];
+  const APARTMENT_SIZES = [t.apt_size1, t.apt_size2, t.apt_size3];
+
+  const [form, setForm] = useState<FormState>({
+    from: "", to: "", date: "", moveType: "", apartmentSize: "",
+    notes: "", name: "", phone: "", email: "",
+  });
+
+  function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) {
+    const { name, value } = e.target;
+    setForm((prev) => ({ ...prev, [name]: value }));
+  }
+
+  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+  }
+
+  return (
+    <section id="kontakt" className="py-12 md:py-24" style={{ background: "#111827" }}>
+      <div className="max-w-6xl mx-auto px-4 md:px-6">
+        <div className="flex flex-col md:flex-row gap-10 md:gap-16 items-start">
+          {/* Left column */}
+          <div className="w-full md:w-2/5 flex-shrink-0">
+            <h2 className="text-2xl md:text-4xl leading-[1.15]" style={{ color: "#FFFFFF", fontWeight: 900 }}>
+              {t.form_h2}
+            </h2>
+            <div className="w-12 h-1 bg-[#DC2626] mt-4" style={{ width: "48px", height: "4px" }} />
+
+            <div className="relative rounded-xl overflow-hidden mt-6 mb-8" style={{ height: "220px" }}>
+              <Image src="/images/photos/team.jpg" alt="BAK Transport Team Wien" fill className="object-cover object-center" />
+              <div className="absolute inset-0" style={{ background: "rgba(17,24,39,0.3)" }} />
+            </div>
+
+            <p style={{ color: "rgba(255,255,255,0.7)", fontSize: "16px", lineHeight: 1.7 }}>
+              {t.form_desc}
+            </p>
+
+            <div className="mt-10 space-y-4">
+              <div className="flex items-center gap-3">
+                <Phone size={18} color="#DC2626" />
+                <span style={{ color: "#FFFFFF", fontWeight: 600 }}>+43 676 123 45 67</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <Mail size={18} color="#DC2626" />
+                <span style={{ color: "#FFFFFF", fontWeight: 600 }}>office@baktransport.at</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <MapPin size={18} color="#DC2626" />
+                <span style={{ color: "rgba(255,255,255,0.7)" }}>Wien &amp; ganz Österreich</span>
+              </div>
+            </div>
+
+            <p className="mt-8 italic" style={{ color: "rgba(255,255,255,0.5)", fontSize: "14px" }}>
+              {t.form_disclaimer}
+            </p>
+          </div>
+
+          {/* Right column */}
+          <div className="w-full md:w-3/5">
+            <div className="bg-white rounded-2xl p-8 shadow-2xl">
+              <form onSubmit={handleSubmit} noValidate>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                  <div>
+                    <label htmlFor="from" className="block mb-1.5" style={labelStyle}>{t.form_from}</label>
+                    <input id="from" name="from" type="text" value={form.from} onChange={handleChange}
+                      placeholder={t.form_from_placeholder} className={inputClass} style={inputStyle} />
+                  </div>
+                  <div>
+                    <label htmlFor="to" className="block mb-1.5" style={labelStyle}>{t.form_to}</label>
+                    <input id="to" name="to" type="text" value={form.to} onChange={handleChange}
+                      placeholder={t.form_to_placeholder} className={inputClass} style={inputStyle} />
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                  <div>
+                    <label htmlFor="date" className="block mb-1.5" style={labelStyle}>{t.form_date}</label>
+                    <input id="date" name="date" type="date" value={form.date} onChange={handleChange}
+                      className={inputClass} style={inputStyle} />
+                  </div>
+                  <div>
+                    <label htmlFor="moveType" className="block mb-1.5" style={labelStyle}>{t.form_movetype}</label>
+                    <select id="moveType" name="moveType" value={form.moveType} onChange={handleChange}
+                      className={inputClass} style={inputStyle}>
+                      <option value="">{t.form_movetype_placeholder}</option>
+                      {MOVE_TYPES.map((type) => (
+                        <option key={type} value={type}>{type}</option>
+                      ))}
+                    </select>
+                  </div>
+                </div>
+
+                <div className="mb-4">
+                  <p className="block mb-1.5" style={labelStyle}>{t.form_size}</p>
+                  <div className="flex gap-2 flex-wrap">
+                    {APARTMENT_SIZES.map((size) => {
+                      const isSelected = form.apartmentSize === size;
+                      return (
+                        <button
+                          key={size}
+                          type="button"
+                          onClick={() => setForm((prev) => ({ ...prev, apartmentSize: size }))}
+                          className="px-4 py-2 rounded-lg font-semibold transition-colors duration-150"
+                          style={{
+                            fontSize: "14px",
+                            background: isSelected ? "#DC2626" : "transparent",
+                            color: isSelected ? "#FFFFFF" : "#374151",
+                            border: isSelected ? "1px solid #DC2626" : "1px solid #E5E7EB",
+                          }}
+                        >
+                          {size}
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+
+                <div className="mb-4">
+                  <label htmlFor="notes" className="block mb-1.5" style={labelStyle}>{t.form_notes}</label>
+                  <textarea id="notes" name="notes" rows={3} value={form.notes} onChange={handleChange}
+                    placeholder={t.form_notes_placeholder} className={inputClass} style={inputStyle} />
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                  <div>
+                    <label htmlFor="name" className="block mb-1.5" style={labelStyle}>{t.form_name}</label>
+                    <input id="name" name="name" type="text" value={form.name} onChange={handleChange}
+                      required className={inputClass} style={inputStyle} />
+                  </div>
+                  <div>
+                    <label htmlFor="phone" className="block mb-1.5" style={labelStyle}>{t.form_phone}</label>
+                    <input id="phone" name="phone" type="tel" value={form.phone} onChange={handleChange}
+                      required className={inputClass} style={inputStyle} />
+                  </div>
+                </div>
+
+                <div className="mb-6">
+                  <label htmlFor="email" className="block mb-1.5" style={labelStyle}>{t.form_email}</label>
+                  <input id="email" name="email" type="email" value={form.email} onChange={handleChange}
+                    required className={inputClass} style={inputStyle} />
+                </div>
+
+                <button
+                  type="submit"
+                  className="w-full py-4 rounded-xl text-white font-extrabold hover:bg-[#b91c1c] transition-colors duration-150"
+                  style={{ background: "#DC2626", fontSize: "17px", fontWeight: 800 }}
+                >
+                  {t.form_submit}
+                </button>
+
+                <p className="text-center mt-3" style={{ color: "#9CA3AF", fontSize: "13px" }}>
+                  {t.form_note}
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default QuoteFormSection;

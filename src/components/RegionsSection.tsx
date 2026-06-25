@@ -1,0 +1,143 @@
+"use client";
+
+import { MapPin } from "lucide-react";
+import { useLang } from "@/contexts/LanguageContext";
+import { translations } from "@/i18n/translations";
+
+const areaTags = [
+  { label: "Wien", labelEn: "Vienna", highlight: true },
+  { label: "Niederösterreich", labelEn: "Lower Austria", highlight: false },
+  { label: "Burgenland", labelEn: "Burgenland", highlight: false },
+  { label: "Steiermark", labelEn: "Styria", highlight: false },
+  { label: "Salzburg", labelEn: "Salzburg", highlight: false },
+  { label: "Oberösterreich", labelEn: "Upper Austria", highlight: false },
+  { label: "Tirol", labelEn: "Tyrol", highlight: false },
+  { label: "Vorarlberg", labelEn: "Vorarlberg", highlight: false },
+  { label: "Kärnten", labelEn: "Carinthia", highlight: false },
+  { label: "Deutschland", labelEn: "Germany", highlight: false },
+  { label: "Schweiz", labelEn: "Switzerland", highlight: false },
+];
+
+export function RegionsSection() {
+  const { lang } = useLang();
+  const t = translations[lang];
+
+  const regionCards = [
+    { title: t.region1_title, text: t.region1_text },
+    { title: t.region2_title, text: t.region2_text },
+    { title: t.region3_title, text: t.region3_text },
+  ];
+
+  return (
+    <section className="py-12 md:py-24" style={{ backgroundColor: "#F9FAFB" }}>
+      <div className="max-w-7xl mx-auto px-4 md:px-6">
+        {/* Header */}
+        <div className="text-center mb-10 md:mb-16">
+          <p
+            className="text-xs font-bold uppercase tracking-widest mb-3"
+            style={{ color: "#DC2626" }}
+          >
+            {t.regions_label}
+          </p>
+          <h2
+            className="text-2xl md:text-4xl leading-tight"
+            style={{ color: "#111827", fontWeight: 900 }}
+          >
+            {t.regions_h2}
+          </h2>
+          <p
+            className="mt-4 max-w-2xl mx-auto"
+            style={{ color: "#6B7280", fontSize: "16px", lineHeight: 1.7 }}
+          >
+            {t.regions_desc}
+          </p>
+        </div>
+
+        {/* Two columns */}
+        <div className="flex flex-col lg:flex-row gap-10">
+          {/* Left column — 45% */}
+          <div className="flex flex-col gap-6 lg:w-[45%]">
+            {regionCards.map((card) => (
+              <div
+                key={card.title}
+                className="flex items-start gap-4 rounded-xl p-6"
+                style={{ backgroundColor: "#FFFFFF", border: "1px solid #E5E7EB" }}
+              >
+                <MapPin
+                  size={24}
+                  style={{ color: "#DC2626", marginTop: "2px", flexShrink: 0 }}
+                />
+                <div>
+                  <p style={{ fontWeight: 700, color: "#111827", fontSize: "17px" }}>
+                    {card.title}
+                  </p>
+                  <p
+                    className="mt-1"
+                    style={{ color: "#6B7280", fontSize: "14px", lineHeight: 1.6 }}
+                  >
+                    {card.text}
+                  </p>
+                </div>
+              </div>
+            ))}
+
+            {/* Below cards link */}
+            <div className="mt-8">
+              <p style={{ color: "#6B7280", fontSize: "14px" }}>
+                {t.regions_question}
+              </p>
+              <a
+                href="#kontakt"
+                className="hover:underline"
+                style={{ color: "#DC2626", fontWeight: 700, fontSize: "14px" }}
+              >
+                {t.regions_contact_link}
+              </a>
+            </div>
+          </div>
+
+          {/* Right column — 55% */}
+          <div className="lg:w-[55%]">
+            <div
+              className="rounded-2xl p-6 md:p-10"
+              style={{ backgroundColor: "#111827" }}
+            >
+              <p
+                className="mb-6"
+                style={{ color: "#FFFFFF", fontSize: "22px", fontWeight: 700 }}
+              >
+                {t.regions_area_title}
+              </p>
+
+              <div className="flex flex-wrap gap-2">
+                {areaTags.map((tag) => (
+                  <span
+                    key={tag.label}
+                    className="rounded-full px-4 py-2"
+                    style={{
+                      backgroundColor: tag.highlight ? "#DC2626" : "#1F2937",
+                      color: tag.highlight ? "#FFFFFF" : "rgba(255,255,255,0.8)",
+                      fontSize: "14px",
+                      border: tag.highlight ? "none" : "1px solid #374151",
+                    }}
+                  >
+                    {lang === "en" ? tag.labelEn : tag.label}
+                  </span>
+                ))}
+              </div>
+
+              <p
+                className="mt-8 text-center italic"
+                style={{ color: "rgba(255,255,255,0.4)", fontSize: "13px" }}
+              >
+                {t.regions_cross_border}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default RegionsSection;
