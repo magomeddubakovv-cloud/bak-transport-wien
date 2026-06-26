@@ -1,0 +1,10 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "baktransport.at" }],
+      "destination": "https://www.baktransport.at/:path*",
+      "permanent": true
+    }
+  ]
+}
