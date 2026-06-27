@@ -218,7 +218,7 @@ function ReviewCard({ review }: { review: typeof reviews[0] }) {
         </div>
 
         {/* Text */}
-        <p className="text-sm leading-relaxed mb-1" style={{ color: "#374151" }}>
+        <p className="text-base leading-relaxed mb-1" style={{ color: "#374151" }}>
           {displayText}
         </p>
         {isLong && (

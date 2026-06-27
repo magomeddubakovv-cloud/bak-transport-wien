@@ -73,7 +73,7 @@ export function RegionsSection() {
                   </p>
                   <p
                     className="mt-1"
-                    style={{ color: "#6B7280", fontSize: "14px", lineHeight: 1.6 }}
+                    style={{ color: "#6B7280", fontSize: "15px", lineHeight: 1.6 }}
                   >
                     {card.text}
                   </p>
@@ -83,13 +83,13 @@ export function RegionsSection() {
 
             {/* Below cards link */}
             <div className="mt-8">
-              <p style={{ color: "#6B7280", fontSize: "14px" }}>
+              <p style={{ color: "#6B7280", fontSize: "15px" }}>
                 {t.regions_question}
               </p>
               <a
                 href="#kontakt"
                 className="hover:underline"
-                style={{ color: "#EA580C", fontWeight: 700, fontSize: "14px" }}
+                style={{ color: "#EA580C", fontWeight: 700, fontSize: "15px" }}
               >
                 {t.regions_contact_link}
               </a>
@@ -128,7 +128,7 @@ export function RegionsSection() {
 
               <p
                 className="mt-8 text-center italic"
-                style={{ color: "#9CA3AF", fontSize: "13px" }}
+                style={{ color: "#9CA3AF", fontSize: "12px" }}
               >
                 {t.regions_cross_border}
               </p>

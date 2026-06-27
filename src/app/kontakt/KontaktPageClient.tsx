@@ -69,7 +69,7 @@ export function KontaktPageClient() {
                 ) : (
                   <p className="font-semibold mb-1" style={{ color: "#EA580C" }}>{c.value}</p>
                 )}
-                <p style={{ color: "#6B7280", fontSize: "14px" }}>{c.sub}</p>
+                <p style={{ color: "#6B7280", fontSize: "15px" }}>{c.sub}</p>
               </div>
             ))}
           </div>

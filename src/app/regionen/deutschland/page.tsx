@@ -4,7 +4,7 @@ import { DeutschlandPageClient } from "./DeutschlandPageClient";
 
 export const metadata: Metadata = {
   title: "Umzug nach Deutschland | Wien–München & mehr | BAK Transport",
-  description: "Umzug nach Deutschland: Wien nach München, Stuttgart, Frankfurt, Berlin. Kein Zoll (EU), vollversichert, Fixpreis nach Videobesichtigung.",
+  description: "✓ Umzug nach Deutschland mit BAK Transport Wien: Wien–München, Stuttgart, Frankfurt, Berlin. EU-intern kein Zoll, vollversichert, Fixpreis nach Videobesichtigung, schnelle Rückmeldung.",
   alternates: { canonical: "https://www.baktransport.at/regionen/deutschland" },
 };
 

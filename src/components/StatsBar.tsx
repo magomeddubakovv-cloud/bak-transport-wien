@@ -69,7 +69,7 @@ function AnimatedStat({ config, label, active, hasBorder }: AnimatedStatProps) {
       <span className="text-white text-2xl md:text-3xl" style={{ fontWeight: 900, lineHeight: 1 }}>
         {display}
       </span>
-      <span className="mt-1 uppercase tracking-wide" style={{ color: "rgba(255,255,255,0.8)", fontSize: "13px" }}>
+      <span className="mt-1 uppercase tracking-wide" style={{ color: "rgba(255,255,255,0.8)", fontSize: "12px" }}>
         {label}
       </span>
     </div>

@@ -56,7 +56,7 @@ export function FAQSection() {
                   </span>
                 </button>
                 <div style={{ maxHeight: isOpen ? "600px" : "0", overflow: "hidden", transition: "max-height 0.35s ease" }}>
-                  <p className="pb-6" style={{ color: "#6B7280", fontSize: "15px", lineHeight: 1.8 }}>
+                  <p className="pb-6" style={{ color: "#6B7280", fontSize: "16px", lineHeight: 1.8 }}>
                     {item.answer}
                   </p>
                 </div>

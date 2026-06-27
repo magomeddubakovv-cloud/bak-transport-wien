@@ -96,7 +96,7 @@ export function Footer() {
 
             <address
               className="mt-4 not-italic"
-              style={{ color: "rgba(255,255,255,0.4)", fontSize: "13px", lineHeight: 1.7 }}
+              style={{ color: "rgba(255,255,255,0.4)", fontSize: "14px", lineHeight: 1.7 }}
               itemScope
               itemType="https://schema.org/LocalBusiness"
             >
@@ -119,7 +119,7 @@ export function Footer() {
 
           {/* Column 2 — Leistungen */}
           <div>
-            <p className="mb-5 uppercase tracking-wider" style={{ color: "#FFFFFF", fontWeight: 700, fontSize: "13px" }}>
+            <p className="mb-5 uppercase tracking-wider" style={{ color: "#FFFFFF", fontWeight: 700, fontSize: "12px" }}>
               {t.footer_leistungen}
             </p>
             <ul className="space-y-3">
@@ -136,7 +136,7 @@ export function Footer() {
 
           {/* Column 3 — Regionen */}
           <div>
-            <p className="mb-5 uppercase tracking-wider" style={{ color: "#FFFFFF", fontWeight: 700, fontSize: "13px" }}>
+            <p className="mb-5 uppercase tracking-wider" style={{ color: "#FFFFFF", fontWeight: 700, fontSize: "12px" }}>
               {t.footer_regionen}
             </p>
             <ul className="space-y-3">
@@ -153,7 +153,7 @@ export function Footer() {
 
           {/* Column 4 — Unternehmen */}
           <div>
-            <p className="mb-5 uppercase tracking-wider" style={{ color: "#FFFFFF", fontWeight: 700, fontSize: "13px" }}>
+            <p className="mb-5 uppercase tracking-wider" style={{ color: "#FFFFFF", fontWeight: 700, fontSize: "12px" }}>
               {t.footer_unternehmen}
             </p>
             <ul className="space-y-3">
@@ -172,10 +172,10 @@ export function Footer() {
 
       <div className="py-6" style={{ borderTop: "1px solid rgba(255,255,255,0.1)" }}>
         <div className="max-w-7xl mx-auto px-4 md:px-6 flex flex-col md:flex-row justify-between items-center gap-2 text-center md:text-left">
-          <p style={{ color: "rgba(255,255,255,0.3)", fontSize: "13px" }}>
+          <p style={{ color: "rgba(255,255,255,0.3)", fontSize: "12px" }}>
             {t.footer_copyright}
           </p>
-          <p style={{ color: "rgba(255,255,255,0.3)", fontSize: "13px" }}>
+          <p style={{ color: "rgba(255,255,255,0.3)", fontSize: "12px" }}>
             office@baktransport.at · +43 676 123 45 67
           </p>
         </div>
