@@ -77,12 +77,12 @@ export function KarrierePageClient() {
       </section>
       <section className="py-12 md:py-20" style={{ backgroundColor: "#F9FAFB" }}>
         <div className="max-w-7xl mx-auto px-4 md:px-6">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 md:mb-12 text-white">{t.karriere_why_h2}</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 md:mb-12 text-gray-900">{t.karriere_why_h2}</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {whyItems.map((item) => (
               <div key={item.title} className="rounded-2xl p-6 text-center" style={{ backgroundColor: "#FFFFFF", border: "1px solid #E5E7EB" }}>
                 <div className="text-3xl mb-3">{item.icon}</div>
-                <div className="font-bold text-white mb-1">{item.title}</div>
+                <div className="font-bold text-gray-900 mb-1">{item.title}</div>
                 <div style={{ color: "#9CA3AF", fontSize: "14px" }}>{item.sub}</div>
               </div>
             ))}

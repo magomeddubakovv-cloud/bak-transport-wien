@@ -45,12 +45,12 @@ export function KontaktPageClient() {
       </section>
       <section className="py-12 md:py-20" style={{ backgroundColor: "#F9FAFB" }}>
         <div className="max-w-7xl mx-auto px-4 md:px-6">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 md:mb-12 text-white">{t.kontakt_hours_h2}</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 md:mb-12 text-gray-900">{t.kontakt_hours_h2}</h2>
           <div className="max-w-md mx-auto space-y-4">
             {hours.map((row) => (
               <div key={row.day} className="flex justify-between py-3" style={{ borderBottom: "1px solid #E5E7EB" }}>
                 <span style={{ color: "#9CA3AF" }}>{row.day}</span>
-                <span className="font-semibold text-white">{row.time}</span>
+                <span className="font-semibold text-gray-900">{row.time}</span>
               </div>
             ))}
           </div>

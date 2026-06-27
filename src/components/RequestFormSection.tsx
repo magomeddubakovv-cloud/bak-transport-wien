@@ -241,7 +241,7 @@ export function RequestFormSection() {
           </h2>
           <p
             className="mt-3"
-            style={{ color: "#374151", fontSize: "16px" }}
+            style={{ color: "rgba(255,255,255,0.8)", fontSize: "16px" }}
           >
             {t.reqform_desc}
           </p>
