@@ -282,7 +282,7 @@ export function ReviewsSection() {
               style={{ backgroundColor: "#E5E7EB" }}
               aria-label="Zurück"
             >
-              <ChevronLeft size={20} color="#E5E7EB" />
+              <ChevronLeft size={20} color="#374151" />
             </button>
             <button
               onClick={() => scroll("right")}
@@ -290,7 +290,7 @@ export function ReviewsSection() {
               style={{ backgroundColor: "#E5E7EB" }}
               aria-label="Weiter"
             >
-              <ChevronRight size={20} color="#E5E7EB" />
+              <ChevronRight size={20} color="#374151" />
             </button>
           </div>
         </div>
@@ -316,7 +316,7 @@ export function ReviewsSection() {
             style={{ backgroundColor: "#E5E7EB" }}
             aria-label="Zurück"
           >
-            <ChevronLeft size={20} color="#E5E7EB" />
+            <ChevronLeft size={20} color="#374151" />
           </button>
           <button
             onClick={() => scroll("right")}
@@ -324,7 +324,7 @@ export function ReviewsSection() {
             style={{ backgroundColor: "#E5E7EB" }}
             aria-label="Weiter"
           >
-            <ChevronRight size={20} color="#E5E7EB" />
+            <ChevronRight size={20} color="#374151" />
           </button>
         </div>
       </div>
