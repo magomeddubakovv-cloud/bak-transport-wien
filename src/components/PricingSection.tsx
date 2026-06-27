@@ -87,7 +87,7 @@ export function PricingSection() {
                 {card.features.map((feature) => (
                   <li key={feature} className="flex items-center gap-3">
                     <Check size={16} style={{ color: card.featured ? "#FFFFFF" : "#EA580C", flexShrink: 0 }} />
-                    <span style={{ color: card.featured ? "#FFFFFF" : "#374151", fontSize: "14px" }}>
+                    <span style={{ color: card.featured ? "#FFFFFF" : "#374151", fontSize: "15px" }}>
                       {feature}
                     </span>
                   </li>
@@ -109,10 +109,10 @@ export function PricingSection() {
           ))}
         </div>
 
-        <p className="mt-8 text-center" style={{ color: "#9CA3AF", fontSize: "13px" }}>
+        <p className="mt-8 text-center" style={{ color: "#9CA3AF", fontSize: "12px" }}>
           {t.pricing_footnote}
         </p>
-        <p className="mt-2 text-center" style={{ color: "#6B7280", fontSize: "14px" }}>
+        <p className="mt-2 text-center" style={{ color: "#6B7280", fontSize: "15px" }}>
           {t.pricing_hourly}
         </p>
       </div>

@@ -28,7 +28,7 @@ export function BenefitsSection() {
         <div className="text-center mb-12">
           <p
             className="uppercase tracking-widest font-semibold mb-2"
-            style={{ color: "#F97316", fontSize: "13px" }}
+            style={{ color: "#F97316", fontSize: "12px" }}
           >
             {t.benefits_label}
           </p>
@@ -68,7 +68,7 @@ export function BenefitsSection() {
               </h3>
               <p
                 className="mt-3"
-                style={{ color: "#374151", fontSize: "15px", lineHeight: 1.7 }}
+                style={{ color: "#374151", fontSize: "16px", lineHeight: 1.7 }}
               >
                 {card.text}
               </p>

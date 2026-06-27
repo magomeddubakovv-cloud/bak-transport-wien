@@ -74,14 +74,14 @@ export function ServicesSection() {
                   <h3 className="mb-3" style={{ color: "#111827", fontSize: "22px", fontWeight: 800 }}>
                     {title}
                   </h3>
-                  <p className="mb-6" style={{ color: "#6B7280", fontSize: "15px", lineHeight: 1.7 }}>
+                  <p className="mb-6" style={{ color: "#6B7280", fontSize: "16px", lineHeight: 1.7 }}>
                     {description}
                   </p>
                   <ul className="space-y-2 mb-8">
                     {features.map((feature) => (
                       <li key={feature} className="flex items-center gap-2">
                         <span className="w-1.5 h-1.5 bg-[#EA580C] rounded-sm flex-shrink-0" />
-                        <span style={{ color: "#374151", fontSize: "14px" }}>{feature}</span>
+                        <span style={{ color: "#374151", fontSize: "15px" }}>{feature}</span>
                       </li>
                     ))}
                   </ul>

@@ -43,7 +43,7 @@ function Input({ className = "", style, ...props }: InputProps) {
       className={`w-full rounded-md px-4 outline-none transition-all focus:ring-1 ${className}`}
       style={{
         border: "1px solid #E2E8F0",
-        fontSize: "15px",
+        fontSize: "16px",
         paddingTop: "10px",
         paddingBottom: "10px",
         ...style,
@@ -72,7 +72,7 @@ function Select({ className = "", style, children, ...props }: SelectProps) {
       className={`w-full rounded-md px-4 outline-none transition-all focus:ring-1 bg-white ${className}`}
       style={{
         border: "1px solid #E2E8F0",
-        fontSize: "15px",
+        fontSize: "16px",
         paddingTop: "10px",
         paddingBottom: "10px",
         ...style,
@@ -168,7 +168,7 @@ function AddressBlock({ prefix, label, fields, onChange, t }: AddressBlockProps)
         </p>
         <div className="flex gap-6">
           {(["ja", "nein"] as const).map((val) => (
-            <label key={val} className="flex items-center gap-2 cursor-pointer" style={{ fontSize: "15px", color: "#374151" }}>
+            <label key={val} className="flex items-center gap-2 cursor-pointer" style={{ fontSize: "16px", color: "#374151" }}>
               <input
                 type="radio"
                 name={`${prefix}-aufzug`}
@@ -322,7 +322,7 @@ export function RequestFormSection() {
                         onClick={() => setGroesse(opt.key)}
                         className="px-6 py-2.5 rounded-md font-semibold transition-colors duration-150"
                         style={{
-                          fontSize: "15px",
+                          fontSize: "16px",
                           border: "1px solid #E2E8F0",
                           backgroundColor: selected ? "#1B3A6B" : "#FFFFFF",
                           color: selected ? "#FFFFFF" : "#E5E7EB",
@@ -344,7 +344,7 @@ export function RequestFormSection() {
                   value={umfang}
                   onChange={(e) => setUmfang(e.target.value)}
                   className="w-full rounded-md px-4 py-2.5 outline-none transition-all resize-none"
-                  style={{ border: "1px solid #E2E8F0", fontSize: "15px" }}
+                  style={{ border: "1px solid #E2E8F0", fontSize: "16px" }}
                   onFocus={(e) => {
                     e.currentTarget.style.borderColor = "#1B3A6B";
                     e.currentTarget.style.boxShadow = "0 0 0 1px #1B3A6B";
@@ -412,7 +412,7 @@ export function RequestFormSection() {
               <label
                 htmlFor="datenschutz"
                 className="cursor-pointer"
-                style={{ fontSize: "13px", color: "#64748B", lineHeight: 1.6 }}
+                style={{ fontSize: "12px", color: "#64748B", lineHeight: 1.6 }}
               >
                 {t.reqform_datenschutz}{" "}
                 <a

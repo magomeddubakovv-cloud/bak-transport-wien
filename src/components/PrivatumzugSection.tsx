@@ -32,19 +32,19 @@ export function PrivatumzugSection() {
             </h2>
 
             <p
-              className="mt-4 text-[15px] leading-[1.8]"
+              className="mt-4 text-base leading-[1.8]"
               style={{ color: "#374151" }}
             >
               {t.privat_p1}
             </p>
             <p
-              className="mt-4 text-[15px] leading-[1.8]"
+              className="mt-4 text-base leading-[1.8]"
               style={{ color: "#374151" }}
             >
               {t.privat_p2}
             </p>
             <p
-              className="mt-4 text-[15px] leading-[1.8]"
+              className="mt-4 text-base leading-[1.8]"
               style={{ color: "#374151" }}
             >
               {t.privat_p3}

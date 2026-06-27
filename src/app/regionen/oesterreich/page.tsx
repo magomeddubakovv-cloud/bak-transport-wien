@@ -4,7 +4,7 @@ import { OesterreichPageClient } from "./OesterreichPageClient";
 
 export const metadata: Metadata = {
   title: "Umzug Österreich | Bundesweit mit Fixpreis | BAK Transport",
-  description: "Umzug Österreich: Graz, Linz, Salzburg, Innsbruck und mehr. Bundesweit tätig mit Fixpreis und Vollversicherung.",
+  description: "✓ Umzug Österreich mit BAK Transport Wien: Graz, Linz, Salzburg, Innsbruck & alle Bundesländer. Fixpreis, vollversichert, kostenlose Besichtigung, Rückmeldung in 60 Min.",
   alternates: { canonical: "https://www.baktransport.at/regionen/oesterreich" },
 };
 

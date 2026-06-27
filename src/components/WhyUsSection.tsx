@@ -44,7 +44,7 @@ export function WhyUsSection() {
                 <h3 className="mb-2" style={{ color: "#111827", fontSize: "20px", fontWeight: 800 }}>
                   {reason.title}
                 </h3>
-                <p style={{ color: "#6B7280", fontSize: "15px", lineHeight: 1.7 }}>
+                <p style={{ color: "#6B7280", fontSize: "16px", lineHeight: 1.7 }}>
                   {reason.text}
                 </p>
               </div>

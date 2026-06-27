@@ -213,7 +213,7 @@ export function HeroSection() {
             {TRUST_BADGES.map(({ icon: Icon, label }) => (
               <div key={label} className="flex items-center gap-2">
                 <Icon size={20} style={{ color: "#EA580C" }} />
-                <span style={{ color: "#4B5563", fontSize: "14px" }}>
+                <span style={{ color: "#4B5563", fontSize: "15px" }}>
                   {label}
                 </span>
               </div>

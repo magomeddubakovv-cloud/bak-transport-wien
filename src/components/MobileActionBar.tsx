@@ -19,7 +19,7 @@ export function MobileActionBar() {
         style={{
           backgroundColor: "#EA580C",
           padding: "15px 0",
-          fontSize: "15px",
+          fontSize: "16px",
           textDecoration: "none",
           minHeight: "54px",
           letterSpacing: "0.01em",
@@ -37,7 +37,7 @@ export function MobileActionBar() {
         style={{
           backgroundColor: "#22C55E",
           padding: "15px 0",
-          fontSize: "15px",
+          fontSize: "16px",
           textDecoration: "none",
           minHeight: "54px",
           letterSpacing: "0.01em",

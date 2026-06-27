@@ -4,7 +4,7 @@ import { SchweizPageClient } from "./SchweizPageClient";
 
 export const metadata: Metadata = {
   title: "Umzug in die Schweiz | Wien–Zürich & Bern | BAK Transport",
-  description: "Umzug in die Schweiz: Wien nach Zürich, Bern, Basel. Inklusive Zollinformationen, vollversichert, Fixpreis nach Videobesichtigung.",
+  description: "✓ Umzug in die Schweiz mit BAK Transport Wien: Zürich, Bern, Basel, Genf. Inkl. Zollberatung, vollversichert, Fixpreis nach Videobesichtigung, erfahrenes Umzugsteam.",
   alternates: { canonical: "https://www.baktransport.at/regionen/schweiz" },
 };
 

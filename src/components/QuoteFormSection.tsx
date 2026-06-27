@@ -20,7 +20,7 @@ interface FormState {
 
 const inputClass =
   "border border-[#E5E7EB] rounded-lg px-4 py-3 w-full focus:border-[#EA580C] focus:ring-1 focus:ring-[#EA580C] focus:outline-none";
-const inputStyle = { fontSize: "15px" } as const;
+const inputStyle = { fontSize: "16px" } as const;
 const labelStyle = { fontSize: "13px", fontWeight: 600, color: "#374151" } as const;
 
 export function QuoteFormSection() {
@@ -131,7 +131,7 @@ export function QuoteFormSection() {
                           onClick={() => setForm((prev) => ({ ...prev, apartmentSize: size }))}
                           className="px-4 py-2 rounded-lg font-semibold transition-colors duration-150"
                           style={{
-                            fontSize: "14px",
+                            fontSize: "15px",
                             background: isSelected ? "#EA580C" : "transparent",
                             color: isSelected ? "#FFFFFF" : "#E5E7EB",
                             border: isSelected ? "1px solid #EA580C" : "1px solid #E5E7EB",
@@ -177,7 +177,7 @@ export function QuoteFormSection() {
                   {t.form_submit}
                 </button>
 
-                <p className="text-center mt-3" style={{ color: "#9CA3AF", fontSize: "13px" }}>
+                <p className="text-center mt-3" style={{ color: "#9CA3AF", fontSize: "12px" }}>
                   {t.form_note}
                 </p>
               </form>

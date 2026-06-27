@@ -4,7 +4,7 @@ import { GrenzueberschreitendPageClient } from "./GrenzueberschreitendPageClient
 
 export const metadata: Metadata = {
   title: "Grenzüberschreitende Umzüge | Europa | BAK Transport Wien",
-  description: "Grenzüberschreitende Umzüge von Wien nach Deutschland, Schweiz, Slowakei, Tschechien, Ungarn und mehr. Fixpreis, vollversichert.",
+  description: "✓ Grenzüberschreitende Umzüge von Wien nach Deutschland, Schweiz, Slowakei, Tschechien, Ungarn & mehr. BAK Transport: Fixpreis, vollversichert, Videobesichtigung möglich.",
   alternates: { canonical: "https://www.baktransport.at/regionen/grenzueberschreitend" },
 };
 
