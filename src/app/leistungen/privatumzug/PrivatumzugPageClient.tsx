@@ -36,7 +36,7 @@ export function PrivatumzugPageClient() {
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
             <div>
-              <h2 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: "#F9FAFB" }}>{t.priv_page_h2}</h2>
+              <h2 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: "#111827" }}>{t.priv_page_h2}</h2>
               <p className="mb-4" style={{ color: "#6B7280", lineHeight: "1.75" }}>{t.priv_page_p1}</p>
               <p className="mb-4" style={{ color: "#6B7280", lineHeight: "1.75" }}>{t.priv_page_p2}</p>
               <p className="mb-4" style={{ color: "#6B7280", lineHeight: "1.75" }}>{t.priv_page_p3}</p>
@@ -50,7 +50,7 @@ export function PrivatumzugPageClient() {
                 {checklistItems.map((item) => (
                   <li key={item} className="flex items-center gap-3">
                     <Check className="w-5 h-5 shrink-0" style={{ color: "#EA580C" }} />
-                    <span style={{ color: "#F9FAFB" }}>{item}</span>
+                    <span style={{ color: "#111827" }}>{item}</span>
                   </li>
                 ))}
               </ul>
@@ -60,12 +60,12 @@ export function PrivatumzugPageClient() {
       </section>
       <section className="py-12 md:py-20" style={{ backgroundColor: "#F9FAFB" }}>
         <div className="max-w-7xl mx-auto px-4 md:px-6">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 md:mb-12" style={{ color: "#F9FAFB" }}>{t.sub_why_bak}</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 md:mb-12" style={{ color: "#111827" }}>{t.sub_why_bak}</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {cards.map((card) => (
               <div key={card.title} className="bg-white rounded-2xl p-8 shadow-sm" style={{ border: "1px solid #E5E7EB" }}>
                 <div className="w-2 h-8 rounded mb-4" style={{ backgroundColor: "#EA580C" }} />
-                <h3 className="text-xl font-semibold mb-3" style={{ color: "#F9FAFB" }}>{card.title}</h3>
+                <h3 className="text-xl font-semibold mb-3" style={{ color: "#111827" }}>{card.title}</h3>
                 <p style={{ color: "#6B7280", lineHeight: "1.75" }}>{card.text}</p>
               </div>
             ))}
@@ -89,11 +89,11 @@ export function PrivatumzugPageClient() {
       </section>
       <section className="py-12 md:py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 md:px-6">
-          <h2 className="text-2xl md:text-3xl font-bold mb-10 md:mb-12" style={{ color: "#F9FAFB" }}>{t.priv_page_faq_h2}</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-10 md:mb-12" style={{ color: "#111827" }}>{t.priv_page_faq_h2}</h2>
           <div className="space-y-8">
             {faqs.map((faq) => (
               <div key={faq.q} style={{ borderBottom: "1px solid #E5E7EB", paddingBottom: "2rem" }}>
-                <p className="font-semibold mb-2" style={{ color: "#F9FAFB" }}>{faq.q}</p>
+                <p className="font-semibold mb-2" style={{ color: "#111827" }}>{faq.q}</p>
                 <p style={{ color: "#6B7280", lineHeight: "1.75" }}>{faq.a}</p>
               </div>
             ))}
@@ -102,7 +102,7 @@ export function PrivatumzugPageClient() {
       </section>
       <section className="py-12" style={{ backgroundColor: "#F9FAFB" }}>
         <div className="max-w-7xl mx-auto px-4 md:px-6">
-          <h3 className="text-xl font-bold mb-6" style={{ color: "#F9FAFB" }}>{t.sub_more_services}</h3>
+          <h3 className="text-xl font-bold mb-6" style={{ color: "#111827" }}>{t.sub_more_services}</h3>
           <div className="flex flex-wrap gap-3">
             {[
               { label: lang === "en" ? "Office Moving Vienna" : "Firmenumzug Wien", href: "/leistungen/firmenumzug" },

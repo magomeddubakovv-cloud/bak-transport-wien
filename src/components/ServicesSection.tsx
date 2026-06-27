@@ -47,7 +47,7 @@ export function ServicesSection() {
           <p className="text-xs font-bold uppercase mb-3" style={{ color: "#EA580C", letterSpacing: "4px" }}>
             {t.services_label}
           </p>
-          <h2 className="text-2xl md:text-4xl leading-[1.1]" style={{ color: "#F9FAFB", fontWeight: 900 }}>
+          <h2 className="text-2xl md:text-4xl leading-[1.1]" style={{ color: "#111827", fontWeight: 900 }}>
             {t.services_h2}
           </h2>
           <p className="mt-4 max-w-xl mx-auto text-base md:text-lg" style={{ color: "#6B7280" }}>
@@ -71,7 +71,7 @@ export function ServicesSection() {
                   <div className="w-14 h-14 bg-[#FEF2F2] rounded-2xl flex items-center justify-center mb-6">
                     <Icon size={28} color="#EA580C" />
                   </div>
-                  <h3 className="mb-3" style={{ color: "#F9FAFB", fontSize: "22px", fontWeight: 800 }}>
+                  <h3 className="mb-3" style={{ color: "#111827", fontSize: "22px", fontWeight: 800 }}>
                     {title}
                   </h3>
                   <p className="mb-6" style={{ color: "#6B7280", fontSize: "15px", lineHeight: 1.7 }}>

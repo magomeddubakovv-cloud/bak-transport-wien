@@ -31,12 +31,12 @@ export function KontaktPageClient() {
     <PageLayout label={t.kontakt_label} title={t.kontakt_title} subtitle={t.kontakt_subtitle}>
       <section className="py-12 md:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 md:px-6">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 md:mb-12" style={{ color: "#F9FAFB" }}>{t.kontakt_how_h2}</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 md:mb-12" style={{ color: "#111827" }}>{t.kontakt_how_h2}</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {cards.map((card) => (
               <div key={card.title} className="bg-white rounded-2xl p-8 shadow-sm" style={{ border: "1px solid #E5E7EB" }}>
                 <div className="w-2 h-8 rounded mb-4" style={{ backgroundColor: "#EA580C" }} />
-                <h3 className="text-xl font-semibold mb-3" style={{ color: "#F9FAFB" }}>{card.title}</h3>
+                <h3 className="text-xl font-semibold mb-3" style={{ color: "#111827" }}>{card.title}</h3>
                 <p style={{ color: "#6B7280", lineHeight: "1.75" }}>{card.text}</p>
               </div>
             ))}
@@ -58,12 +58,12 @@ export function KontaktPageClient() {
       </section>
       <section className="py-12 md:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 md:px-6">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 md:mb-12" style={{ color: "#F9FAFB" }}>{t.kontakt_reach_h2}</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 md:mb-12" style={{ color: "#111827" }}>{t.kontakt_reach_h2}</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {contacts.map((c) => (
               <div key={c.title} className="rounded-2xl p-8 text-center" style={{ backgroundColor: "#F9FAFB", border: "1px solid #E5E7EB" }}>
                 <div className="text-4xl mb-4">{c.icon}</div>
-                <h3 className="text-lg font-bold mb-2" style={{ color: "#F9FAFB" }}>{c.title}</h3>
+                <h3 className="text-lg font-bold mb-2" style={{ color: "#111827" }}>{c.title}</h3>
                 {c.href ? (
                   <a href={c.href} className="block font-semibold mb-1" style={{ color: "#EA580C", textDecoration: "none" }}>{c.value}</a>
                 ) : (

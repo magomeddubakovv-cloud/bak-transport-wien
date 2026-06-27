@@ -27,7 +27,7 @@ export function FaqPageClient() {
           <div className="space-y-8">
             {faqs.map((faq) => (
               <div key={faq.q} style={{ borderBottom: "1px solid #E5E7EB", paddingBottom: "2rem" }}>
-                <p className="font-semibold text-lg mb-2" style={{ color: "#F9FAFB" }}>{faq.q}</p>
+                <p className="font-semibold text-lg mb-2" style={{ color: "#111827" }}>{faq.q}</p>
                 <p style={{ color: "#6B7280", lineHeight: "1.75" }}>{faq.a}</p>
               </div>
             ))}

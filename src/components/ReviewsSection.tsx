@@ -212,7 +212,7 @@ function ReviewCard({ review }: { review: typeof reviews[0] }) {
             {review.initial}
           </div>
           <div>
-            <p className="font-semibold text-sm" style={{ color: "#F9FAFB" }}>{review.name}</p>
+            <p className="font-semibold text-sm" style={{ color: "#111827" }}>{review.name}</p>
             <p className="text-xs" style={{ color: "#9CA3AF" }}>{review.time}</p>
           </div>
         </div>
@@ -262,14 +262,14 @@ export function ReviewsSection() {
             <p className="text-xs uppercase tracking-widest font-bold mb-1" style={{ color: "#EA580C" }}>
               {t.reviews_label}
             </p>
-            <h2 className="text-2xl md:text-3xl font-bold" style={{ color: "#F9FAFB" }}>
+            <h2 className="text-2xl md:text-3xl font-bold" style={{ color: "#111827" }}>
               {t.reviews_h2}
             </h2>
             <div className="flex items-center gap-2 mt-2">
               <div className="flex gap-0.5">
                 {[1,2,3,4,5].map(i => <StarIcon key={i} />)}
               </div>
-              <span className="text-sm font-semibold" style={{ color: "#F9FAFB" }}>5,0</span>
+              <span className="text-sm font-semibold" style={{ color: "#111827" }}>5,0</span>
               <span className="text-sm" style={{ color: "#6B7280" }}>{t.reviews_count}</span>
             </div>
           </div>

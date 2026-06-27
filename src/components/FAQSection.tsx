@@ -30,7 +30,7 @@ export function FAQSection() {
           <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "#EA580C" }}>
             {t.faq_label}
           </p>
-          <h2 className="text-2xl md:text-4xl leading-tight" style={{ color: "#F9FAFB", fontWeight: 900 }}>
+          <h2 className="text-2xl md:text-4xl leading-tight" style={{ color: "#111827", fontWeight: 900 }}>
             {t.faq_h2}
           </h2>
         </div>
@@ -45,7 +45,7 @@ export function FAQSection() {
                   onClick={() => toggle(index)}
                   className="w-full flex justify-between items-center py-5 text-left min-h-[44px]"
                 >
-                  <span className="pr-4 text-base md:text-lg" style={{ fontWeight: 700, color: "#F9FAFB" }}>
+                  <span className="pr-4 text-base md:text-lg" style={{ fontWeight: 700, color: "#111827" }}>
                     {item.question}
                   </span>
                   <span

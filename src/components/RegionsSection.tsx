@@ -41,7 +41,7 @@ export function RegionsSection() {
           </p>
           <h2
             className="text-2xl md:text-4xl leading-tight"
-            style={{ color: "#F9FAFB", fontWeight: 900 }}
+            style={{ color: "#111827", fontWeight: 900 }}
           >
             {t.regions_h2}
           </h2>
@@ -68,7 +68,7 @@ export function RegionsSection() {
                   style={{ color: "#EA580C", marginTop: "2px", flexShrink: 0 }}
                 />
                 <div>
-                  <p style={{ fontWeight: 700, color: "#F9FAFB", fontSize: "17px" }}>
+                  <p style={{ fontWeight: 700, color: "#111827", fontSize: "17px" }}>
                     {card.title}
                   </p>
                   <p

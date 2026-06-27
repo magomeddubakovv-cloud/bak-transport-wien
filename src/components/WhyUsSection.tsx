@@ -22,7 +22,7 @@ export function WhyUsSection() {
           <p className="text-xs font-bold uppercase mb-3" style={{ color: "#EA580C", letterSpacing: "4px" }}>
             {t.whyus_label}
           </p>
-          <h2 className="text-2xl md:text-4xl leading-tight" style={{ color: "#F9FAFB", fontWeight: 900 }}>
+          <h2 className="text-2xl md:text-4xl leading-tight" style={{ color: "#111827", fontWeight: 900 }}>
             {t.whyus_h2}
           </h2>
           <div className="w-16 h-1 bg-[#EA580C] mx-auto mt-6" />
@@ -41,7 +41,7 @@ export function WhyUsSection() {
                 {reason.number}
               </span>
               <div>
-                <h3 className="mb-2" style={{ color: "#F9FAFB", fontSize: "20px", fontWeight: 800 }}>
+                <h3 className="mb-2" style={{ color: "#111827", fontSize: "20px", fontWeight: 800 }}>
                   {reason.title}
                 </h3>
                 <p style={{ color: "#6B7280", fontSize: "15px", lineHeight: 1.7 }}>
