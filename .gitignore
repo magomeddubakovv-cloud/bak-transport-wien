@@ -52,3 +52,4 @@ temp/
 .claude/worktrees/
 *.png
 !public/**/*.png
+!src/app/icon.png
