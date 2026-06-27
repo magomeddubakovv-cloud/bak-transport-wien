@@ -17,7 +17,7 @@ const reviews = [
   {
     name: "Christoph Trummer",
     initial: "C",
-    color: "#E5E7EB",
+    color: "#374151",
     time: "Vor 2 Monaten",
     text: "Top Service! Der Umzug hat sich zwar aufgrund unvorhersehbarer äußerer Umstände verzögert, aber das Team blieb durchgehend professionell, effizient und lösungsorientiert. Klare Empfehlung.",
     stars: 5,
@@ -218,7 +218,7 @@ function ReviewCard({ review }: { review: typeof reviews[0] }) {
         </div>
 
         {/* Text */}
-        <p className="text-sm leading-relaxed mb-1" style={{ color: "#E5E7EB" }}>
+        <p className="text-sm leading-relaxed mb-1" style={{ color: "#374151" }}>
           {displayText}
         </p>
         {isLong && (

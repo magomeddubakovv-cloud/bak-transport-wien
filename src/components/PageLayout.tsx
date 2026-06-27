@@ -25,14 +25,15 @@ export function PageLayout({ children, title, subtitle, label }: PageLayoutProps
               </p>
             )}
             <h1
-              className="text-white font-black leading-tight text-2xl md:text-4xl lg:text-5xl"
+              className="font-black leading-tight text-2xl md:text-4xl lg:text-5xl"
+              style={{ color: "#111827" }}
             >
               {title}
             </h1>
             {subtitle && (
               <p
                 className="mt-4 text-base md:text-lg max-w-2xl"
-                style={{ color: "rgba(255,255,255,0.65)", lineHeight: 1.7 }}
+                style={{ color: "#6B7280", lineHeight: 1.7 }}
               >
                 {subtitle}
               </p>

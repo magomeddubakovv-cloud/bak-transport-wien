@@ -108,7 +108,7 @@ export function KarrierePageClient() {
           <p className="mb-8 text-white opacity-90">{t.karriere_cta_desc}</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="mailto:office@baktransport.at" className="inline-block px-8 py-4 rounded-xl font-semibold text-base" style={{ backgroundColor: "#FFFFFF", color: "#EA580C" }}>{t.karriere_cta_btn1}</a>
-            <a href="tel:+436761234567" className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-semibold text-base text-white" style={{ border: "2px solid rgba(255,255,255,0.6)" }}><Phone className="w-5 h-5" />{t.karriere_cta_btn2}</a>
+            <a href="tel:+436761234567" className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-semibold text-base" style={{ border: "2px solid #EA580C", color: "#EA580C" }}><Phone className="w-5 h-5" />{t.karriere_cta_btn2}</a>
           </div>
         </div>
       </section>

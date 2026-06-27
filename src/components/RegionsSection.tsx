@@ -116,7 +116,7 @@ export function RegionsSection() {
                     className="rounded-full px-4 py-2"
                     style={{
                       backgroundColor: tag.highlight ? "#EA580C" : "#FFFFFF",
-                      color: tag.highlight ? "#FFFFFF" : "rgba(255,255,255,0.8)",
+                      color: tag.highlight ? "#FFFFFF" : "#374151",
                       fontSize: "14px",
                       border: tag.highlight ? "none" : "1px solid #E5E7EB",
                     }}

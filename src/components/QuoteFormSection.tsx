@@ -21,7 +21,7 @@ interface FormState {
 const inputClass =
   "border border-[#E5E7EB] rounded-lg px-4 py-3 w-full focus:border-[#EA580C] focus:ring-1 focus:ring-[#EA580C] focus:outline-none";
 const inputStyle = { fontSize: "15px" } as const;
-const labelStyle = { fontSize: "13px", fontWeight: 600, color: "#E5E7EB" } as const;
+const labelStyle = { fontSize: "13px", fontWeight: 600, color: "#374151" } as const;
 
 export function QuoteFormSection() {
   const { lang } = useLang();

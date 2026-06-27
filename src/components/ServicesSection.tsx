@@ -81,7 +81,7 @@ export function ServicesSection() {
                     {features.map((feature) => (
                       <li key={feature} className="flex items-center gap-2">
                         <span className="w-1.5 h-1.5 bg-[#EA580C] rounded-sm flex-shrink-0" />
-                        <span style={{ color: "#E5E7EB", fontSize: "14px" }}>{feature}</span>
+                        <span style={{ color: "#374151", fontSize: "14px" }}>{feature}</span>
                       </li>
                     ))}
                   </ul>

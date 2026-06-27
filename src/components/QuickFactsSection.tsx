@@ -43,7 +43,7 @@ export function QuickFactsSection() {
               >
                 ✓
               </span>
-              <span style={{ color: "#E5E7EB", fontSize: "15px" }}>{fact}</span>
+              <span style={{ color: "#374151", fontSize: "15px" }}>{fact}</span>
             </div>
           ))}
         </div>

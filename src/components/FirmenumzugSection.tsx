@@ -45,19 +45,19 @@ export function FirmenumzugSection() {
 
             <p
               className="mt-4 text-[15px] leading-[1.8]"
-              style={{ color: "#E5E7EB" }}
+              style={{ color: "#374151" }}
             >
               {t.firmen_p1}
             </p>
             <p
               className="mt-4 text-[15px] leading-[1.8]"
-              style={{ color: "#E5E7EB" }}
+              style={{ color: "#374151" }}
             >
               {t.firmen_p2}
             </p>
             <p
               className="mt-4 text-[15px] leading-[1.8]"
-              style={{ color: "#E5E7EB" }}
+              style={{ color: "#374151" }}
             >
               {t.firmen_p3}
             </p>

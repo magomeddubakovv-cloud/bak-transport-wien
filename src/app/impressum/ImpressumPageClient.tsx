@@ -11,7 +11,7 @@ export function ImpressumPageClient() {
   return (
     <PageLayout label={t.impressum_label} title={t.impressum_title}>
       <section className="py-12 md:py-20 bg-white">
-        <div className="max-w-3xl mx-auto px-4 md:px-6 prose" style={{ color: "#E5E7EB", lineHeight: "1.8" }}>
+        <div className="max-w-3xl mx-auto px-4 md:px-6 prose" style={{ color: "#374151", lineHeight: "1.8" }}>
           <h2 style={{ color: "#F9FAFB" }}>{t.impressum_h2_1}</h2>
           <p><strong>BAK Transport GmbH</strong><br />Musterstraße 12<br />1010 Wien<br />Österreich</p>
           <p><strong>{t.impressum_tel}</strong> +43 676 123 45 67<br /><strong>{t.impressum_email_label}</strong> office@baktransport.at</p>

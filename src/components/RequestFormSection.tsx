@@ -27,7 +27,7 @@ function FieldLabel({ htmlFor, children }: LabelProps) {
     <label
       htmlFor={htmlFor}
       className="block mb-1"
-      style={{ fontSize: "13px", fontWeight: 600, color: "#E5E7EB" }}
+      style={{ fontSize: "13px", fontWeight: 600, color: "#374151" }}
     >
       {children}
     </label>
@@ -163,12 +163,12 @@ function AddressBlock({ prefix, label, fields, onChange, t }: AddressBlockProps)
 
       {/* Row 3: Aufzug radio */}
       <div>
-        <p className="mb-2" style={{ fontSize: "13px", fontWeight: 600, color: "#E5E7EB" }}>
+        <p className="mb-2" style={{ fontSize: "13px", fontWeight: 600, color: "#374151" }}>
           {t.reqform_aufzug}
         </p>
         <div className="flex gap-6">
           {(["ja", "nein"] as const).map((val) => (
-            <label key={val} className="flex items-center gap-2 cursor-pointer" style={{ fontSize: "15px", color: "#E5E7EB" }}>
+            <label key={val} className="flex items-center gap-2 cursor-pointer" style={{ fontSize: "15px", color: "#374151" }}>
               <input
                 type="radio"
                 name={`${prefix}-aufzug`}
@@ -309,7 +309,7 @@ export function RequestFormSection() {
 
               {/* Größe */}
               <div>
-                <p className="mb-2" style={{ fontSize: "13px", fontWeight: 600, color: "#E5E7EB" }}>
+                <p className="mb-2" style={{ fontSize: "13px", fontWeight: 600, color: "#374151" }}>
                   {t.reqform_groesse}
                 </p>
                 <div className="flex gap-3 flex-wrap">
