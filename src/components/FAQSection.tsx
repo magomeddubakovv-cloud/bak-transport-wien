@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import { useLang } from "@/contexts/LanguageContext";
@@ -27,10 +27,10 @@ export function FAQSection() {
     <section className="py-12 md:py-24" style={{ backgroundColor: "#FFFFFF" }}>
       <div className="max-w-5xl mx-auto px-4 md:px-6">
         <div className="text-center mb-10 md:mb-12">
-          <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "#DC2626" }}>
+          <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "#EA580C" }}>
             {t.faq_label}
           </p>
-          <h2 className="text-2xl md:text-4xl leading-tight" style={{ color: "#111827", fontWeight: 900 }}>
+          <h2 className="text-2xl md:text-4xl leading-tight" style={{ color: "#F9FAFB", fontWeight: 900 }}>
             {t.faq_h2}
           </h2>
         </div>
@@ -45,12 +45,12 @@ export function FAQSection() {
                   onClick={() => toggle(index)}
                   className="w-full flex justify-between items-center py-5 text-left min-h-[44px]"
                 >
-                  <span className="pr-4 text-base md:text-lg" style={{ fontWeight: 700, color: "#111827" }}>
+                  <span className="pr-4 text-base md:text-lg" style={{ fontWeight: 700, color: "#F9FAFB" }}>
                     {item.question}
                   </span>
                   <span
                     className="flex items-center justify-center shrink-0 rounded-md"
-                    style={{ width: "32px", height: "32px", backgroundColor: "#DC2626", color: "#FFFFFF", fontSize: "18px", fontWeight: 300 }}
+                    style={{ width: "32px", height: "32px", backgroundColor: "#EA580C", color: "#FFFFFF", fontSize: "18px", fontWeight: 300 }}
                   >
                     {isOpen ? "−" : "+"}
                   </span>

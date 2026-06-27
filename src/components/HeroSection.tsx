@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
@@ -40,12 +40,12 @@ function AnimatedHeroStat({ config, label, active, hasBorder }: { config: StatCo
   return (
     <div
       className={hasBorder ? "pb-5 mb-5" : ""}
-      style={hasBorder ? { borderBottom: "1px solid #374151" } : {}}
+      style={hasBorder ? { borderBottom: "1px solid #E5E7EB" } : {}}
     >
-      <div className="text-white text-4xl md:text-5xl" style={{ fontWeight: 900, lineHeight: 1 }}>
+      <div className="text-4xl md:text-5xl" style={{ fontWeight: 900, lineHeight: 1, color: "#EA580C" }}>
         {display}
       </div>
-      <div className="mt-1 uppercase tracking-wide" style={{ color: "rgba(255,255,255,0.6)", fontSize: "14px" }}>
+      <div className="mt-1 uppercase tracking-wide" style={{ color: "#6B7280", fontSize: "14px" }}>
         {label}
       </div>
     </div>
@@ -85,7 +85,7 @@ export function HeroSection() {
   return (
     <section
       className="min-h-screen flex flex-col justify-center"
-      style={{ backgroundColor: "#111827", position: "relative", overflow: "hidden" }}
+      style={{ backgroundColor: "#FFF7ED", position: "relative", overflow: "hidden" }}
     >
       {/* Background photo */}
       <Image
@@ -93,7 +93,7 @@ export function HeroSection() {
         alt="BAK Transport — professionelle Umzüge in Wien"
         fill
         className="object-cover object-center"
-        style={{ opacity: 0.15 }}
+        style={{ opacity: 0.08 }}
         priority
       />
 
@@ -102,7 +102,7 @@ export function HeroSection() {
         className="absolute inset-0 z-0"
         style={{
           background:
-            "linear-gradient(135deg, #111827 60%, rgba(17,24,39,0.85) 100%)",
+            "linear-gradient(135deg, #FFF7ED 50%, rgba(254,215,170,0.6) 100%)",
         }}
       />
 
@@ -114,7 +114,7 @@ export function HeroSection() {
               <span
                 className="inline-block rounded-full uppercase tracking-widest font-bold"
                 style={{
-                  backgroundColor: "#DC2626",
+                  backgroundColor: "#EA580C",
                   color: "#FFFFFF",
                   fontSize: "12px",
                   padding: "4px 16px",
@@ -125,23 +125,23 @@ export function HeroSection() {
               </span>
 
               <h1
-                className="mt-4 text-white text-3xl md:text-5xl lg:text-6xl"
-                style={{ fontWeight: 900, lineHeight: 1.05, letterSpacing: "-1px" }}
+                className="mt-4 text-3xl md:text-5xl lg:text-6xl"
+                style={{ fontWeight: 900, lineHeight: 1.05, letterSpacing: "-1px", color: "#111827" }}
               >
                 BAK Transport.
                 <br />
                 {t.hero_h1_part2}{" "}
-                <span style={{ color: "#DC2626" }}>{t.hero_h1_part3}</span>
+                <span style={{ color: "#EA580C" }}>{t.hero_h1_part3}</span>
               </h1>
 
               <div
                 className="mt-4 mb-6"
-                style={{ width: "60px", height: "4px", backgroundColor: "#DC2626", borderRadius: "2px" }}
+                style={{ width: "60px", height: "4px", backgroundColor: "#EA580C", borderRadius: "2px" }}
               />
 
               <p
                 className="max-w-md text-base md:text-lg"
-                style={{ color: "rgba(255,255,255,0.7)", lineHeight: 1.7 }}
+                style={{ color: "#4B5563", lineHeight: 1.7 }}
               >
                 {t.hero_subtext}
               </p>
@@ -149,9 +149,9 @@ export function HeroSection() {
               <div className="mt-8 flex flex-col sm:flex-row gap-4">
                 <a
                   href="#kontakt"
-                  className="rounded-lg font-extrabold transition-colors hover:bg-[#b91c1c] text-center"
+                  className="rounded-lg font-extrabold transition-colors hover:bg-[#C2410C] text-center"
                   style={{
-                    backgroundColor: "#DC2626",
+                    backgroundColor: "#EA580C",
                     color: "#FFFFFF",
                     fontSize: "16px",
                     padding: "16px 32px",
@@ -164,9 +164,9 @@ export function HeroSection() {
                 </a>
                 <a
                   href="tel:+436761234567"
-                  className="rounded-lg font-bold border-2 border-white transition-colors hover:bg-white/10 text-center"
+                  className="rounded-lg font-bold border-2 border-[#EA580C] transition-colors hover:bg-orange-50 text-center"
                   style={{
-                    color: "#FFFFFF",
+                    color: "#EA580C",
                     fontSize: "16px",
                     padding: "16px 32px",
                     textDecoration: "none",
@@ -185,9 +185,9 @@ export function HeroSection() {
                 ref={cardRef}
                 className="rounded-2xl"
                 style={{
-                  backgroundColor: "#1F2937",
-                  border: "1px solid #374151",
-                  borderLeftColor: "#DC2626",
+                  backgroundColor: "#FFFFFF",
+                  border: "1px solid #E5E7EB",
+                  borderLeftColor: "#EA580C",
                   borderLeftWidth: "4px",
                   padding: "24px",
                 }}
@@ -208,12 +208,12 @@ export function HeroSection() {
           {/* Bottom trust bar */}
           <div
             className="mt-12 pt-8 flex flex-wrap justify-center gap-6 md:gap-12"
-            style={{ borderTop: "1px solid #1F2937" }}
+            style={{ borderTop: "1px solid #FED7AA" }}
           >
             {TRUST_BADGES.map(({ icon: Icon, label }) => (
               <div key={label} className="flex items-center gap-2">
-                <Icon size={20} style={{ color: "#DC2626" }} />
-                <span style={{ color: "rgba(255,255,255,0.7)", fontSize: "14px" }}>
+                <Icon size={20} style={{ color: "#EA580C" }} />
+                <span style={{ color: "#4B5563", fontSize: "14px" }}>
                   {label}
                 </span>
               </div>

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import Image from "next/image";
@@ -19,9 +19,9 @@ interface FormState {
 }
 
 const inputClass =
-  "border border-[#E5E7EB] rounded-lg px-4 py-3 w-full focus:border-[#DC2626] focus:ring-1 focus:ring-[#DC2626] focus:outline-none";
+  "border border-[#E5E7EB] rounded-lg px-4 py-3 w-full focus:border-[#EA580C] focus:ring-1 focus:ring-[#EA580C] focus:outline-none";
 const inputStyle = { fontSize: "15px" } as const;
-const labelStyle = { fontSize: "13px", fontWeight: 600, color: "#374151" } as const;
+const labelStyle = { fontSize: "13px", fontWeight: 600, color: "#E5E7EB" } as const;
 
 export function QuoteFormSection() {
   const { lang } = useLang();
@@ -45,41 +45,41 @@ export function QuoteFormSection() {
   }
 
   return (
-    <section id="kontakt" className="py-12 md:py-24" style={{ background: "#111827" }}>
+    <section id="kontakt" className="py-12 md:py-24" style={{ background: "#F9FAFB" }}>
       <div className="max-w-6xl mx-auto px-4 md:px-6">
         <div className="flex flex-col md:flex-row gap-10 md:gap-16 items-start">
           {/* Left column */}
           <div className="w-full md:w-2/5 flex-shrink-0">
-            <h2 className="text-2xl md:text-4xl leading-[1.15]" style={{ color: "#FFFFFF", fontWeight: 900 }}>
+            <h2 className="text-2xl md:text-4xl leading-[1.15]" style={{ color: "#111827", fontWeight: 900 }}>
               {t.form_h2}
             </h2>
-            <div className="w-12 h-1 bg-[#DC2626] mt-4" style={{ width: "48px", height: "4px" }} />
+            <div className="w-12 h-1 bg-[#EA580C] mt-4" style={{ width: "48px", height: "4px" }} />
 
             <div className="relative rounded-xl overflow-hidden mt-6 mb-8" style={{ height: "220px" }}>
               <Image src="/images/photos/team.jpg" alt="BAK Transport Team Wien" fill className="object-cover object-center" />
               <div className="absolute inset-0" style={{ background: "rgba(17,24,39,0.3)" }} />
             </div>
 
-            <p style={{ color: "rgba(255,255,255,0.7)", fontSize: "16px", lineHeight: 1.7 }}>
+            <p style={{ color: "#4B5563", fontSize: "16px", lineHeight: 1.7 }}>
               {t.form_desc}
             </p>
 
             <div className="mt-10 space-y-4">
               <div className="flex items-center gap-3">
-                <Phone size={18} color="#DC2626" />
-                <span style={{ color: "#FFFFFF", fontWeight: 600 }}>+43 676 123 45 67</span>
+                <Phone size={18} color="#EA580C" />
+                <span style={{ color: "#111827", fontWeight: 600 }}>+43 676 123 45 67</span>
               </div>
               <div className="flex items-center gap-3">
-                <Mail size={18} color="#DC2626" />
-                <span style={{ color: "#FFFFFF", fontWeight: 600 }}>office@baktransport.at</span>
+                <Mail size={18} color="#EA580C" />
+                <span style={{ color: "#111827", fontWeight: 600 }}>office@baktransport.at</span>
               </div>
               <div className="flex items-center gap-3">
-                <MapPin size={18} color="#DC2626" />
-                <span style={{ color: "rgba(255,255,255,0.7)" }}>Wien &amp; ganz Österreich</span>
+                <MapPin size={18} color="#EA580C" />
+                <span style={{ color: "#4B5563" }}>Wien &amp; ganz Österreich</span>
               </div>
             </div>
 
-            <p className="mt-8 italic" style={{ color: "rgba(255,255,255,0.5)", fontSize: "14px" }}>
+            <p className="mt-8 italic" style={{ color: "#9CA3AF", fontSize: "14px" }}>
               {t.form_disclaimer}
             </p>
           </div>
@@ -132,9 +132,9 @@ export function QuoteFormSection() {
                           className="px-4 py-2 rounded-lg font-semibold transition-colors duration-150"
                           style={{
                             fontSize: "14px",
-                            background: isSelected ? "#DC2626" : "transparent",
-                            color: isSelected ? "#FFFFFF" : "#374151",
-                            border: isSelected ? "1px solid #DC2626" : "1px solid #E5E7EB",
+                            background: isSelected ? "#EA580C" : "transparent",
+                            color: isSelected ? "#FFFFFF" : "#E5E7EB",
+                            border: isSelected ? "1px solid #EA580C" : "1px solid #E5E7EB",
                           }}
                         >
                           {size}
@@ -171,8 +171,8 @@ export function QuoteFormSection() {
 
                 <button
                   type="submit"
-                  className="w-full py-4 rounded-xl text-white font-extrabold hover:bg-[#b91c1c] transition-colors duration-150"
-                  style={{ background: "#DC2626", fontSize: "17px", fontWeight: 800 }}
+                  className="w-full py-4 rounded-xl text-white font-extrabold hover:bg-[#C2410C] transition-colors duration-150"
+                  style={{ background: "#EA580C", fontSize: "17px", fontWeight: 800 }}
                 >
                   {t.form_submit}
                 </button>

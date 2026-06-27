@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Link from "next/link";
 import { Logo } from "@/components/Logo";
@@ -61,8 +61,8 @@ export function Footer() {
   ];
 
   return (
-    <footer style={{ backgroundColor: "#0D1117", color: "#FFFFFF" }}>
-      <div className="py-16" style={{ borderBottom: "1px solid #1F2937" }}>
+    <footer style={{ backgroundColor: "#1C0F00", color: "#FFFFFF" }}>
+      <div className="py-16" style={{ borderBottom: "1px solid rgba(255,255,255,0.1)" }}>
         <div className="max-w-7xl mx-auto px-4 md:px-6 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
           {/* Column 1 — Brand */}
           <div className="col-span-2 md:col-span-1">
@@ -87,7 +87,7 @@ export function Footer() {
                   href="#"
                   aria-label={label}
                   className="rounded-lg p-2.5 transition-colors"
-                  style={{ backgroundColor: "#1F2937", color: "#FFFFFF" }}
+                  style={{ backgroundColor: "rgba(255,255,255,0.12)", color: "#FFFFFF" }}
                 >
                   <Icon />
                 </a>
@@ -170,7 +170,7 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="py-6" style={{ borderTop: "1px solid #1F2937" }}>
+      <div className="py-6" style={{ borderTop: "1px solid rgba(255,255,255,0.1)" }}>
         <div className="max-w-7xl mx-auto px-4 md:px-6 flex flex-col md:flex-row justify-between items-center gap-2 text-center md:text-left">
           <p style={{ color: "rgba(255,255,255,0.3)", fontSize: "13px" }}>
             {t.footer_copyright}

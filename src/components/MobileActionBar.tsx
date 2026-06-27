@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { Phone } from "lucide-react";
 import { useLang } from "@/contexts/LanguageContext";
@@ -17,7 +17,7 @@ export function MobileActionBar() {
         href="tel:+436761234567"
         className="flex-1 flex items-center justify-center gap-2 font-bold text-white rounded-2xl"
         style={{
-          backgroundColor: "#DC2626",
+          backgroundColor: "#EA580C",
           padding: "15px 0",
           fontSize: "15px",
           textDecoration: "none",

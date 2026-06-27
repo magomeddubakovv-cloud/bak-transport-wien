@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useRef, useState } from "react";
 import { useLang } from "@/contexts/LanguageContext";
@@ -101,7 +101,7 @@ export function StatsBar() {
   ];
 
   return (
-    <section ref={sectionRef} className="w-full py-8 md:py-10" style={{ backgroundColor: "#DC2626" }}>
+    <section ref={sectionRef} className="w-full py-8 md:py-10" style={{ backgroundColor: "#EA580C" }}>
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         <div className="grid grid-cols-2 md:grid-cols-4">
           {STATS.map((stat, i) => (

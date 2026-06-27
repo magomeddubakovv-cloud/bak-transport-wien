@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { Check } from "lucide-react";
 import { useLang } from "@/contexts/LanguageContext";
@@ -36,16 +36,16 @@ export function PricingSection() {
   ];
 
   return (
-    <section className="py-12 md:py-24" style={{ backgroundColor: "#111827" }}>
+    <section className="py-12 md:py-24" style={{ backgroundColor: "#F9FAFB" }}>
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         <div className="text-center mb-10 md:mb-16">
-          <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "#DC2626" }}>
+          <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "#EA580C" }}>
             {t.pricing_label}
           </p>
-          <h2 className="text-2xl md:text-4xl leading-tight" style={{ color: "#FFFFFF", fontWeight: 900 }}>
+          <h2 className="text-2xl md:text-4xl leading-tight" style={{ color: "#111827", fontWeight: 900 }}>
             {t.pricing_h2}
           </h2>
-          <p className="mt-3 text-base md:text-xl" style={{ color: "rgba(255,255,255,0.6)" }}>
+          <p className="mt-3 text-base md:text-xl" style={{ color: "#6B7280" }}>
             {t.pricing_subtext}
           </p>
         </div>
@@ -56,38 +56,38 @@ export function PricingSection() {
               key={card.title}
               className="rounded-2xl p-8 relative"
               style={{
-                backgroundColor: card.featured ? "#DC2626" : "#1F2937",
-                border: card.featured ? "none" : "1px solid #374151",
+                backgroundColor: card.featured ? "#EA580C" : "#FFFFFF",
+                border: card.featured ? "none" : "1px solid #E5E7EB",
               }}
             >
               {card.featured && (
                 <div
                   className="absolute left-1/2 -translate-x-1/2 -top-4 rounded-full px-5 py-1.5 text-sm font-bold shadow"
-                  style={{ backgroundColor: "#FFFFFF", color: "#DC2626", whiteSpace: "nowrap" }}
+                  style={{ backgroundColor: "#FFFFFF", color: "#EA580C", whiteSpace: "nowrap" }}
                 >
                   {t.pricing_badge}
                 </div>
               )}
 
-              <p style={{ color: "#FFFFFF", fontSize: "22px", fontWeight: 800 }}>{card.title}</p>
-              <p className="mt-1" style={{ color: card.featured ? "rgba(255,255,255,0.8)" : "rgba(255,255,255,0.5)", fontSize: "14px" }}>
+              <p style={{ color: card.featured ? "#FFFFFF" : "#111827", fontSize: "22px", fontWeight: 800 }}>{card.title}</p>
+              <p className="mt-1" style={{ color: card.featured ? "rgba(255,255,255,0.8)" : "#6B7280", fontSize: "14px" }}>
                 {card.forText}
               </p>
 
-              <p className="mt-8" style={{ color: "#FFFFFF", fontSize: "42px", fontWeight: 900, lineHeight: 1 }}>
+              <p className="mt-8" style={{ color: card.featured ? "#FFFFFF" : "#111827", fontSize: "42px", fontWeight: 900, lineHeight: 1 }}>
                 {card.price}
-                <span style={{ color: card.featured ? "rgba(255,255,255,0.8)" : "rgba(255,255,255,0.5)", fontSize: "14px", fontWeight: 400, marginLeft: "6px" }}>
+                <span style={{ color: card.featured ? "rgba(255,255,255,0.8)" : "#6B7280", fontSize: "14px", fontWeight: 400, marginLeft: "6px" }}>
                   {t.pricing_per}
                 </span>
               </p>
 
-              <div className="mt-6 mb-6" style={{ borderTop: card.featured ? "1px solid rgba(255,255,255,0.2)" : "1px solid #374151" }} />
+              <div className="mt-6 mb-6" style={{ borderTop: card.featured ? "1px solid rgba(255,255,255,0.2)" : "1px solid #E5E7EB" }} />
 
               <ul className="space-y-3">
                 {card.features.map((feature) => (
                   <li key={feature} className="flex items-center gap-3">
-                    <Check size={16} style={{ color: card.featured ? "#FFFFFF" : "#DC2626", flexShrink: 0 }} />
-                    <span style={{ color: card.featured ? "#FFFFFF" : "rgba(255,255,255,0.75)", fontSize: "14px" }}>
+                    <Check size={16} style={{ color: card.featured ? "#FFFFFF" : "#EA580C", flexShrink: 0 }} />
+                    <span style={{ color: card.featured ? "#FFFFFF" : "#374151", fontSize: "14px" }}>
                       {feature}
                     </span>
                   </li>
@@ -99,8 +99,8 @@ export function PricingSection() {
                 className="block text-center rounded-xl py-3 w-full mt-8 font-semibold transition-colors"
                 style={
                   card.featured
-                    ? { backgroundColor: "#FFFFFF", color: "#DC2626", fontWeight: 700 }
-                    : { border: "1px solid #374151", color: "#FFFFFF" }
+                    ? { backgroundColor: "#FFFFFF", color: "#EA580C", fontWeight: 700 }
+                    : { border: "1px solid #E5E7EB", color: "#111827" }
                 }
               >
                 {card.ctaLabel}
@@ -109,10 +109,10 @@ export function PricingSection() {
           ))}
         </div>
 
-        <p className="mt-8 text-center" style={{ color: "rgba(255,255,255,0.4)", fontSize: "13px" }}>
+        <p className="mt-8 text-center" style={{ color: "#9CA3AF", fontSize: "13px" }}>
           {t.pricing_footnote}
         </p>
-        <p className="mt-2 text-center" style={{ color: "rgba(255,255,255,0.55)", fontSize: "14px" }}>
+        <p className="mt-2 text-center" style={{ color: "#6B7280", fontSize: "14px" }}>
           {t.pricing_hourly}
         </p>
       </div>

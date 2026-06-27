@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -33,19 +33,19 @@ export function PrivatumzugSection() {
 
             <p
               className="mt-4 text-[15px] leading-[1.8]"
-              style={{ color: "#374151" }}
+              style={{ color: "#E5E7EB" }}
             >
               {t.privat_p1}
             </p>
             <p
               className="mt-4 text-[15px] leading-[1.8]"
-              style={{ color: "#374151" }}
+              style={{ color: "#E5E7EB" }}
             >
               {t.privat_p2}
             </p>
             <p
               className="mt-4 text-[15px] leading-[1.8]"
-              style={{ color: "#374151" }}
+              style={{ color: "#E5E7EB" }}
             >
               {t.privat_p3}
             </p>

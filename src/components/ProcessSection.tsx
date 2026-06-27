@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import { cn } from "@/lib/utils";
@@ -77,7 +77,7 @@ export function ProcessSection() {
             <span className="inline-block bg-[#F97316]/10 text-[#F97316] rounded-full px-4 py-1 text-[13px] mb-4">
               {activeStep.duration}
             </span>
-            <p className="text-[#374151] text-[15px] leading-[1.8] flex-1">
+            <p className="text-[#E5E7EB] text-[15px] leading-[1.8] flex-1">
               {activeStep.content}
             </p>
 

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { MapPin } from "lucide-react";
 import { useLang } from "@/contexts/LanguageContext";
@@ -35,13 +35,13 @@ export function RegionsSection() {
         <div className="text-center mb-10 md:mb-16">
           <p
             className="text-xs font-bold uppercase tracking-widest mb-3"
-            style={{ color: "#DC2626" }}
+            style={{ color: "#EA580C" }}
           >
             {t.regions_label}
           </p>
           <h2
             className="text-2xl md:text-4xl leading-tight"
-            style={{ color: "#111827", fontWeight: 900 }}
+            style={{ color: "#F9FAFB", fontWeight: 900 }}
           >
             {t.regions_h2}
           </h2>
@@ -65,10 +65,10 @@ export function RegionsSection() {
               >
                 <MapPin
                   size={24}
-                  style={{ color: "#DC2626", marginTop: "2px", flexShrink: 0 }}
+                  style={{ color: "#EA580C", marginTop: "2px", flexShrink: 0 }}
                 />
                 <div>
-                  <p style={{ fontWeight: 700, color: "#111827", fontSize: "17px" }}>
+                  <p style={{ fontWeight: 700, color: "#F9FAFB", fontSize: "17px" }}>
                     {card.title}
                   </p>
                   <p
@@ -89,7 +89,7 @@ export function RegionsSection() {
               <a
                 href="#kontakt"
                 className="hover:underline"
-                style={{ color: "#DC2626", fontWeight: 700, fontSize: "14px" }}
+                style={{ color: "#EA580C", fontWeight: 700, fontSize: "14px" }}
               >
                 {t.regions_contact_link}
               </a>
@@ -100,11 +100,11 @@ export function RegionsSection() {
           <div className="lg:w-[55%]">
             <div
               className="rounded-2xl p-6 md:p-10"
-              style={{ backgroundColor: "#111827" }}
+              style={{ backgroundColor: "#F9FAFB" }}
             >
               <p
                 className="mb-6"
-                style={{ color: "#FFFFFF", fontSize: "22px", fontWeight: 700 }}
+                style={{ color: "#111827", fontSize: "22px", fontWeight: 700 }}
               >
                 {t.regions_area_title}
               </p>
@@ -115,10 +115,10 @@ export function RegionsSection() {
                     key={tag.label}
                     className="rounded-full px-4 py-2"
                     style={{
-                      backgroundColor: tag.highlight ? "#DC2626" : "#1F2937",
+                      backgroundColor: tag.highlight ? "#EA580C" : "#FFFFFF",
                       color: tag.highlight ? "#FFFFFF" : "rgba(255,255,255,0.8)",
                       fontSize: "14px",
-                      border: tag.highlight ? "none" : "1px solid #374151",
+                      border: tag.highlight ? "none" : "1px solid #E5E7EB",
                     }}
                   >
                     {lang === "en" ? tag.labelEn : tag.label}
@@ -128,7 +128,7 @@ export function RegionsSection() {
 
               <p
                 className="mt-8 text-center italic"
-                style={{ color: "rgba(255,255,255,0.4)", fontSize: "13px" }}
+                style={{ color: "#9CA3AF", fontSize: "13px" }}
               >
                 {t.regions_cross_border}
               </p>

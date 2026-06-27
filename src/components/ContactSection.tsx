@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useLang } from "@/contexts/LanguageContext";
 import { translations } from "@/i18n/translations";
@@ -18,9 +18,9 @@ export function ContactSection() {
         </p>
 
         <div className="inline-flex flex-col gap-2 mt-6 text-left">
-          <p className="text-[#374151]">• {t.contact_item1}</p>
-          <p className="text-[#374151]">• {t.contact_item2}</p>
-          <p className="text-[#374151]">• {t.contact_item3}</p>
+          <p className="text-[#E5E7EB]">• {t.contact_item1}</p>
+          <p className="text-[#E5E7EB]">• {t.contact_item2}</p>
+          <p className="text-[#E5E7EB]">• {t.contact_item3}</p>
         </div>
 
         <div className="mt-8 flex justify-center gap-4 flex-wrap">

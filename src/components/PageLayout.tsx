@@ -1,4 +1,4 @@
-import { Navbar } from "@/components/Navbar";
+﻿import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 
 interface PageLayoutProps {
@@ -14,12 +14,12 @@ export function PageLayout({ children, title, subtitle, label }: PageLayoutProps
       <Navbar />
       <main>
         {/* Page Hero */}
-        <section style={{ backgroundColor: "#111827" }} className="py-12 md:py-20">
+        <section style={{ backgroundColor: "#F9FAFB" }} className="py-12 md:py-20">
           <div className="max-w-7xl mx-auto px-4 md:px-6">
             {label && (
               <p
                 className="text-xs uppercase tracking-[4px] font-bold mb-3"
-                style={{ color: "#DC2626" }}
+                style={{ color: "#EA580C" }}
               >
                 {label}
               </p>
@@ -42,7 +42,7 @@ export function PageLayout({ children, title, subtitle, label }: PageLayoutProps
               style={{
                 width: "48px",
                 height: "4px",
-                backgroundColor: "#DC2626",
+                backgroundColor: "#EA580C",
                 borderRadius: "2px",
               }}
             />

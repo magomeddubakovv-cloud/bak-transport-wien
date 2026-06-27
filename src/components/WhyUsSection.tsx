@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Image from "next/image";
 import { useLang } from "@/contexts/LanguageContext";
@@ -19,13 +19,13 @@ export function WhyUsSection() {
     <section className="bg-white py-12 md:py-24">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         <div className="mb-10 md:mb-16 text-center">
-          <p className="text-xs font-bold uppercase mb-3" style={{ color: "#DC2626", letterSpacing: "4px" }}>
+          <p className="text-xs font-bold uppercase mb-3" style={{ color: "#EA580C", letterSpacing: "4px" }}>
             {t.whyus_label}
           </p>
-          <h2 className="text-2xl md:text-4xl leading-tight" style={{ color: "#111827", fontWeight: 900 }}>
+          <h2 className="text-2xl md:text-4xl leading-tight" style={{ color: "#F9FAFB", fontWeight: 900 }}>
             {t.whyus_h2}
           </h2>
-          <div className="w-16 h-1 bg-[#DC2626] mx-auto mt-6" />
+          <div className="w-16 h-1 bg-[#EA580C] mx-auto mt-6" />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -36,12 +36,12 @@ export function WhyUsSection() {
             >
               <span
                 className="leading-none select-none text-4xl md:text-5xl"
-                style={{ color: "#DC2626", fontWeight: 900, opacity: 0.9, minWidth: "3rem" }}
+                style={{ color: "#EA580C", fontWeight: 900, opacity: 0.9, minWidth: "3rem" }}
               >
                 {reason.number}
               </span>
               <div>
-                <h3 className="mb-2" style={{ color: "#111827", fontSize: "20px", fontWeight: 800 }}>
+                <h3 className="mb-2" style={{ color: "#F9FAFB", fontSize: "20px", fontWeight: 800 }}>
                   {reason.title}
                 </h3>
                 <p style={{ color: "#6B7280", fontSize: "15px", lineHeight: 1.7 }}>
@@ -65,7 +65,7 @@ export function WhyUsSection() {
               <p className="text-white font-black" style={{ fontSize: "clamp(22px,4vw,36px)" }}>
                 {t.whyus_quote}
               </p>
-              <p className="mt-3 font-semibold" style={{ color: "#DC2626", fontSize: "16px" }}>BAK Transport Wien</p>
+              <p className="mt-3 font-semibold" style={{ color: "#EA580C", fontSize: "16px" }}>BAK Transport Wien</p>
             </div>
           </div>
         </div>

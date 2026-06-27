@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
@@ -76,15 +76,15 @@ export function Navbar() {
     <header
       className="fixed top-0 left-0 right-0 z-50 transition-shadow duration-300"
       style={{
-        backgroundColor: "#111827",
+        backgroundColor: "#FFFFFF",
         height: "88px",
-        boxShadow: scrolled ? "0 4px 24px rgba(0,0,0,0.4)" : "none",
+        boxShadow: scrolled ? "0 4px 16px rgba(0,0,0,0.1)" : "0 1px 0 #E5E7EB",
       }}
     >
       <div ref={navRef} className="max-w-7xl mx-auto pl-0 pr-2 md:px-6 h-full flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="shrink-0 flex items-center" style={{ lineHeight: 0 }}>
-          <Logo variant="light" size="sm" />
+          <Logo variant="dark" size="sm" />
         </Link>
 
         {/* Desktop nav with dropdowns */}
@@ -95,8 +95,8 @@ export function Navbar() {
               <div key={link.label} className="relative">
                 <button
                   onClick={() => setOpenDropdown(isOpen ? null : link.label)}
-                  className="flex items-center gap-1 rounded-md px-3 py-2 transition-colors duration-150 hover:text-white hover:bg-white/10"
-                  style={{ color: "rgba(255,255,255,0.75)", fontSize: "15px", fontWeight: 500, background: "none", border: "none", cursor: "pointer" }}
+                  className="flex items-center gap-1 rounded-md px-3 py-2 transition-colors duration-150 hover:text-[#EA580C] hover:bg-orange-50"
+                  style={{ color: "#374151", fontSize: "15px", fontWeight: 500, background: "none", border: "none", cursor: "pointer" }}
                 >
                   {link.label}
                   <ChevronDown size={14} style={{ transform: isOpen ? "rotate(180deg)" : "rotate(0deg)", transition: "transform 0.2s" }} />
@@ -104,15 +104,15 @@ export function Navbar() {
                 {isOpen && (
                   <div
                     className="absolute top-full left-0 mt-1 rounded-xl py-2 shadow-2xl z-50"
-                    style={{ backgroundColor: "#1F2937", border: "1px solid rgba(255,255,255,0.08)", minWidth: "220px" }}
+                    style={{ backgroundColor: "#FFFFFF", border: "1px solid #E5E7EB", minWidth: "220px" }}
                   >
                     {link.dropdown.map((item) => (
                       <a
                         key={item.href}
                         href={item.href}
                         onClick={() => setOpenDropdown(null)}
-                        className="block px-4 py-2.5 text-sm transition-colors hover:bg-white/10 hover:text-white"
-                        style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none", fontWeight: 500 }}
+                        className="block px-4 py-2.5 text-sm transition-colors hover:bg-orange-50 hover:text-[#EA580C]"
+                        style={{ color: "#374151", textDecoration: "none", fontWeight: 500 }}
                       >
                         {item.label}
                       </a>
@@ -130,8 +130,8 @@ export function Navbar() {
           {/* Phone button — square on mobile, full width on desktop */}
           <a
             href="tel:+436761234567"
-            className="flex items-center justify-center rounded-md transition-colors duration-150 hover:bg-[#b91c1c] w-[38px] h-[38px] md:w-auto md:h-auto md:px-3 md:py-2 md:gap-2"
-            style={{ backgroundColor: "#DC2626", color: "#FFFFFF", fontWeight: 700, textDecoration: "none", flexShrink: 0 }}
+            className="flex items-center justify-center rounded-md transition-colors duration-150 hover:bg-[#C2410C] w-[38px] h-[38px] md:w-auto md:h-auto md:px-3 md:py-2 md:gap-2"
+            style={{ backgroundColor: "#EA580C", color: "#FFFFFF", fontWeight: 700, textDecoration: "none", flexShrink: 0 }}
             aria-label={lang === "en" ? "Call Us" : "Anrufen"}
           >
             <Phone size={17} />
@@ -155,8 +155,8 @@ export function Navbar() {
 
           {/* Hamburger — mobile only */}
           <button
-            className="md:hidden flex items-center justify-center rounded-md p-2 transition-colors hover:bg-white/10"
-            style={{ color: "#FFFFFF" }}
+            className="md:hidden flex items-center justify-center rounded-md p-2 transition-colors hover:bg-orange-50"
+            style={{ color: "#374151" }}
             onClick={() => setMenuOpen((v) => !v)}
             aria-label={menuOpen ? "Close menu" : "Open menu"}
             type="button"
@@ -168,11 +168,11 @@ export function Navbar() {
 
       {/* Mobile dropdown */}
       {menuOpen && (
-        <div className="md:hidden w-full overflow-y-auto max-h-[80vh]" style={{ backgroundColor: "#1F2937" }}>
+        <div className="md:hidden w-full overflow-y-auto max-h-[80vh]" style={{ backgroundColor: "#FFFFFF" }}>
           <nav className="flex flex-col px-6 py-4">
             {NAV_LINKS.map((link) => (
               <div key={link.label}>
-                <div className="py-3 font-bold text-base border-b" style={{ borderColor: "rgba(255,255,255,0.1)", color: "#DC2626" }}>
+                <div className="py-3 font-bold text-base border-b" style={{ borderColor: "#E5E7EB", color: "#EA580C" }}>
                   {link.label}
                 </div>
                 {link.dropdown.map((item) => (
@@ -180,8 +180,8 @@ export function Navbar() {
                     key={item.href}
                     href={item.href}
                     onClick={() => setMenuOpen(false)}
-                    className="block py-2.5 pl-3 text-sm transition-colors hover:text-[#DC2626]"
-                    style={{ color: "rgba(255,255,255,0.75)", textDecoration: "none" }}
+                    className="block py-2.5 pl-3 text-sm transition-colors hover:text-[#EA580C]"
+                    style={{ color: "#4B5563", textDecoration: "none" }}
                   >
                     {item.label}
                   </a>
@@ -192,7 +192,7 @@ export function Navbar() {
               <a
                 href="tel:+436761234567"
                 className="flex items-center justify-center gap-2 rounded-md font-bold text-white"
-                style={{ backgroundColor: "#DC2626", padding: "14px 24px", fontSize: "16px", textDecoration: "none" }}
+                style={{ backgroundColor: "#EA580C", padding: "14px 24px", fontSize: "16px", textDecoration: "none" }}
                 onClick={() => setMenuOpen(false)}
               >
                 <Phone size={18} />

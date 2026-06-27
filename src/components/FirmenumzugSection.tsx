@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Image from "next/image";
 import { useLang } from "@/contexts/LanguageContext";
@@ -45,19 +45,19 @@ export function FirmenumzugSection() {
 
             <p
               className="mt-4 text-[15px] leading-[1.8]"
-              style={{ color: "#374151" }}
+              style={{ color: "#E5E7EB" }}
             >
               {t.firmen_p1}
             </p>
             <p
               className="mt-4 text-[15px] leading-[1.8]"
-              style={{ color: "#374151" }}
+              style={{ color: "#E5E7EB" }}
             >
               {t.firmen_p2}
             </p>
             <p
               className="mt-4 text-[15px] leading-[1.8]"
-              style={{ color: "#374151" }}
+              style={{ color: "#E5E7EB" }}
             >
               {t.firmen_p3}
             </p>

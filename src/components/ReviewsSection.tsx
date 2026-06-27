@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useRef, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -17,7 +17,7 @@ const reviews = [
   {
     name: "Christoph Trummer",
     initial: "C",
-    color: "#374151",
+    color: "#E5E7EB",
     time: "Vor 2 Monaten",
     text: "Top Service! Der Umzug hat sich zwar aufgrund unvorhersehbarer äußerer Umstände verzögert, aber das Team blieb durchgehend professionell, effizient und lösungsorientiert. Klare Empfehlung.",
     stars: 5,
@@ -25,7 +25,7 @@ const reviews = [
   {
     name: "Josef Ossovsky",
     initial: "J",
-    color: "#1F2937",
+    color: "#111827",
     time: "Vor 3 Monaten",
     text: "Bin mit der gesamten Abwicklung des Auftrages sehr zufrieden. Sehr höflich und zuvorkommend! Saubere und schnelle Arbeit! Jederzeit gerne wieder!",
     stars: 5,
@@ -33,7 +33,7 @@ const reviews = [
   {
     name: "Maria Huber",
     initial: "M",
-    color: "#DC2626",
+    color: "#EA580C",
     time: "Vor 1 Monat",
     text: "Absolut reibungsloser Ablauf von Anfang bis Ende. Das Team war freundlich, schnell und hat alles sorgfältig behandelt. Kein einziger Kratzer an den Möbeln. Sehr empfehlenswert!",
     stars: 5,
@@ -121,7 +121,7 @@ const reviews = [
   {
     name: "Markus Hofer",
     initial: "M",
-    color: "#B91C1C",
+    color: "#C2410C",
     time: "Vor 5 Monaten",
     text: "Büroumzug am Wochenende damit der Betrieb Montag wieder läuft – hat perfekt funktioniert. Schnell, leise, diskret. Unsere Mitarbeiter haben kaum etwas bemerkt.",
     stars: 5,
@@ -212,13 +212,13 @@ function ReviewCard({ review }: { review: typeof reviews[0] }) {
             {review.initial}
           </div>
           <div>
-            <p className="font-semibold text-sm" style={{ color: "#111827" }}>{review.name}</p>
+            <p className="font-semibold text-sm" style={{ color: "#F9FAFB" }}>{review.name}</p>
             <p className="text-xs" style={{ color: "#9CA3AF" }}>{review.time}</p>
           </div>
         </div>
 
         {/* Text */}
-        <p className="text-sm leading-relaxed mb-1" style={{ color: "#374151" }}>
+        <p className="text-sm leading-relaxed mb-1" style={{ color: "#E5E7EB" }}>
           {displayText}
         </p>
         {isLong && (
@@ -259,17 +259,17 @@ export function ReviewsSection() {
         {/* Heading */}
         <div className="flex items-center justify-between mb-8">
           <div>
-            <p className="text-xs uppercase tracking-widest font-bold mb-1" style={{ color: "#DC2626" }}>
+            <p className="text-xs uppercase tracking-widest font-bold mb-1" style={{ color: "#EA580C" }}>
               {t.reviews_label}
             </p>
-            <h2 className="text-2xl md:text-3xl font-bold" style={{ color: "#111827" }}>
+            <h2 className="text-2xl md:text-3xl font-bold" style={{ color: "#F9FAFB" }}>
               {t.reviews_h2}
             </h2>
             <div className="flex items-center gap-2 mt-2">
               <div className="flex gap-0.5">
                 {[1,2,3,4,5].map(i => <StarIcon key={i} />)}
               </div>
-              <span className="text-sm font-semibold" style={{ color: "#111827" }}>5,0</span>
+              <span className="text-sm font-semibold" style={{ color: "#F9FAFB" }}>5,0</span>
               <span className="text-sm" style={{ color: "#6B7280" }}>{t.reviews_count}</span>
             </div>
           </div>
@@ -282,7 +282,7 @@ export function ReviewsSection() {
               style={{ backgroundColor: "#E5E7EB" }}
               aria-label="Zurück"
             >
-              <ChevronLeft size={20} color="#374151" />
+              <ChevronLeft size={20} color="#E5E7EB" />
             </button>
             <button
               onClick={() => scroll("right")}
@@ -290,7 +290,7 @@ export function ReviewsSection() {
               style={{ backgroundColor: "#E5E7EB" }}
               aria-label="Weiter"
             >
-              <ChevronRight size={20} color="#374151" />
+              <ChevronRight size={20} color="#E5E7EB" />
             </button>
           </div>
         </div>
@@ -316,7 +316,7 @@ export function ReviewsSection() {
             style={{ backgroundColor: "#E5E7EB" }}
             aria-label="Zurück"
           >
-            <ChevronLeft size={20} color="#374151" />
+            <ChevronLeft size={20} color="#E5E7EB" />
           </button>
           <button
             onClick={() => scroll("right")}
@@ -324,7 +324,7 @@ export function ReviewsSection() {
             style={{ backgroundColor: "#E5E7EB" }}
             aria-label="Weiter"
           >
-            <ChevronRight size={20} color="#374151" />
+            <ChevronRight size={20} color="#E5E7EB" />
           </button>
         </div>
       </div>
