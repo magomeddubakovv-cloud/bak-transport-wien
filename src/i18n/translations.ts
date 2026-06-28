@@ -226,7 +226,7 @@ const de = {
   contact_item1: "Privatumzug und Firmenumzug",
   contact_item2: "Küchenmontage und Möbelmontage",
   contact_item3: "Umzugsanfrage online",
-  contact_call_btn: "Jetzt anrufen: +43 681 10723047",
+  contact_call_btn: "Jetzt anrufen",
   contact_email_btn: "E-Mail senden",
 
   // FinalCTASection
@@ -1421,7 +1421,7 @@ const en: typeof de = {
   contact_item1: "Private and office moves",
   contact_item2: "Kitchen and furniture assembly",
   contact_item3: "Online moving request",
-  contact_call_btn: "Call now: +43 681 10723047",
+  contact_call_btn: "Call now",
   contact_email_btn: "Send email",
 
   // FinalCTASection
