@@ -10,7 +10,7 @@ export function ServicesSection() {
   const { lang } = useLang();
   const t = translations[lang];
 
-  const services: { Icon: LucideIcon; title: string; description: string; features: string[]; photo: string; photoAlt: string; href: string }[] = [
+  const services: { Icon: LucideIcon; title: string; description: string; features: string[]; photo: string; photoAlt: string; href: string; learnMore: string }[] = [
     {
       Icon: Home,
       title: t.svc1_title,
@@ -19,6 +19,7 @@ export function ServicesSection() {
       photo: "/images/photos/privatumzug.jpg",
       photoAlt: "Private move",
       href: "/leistungen/privatumzug",
+      learnMore: lang === "en" ? "Learn more about private moves →" : "Mehr über Privatumzug →",
     },
     {
       Icon: Building2,
@@ -28,6 +29,7 @@ export function ServicesSection() {
       photo: "/images/photos/firmenumzug.jpg",
       photoAlt: "Office move",
       href: "/leistungen/firmenumzug",
+      learnMore: lang === "en" ? "Learn more about office moves →" : "Mehr über Firmenumzug →",
     },
     {
       Icon: Wrench,
@@ -37,6 +39,7 @@ export function ServicesSection() {
       photo: "/images/photos/moebelmontage.jpg",
       photoAlt: "Assembly & transport",
       href: "/leistungen/moebelmontage",
+      learnMore: lang === "en" ? "Learn more about assembly →" : "Mehr über Möbelmontage →",
     },
   ];
 
@@ -57,7 +60,7 @@ export function ServicesSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
           {services.map((service) => {
-            const { Icon, title, description, features, photo, photoAlt, href } = service;
+            const { Icon, title, description, features, photo, photoAlt, href, learnMore } = service;
             return (
               <div
                 key={title}
@@ -86,7 +89,7 @@ export function ServicesSection() {
                     ))}
                   </ul>
                   <a href={href} className="hover:underline" style={{ color: "#C2410C", fontWeight: 700, fontSize: "14px" }}>
-                    {t.services_learn_more}
+                    {learnMore}
                   </a>
                 </div>
               </div>

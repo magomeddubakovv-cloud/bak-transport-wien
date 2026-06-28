@@ -14,9 +14,9 @@ import { ReviewsSection } from "@/components/ReviewsSection";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Umzugsfirma Wien ab €650 | Fixpreis & Vollversicherung | BAK Transport",
+  title: "BAK Transport Wien | Umzugsfirma ab €650 | Fixpreis",
   description:
-    "✓ BAK Transport – Nr. 1 Umzugsfirma Wien. Privatumzüge ab €650, Firmenumzüge, Möbelmontage. Alle 23 Bezirke, kostenlose Besichtigung, Fixpreis, Rückmeldung in 60 Min.",
+    "BAK Transport – Umzugsfirma Wien ab €650. Privatumzüge, Firmenumzüge, Möbelmontage. Alle 23 Bezirke, Fixpreis, vollversichert, Rückmeldung in 60 Min.",
   alternates: { canonical: "https://www.baktransport.at" },
   keywords: ["Umzugsfirma Wien", "Privatumzug Wien ab 650", "Umzug Wien günstig Fixpreis", "Umzugsunternehmen Wien alle Bezirke"],
 };

@@ -137,6 +137,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="de" className={`${inter.variable} h-full antialiased`}>
       <head>
+        <link rel="apple-touch-icon" href="/icon.png" />
         <StructuredData data={localBusinessSchema} />
         <meta name="geo.region" content="AT-9" />
         <meta name="geo.placename" content="Wien" />
