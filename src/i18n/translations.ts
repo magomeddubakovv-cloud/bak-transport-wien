@@ -226,7 +226,7 @@ const de = {
   contact_item1: "Privatumzug und Firmenumzug",
   contact_item2: "Küchenmontage und Möbelmontage",
   contact_item3: "Umzugsanfrage online",
-  contact_call_btn: "Jetzt anrufen: +43 676 442 96 52",
+  contact_call_btn: "Jetzt anrufen: +43 681 10723047",
   contact_email_btn: "E-Mail senden",
 
   // FinalCTASection
@@ -577,7 +577,7 @@ const de = {
     "Diese Website wird bei Vercel Inc. gehostet. Details finden Sie in der Datenschutzerklärung von Vercel unter vercel.com/legal/privacy-policy.",
   datenschutz_h5: "5. Kontakt",
   datenschutz_contact:
-    "BAK Transport GmbH · Musterstraße 12, 1010 Wien · office@baktransport.at · +43 676 123 45 67",
+    "BAK Transport GmbH · Musterstraße 12, 1010 Wien · office@baktransport.at · +43 681 10723047",
 
   // Shared subpage strings
   sub_why_bak: "Warum BAK Transport?",
@@ -1421,7 +1421,7 @@ const en: typeof de = {
   contact_item1: "Private and office moves",
   contact_item2: "Kitchen and furniture assembly",
   contact_item3: "Online moving request",
-  contact_call_btn: "Call now: +43 676 442 96 52",
+  contact_call_btn: "Call now: +43 681 10723047",
   contact_email_btn: "Send email",
 
   // FinalCTASection
@@ -1769,7 +1769,7 @@ const en: typeof de = {
     "This website is hosted by Vercel Inc. Details can be found in Vercel's privacy policy at vercel.com/legal/privacy-policy.",
   datenschutz_h5: "5. Contact",
   datenschutz_contact:
-    "BAK Transport GmbH · Musterstraße 12, 1010 Vienna · office@baktransport.at · +43 676 123 45 67",
+    "BAK Transport GmbH · Musterstraße 12, 1010 Vienna · office@baktransport.at · +43 681 10723047",
 
   // Shared subpage strings
   sub_why_bak: "Why BAK Transport?",

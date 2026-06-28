@@ -112,7 +112,7 @@ export function Footer() {
                 itemProp="telephone"
                 style={{ color: "rgba(255,255,255,0.4)", textDecoration: "none" }}
               >
-                +43 676 123 45 67
+                +43 681 10723047
               </a>
             </address>
           </div>
@@ -176,7 +176,7 @@ export function Footer() {
             {t.footer_copyright}
           </p>
           <p style={{ color: "rgba(255,255,255,0.3)", fontSize: "12px" }}>
-            office@baktransport.at · +43 676 123 45 67
+            office@baktransport.at · +43 681 10723047
           </p>
         </div>
       </div>

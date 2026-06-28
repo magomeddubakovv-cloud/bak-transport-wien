@@ -29,7 +29,7 @@ export function CTASection() {
             className="rounded-xl transition-colors text-center"
             style={{ border: "2px solid #FFFFFF", color: "#FFFFFF", padding: "16px 32px", fontSize: "17px", fontWeight: 700, display: "block", minHeight: "44px" }}
           >
-            +43 676 123 45 67
+            +43 681 10723047
           </a>
         </div>
       </div>

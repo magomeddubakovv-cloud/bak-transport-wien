@@ -89,7 +89,7 @@ export function QuoteFormSection() {
             <div className="mt-10 space-y-4">
               <div className="flex items-center gap-3">
                 <Phone size={18} color="#EA580C" />
-                <span style={{ color: "#111827", fontWeight: 600 }}>+43 676 123 45 67</span>
+                <span style={{ color: "#111827", fontWeight: 600 }}>+43 681 10723047</span>
               </div>
               <div className="flex items-center gap-3">
                 <Mail size={18} color="#EA580C" />
