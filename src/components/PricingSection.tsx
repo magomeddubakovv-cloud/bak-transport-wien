@@ -70,13 +70,13 @@ export function PricingSection() {
               )}
 
               <p style={{ color: card.featured ? "#FFFFFF" : "#111827", fontSize: "22px", fontWeight: 800 }}>{card.title}</p>
-              <p className="mt-1" style={{ color: card.featured ? "rgba(255,255,255,0.8)" : "#6B7280", fontSize: "14px" }}>
+              <p className="mt-1" style={{ color: card.featured ? "#FFFFFF" : "#6B7280", fontSize: "14px" }}>
                 {card.forText}
               </p>
 
               <p className="mt-8" style={{ color: card.featured ? "#FFFFFF" : "#111827", fontSize: "42px", fontWeight: 900, lineHeight: 1 }}>
                 {card.price}
-                <span style={{ color: card.featured ? "rgba(255,255,255,0.8)" : "#6B7280", fontSize: "14px", fontWeight: 400, marginLeft: "6px" }}>
+                <span style={{ color: card.featured ? "#FFFFFF" : "#6B7280", fontSize: "14px", fontWeight: 400, marginLeft: "6px" }}>
                   {t.pricing_per}
                 </span>
               </p>

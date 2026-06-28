@@ -350,7 +350,7 @@ export function RequestFormSection() {
                           fontSize: "16px",
                           border: "1px solid #E2E8F0",
                           backgroundColor: selected ? "#1B3A6B" : "#FFFFFF",
-                          color: selected ? "#FFFFFF" : "#E5E7EB",
+                          color: selected ? "#FFFFFF" : "#374151",
                         }}
                       >
                         {opt.label}

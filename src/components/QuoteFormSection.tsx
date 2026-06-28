@@ -155,7 +155,7 @@ export function QuoteFormSection() {
                           style={{
                             fontSize: "15px",
                             background: isSelected ? "#EA580C" : "transparent",
-                            color: isSelected ? "#FFFFFF" : "#E5E7EB",
+                            color: isSelected ? "#FFFFFF" : "#374151",
                             border: isSelected ? "1px solid #EA580C" : "1px solid #E5E7EB",
                           }}
                         >

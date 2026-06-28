@@ -213,7 +213,7 @@ function ReviewCard({ review }: { review: typeof reviews[0] }) {
           </div>
           <div>
             <p className="font-semibold text-sm" style={{ color: "#111827" }}>{review.name}</p>
-            <p className="text-xs" style={{ color: "#9CA3AF" }}>{review.time}</p>
+            <p className="text-xs" style={{ color: "#6B7280" }}>{review.time}</p>
           </div>
         </div>
 
