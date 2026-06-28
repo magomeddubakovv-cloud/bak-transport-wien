@@ -58,7 +58,7 @@ export function WhyUsSection() {
 
         <div className="mt-10 md:mt-16 relative rounded-2xl overflow-hidden h-48 md:h-80">
           <Image
-            src="/images/photos/banner.jpg"
+            src="/images/photos/banner2.jpg"
             alt="BAK Transport Wien — Professionelle Umzugshelfer"
             title="BAK Transport Wien — Professionelle Umzugshelfer"
             fill
