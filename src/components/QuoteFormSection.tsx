@@ -78,7 +78,7 @@ export function QuoteFormSection() {
             <div className="w-12 h-1 bg-[#C2410C] mt-4" style={{ width: "48px", height: "4px" }} />
 
             <div className="relative rounded-xl overflow-hidden mt-6 mb-8" style={{ height: "220px" }}>
-              <Image src="/images/photos/team.jpg" alt="BAK Transport Team Wien" fill className="object-cover object-center" />
+              <Image src="/images/photos/team.jpg" alt="BAK Transport Team Wien" title="Das Team von BAK Transport Wien" fill className="object-cover object-center" />
               <div className="absolute inset-0" style={{ background: "rgba(17,24,39,0.3)" }} />
             </div>
 

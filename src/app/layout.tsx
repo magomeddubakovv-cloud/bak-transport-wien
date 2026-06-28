@@ -57,6 +57,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
+    site: "@baktransport",
     title: "BAK Transport Wien | Umzugsfirma mit Fixpreis",
     description: "Professionelle Umzüge in Wien & Österreich. Fixpreis, vollversichert.",
     images: ["/images/photos/hero-movers.jpg"],

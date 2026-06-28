@@ -23,7 +23,7 @@ export function WhyUsSection() {
             {t.whyus_label}
           </p>
           <h2 className="text-2xl md:text-4xl leading-tight" style={{ color: "#111827", fontWeight: 900 }}>
-            {t.whyus_h2}
+            <strong>{t.whyus_h2}</strong>
           </h2>
           <div className="w-16 h-1 bg-[#C2410C] mx-auto mt-6" />
         </div>
@@ -46,7 +46,7 @@ export function WhyUsSection() {
               </span>
               <div>
                 <h3 className="mb-2" style={{ color: "#111827", fontSize: "20px", fontWeight: 800 }}>
-                  {reason.title}
+                  <strong>{reason.title}</strong>
                 </h3>
                 <p style={{ color: "#6B7280", fontSize: "16px", lineHeight: 1.7 }}>
                   {reason.text}
@@ -58,8 +58,9 @@ export function WhyUsSection() {
 
         <div className="mt-10 md:mt-16 relative rounded-2xl overflow-hidden h-48 md:h-80">
           <Image
-            src="/images/photos/kartons.jpg"
-            alt="BAK Transport Wien"
+            src="/images/photos/banner.jpg"
+            alt="BAK Transport Wien — Professionelle Umzugshelfer"
+            title="BAK Transport Wien — Professionelle Umzugshelfer"
             fill
             className="object-cover object-center"
           />

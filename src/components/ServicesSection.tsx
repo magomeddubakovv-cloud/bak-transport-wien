@@ -10,7 +10,7 @@ export function ServicesSection() {
   const { lang } = useLang();
   const t = translations[lang];
 
-  const services: { Icon: LucideIcon; title: string; description: string; features: string[]; photo: string; photoAlt: string; href: string; learnMore: string }[] = [
+  const services: { Icon: LucideIcon; title: string; description: string; features: string[]; photo: string; photoAlt: string; photoTitle: string; href: string; learnMore: string }[] = [
     {
       Icon: Home,
       title: t.svc1_title,
@@ -18,6 +18,7 @@ export function ServicesSection() {
       features: [t.svc1_f1, t.svc1_f2, t.svc1_f3, t.svc1_f4],
       photo: "/images/photos/privatumzug.jpg",
       photoAlt: "Private move",
+      photoTitle: "Privatumzug Wien — BAK Transport",
       href: "/leistungen/privatumzug",
       learnMore: lang === "en" ? "Learn more about private moves →" : "Mehr über Privatumzug →",
     },
@@ -28,6 +29,7 @@ export function ServicesSection() {
       features: [t.svc2_f1, t.svc2_f2, t.svc2_f3, t.svc2_f4],
       photo: "/images/photos/firmenumzug.jpg",
       photoAlt: "Office move",
+      photoTitle: "Firmenumzug Wien — BAK Transport",
       href: "/leistungen/firmenumzug",
       learnMore: lang === "en" ? "Learn more about office moves →" : "Mehr über Firmenumzug →",
     },
@@ -38,6 +40,7 @@ export function ServicesSection() {
       features: [t.svc3_f1, t.svc3_f2, t.svc3_f3, t.svc3_f4],
       photo: "/images/photos/moebelmontage.jpg",
       photoAlt: "Assembly & transport",
+      photoTitle: "Möbelmontage Wien — BAK Transport",
       href: "/leistungen/moebelmontage",
       learnMore: lang === "en" ? "Learn more about assembly →" : "Mehr über Möbelmontage →",
     },
@@ -60,7 +63,7 @@ export function ServicesSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
           {services.map((service) => {
-            const { Icon, title, description, features, photo, photoAlt, href, learnMore } = service;
+            const { Icon, title, description, features, photo, photoAlt, photoTitle, href, learnMore } = service;
             return (
               <div
                 key={title}
@@ -68,14 +71,14 @@ export function ServicesSection() {
               >
                 <div className="h-2 w-full bg-[#C2410C]" />
                 <div className="relative w-full h-48">
-                  <Image src={photo} alt={photoAlt} fill className="object-cover" />
+                  <Image src={photo} alt={photoAlt} title={photoTitle} fill className="object-cover" />
                 </div>
                 <div className="p-6 md:p-8">
                   <div className="w-14 h-14 bg-[#FEF2F2] rounded-2xl flex items-center justify-center mb-6">
                     <Icon size={28} color="#C2410C" />
                   </div>
                   <h3 className="mb-3" style={{ color: "#111827", fontSize: "22px", fontWeight: 800 }}>
-                    {title}
+                    <strong>{title}</strong>
                   </h3>
                   <p className="mb-6" style={{ color: "#6B7280", fontSize: "16px", lineHeight: 1.7 }}>
                     {description}
