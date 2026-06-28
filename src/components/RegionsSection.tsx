@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { MapPin } from "lucide-react";
 import { useLang } from "@/contexts/LanguageContext";
@@ -128,7 +128,7 @@ export function RegionsSection() {
 
               <p
                 className="mt-8 text-center italic"
-                style={{ color: "#9CA3AF", fontSize: "12px" }}
+                style={{ color: "#6B7280", fontSize: "12px" }}
               >
                 {t.regions_cross_border}
               </p>

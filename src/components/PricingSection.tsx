@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { Check } from "lucide-react";
 import { useLang } from "@/contexts/LanguageContext";
@@ -39,7 +39,7 @@ export function PricingSection() {
     <section className="py-12 md:py-24" style={{ backgroundColor: "#F9FAFB" }}>
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         <div className="text-center mb-10 md:mb-16">
-          <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "#EA580C" }}>
+          <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "#C2410C" }}>
             {t.pricing_label}
           </p>
           <h2 className="text-2xl md:text-4xl leading-tight" style={{ color: "#111827", fontWeight: 900 }}>
@@ -109,7 +109,7 @@ export function PricingSection() {
           ))}
         </div>
 
-        <p className="mt-8 text-center" style={{ color: "#9CA3AF", fontSize: "12px" }}>
+        <p className="mt-8 text-center" style={{ color: "#6B7280", fontSize: "12px" }}>
           {t.pricing_footnote}
         </p>
         <p className="mt-2 text-center" style={{ color: "#6B7280", fontSize: "15px" }}>

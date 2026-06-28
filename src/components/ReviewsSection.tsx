@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useRef, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -259,7 +259,7 @@ export function ReviewsSection() {
         {/* Heading */}
         <div className="flex items-center justify-between mb-8">
           <div>
-            <p className="text-xs uppercase tracking-widest font-bold mb-1" style={{ color: "#EA580C" }}>
+            <p className="text-xs uppercase tracking-widest font-bold mb-1" style={{ color: "#C2410C" }}>
               {t.reviews_label}
             </p>
             <h2 className="text-2xl md:text-3xl font-bold" style={{ color: "#111827" }}>

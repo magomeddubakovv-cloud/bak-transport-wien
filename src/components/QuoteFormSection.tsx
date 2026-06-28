@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useState } from "react";
 import Image from "next/image";
@@ -101,7 +101,7 @@ export function QuoteFormSection() {
               </div>
             </div>
 
-            <p className="mt-8 italic" style={{ color: "#9CA3AF", fontSize: "14px" }}>
+            <p className="mt-8 italic" style={{ color: "#6B7280", fontSize: "14px" }}>
               {t.form_disclaimer}
             </p>
           </div>
@@ -211,7 +211,7 @@ export function QuoteFormSection() {
                   </p>
                 )}
 
-                <p className="text-center mt-3" style={{ color: "#9CA3AF", fontSize: "12px" }}>
+                <p className="text-center mt-3" style={{ color: "#6B7280", fontSize: "12px" }}>
                   {t.form_note}
                 </p>
               </form>

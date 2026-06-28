@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { Check, Phone } from "lucide-react";
 import Image from "next/image";
@@ -83,7 +83,7 @@ export function KarrierePageClient() {
               <div key={item.title} className="rounded-2xl p-6 text-center" style={{ backgroundColor: "#FFFFFF", border: "1px solid #E5E7EB" }}>
                 <div className="text-3xl mb-3">{item.icon}</div>
                 <div className="font-bold text-gray-900 mb-1">{item.title}</div>
-                <div style={{ color: "#9CA3AF", fontSize: "15px" }}>{item.sub}</div>
+                <div style={{ color: "#6B7280", fontSize: "15px" }}>{item.sub}</div>
               </div>
             ))}
           </div>

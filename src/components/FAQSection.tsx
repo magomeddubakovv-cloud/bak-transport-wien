@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useState } from "react";
 import { useLang } from "@/contexts/LanguageContext";
@@ -27,7 +27,7 @@ export function FAQSection() {
     <section className="py-12 md:py-24" style={{ backgroundColor: "#FFFFFF" }}>
       <div className="max-w-5xl mx-auto px-4 md:px-6">
         <div className="text-center mb-10 md:mb-12">
-          <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "#EA580C" }}>
+          <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "#C2410C" }}>
             {t.faq_label}
           </p>
           <h2 className="text-2xl md:text-4xl leading-tight" style={{ color: "#111827", fontWeight: 900 }}>

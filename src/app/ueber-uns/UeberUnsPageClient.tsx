@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { Check, Phone } from "lucide-react";
 import Image from "next/image";
@@ -81,7 +81,7 @@ export function UeberUnsPageClient() {
             {stats.map((stat) => (
               <div key={stat.label}>
                 <div className="text-2xl md:text-4xl font-black mb-2" style={{ color: "#EA580C" }}>{stat.value}</div>
-                <div style={{ color: "#9CA3AF" }}>{stat.label}</div>
+                <div style={{ color: "#6B7280" }}>{stat.label}</div>
               </div>
             ))}
           </div>

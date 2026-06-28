@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { Phone } from "lucide-react";
 import { PageLayout } from "@/components/PageLayout";
@@ -49,7 +49,7 @@ export function KontaktPageClient() {
           <div className="max-w-md mx-auto space-y-4">
             {hours.map((row) => (
               <div key={row.day} className="flex justify-between py-3" style={{ borderBottom: "1px solid #E5E7EB" }}>
-                <span style={{ color: "#9CA3AF" }}>{row.day}</span>
+                <span style={{ color: "#6B7280" }}>{row.day}</span>
                 <span className="font-semibold text-gray-900">{row.time}</span>
               </div>
             ))}

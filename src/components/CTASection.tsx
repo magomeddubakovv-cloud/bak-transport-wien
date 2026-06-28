@@ -13,7 +13,7 @@ export function CTASection() {
         <h2 className="text-2xl md:text-4xl leading-tight" style={{ color: "#FFFFFF", fontWeight: 900 }}>
           {t.cta_h2}
         </h2>
-        <p className="mt-4 max-w-2xl mx-auto text-base md:text-lg" style={{ color: "rgba(255,255,255,0.85)", lineHeight: 1.6 }}>
+        <p className="mt-4 max-w-2xl mx-auto text-base md:text-lg" style={{ color: "#FFFFFF", lineHeight: 1.6 }}>
           {t.cta_desc}
         </p>
         <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">

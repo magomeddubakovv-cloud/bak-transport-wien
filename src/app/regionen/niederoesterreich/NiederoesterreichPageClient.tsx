@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { Check, Phone } from "lucide-react";
 import Image from "next/image";
@@ -74,13 +74,13 @@ export function NiederoesterreichPageClient() {
       <section className="py-12 md:py-20" style={{ backgroundColor: "#F9FAFB" }}>
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-4 text-gray-900">{t.noe_page_price_h2}</h2>
-          <p className="text-center mb-12" style={{ color: "#9CA3AF" }}>{t.noe_page_price_footnote}</p>
+          <p className="text-center mb-12" style={{ color: "#6B7280" }}>{t.noe_page_price_footnote}</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {pricing.map((p) => (
               <div key={p.label} className="rounded-2xl p-8 text-center" style={{ backgroundColor: "#FFFFFF", border: "1px solid #E5E7EB" }}>
                 <div className="text-lg font-semibold mb-2 text-gray-900">{p.label}</div>
                 <div className="text-3xl md:text-4xl font-bold mb-3" style={{ color: "#EA580C" }}>{p.price}</div>
-                <div style={{ color: "#9CA3AF" }}>{p.detail}</div>
+                <div style={{ color: "#6B7280" }}>{p.detail}</div>
               </div>
             ))}
           </div>

@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import Image from "next/image";
 import { Home, Building2, Wrench } from "lucide-react";
@@ -44,7 +44,7 @@ export function ServicesSection() {
     <section className="bg-[#F9FAFB] py-12 md:py-24">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         <div className="text-center mb-10 md:mb-16">
-          <p className="text-xs font-bold uppercase mb-3" style={{ color: "#EA580C", letterSpacing: "4px" }}>
+          <p className="text-xs font-bold uppercase mb-3" style={{ color: "#C2410C", letterSpacing: "4px" }}>
             {t.services_label}
           </p>
           <h2 className="text-2xl md:text-4xl leading-[1.1]" style={{ color: "#111827", fontWeight: 900 }}>

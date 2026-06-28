@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import Image from "next/image";
 import { useLang } from "@/contexts/LanguageContext";
@@ -19,7 +19,7 @@ export function WhyUsSection() {
     <section className="bg-white py-12 md:py-24">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         <div className="mb-10 md:mb-16 text-center">
-          <p className="text-xs font-bold uppercase mb-3" style={{ color: "#EA580C", letterSpacing: "4px" }}>
+          <p className="text-xs font-bold uppercase mb-3" style={{ color: "#C2410C", letterSpacing: "4px" }}>
             {t.whyus_label}
           </p>
           <h2 className="text-2xl md:text-4xl leading-tight" style={{ color: "#111827", fontWeight: 900 }}>
