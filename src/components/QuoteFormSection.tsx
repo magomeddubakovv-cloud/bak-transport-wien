@@ -34,14 +34,36 @@ export function QuoteFormSection() {
     from: "", to: "", date: "", moveType: "", apartmentSize: "",
     notes: "", name: "", phone: "", email: "",
   });
+  const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
 
   function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) {
     const { name, value } = e.target;
     setForm((prev) => ({ ...prev, [name]: value }));
   }
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    setStatus("sending");
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          access_key: "1009093d-4421-4efd-a23b-b210eab10804",
+          subject: "Neue Angebotsanfrage – BAK Transport Wien",
+          from_name: form.name,
+          ...form,
+        }),
+      });
+      if (res.ok) {
+        setStatus("success");
+        setForm({ from: "", to: "", date: "", moveType: "", apartmentSize: "", notes: "", name: "", phone: "", email: "" });
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
   }
 
   return (
@@ -171,11 +193,23 @@ export function QuoteFormSection() {
 
                 <button
                   type="submit"
+                  disabled={status === "sending"}
                   className="w-full py-4 rounded-xl text-white font-extrabold hover:bg-[#C2410C] transition-colors duration-150"
-                  style={{ background: "#EA580C", fontSize: "17px", fontWeight: 800 }}
+                  style={{ background: "#EA580C", fontSize: "17px", fontWeight: 800, opacity: status === "sending" ? 0.7 : 1 }}
                 >
-                  {t.form_submit}
+                  {status === "sending" ? "Wird gesendet..." : t.form_submit}
                 </button>
+
+                {status === "success" && (
+                  <p className="text-center mt-3 font-semibold" style={{ color: "#16a34a", fontSize: "15px" }}>
+                    ✓ Anfrage erfolgreich gesendet! Wir melden uns bald.
+                  </p>
+                )}
+                {status === "error" && (
+                  <p className="text-center mt-3" style={{ color: "#DC2626", fontSize: "15px" }}>
+                    Fehler beim Senden. Bitte versuche es erneut.
+                  </p>
+                )}
 
                 <p className="text-center mt-3" style={{ color: "#9CA3AF", fontSize: "12px" }}>
                   {t.form_note}

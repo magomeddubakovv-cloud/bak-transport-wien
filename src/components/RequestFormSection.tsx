@@ -217,9 +217,34 @@ export function RequestFormSection() {
 
   // Datenschutz
   const [datenschutz, setDatenschutz] = useState(false);
+  const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if (!datenschutz) return;
+    setStatus("sending");
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          access_key: "1009093d-4421-4efd-a23b-b210eab10804",
+          subject: "Neue Umzugsanfrage – BAK Transport Wien",
+          from_name: name,
+          name, telefon, email,
+          umzugsdatum, art, groesse, umfang,
+          von_adresse: `${von.adresse} ${von.hausnr}, ${von.plz}, Stockwerk: ${von.stockwerk}, Aufzug: ${von.aufzug}`,
+          nach_adresse: `${nach.adresse} ${nach.hausnr}, ${nach.plz}, Stockwerk: ${nach.stockwerk}, Aufzug: ${nach.aufzug}`,
+        }),
+      });
+      if (res.ok) {
+        setStatus("success");
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
   };
 
   const groesseOptions: { key: UmzugGroesse; label: string }[] = [
@@ -428,16 +453,29 @@ export function RequestFormSection() {
             {/* Submit */}
             <button
               type="submit"
+              disabled={status === "sending"}
               className="w-full rounded-lg text-white font-bold transition-opacity hover:opacity-90"
               style={{
                 backgroundColor: "#F97316",
                 paddingTop: "16px",
                 paddingBottom: "16px",
                 fontSize: "18px",
+                opacity: status === "sending" ? 0.7 : 1,
               }}
             >
-              {t.reqform_submit}
+              {status === "sending" ? "Wird gesendet..." : t.reqform_submit}
             </button>
+
+            {status === "success" && (
+              <p className="text-center font-semibold" style={{ color: "#16a34a", fontSize: "15px" }}>
+                ✓ Anfrage erfolgreich gesendet! Wir melden uns bald.
+              </p>
+            )}
+            {status === "error" && (
+              <p className="text-center" style={{ color: "#DC2626", fontSize: "15px" }}>
+                Fehler beim Senden. Bitte versuche es erneut.
+              </p>
+            )}
           </form>
         </div>
       </div>
