@@ -31,7 +31,7 @@ export function ContactSection() {
             {t.contact_call_btn}
           </a>
           <a
-            href="mailto:office@stahlundsoehne.at"
+            href="mailto:office@baktransport.at"
             className="inline-block border border-[#1B3A6B] text-[#1B3A6B] rounded-lg px-6 py-3 font-semibold text-sm hover:bg-[#1B3A6B] hover:text-white transition-colors"
           >
             {t.contact_email_btn}
