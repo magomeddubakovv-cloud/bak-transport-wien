@@ -25,7 +25,7 @@ export function WhyUsSection() {
           <h2 className="text-2xl md:text-4xl leading-tight" style={{ color: "#111827", fontWeight: 900 }}>
             {t.whyus_h2}
           </h2>
-          <div className="w-16 h-1 bg-[#EA580C] mx-auto mt-6" />
+          <div className="w-16 h-1 bg-[#C2410C] mx-auto mt-6" />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -36,7 +36,7 @@ export function WhyUsSection() {
             >
               <span
                 className="leading-none select-none text-4xl md:text-5xl"
-                style={{ color: "#EA580C", fontWeight: 900, opacity: 0.9, minWidth: "3rem" }}
+                style={{ color: "#C2410C", fontWeight: 900, opacity: 0.9, minWidth: "3rem" }}
               >
                 {reason.number}
               </span>
@@ -65,7 +65,7 @@ export function WhyUsSection() {
               <p className="text-white font-black" style={{ fontSize: "clamp(22px,4vw,36px)" }}>
                 {t.whyus_quote}
               </p>
-              <p className="mt-3 font-semibold" style={{ color: "#EA580C", fontSize: "16px" }}>BAK Transport Wien</p>
+              <p className="mt-3 font-semibold" style={{ color: "#C2410C", fontSize: "16px" }}>BAK Transport Wien</p>
             </div>
           </div>
         </div>

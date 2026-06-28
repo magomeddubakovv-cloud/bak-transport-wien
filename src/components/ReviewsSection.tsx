@@ -33,7 +33,7 @@ const reviews = [
   {
     name: "Maria Huber",
     initial: "M",
-    color: "#EA580C",
+    color: "#C2410C",
     time: "Vor 1 Monat",
     text: "Absolut reibungsloser Ablauf von Anfang bis Ende. Das Team war freundlich, schnell und hat alles sorgfältig behandelt. Kein einziger Kratzer an den Möbeln. Sehr empfehlenswert!",
     stars: 5,

@@ -1,4 +1,4 @@
-﻿import { Navbar } from "@/components/Navbar";
+import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 
 interface PageLayoutProps {
@@ -19,7 +19,7 @@ export function PageLayout({ children, title, subtitle, label }: PageLayoutProps
             {label && (
               <p
                 className="text-xs uppercase tracking-[4px] font-bold mb-3"
-                style={{ color: "#EA580C" }}
+                style={{ color: "#C2410C" }}
               >
                 {label}
               </p>
@@ -43,7 +43,7 @@ export function PageLayout({ children, title, subtitle, label }: PageLayoutProps
               style={{
                 width: "48px",
                 height: "4px",
-                backgroundColor: "#EA580C",
+                backgroundColor: "#C2410C",
                 borderRadius: "2px",
               }}
             />

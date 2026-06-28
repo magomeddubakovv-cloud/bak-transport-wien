@@ -56,14 +56,14 @@ export function PricingSection() {
               key={card.title}
               className="rounded-2xl p-8 relative"
               style={{
-                backgroundColor: card.featured ? "#EA580C" : "#FFFFFF",
+                backgroundColor: card.featured ? "#C2410C" : "#FFFFFF",
                 border: card.featured ? "none" : "1px solid #E5E7EB",
               }}
             >
               {card.featured && (
                 <div
                   className="absolute left-1/2 -translate-x-1/2 -top-4 rounded-full px-5 py-1.5 text-sm font-bold shadow"
-                  style={{ backgroundColor: "#FFFFFF", color: "#EA580C", whiteSpace: "nowrap" }}
+                  style={{ backgroundColor: "#FFFFFF", color: "#C2410C", whiteSpace: "nowrap" }}
                 >
                   {t.pricing_badge}
                 </div>
@@ -86,7 +86,7 @@ export function PricingSection() {
               <ul className="space-y-3">
                 {card.features.map((feature) => (
                   <li key={feature} className="flex items-center gap-3">
-                    <Check size={16} style={{ color: card.featured ? "#FFFFFF" : "#EA580C", flexShrink: 0 }} />
+                    <Check size={16} style={{ color: card.featured ? "#FFFFFF" : "#C2410C", flexShrink: 0 }} />
                     <span style={{ color: card.featured ? "#FFFFFF" : "#374151", fontSize: "15px" }}>
                       {feature}
                     </span>
@@ -99,7 +99,7 @@ export function PricingSection() {
                 className="block text-center rounded-xl py-3 w-full mt-8 font-semibold transition-colors"
                 style={
                   card.featured
-                    ? { backgroundColor: "#FFFFFF", color: "#EA580C", fontWeight: 700 }
+                    ? { backgroundColor: "#FFFFFF", color: "#C2410C", fontWeight: 700 }
                     : { border: "1px solid #E5E7EB", color: "#111827" }
                 }
               >

@@ -48,7 +48,7 @@ export function NotfallumzugPageClient() {
               <ul className="space-y-4">
                 {checklistItems.map((item) => (
                   <li key={item} className="flex items-center gap-3">
-                    <Check className="w-5 h-5 shrink-0" style={{ color: "#EA580C" }} />
+                    <Check className="w-5 h-5 shrink-0" style={{ color: "#C2410C" }} />
                     <span style={{ color: "#111827" }}>{item}</span>
                   </li>
                 ))}
@@ -63,7 +63,7 @@ export function NotfallumzugPageClient() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {cards.map((card) => (
               <div key={card.title} className="bg-white rounded-2xl p-8 shadow-sm" style={{ border: "1px solid #E5E7EB" }}>
-                <div className="w-2 h-8 rounded mb-4" style={{ backgroundColor: "#EA580C" }} />
+                <div className="w-2 h-8 rounded mb-4" style={{ backgroundColor: "#C2410C" }} />
                 <h3 className="text-xl font-semibold mb-3" style={{ color: "#111827" }}>{card.title}</h3>
                 <p style={{ color: "#6B7280", lineHeight: "1.75" }}>{card.text}</p>
               </div>
@@ -79,7 +79,7 @@ export function NotfallumzugPageClient() {
             {pricing.map((p) => (
               <div key={p.label} className="rounded-2xl p-8 text-center" style={{ backgroundColor: "#FFFFFF", border: "1px solid #E5E7EB" }}>
                 <div className="text-lg font-semibold mb-2 text-gray-900">{p.label}</div>
-                <div className="text-3xl md:text-4xl font-bold mb-3" style={{ color: "#EA580C" }}>{p.price}</div>
+                <div className="text-3xl md:text-4xl font-bold mb-3" style={{ color: "#C2410C" }}>{p.price}</div>
                 <div style={{ color: "#6B7280" }}>{p.detail}</div>
               </div>
             ))}
@@ -111,20 +111,20 @@ export function NotfallumzugPageClient() {
               { label: lang === "en" ? "Heavy Transport Vienna" : "Schwerlasttransport Wien", href: "/leistungen/schwerlasttransport" },
             ].map((link) => (
               <a key={link.href} href={link.href} className="px-4 py-2 rounded-lg text-sm font-medium"
-                style={{ backgroundColor: "#FFFFFF", border: "1px solid #E5E7EB", color: "#EA580C", textDecoration: "none" }}>
+                style={{ backgroundColor: "#FFFFFF", border: "1px solid #E5E7EB", color: "#C2410C", textDecoration: "none" }}>
                 {link.label}
               </a>
             ))}
           </div>
         </div>
       </section>
-      <section className="py-12 md:py-20" style={{ backgroundColor: "#EA580C" }}>
+      <section className="py-12 md:py-20" style={{ backgroundColor: "#C2410C" }}>
         <div className="max-w-7xl mx-auto px-4 md:px-6 text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">{t.notfall_page_cta_h2}</h2>
           <p className="mb-8 text-white opacity-90">{t.sub_cta_desc}</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/kontakt" className="inline-block px-8 py-4 rounded-xl font-semibold text-base" style={{ backgroundColor: "#FFFFFF", color: "#EA580C" }}>{t.sub_cta_btn1}</a>
-            <a href="tel:+4368110723047" className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-semibold text-base" style={{ border: "2px solid #EA580C", color: "#EA580C" }}><Phone className="w-5 h-5" />{t.sub_cta_btn2}</a>
+            <a href="/kontakt" className="inline-block px-8 py-4 rounded-xl font-semibold text-base" style={{ backgroundColor: "#FFFFFF", color: "#C2410C" }}>{t.sub_cta_btn1}</a>
+            <a href="tel:+4368110723047" className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-semibold text-base" style={{ border: "2px solid #C2410C", color: "#C2410C" }}><Phone className="w-5 h-5" />{t.sub_cta_btn2}</a>
           </div>
         </div>
       </section>

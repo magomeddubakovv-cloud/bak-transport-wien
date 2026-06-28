@@ -63,13 +63,13 @@ export function ServicesSection() {
                 key={title}
                 className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 cursor-default"
               >
-                <div className="h-2 w-full bg-[#EA580C]" />
+                <div className="h-2 w-full bg-[#C2410C]" />
                 <div className="relative w-full h-48">
                   <Image src={photo} alt={photoAlt} fill className="object-cover" />
                 </div>
                 <div className="p-6 md:p-8">
                   <div className="w-14 h-14 bg-[#FEF2F2] rounded-2xl flex items-center justify-center mb-6">
-                    <Icon size={28} color="#EA580C" />
+                    <Icon size={28} color="#C2410C" />
                   </div>
                   <h3 className="mb-3" style={{ color: "#111827", fontSize: "22px", fontWeight: 800 }}>
                     {title}
@@ -80,12 +80,12 @@ export function ServicesSection() {
                   <ul className="space-y-2 mb-8">
                     {features.map((feature) => (
                       <li key={feature} className="flex items-center gap-2">
-                        <span className="w-1.5 h-1.5 bg-[#EA580C] rounded-sm flex-shrink-0" />
+                        <span className="w-1.5 h-1.5 bg-[#C2410C] rounded-sm flex-shrink-0" />
                         <span style={{ color: "#374151", fontSize: "15px" }}>{feature}</span>
                       </li>
                     ))}
                   </ul>
-                  <a href={href} className="hover:underline" style={{ color: "#EA580C", fontWeight: 700, fontSize: "14px" }}>
+                  <a href={href} className="hover:underline" style={{ color: "#C2410C", fontWeight: 700, fontSize: "14px" }}>
                     {t.services_learn_more}
                   </a>
                 </div>

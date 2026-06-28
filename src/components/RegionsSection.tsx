@@ -35,7 +35,7 @@ export function RegionsSection() {
         <div className="text-center mb-10 md:mb-16">
           <p
             className="text-xs font-bold uppercase tracking-widest mb-3"
-            style={{ color: "#EA580C" }}
+            style={{ color: "#C2410C" }}
           >
             {t.regions_label}
           </p>
@@ -65,7 +65,7 @@ export function RegionsSection() {
               >
                 <MapPin
                   size={24}
-                  style={{ color: "#EA580C", marginTop: "2px", flexShrink: 0 }}
+                  style={{ color: "#C2410C", marginTop: "2px", flexShrink: 0 }}
                 />
                 <div>
                   <p style={{ fontWeight: 700, color: "#111827", fontSize: "17px" }}>
@@ -89,7 +89,7 @@ export function RegionsSection() {
               <a
                 href="#kontakt"
                 className="hover:underline"
-                style={{ color: "#EA580C", fontWeight: 700, fontSize: "15px" }}
+                style={{ color: "#C2410C", fontWeight: 700, fontSize: "15px" }}
               >
                 {t.regions_contact_link}
               </a>
@@ -115,7 +115,7 @@ export function RegionsSection() {
                     key={tag.label}
                     className="rounded-full px-4 py-2"
                     style={{
-                      backgroundColor: tag.highlight ? "#EA580C" : "#FFFFFF",
+                      backgroundColor: tag.highlight ? "#C2410C" : "#FFFFFF",
                       color: tag.highlight ? "#FFFFFF" : "#374151",
                       fontSize: "14px",
                       border: tag.highlight ? "none" : "1px solid #E5E7EB",

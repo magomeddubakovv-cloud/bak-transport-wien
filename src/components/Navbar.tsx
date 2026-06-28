@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
@@ -95,7 +95,7 @@ export function Navbar() {
               <div key={link.label} className="relative">
                 <button
                   onClick={() => setOpenDropdown(isOpen ? null : link.label)}
-                  className="flex items-center gap-1 rounded-md px-3 py-2 transition-colors duration-150 hover:text-[#EA580C] hover:bg-orange-50"
+                  className="flex items-center gap-1 rounded-md px-3 py-2 transition-colors duration-150 hover:text-[#C2410C] hover:bg-orange-50"
                   style={{ color: "#374151", fontSize: "15px", fontWeight: 500, background: "none", border: "none", cursor: "pointer" }}
                 >
                   {link.label}
@@ -111,7 +111,7 @@ export function Navbar() {
                         key={item.href}
                         href={item.href}
                         onClick={() => setOpenDropdown(null)}
-                        className="block px-4 py-2.5 text-sm transition-colors hover:bg-orange-50 hover:text-[#EA580C]"
+                        className="block px-4 py-2.5 text-sm transition-colors hover:bg-orange-50 hover:text-[#C2410C]"
                         style={{ color: "#374151", textDecoration: "none", fontWeight: 500 }}
                       >
                         {item.label}
@@ -131,7 +131,7 @@ export function Navbar() {
           <a
             href="tel:+4368110723047"
             className="flex items-center justify-center rounded-md transition-colors duration-150 hover:bg-[#C2410C] w-[38px] h-[38px] md:w-auto md:h-auto md:px-3 md:py-2 md:gap-2"
-            style={{ backgroundColor: "#EA580C", color: "#FFFFFF", fontWeight: 700, textDecoration: "none", flexShrink: 0 }}
+            style={{ backgroundColor: "#C2410C", color: "#FFFFFF", fontWeight: 700, textDecoration: "none", flexShrink: 0 }}
             aria-label={lang === "en" ? "Call Us" : "Anrufen"}
           >
             <Phone size={17} />
@@ -172,7 +172,7 @@ export function Navbar() {
           <nav className="flex flex-col px-6 py-4">
             {NAV_LINKS.map((link) => (
               <div key={link.label}>
-                <div className="py-3 font-bold text-base border-b" style={{ borderColor: "#E5E7EB", color: "#EA580C" }}>
+                <div className="py-3 font-bold text-base border-b" style={{ borderColor: "#E5E7EB", color: "#C2410C" }}>
                   {link.label}
                 </div>
                 {link.dropdown.map((item) => (
@@ -180,7 +180,7 @@ export function Navbar() {
                     key={item.href}
                     href={item.href}
                     onClick={() => setMenuOpen(false)}
-                    className="block py-2.5 pl-3 text-sm transition-colors hover:text-[#EA580C]"
+                    className="block py-2.5 pl-3 text-sm transition-colors hover:text-[#C2410C]"
                     style={{ color: "#4B5563", textDecoration: "none" }}
                   >
                     {item.label}
@@ -192,7 +192,7 @@ export function Navbar() {
               <a
                 href="tel:+4368110723047"
                 className="flex items-center justify-center gap-2 rounded-md font-bold text-white"
-                style={{ backgroundColor: "#EA580C", padding: "14px 24px", fontSize: "16px", textDecoration: "none" }}
+                style={{ backgroundColor: "#C2410C", padding: "14px 24px", fontSize: "16px", textDecoration: "none" }}
                 onClick={() => setMenuOpen(false)}
               >
                 <Phone size={18} />

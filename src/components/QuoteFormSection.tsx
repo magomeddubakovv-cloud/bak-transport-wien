@@ -19,7 +19,7 @@ interface FormState {
 }
 
 const inputClass =
-  "border border-[#E5E7EB] rounded-lg px-4 py-3 w-full focus:border-[#EA580C] focus:ring-1 focus:ring-[#EA580C] focus:outline-none";
+  "border border-[#E5E7EB] rounded-lg px-4 py-3 w-full focus:border-[#C2410C] focus:ring-1 focus:ring-[#C2410C] focus:outline-none";
 const inputStyle = { fontSize: "16px" } as const;
 const labelStyle = { fontSize: "13px", fontWeight: 600, color: "#374151" } as const;
 
@@ -75,7 +75,7 @@ export function QuoteFormSection() {
             <h2 className="text-2xl md:text-4xl leading-[1.15]" style={{ color: "#111827", fontWeight: 900 }}>
               {t.form_h2}
             </h2>
-            <div className="w-12 h-1 bg-[#EA580C] mt-4" style={{ width: "48px", height: "4px" }} />
+            <div className="w-12 h-1 bg-[#C2410C] mt-4" style={{ width: "48px", height: "4px" }} />
 
             <div className="relative rounded-xl overflow-hidden mt-6 mb-8" style={{ height: "220px" }}>
               <Image src="/images/photos/team.jpg" alt="BAK Transport Team Wien" fill className="object-cover object-center" />
@@ -88,15 +88,15 @@ export function QuoteFormSection() {
 
             <div className="mt-10 space-y-4">
               <div className="flex items-center gap-3">
-                <Phone size={18} color="#EA580C" />
+                <Phone size={18} color="#C2410C" />
                 <span style={{ color: "#111827", fontWeight: 600 }}>+43 681 10723047</span>
               </div>
               <div className="flex items-center gap-3">
-                <Mail size={18} color="#EA580C" />
+                <Mail size={18} color="#C2410C" />
                 <span style={{ color: "#111827", fontWeight: 600 }}>office@baktransport.at</span>
               </div>
               <div className="flex items-center gap-3">
-                <MapPin size={18} color="#EA580C" />
+                <MapPin size={18} color="#C2410C" />
                 <span style={{ color: "#4B5563" }}>Wien &amp; ganz Österreich</span>
               </div>
             </div>
@@ -154,9 +154,9 @@ export function QuoteFormSection() {
                           className="px-4 py-2 rounded-lg font-semibold transition-colors duration-150"
                           style={{
                             fontSize: "15px",
-                            background: isSelected ? "#EA580C" : "transparent",
+                            background: isSelected ? "#C2410C" : "transparent",
                             color: isSelected ? "#FFFFFF" : "#374151",
-                            border: isSelected ? "1px solid #EA580C" : "1px solid #E5E7EB",
+                            border: isSelected ? "1px solid #C2410C" : "1px solid #E5E7EB",
                           }}
                         >
                           {size}
@@ -195,7 +195,7 @@ export function QuoteFormSection() {
                   type="submit"
                   disabled={status === "sending"}
                   className="w-full py-4 rounded-xl text-white font-extrabold hover:bg-[#C2410C] transition-colors duration-150"
-                  style={{ background: "#EA580C", fontSize: "17px", fontWeight: 800, opacity: status === "sending" ? 0.7 : 1 }}
+                  style={{ background: "#C2410C", fontSize: "17px", fontWeight: 800, opacity: status === "sending" ? 0.7 : 1 }}
                 >
                   {status === "sending" ? "Wird gesendet..." : t.form_submit}
                 </button>

@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
@@ -42,7 +42,7 @@ function AnimatedHeroStat({ config, label, active, hasBorder }: { config: StatCo
       className={hasBorder ? "pb-5 mb-5" : ""}
       style={hasBorder ? { borderBottom: "1px solid #E5E7EB" } : {}}
     >
-      <div className="text-4xl md:text-5xl" style={{ fontWeight: 900, lineHeight: 1, color: "#EA580C" }}>
+      <div className="text-4xl md:text-5xl" style={{ fontWeight: 900, lineHeight: 1, color: "#C2410C" }}>
         {display}
       </div>
       <div className="mt-1 uppercase tracking-wide" style={{ color: "#6B7280", fontSize: "14px" }}>
@@ -114,7 +114,7 @@ export function HeroSection() {
               <span
                 className="inline-block rounded-full uppercase tracking-widest font-bold"
                 style={{
-                  backgroundColor: "#EA580C",
+                  backgroundColor: "#C2410C",
                   color: "#FFFFFF",
                   fontSize: "12px",
                   padding: "4px 16px",
@@ -131,12 +131,12 @@ export function HeroSection() {
                 BAK Transport.
                 <br />
                 {t.hero_h1_part2}{" "}
-                <span style={{ color: "#EA580C" }}>{t.hero_h1_part3}</span>
+                <span style={{ color: "#C2410C" }}>{t.hero_h1_part3}</span>
               </h1>
 
               <div
                 className="mt-4 mb-6"
-                style={{ width: "60px", height: "4px", backgroundColor: "#EA580C", borderRadius: "2px" }}
+                style={{ width: "60px", height: "4px", backgroundColor: "#C2410C", borderRadius: "2px" }}
               />
 
               <p
@@ -151,7 +151,7 @@ export function HeroSection() {
                   href="#kontakt"
                   className="rounded-lg font-extrabold transition-colors hover:bg-[#C2410C] text-center"
                   style={{
-                    backgroundColor: "#EA580C",
+                    backgroundColor: "#C2410C",
                     color: "#FFFFFF",
                     fontSize: "16px",
                     padding: "16px 32px",
@@ -164,9 +164,9 @@ export function HeroSection() {
                 </a>
                 <a
                   href="tel:+4368110723047"
-                  className="rounded-lg font-bold border-2 border-[#EA580C] transition-colors hover:bg-orange-50 text-center"
+                  className="rounded-lg font-bold border-2 border-[#C2410C] transition-colors hover:bg-orange-50 text-center"
                   style={{
-                    color: "#EA580C",
+                    color: "#C2410C",
                     fontSize: "16px",
                     padding: "16px 32px",
                     textDecoration: "none",
@@ -187,7 +187,7 @@ export function HeroSection() {
                 style={{
                   backgroundColor: "#FFFFFF",
                   border: "1px solid #E5E7EB",
-                  borderLeftColor: "#EA580C",
+                  borderLeftColor: "#C2410C",
                   borderLeftWidth: "4px",
                   padding: "24px",
                 }}
@@ -212,7 +212,7 @@ export function HeroSection() {
           >
             {TRUST_BADGES.map(({ icon: Icon, label }) => (
               <div key={label} className="flex items-center gap-2">
-                <Icon size={20} style={{ color: "#EA580C" }} />
+                <Icon size={20} style={{ color: "#C2410C" }} />
                 <span style={{ color: "#4B5563", fontSize: "15px" }}>
                   {label}
                 </span>

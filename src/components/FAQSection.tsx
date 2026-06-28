@@ -50,7 +50,7 @@ export function FAQSection() {
                   </span>
                   <span
                     className="flex items-center justify-center shrink-0 rounded-md"
-                    style={{ width: "32px", height: "32px", backgroundColor: "#EA580C", color: "#FFFFFF", fontSize: "18px", fontWeight: 300 }}
+                    style={{ width: "32px", height: "32px", backgroundColor: "#C2410C", color: "#FFFFFF", fontSize: "18px", fontWeight: 300 }}
                   >
                     {isOpen ? "−" : "+"}
                   </span>

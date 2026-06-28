@@ -1,4 +1,4 @@
-﻿@import "tailwindcss";
+@import "tailwindcss";
 
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
@@ -42,7 +42,7 @@
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.09 0.01 260);
 
-  /* Primary = crimson red #EA580C */
+  /* Primary = crimson red #C2410C */
   --primary: oklch(0.505 0.215 27);
   --primary-foreground: oklch(1 0 0);
 
@@ -90,7 +90,7 @@
 
 /* BAK Brand helpers */
 :root {
-  --bak-red: #EA580C;
+  --bak-red: #C2410C;
   --bak-dark: #F9FAFB;
   --bak-charcoal: #FFFFFF;
   --bak-light: #F9FAFB;
