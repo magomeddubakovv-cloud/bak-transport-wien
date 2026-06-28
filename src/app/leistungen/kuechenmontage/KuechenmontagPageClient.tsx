@@ -1,4 +1,4 @@
-"use client";
+ï»¿"use client";
 
 import { Check, Phone } from "lucide-react";
 import Image from "next/image";
@@ -43,7 +43,7 @@ export function KuechenmontagPageClient() {
             </div>
             <div className="flex flex-col gap-6">
               <div className="relative rounded-2xl overflow-hidden h-48 md:h-72">
-                <Image src="/images/photos/kuechenmontage.jpg" alt="Küchenmontage Wien mit BAK Transport" fill sizes="(max-width: 768px) 100vw, 45vw" className="object-cover object-center" />
+                <Image src="/images/photos/kuechenmontage.jpg" alt="KÃ¼chenmontage Wien mit BAK Transport" fill sizes="(max-width: 768px) 100vw, 45vw" className="object-cover object-center" />
               </div>
               <ul className="space-y-4">
                 {checklistItems.map((item) => (
@@ -106,7 +106,7 @@ export function KuechenmontagPageClient() {
             {[
               { label: lang === "en" ? "Private Moving Vienna" : "Privatumzug Wien", href: "/leistungen/privatumzug" },
               { label: lang === "en" ? "Office Moving Vienna" : "Firmenumzug Wien", href: "/leistungen/firmenumzug" },
-              { label: lang === "en" ? "Furniture Assembly Vienna" : "Möbelmontage Wien", href: "/leistungen/moebelmontage" },
+              { label: lang === "en" ? "Furniture Assembly Vienna" : "MÃ¶belmontage Wien", href: "/leistungen/moebelmontage" },
               { label: lang === "en" ? "Heavy Transport Vienna" : "Schwerlasttransport Wien", href: "/leistungen/schwerlasttransport" },
               { label: lang === "en" ? "Emergency Move Vienna" : "Notfallumzug Wien", href: "/leistungen/notfallumzug" },
             ].map((link) => (

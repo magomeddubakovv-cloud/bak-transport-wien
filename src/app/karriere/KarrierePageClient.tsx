@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { Check, Phone } from "lucide-react";
 import Image from "next/image";
@@ -28,10 +28,10 @@ export function KarrierePageClient() {
   ];
 
   const whyItems = [
-    { icon: "??", title: t.karriere_why1_title, sub: t.karriere_why1_sub },
-    { icon: "??", title: t.karriere_why2_title, sub: t.karriere_why2_sub },
-    { icon: "??", title: t.karriere_why3_title, sub: t.karriere_why3_sub },
-    { icon: "??", title: t.karriere_why4_title, sub: t.karriere_why4_sub },
+    { icon: "💰", title: t.karriere_why1_title, sub: t.karriere_why1_sub },
+    { icon: "🚚", title: t.karriere_why2_title, sub: t.karriere_why2_sub },
+    { icon: "🤝", title: t.karriere_why3_title, sub: t.karriere_why3_sub },
+    { icon: "📈", title: t.karriere_why4_title, sub: t.karriere_why4_sub },
   ];
 
   return (

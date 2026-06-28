@@ -1,4 +1,4 @@
-"use client";
+ï»¿"use client";
 
 import Link from "next/link";
 import { Logo } from "@/components/Logo";
@@ -64,7 +64,7 @@ export function Footer() {
     <footer style={{ backgroundColor: "#1C0F00", color: "#FFFFFF" }}>
       <div className="py-16" style={{ borderBottom: "1px solid rgba(255,255,255,0.1)" }}>
         <div className="max-w-7xl mx-auto px-4 md:px-6 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
-          {/* Column 1 — Brand */}
+          {/* Column 1 â€” Brand */}
           <div className="col-span-2 md:col-span-1">
             <Link href="/" style={{ lineHeight: 0, display: "inline-block" }}>
               <Logo variant="light" size="md" />
@@ -102,7 +102,7 @@ export function Footer() {
             >
               <span itemProp="name" style={{ display: "none" }}>BAK Transport Wien</span>
               <span itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
-                <span itemProp="streetAddress">Musterstraße 12</span><br />
+                <span itemProp="streetAddress">MusterstraÃŸe 12</span><br />
                 <span itemProp="postalCode">1010</span>{" "}
                 <span itemProp="addressLocality">Wien</span>
               </span>
@@ -117,7 +117,7 @@ export function Footer() {
             </address>
           </div>
 
-          {/* Column 2 — Leistungen */}
+          {/* Column 2 â€” Leistungen */}
           <div>
             <p className="mb-5 uppercase tracking-wider" style={{ color: "#FFFFFF", fontWeight: 700, fontSize: "12px" }}>
               {t.footer_leistungen}
@@ -134,7 +134,7 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Column 3 — Regionen */}
+          {/* Column 3 â€” Regionen */}
           <div>
             <p className="mb-5 uppercase tracking-wider" style={{ color: "#FFFFFF", fontWeight: 700, fontSize: "12px" }}>
               {t.footer_regionen}
@@ -151,7 +151,7 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Column 4 — Unternehmen */}
+          {/* Column 4 â€” Unternehmen */}
           <div>
             <p className="mb-5 uppercase tracking-wider" style={{ color: "#FFFFFF", fontWeight: 700, fontSize: "12px" }}>
               {t.footer_unternehmen}
@@ -176,7 +176,7 @@ export function Footer() {
             {t.footer_copyright}
           </p>
           <p style={{ color: "rgba(255,255,255,0.3)", fontSize: "12px" }}>
-            office@baktransport.at · +43 676 123 45 67
+            office@baktransport.at Â· +43 676 123 45 67
           </p>
         </div>
       </div>

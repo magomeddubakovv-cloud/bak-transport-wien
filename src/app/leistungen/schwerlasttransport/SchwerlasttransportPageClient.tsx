@@ -1,4 +1,4 @@
-"use client";
+ï»¿"use client";
 
 import { Check, Phone } from "lucide-react";
 import Image from "next/image";
@@ -106,8 +106,8 @@ export function SchwerlasttransportPageClient() {
             {[
               { label: lang === "en" ? "Private Moving Vienna" : "Privatumzug Wien", href: "/leistungen/privatumzug" },
               { label: lang === "en" ? "Office Moving Vienna" : "Firmenumzug Wien", href: "/leistungen/firmenumzug" },
-              { label: lang === "en" ? "Furniture Assembly Vienna" : "Möbelmontage Wien", href: "/leistungen/moebelmontage" },
-              { label: lang === "en" ? "Kitchen Assembly Vienna" : "Küchenmontage Wien", href: "/leistungen/kuechenmontage" },
+              { label: lang === "en" ? "Furniture Assembly Vienna" : "MÃ¶belmontage Wien", href: "/leistungen/moebelmontage" },
+              { label: lang === "en" ? "Kitchen Assembly Vienna" : "KÃ¼chenmontage Wien", href: "/leistungen/kuechenmontage" },
               { label: lang === "en" ? "Emergency Move Vienna" : "Notfallumzug Wien", href: "/leistungen/notfallumzug" },
             ].map((link) => (
               <a key={link.href} href={link.href} className="px-4 py-2 rounded-lg text-sm font-medium"

@@ -1,4 +1,4 @@
-"use client";
+ï»¿"use client";
 
 import { Check, Phone } from "lucide-react";
 import Image from "next/image";
@@ -105,8 +105,8 @@ export function FirmenumzugPageClient() {
           <div className="flex flex-wrap gap-3">
             {[
               { label: lang === "en" ? "Private Moving Vienna" : "Privatumzug Wien", href: "/leistungen/privatumzug" },
-              { label: lang === "en" ? "Furniture Assembly Vienna" : "Möbelmontage Wien", href: "/leistungen/moebelmontage" },
-              { label: lang === "en" ? "Kitchen Assembly Vienna" : "Küchenmontage Wien", href: "/leistungen/kuechenmontage" },
+              { label: lang === "en" ? "Furniture Assembly Vienna" : "MÃ¶belmontage Wien", href: "/leistungen/moebelmontage" },
+              { label: lang === "en" ? "Kitchen Assembly Vienna" : "KÃ¼chenmontage Wien", href: "/leistungen/kuechenmontage" },
               { label: lang === "en" ? "Heavy Transport Vienna" : "Schwerlasttransport Wien", href: "/leistungen/schwerlasttransport" },
               { label: lang === "en" ? "Emergency Move Vienna" : "Notfallumzug Wien", href: "/leistungen/notfallumzug" },
             ].map((link) => (

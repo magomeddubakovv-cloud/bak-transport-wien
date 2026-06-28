@@ -1,4 +1,4 @@
-"use client";
+ï»¿"use client";
 
 import { Check, Phone } from "lucide-react";
 import Image from "next/image";
@@ -31,10 +31,10 @@ export function WienPageClient() {
   ];
 
   const bezirke = [
-    "1. Innere Stadt", "2. Leopoldstadt", "3. Landstraße", "4. Wieden", "5. Margareten",
+    "1. Innere Stadt", "2. Leopoldstadt", "3. LandstraÃŸe", "4. Wieden", "5. Margareten",
     "6. Mariahilf", "7. Neubau", "8. Josefstadt", "9. Alsergrund", "10. Favoriten",
-    "11. Simmering", "12. Meidling", "13. Hietzing", "14. Penzing", "15. Rudolfsheim-Fünfhaus",
-    "16. Ottakring", "17. Hernals", "18. Währing", "19. Döbling", "20. Brigittenau",
+    "11. Simmering", "12. Meidling", "13. Hietzing", "14. Penzing", "15. Rudolfsheim-FÃ¼nfhaus",
+    "16. Ottakring", "17. Hernals", "18. WÃ¤hring", "19. DÃ¶bling", "20. Brigittenau",
     "21. Floridsdorf", "22. Donaustadt", "23. Liesing",
   ];
 

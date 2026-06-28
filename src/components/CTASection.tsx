@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useLang } from "@/contexts/LanguageContext";
 import { translations } from "@/i18n/translations";

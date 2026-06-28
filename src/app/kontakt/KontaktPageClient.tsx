@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { Phone } from "lucide-react";
 import { PageLayout } from "@/components/PageLayout";
@@ -10,9 +10,9 @@ export function KontaktPageClient() {
   const t = translations[lang];
 
   const contacts = [
-    { icon: "??", title: t.kontakt_tel_title, value: "+43 676 123 45 67", sub: t.kontakt_tel_sub, href: "tel:+4368110723047" },
-    { icon: "??", title: t.kontakt_email_title, value: "office@baktransport.at", sub: t.kontakt_email_sub, href: "mailto:office@baktransport.at" },
-    { icon: "??", title: t.kontakt_addr_title, value: "Musterstra�e 12, 1010 Wien", sub: t.kontakt_addr_sub, href: null },
+    { icon: "📞", title: t.kontakt_tel_title, value: "+43 676 123 45 67", sub: t.kontakt_tel_sub, href: "tel:+4368110723047" },
+    { icon: "✉️", title: t.kontakt_email_title, value: "office@baktransport.at", sub: t.kontakt_email_sub, href: "mailto:office@baktransport.at" },
+    { icon: "📍", title: t.kontakt_addr_title, value: "Musterstraße 12, 1010 Wien", sub: t.kontakt_addr_sub, href: null },
   ];
 
   const cards = [
