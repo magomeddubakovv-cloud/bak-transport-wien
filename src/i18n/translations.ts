@@ -77,6 +77,8 @@ const de = {
   // WhyUs
   whyus_label: "WARUM BAK TRANSPORT",
   whyus_h2: "Das BAK Versprechen",
+  whyus_body:
+    "Bei BAK Transport Wien legen wir größten Wert darauf, dass Ihr Umzug von der ersten Anfrage bis zur letzten Kiste reibungslos und stressfrei verläuft. Unser erfahrenes Team aus professionellen Umzugshelfern kennt Wien und alle 23 Bezirke wie ihre eigene Westentasche und sorgt dafür, dass Ihre Möbel und persönlichen Gegenstände sicher und pünktlich an Ihren neuen Wohnort gelangen. Wir bieten Ihnen einen transparenten Fixpreis nach kostenloser Besichtigung, sodass Sie von Anfang an wissen, was Ihr Umzug kostet — ohne versteckte Kosten oder unangenehme Überraschungen auf der Rechnung.",
   whyus_quote:
     "„Ihr Eigentum in sicheren Händen — von der ersten Anfrage bis zum letzten Karton.“",
   r1_title: "Fixpreis-Garantie",
@@ -1272,6 +1274,8 @@ const en: typeof de = {
   // WhyUs
   whyus_label: "WHY BAK TRANSPORT",
   whyus_h2: "The BAK Promise",
+  whyus_body:
+    "At BAK Transport Vienna, we place the greatest importance on ensuring that your move runs smoothly and stress-free from the very first enquiry to the very last box. Our experienced team of professional movers knows Vienna and all 23 districts inside out and ensures that your furniture and personal belongings arrive safely and on time at your new home. We offer you a transparent fixed price after a free inspection, so you know from the start exactly what your move will cost — with no hidden fees or unpleasant surprises.",
   whyus_quote:
     '"Your property in safe hands — from the first inquiry to the last box."',
   r1_title: "Fixed Price Guarantee",

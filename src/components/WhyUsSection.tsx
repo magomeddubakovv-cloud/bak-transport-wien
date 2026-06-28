@@ -28,6 +28,10 @@ export function WhyUsSection() {
           <div className="w-16 h-1 bg-[#C2410C] mx-auto mt-6" />
         </div>
 
+        <p className="text-center max-w-3xl mx-auto mb-10 md:mb-12" style={{ color: "#6B7280", fontSize: "16px", lineHeight: 1.8 }}>
+          {t.whyus_body}
+        </p>
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {reasons.map((reason) => (
             <div
