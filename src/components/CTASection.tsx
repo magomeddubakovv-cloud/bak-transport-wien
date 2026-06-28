@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useLang } from "@/contexts/LanguageContext";
 import { translations } from "@/i18n/translations";
@@ -25,7 +25,7 @@ export function CTASection() {
             {t.cta_btn1}
           </a>
           <a
-            href="tel:+436761234567"
+            href="tel:+4368110723047"
             className="rounded-xl transition-colors text-center"
             style={{ border: "2px solid #FFFFFF", color: "#FFFFFF", padding: "16px 32px", fontSize: "17px", fontWeight: 700, display: "block", minHeight: "44px" }}
           >

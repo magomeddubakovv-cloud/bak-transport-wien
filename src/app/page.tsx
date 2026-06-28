@@ -98,7 +98,7 @@ const serviceSchema = {
   provider: {
     "@type": "MovingCompany",
     name: "BAK Transport Wien",
-    telephone: "+436761234567",
+    telephone: "+4368110723047",
     url: "https://www.baktransport.at",
   },
   areaServed: { "@type": "City", name: "Wien" },

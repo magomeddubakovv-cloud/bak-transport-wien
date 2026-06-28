@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { Phone } from "lucide-react";
 import { useLang } from "@/contexts/LanguageContext";
@@ -14,7 +14,7 @@ export function MobileActionBar() {
       style={{ filter: "drop-shadow(0 8px 24px rgba(0,0,0,0.35))" }}
     >
       <a
-        href="tel:+436761234567"
+        href="tel:+4368110723047"
         className="flex-1 flex items-center justify-center gap-2 font-bold text-white rounded-2xl"
         style={{
           backgroundColor: "#EA580C",
@@ -30,7 +30,7 @@ export function MobileActionBar() {
       </a>
 
       <a
-        href="https://wa.me/436761234567"
+        href="https://wa.me/4368110723047"
         target="_blank"
         rel="noopener noreferrer"
         className="flex-1 flex items-center justify-center gap-2 font-bold text-white rounded-2xl"

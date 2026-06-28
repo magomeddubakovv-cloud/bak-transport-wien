@@ -80,7 +80,7 @@ const localBusinessSchema = {
   description:
     "Professionelle Umzugsfirma in Wien. Privatumzüge, Firmenumzüge, Möbel- und Küchenmontage. Fixpreis nach kostenloser Besichtigung.",
   url: "https://www.baktransport.at",
-  telephone: "+436761234567",
+  telephone: "+4368110723047",
   email: "office@baktransport.at",
   image: "https://www.baktransport.at/images/photos/hero-movers.jpg",
   logo: "https://www.baktransport.at/images/logo-transparent.png",

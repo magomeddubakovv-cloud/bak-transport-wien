@@ -1,4 +1,4 @@
-ï»¿"use client";
+"use client";
 
 import { Check, Phone } from "lucide-react";
 import Image from "next/image";
@@ -106,8 +106,8 @@ export function NotfallumzugPageClient() {
             {[
               { label: lang === "en" ? "Private Moving Vienna" : "Privatumzug Wien", href: "/leistungen/privatumzug" },
               { label: lang === "en" ? "Office Moving Vienna" : "Firmenumzug Wien", href: "/leistungen/firmenumzug" },
-              { label: lang === "en" ? "Furniture Assembly Vienna" : "MÃ¶belmontage Wien", href: "/leistungen/moebelmontage" },
-              { label: lang === "en" ? "Kitchen Assembly Vienna" : "KÃ¼chenmontage Wien", href: "/leistungen/kuechenmontage" },
+              { label: lang === "en" ? "Furniture Assembly Vienna" : "Möbelmontage Wien", href: "/leistungen/moebelmontage" },
+              { label: lang === "en" ? "Kitchen Assembly Vienna" : "Küchenmontage Wien", href: "/leistungen/kuechenmontage" },
               { label: lang === "en" ? "Heavy Transport Vienna" : "Schwerlasttransport Wien", href: "/leistungen/schwerlasttransport" },
             ].map((link) => (
               <a key={link.href} href={link.href} className="px-4 py-2 rounded-lg text-sm font-medium"
@@ -124,7 +124,7 @@ export function NotfallumzugPageClient() {
           <p className="mb-8 text-white opacity-90">{t.sub_cta_desc}</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="/kontakt" className="inline-block px-8 py-4 rounded-xl font-semibold text-base" style={{ backgroundColor: "#FFFFFF", color: "#EA580C" }}>{t.sub_cta_btn1}</a>
-            <a href="tel:+436761234567" className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-semibold text-base" style={{ border: "2px solid #EA580C", color: "#EA580C" }}><Phone className="w-5 h-5" />{t.sub_cta_btn2}</a>
+            <a href="tel:+4368110723047" className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-semibold text-base" style={{ border: "2px solid #EA580C", color: "#EA580C" }}><Phone className="w-5 h-5" />{t.sub_cta_btn2}</a>
           </div>
         </div>
       </section>

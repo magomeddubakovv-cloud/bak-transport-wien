@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { Phone } from "lucide-react";
 import { PageLayout } from "@/components/PageLayout";
@@ -10,9 +10,9 @@ export function KontaktPageClient() {
   const t = translations[lang];
 
   const contacts = [
-    { icon: "📞", title: t.kontakt_tel_title, value: "+43 676 123 45 67", sub: t.kontakt_tel_sub, href: "tel:+436761234567" },
-    { icon: "✉️", title: t.kontakt_email_title, value: "office@baktransport.at", sub: t.kontakt_email_sub, href: "mailto:office@baktransport.at" },
-    { icon: "📍", title: t.kontakt_addr_title, value: "Musterstraße 12, 1010 Wien", sub: t.kontakt_addr_sub, href: null },
+    { icon: "??", title: t.kontakt_tel_title, value: "+43 676 123 45 67", sub: t.kontakt_tel_sub, href: "tel:+4368110723047" },
+    { icon: "??", title: t.kontakt_email_title, value: "office@baktransport.at", sub: t.kontakt_email_sub, href: "mailto:office@baktransport.at" },
+    { icon: "??", title: t.kontakt_addr_title, value: "Musterstra�e 12, 1010 Wien", sub: t.kontakt_addr_sub, href: null },
   ];
 
   const cards = [
@@ -81,7 +81,7 @@ export function KontaktPageClient() {
           <p className="mb-8 text-white opacity-90">{t.kontakt_cta_desc}</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="mailto:office@baktransport.at" className="inline-block px-8 py-4 rounded-xl font-semibold text-base" style={{ backgroundColor: "#FFFFFF", color: "#EA580C" }}>{t.kontakt_cta_email_btn}</a>
-            <a href="tel:+436761234567" className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-semibold text-base" style={{ border: "2px solid #EA580C", color: "#EA580C" }}><Phone className="w-5 h-5" />{t.kontakt_cta_call_btn}</a>
+            <a href="tel:+4368110723047" className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-semibold text-base" style={{ border: "2px solid #EA580C", color: "#EA580C" }}><Phone className="w-5 h-5" />{t.kontakt_cta_call_btn}</a>
           </div>
         </div>
       </section>

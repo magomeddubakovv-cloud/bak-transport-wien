@@ -1,4 +1,4 @@
-ï»¿"use client";
+"use client";
 
 import { Check, Phone } from "lucide-react";
 import Image from "next/image";
@@ -43,7 +43,7 @@ export function MoebelmontagePageClient() {
             </div>
             <div className="flex flex-col gap-6">
               <div className="relative rounded-2xl overflow-hidden h-48 md:h-72">
-                <Image src="/images/photos/moebelmontage.jpg" alt="MÃ¶belmontage Wien mit BAK Transport" fill sizes="(max-width: 768px) 100vw, 45vw" className="object-cover object-center" />
+                <Image src="/images/photos/moebelmontage.jpg" alt="Möbelmontage Wien mit BAK Transport" fill sizes="(max-width: 768px) 100vw, 45vw" className="object-cover object-center" />
               </div>
               <ul className="space-y-4">
                 {checklistItems.map((item) => (
@@ -106,7 +106,7 @@ export function MoebelmontagePageClient() {
             {[
               { label: lang === "en" ? "Private Moving Vienna" : "Privatumzug Wien", href: "/leistungen/privatumzug" },
               { label: lang === "en" ? "Office Moving Vienna" : "Firmenumzug Wien", href: "/leistungen/firmenumzug" },
-              { label: lang === "en" ? "Kitchen Assembly Vienna" : "KÃ¼chenmontage Wien", href: "/leistungen/kuechenmontage" },
+              { label: lang === "en" ? "Kitchen Assembly Vienna" : "Küchenmontage Wien", href: "/leistungen/kuechenmontage" },
               { label: lang === "en" ? "Heavy Transport Vienna" : "Schwerlasttransport Wien", href: "/leistungen/schwerlasttransport" },
               { label: lang === "en" ? "Emergency Move Vienna" : "Notfallumzug Wien", href: "/leistungen/notfallumzug" },
             ].map((link) => (
@@ -124,7 +124,7 @@ export function MoebelmontagePageClient() {
           <p className="mb-8 text-white opacity-90">{t.sub_cta_desc}</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="/kontakt" className="inline-block px-8 py-4 rounded-xl font-semibold text-base" style={{ backgroundColor: "#FFFFFF", color: "#EA580C" }}>{t.sub_cta_btn1}</a>
-            <a href="tel:+436761234567" className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-semibold text-base" style={{ border: "2px solid #EA580C", color: "#EA580C" }}><Phone className="w-5 h-5" />{t.sub_cta_btn2}</a>
+            <a href="tel:+4368110723047" className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-semibold text-base" style={{ border: "2px solid #EA580C", color: "#EA580C" }}><Phone className="w-5 h-5" />{t.sub_cta_btn2}</a>
           </div>
         </div>
       </section>

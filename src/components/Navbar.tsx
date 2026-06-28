@@ -1,4 +1,4 @@
-ï»¿"use client";
+"use client";
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
@@ -127,9 +127,9 @@ export function Navbar() {
         {/* Right side */}
         <div className="flex items-center gap-2">
           <LanguageSwitcher />
-          {/* Phone button â€” square on mobile, full width on desktop */}
+          {/* Phone button — square on mobile, full width on desktop */}
           <a
-            href="tel:+436761234567"
+            href="tel:+4368110723047"
             className="flex items-center justify-center rounded-md transition-colors duration-150 hover:bg-[#C2410C] w-[38px] h-[38px] md:w-auto md:h-auto md:px-3 md:py-2 md:gap-2"
             style={{ backgroundColor: "#EA580C", color: "#FFFFFF", fontWeight: 700, textDecoration: "none", flexShrink: 0 }}
             aria-label={lang === "en" ? "Call Us" : "Anrufen"}
@@ -138,9 +138,9 @@ export function Navbar() {
             <span className="hidden md:inline" style={{ fontSize: "15px", whiteSpace: "nowrap" }}>{lang === "en" ? "Call Us" : "Anrufen"}</span>
           </a>
 
-          {/* WhatsApp button â€” square on mobile, full width on desktop */}
+          {/* WhatsApp button — square on mobile, full width on desktop */}
           <a
-            href="https://wa.me/436761234567"
+            href="https://wa.me/4368110723047"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center rounded-md transition-colors duration-150 hover:bg-[#16a34a] w-[38px] h-[38px] md:w-auto md:h-auto md:px-3 md:py-2 md:gap-2"
@@ -153,7 +153,7 @@ export function Navbar() {
             <span className="hidden md:inline" style={{ fontSize: "15px", whiteSpace: "nowrap" }}>WhatsApp</span>
           </a>
 
-          {/* Hamburger â€” mobile only */}
+          {/* Hamburger — mobile only */}
           <button
             className="md:hidden flex items-center justify-center rounded-md p-2 transition-colors hover:bg-orange-50"
             style={{ color: "#374151" }}
@@ -190,7 +190,7 @@ export function Navbar() {
             ))}
             <div className="mt-4 flex flex-col gap-3">
               <a
-                href="tel:+436761234567"
+                href="tel:+4368110723047"
                 className="flex items-center justify-center gap-2 rounded-md font-bold text-white"
                 style={{ backgroundColor: "#EA580C", padding: "14px 24px", fontSize: "16px", textDecoration: "none" }}
                 onClick={() => setMenuOpen(false)}
@@ -199,7 +199,7 @@ export function Navbar() {
                 {lang === "en" ? "Call Us" : "Anrufen"}
               </a>
               <a
-                href="https://wa.me/436761234567"
+                href="https://wa.me/4368110723047"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 rounded-md font-bold text-white"

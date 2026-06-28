@@ -1,4 +1,4 @@
-ï»¿"use client";
+"use client";
 
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
@@ -78,7 +78,7 @@ export function HeroSection() {
 
   const STAT_CONFIGS: (StatConfig & { label: string })[] = [
     { target: 1000, suffix: "+", germanFormat: true, label: t.hero_stat1 },
-    { target: 5.0, decimals: 1, suffix: "â˜…", germanFormat: true, label: t.hero_stat2 },
+    { target: 5.0, decimals: 1, suffix: "?", germanFormat: true, label: t.hero_stat2 },
     { target: 24, suffix: "h", label: t.hero_stat3 },
   ];
 
@@ -90,7 +90,7 @@ export function HeroSection() {
       {/* Background photo */}
       <Image
         src="/images/photos/hero-movers.jpg"
-        alt="BAK Transport â€” professionelle UmzÃ¼ge in Wien"
+        alt="BAK Transport — professionelle Umzüge in Wien"
         fill
         className="object-cover object-center"
         style={{ opacity: 0.08 }}
@@ -163,7 +163,7 @@ export function HeroSection() {
                   {t.hero_cta_quote}
                 </a>
                 <a
-                  href="tel:+436761234567"
+                  href="tel:+4368110723047"
                   className="rounded-lg font-bold border-2 border-[#EA580C] transition-colors hover:bg-orange-50 text-center"
                   style={{
                     color: "#EA580C",
@@ -179,7 +179,7 @@ export function HeroSection() {
               </div>
             </div>
 
-            {/* Right column â€” stats card */}
+            {/* Right column — stats card */}
             <div className="lg:max-w-[40%] w-full">
               <div
                 ref={cardRef}

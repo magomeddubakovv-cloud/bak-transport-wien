@@ -1,4 +1,4 @@
-ï»¿"use client";
+"use client";
 
 import { Check, Phone } from "lucide-react";
 import Image from "next/image";
@@ -31,10 +31,10 @@ export function WienPageClient() {
   ];
 
   const bezirke = [
-    "1. Innere Stadt", "2. Leopoldstadt", "3. LandstraÃŸe", "4. Wieden", "5. Margareten",
+    "1. Innere Stadt", "2. Leopoldstadt", "3. Landstraße", "4. Wieden", "5. Margareten",
     "6. Mariahilf", "7. Neubau", "8. Josefstadt", "9. Alsergrund", "10. Favoriten",
-    "11. Simmering", "12. Meidling", "13. Hietzing", "14. Penzing", "15. Rudolfsheim-FÃ¼nfhaus",
-    "16. Ottakring", "17. Hernals", "18. WÃ¤hring", "19. DÃ¶bling", "20. Brigittenau",
+    "11. Simmering", "12. Meidling", "13. Hietzing", "14. Penzing", "15. Rudolfsheim-Fünfhaus",
+    "16. Ottakring", "17. Hernals", "18. Währing", "19. Döbling", "20. Brigittenau",
     "21. Floridsdorf", "22. Donaustadt", "23. Liesing",
   ];
 
@@ -127,7 +127,7 @@ export function WienPageClient() {
           <p className="mb-8 text-white opacity-90">{t.sub_cta_desc}</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="/kontakt" className="inline-block px-8 py-4 rounded-xl font-semibold text-base" style={{ backgroundColor: "#FFFFFF", color: "#EA580C" }}>{t.sub_cta_btn1}</a>
-            <a href="tel:+436761234567" className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-semibold text-base" style={{ border: "2px solid #EA580C", color: "#EA580C" }}><Phone className="w-5 h-5" />{t.sub_cta_btn2}</a>
+            <a href="tel:+4368110723047" className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-semibold text-base" style={{ border: "2px solid #EA580C", color: "#EA580C" }}><Phone className="w-5 h-5" />{t.sub_cta_btn2}</a>
           </div>
         </div>
       </section>
