@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import Link from "next/link";
 import { Logo } from "@/components/Logo";
@@ -102,7 +102,7 @@ export function Footer() {
             >
               <span itemProp="name" style={{ display: "none" }}>BAK Transport Wien</span>
               <span itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
-                <span itemProp="streetAddress">Musterstraße 12</span><br />
+                <span itemProp="streetAddress">Zwinzstraße 15</span><br />
                 <span itemProp="postalCode">1010</span>{" "}
                 <span itemProp="addressLocality">Wien</span>
               </span>

@@ -88,9 +88,9 @@ const localBusinessSchema = {
   hasMap: "https://maps.google.com/?q=BAK+Transport+Wien",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Musterstraße 12",
+    streetAddress: "Zwinzstraße 15",
     addressLocality: "Wien",
-    postalCode: "1010",
+    postalCode: "1160",
     addressCountry: "AT",
   },
   geo: {
