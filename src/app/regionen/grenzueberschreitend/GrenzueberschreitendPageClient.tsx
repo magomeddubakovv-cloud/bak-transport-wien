@@ -1,6 +1,6 @@
 "use client";
 
-import { Check, Phone } from "lucide-react";
+import { Check, Phone , Mail } from "lucide-react";
 import Image from "next/image";
 import { PageLayout } from "@/components/PageLayout";
 import { useLang } from "@/contexts/LanguageContext";

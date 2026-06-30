@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Phone } from "lucide-react";
 import { StructuredData } from "@/components/StructuredData";
 import { FaqPageClient } from "./FaqPageClient";
 

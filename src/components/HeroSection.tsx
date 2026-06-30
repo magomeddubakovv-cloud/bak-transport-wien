@@ -1,85 +1,19 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
 import { Truck, Shield, Clock, Award, Phone, Mail } from "lucide-react";
 import { useLang } from "@/contexts/LanguageContext";
 import { translations } from "@/i18n/translations";
 
-interface StatConfig { target: number; decimals?: number; suffix: string; germanFormat?: boolean; }
-
-function useCountUp(config: StatConfig, active: boolean) {
-  const [display, setDisplay] = useState("0");
-  const rafRef = useRef<number>(0);
-  useEffect(() => {
-    if (!active) return;
-    const { target, decimals = 0, suffix, germanFormat = false } = config;
-    const duration = 1800;
-    const start = performance.now();
-    const tick = (now: number) => {
-      const elapsed = Math.min((now - start) / duration, 1);
-      const eased = 1 - Math.pow(1 - elapsed, 3);
-      const value = eased * target;
-      let formatted: string;
-      if (germanFormat) {
-        formatted = decimals > 0 ? value.toFixed(decimals).replace(".", ",") : Math.floor(value).toLocaleString("de-AT");
-      } else {
-        formatted = decimals > 0 ? value.toFixed(decimals) : String(Math.floor(value));
-      }
-      setDisplay(formatted + suffix);
-      if (elapsed < 1) rafRef.current = requestAnimationFrame(tick);
-    };
-    rafRef.current = requestAnimationFrame(tick);
-    return () => cancelAnimationFrame(rafRef.current);
-  }, [active, config]);
-  return display;
-}
-
-function AnimatedHeroStat({ config, label, active, hasBorder }: { config: StatConfig; label: string; active: boolean; hasBorder: boolean }) {
-  const display = useCountUp(config, active);
-  return (
-    <div
-      className={hasBorder ? "pb-5 mb-5" : ""}
-      style={hasBorder ? { borderBottom: "1px solid #E5E7EB" } : {}}
-    >
-      <div className="text-4xl md:text-5xl" style={{ fontWeight: 900, lineHeight: 1, color: "#C2410C" }}>
-        {display}
-      </div>
-      <div className="mt-1 uppercase tracking-wide" style={{ color: "#6B7280", fontSize: "14px" }}>
-        {label}
-      </div>
-    </div>
-  );
-}
-
 export function HeroSection() {
   const { lang } = useLang();
   const t = translations[lang];
-  const [active, setActive] = useState(false);
-  const cardRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const el = cardRef.current;
-    if (!el) return;
-    const observer = new IntersectionObserver(
-      ([entry]) => { if (entry.isIntersecting) { setActive(true); observer.disconnect(); } },
-      { threshold: 0.2 }
-    );
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, []);
 
   const TRUST_BADGES = [
     { icon: Truck, label: t.hero_badge1 },
     { icon: Shield, label: t.hero_badge2 },
     { icon: Clock, label: t.hero_badge3 },
     { icon: Award, label: t.hero_badge4 },
-  ];
-
-  const STAT_CONFIGS: (StatConfig & { label: string })[] = [
-    { target: 1000, suffix: "+", germanFormat: true, label: t.hero_stat1 },
-    { target: 5.0, decimals: 1, suffix: "★", germanFormat: true, label: t.hero_stat2 },
-    { target: 24, suffix: "h", label: t.hero_stat3 },
   ];
 
   return (
