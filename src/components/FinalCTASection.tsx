@@ -1,5 +1,6 @@
 "use client";
 
+import { Mail, Phone } from "lucide-react";
 import { useLang } from "@/contexts/LanguageContext";
 import { translations } from "@/i18n/translations";
 
@@ -18,13 +19,18 @@ export function FinalCTASection() {
         </p>
 
         <div className="mt-10 flex justify-center gap-4 flex-wrap">
-          <button className="bg-white text-[#1B3A6B] rounded-lg px-8 py-4 font-bold text-sm hover:bg-gray-100 transition-colors">
-            {t.final_cta_btn1}
-          </button>
           <a
-            href="tel:+436764429652"
-            className="inline-block bg-transparent border-2 border-white text-white rounded-lg px-8 py-4 font-bold text-sm hover:bg-white/10 transition-colors"
+            href="#kontakt"
+            className="flex items-center justify-center gap-2 bg-white text-[#1B3A6B] rounded-lg px-8 py-4 font-bold text-sm hover:bg-gray-100 transition-colors"
           >
+            <Mail size={18} />
+            {t.final_cta_btn1}
+          </a>
+          <a
+            href="tel:+4368110723047"
+            className="flex items-center justify-center gap-2 bg-transparent border-2 border-white text-white rounded-lg px-8 py-4 font-bold text-sm hover:bg-white/10 transition-colors"
+          >
+            <Phone size={18} />
             {t.final_cta_btn2}
           </a>
         </div>

@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
-import { Truck, Shield, Clock, Award } from "lucide-react";
+import { Truck, Shield, Clock, Award, Phone, Mail } from "lucide-react";
 import { useLang } from "@/contexts/LanguageContext";
 import { translations } from "@/i18n/translations";
 
@@ -150,31 +150,31 @@ export function HeroSection() {
               <div className="mt-8 flex flex-col sm:flex-row gap-4">
                 <a
                   href="#kontakt"
-                  className="rounded-lg font-extrabold transition-colors hover:bg-[#C2410C] text-center"
+                  className="rounded-lg font-extrabold transition-colors hover:bg-[#C2410C] flex items-center justify-center gap-2"
                   style={{
                     backgroundColor: "#C2410C",
                     color: "#FFFFFF",
                     fontSize: "16px",
                     padding: "16px 32px",
                     textDecoration: "none",
-                    display: "block",
                     minHeight: "44px",
                   }}
                 >
+                  <Mail size={20} />
                   {t.hero_cta_quote}
                 </a>
                 <a
                   href="tel:+4368110723047"
-                  className="rounded-lg font-bold border-2 border-[#C2410C] transition-colors hover:bg-orange-50 text-center"
+                  className="rounded-lg font-bold border-2 border-[#C2410C] transition-colors hover:bg-orange-50 flex items-center justify-center gap-2"
                   style={{
                     color: "#C2410C",
                     fontSize: "16px",
                     padding: "16px 32px",
                     textDecoration: "none",
-                    display: "block",
                     minHeight: "44px",
                   }}
                 >
+                  <Phone size={20} />
                   {t.hero_cta_call}
                 </a>
               </div>

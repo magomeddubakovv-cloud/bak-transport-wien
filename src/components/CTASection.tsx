@@ -1,5 +1,6 @@
 "use client";
 
+import { Mail, Phone } from "lucide-react";
 import { useLang } from "@/contexts/LanguageContext";
 import { translations } from "@/i18n/translations";
 
@@ -19,16 +20,18 @@ export function CTASection() {
         <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
           <a
             href="#kontakt"
-            className="rounded-xl transition-colors text-center"
-            style={{ backgroundColor: "#FFFFFF", color: "#C2410C", padding: "16px 32px", fontSize: "17px", fontWeight: 800, display: "block", minHeight: "44px" }}
+            className="rounded-xl transition-colors flex items-center justify-center gap-2"
+            style={{ backgroundColor: "#FFFFFF", color: "#C2410C", padding: "16px 32px", fontSize: "17px", fontWeight: 800, minHeight: "44px" }}
           >
+            <Mail size={20} />
             {t.cta_btn1}
           </a>
           <a
             href="tel:+4368110723047"
-            className="rounded-xl transition-colors text-center"
-            style={{ border: "2px solid #FFFFFF", color: "#FFFFFF", padding: "16px 32px", fontSize: "17px", fontWeight: 700, display: "block", minHeight: "44px" }}
+            className="rounded-xl transition-colors flex items-center justify-center gap-2"
+            style={{ border: "2px solid #FFFFFF", color: "#FFFFFF", padding: "16px 32px", fontSize: "17px", fontWeight: 700, minHeight: "44px" }}
           >
+            <Phone size={20} />
             {t.kontakt_cta_call_btn}
           </a>
         </div>
