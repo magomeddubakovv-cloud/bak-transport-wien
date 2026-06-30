@@ -36,7 +36,7 @@ export function WhyUsSection() {
           {reasons.map((reason) => (
             <div
               key={reason.number}
-              className="bg-[#F9FAFB] rounded-2xl p-8 border border-[#E5E7EB] flex items-start gap-6"
+              className="bg-[#F9FAFB] rounded-2xl p-5 md:p-8 border border-[#E5E7EB] flex items-start gap-4 md:gap-6"
             >
               <span
                 className="leading-none select-none text-4xl md:text-5xl"

@@ -104,8 +104,8 @@ export function DeutschlandPageClient() {
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">{t.de_page_cta_h2}</h2>
           <p className="mb-8 text-white opacity-90">{t.sub_cta_desc}</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/kontakt" className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-semibold text-base" style={{ backgroundColor: "#FFFFFF", color: "#C2410C" }}><Mail className="w-5 h-5" />{t.sub_cta_btn1}</a>
-            <a href="tel:+4368110723047" className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-semibold text-base" style={{ border: "2px solid #C2410C", color: "#C2410C" }}><Phone className="w-5 h-5" />{t.sub_cta_btn2}</a>
+            <a href="/kontakt" className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-semibold text-base w-full sm:w-auto" style={{ backgroundColor: "#FFFFFF", color: "#C2410C" }}><Mail className="w-5 h-5" />{t.sub_cta_btn1}</a>
+            <a href="tel:+4368110723047" className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-semibold text-base w-full sm:w-auto" style={{ border: "2px solid #FFFFFF", color: "#FFFFFF" }}><Phone className="w-5 h-5" />{t.sub_cta_btn2}</a>
           </div>
         </div>
       </section>

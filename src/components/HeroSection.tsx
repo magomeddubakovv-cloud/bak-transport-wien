@@ -42,7 +42,7 @@ export function HeroSection() {
       />
 
       <div className="relative z-10">
-        <div className="max-w-7xl mx-auto px-4 md:px-6 w-full pt-24 pb-12">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 w-full pt-24 pb-28 md:pb-12">
           <div className="flex flex-col lg:flex-row lg:items-center gap-10 lg:gap-16">
             {/* Left column */}
             <div className="flex-1 lg:max-w-[60%]">
@@ -116,7 +116,7 @@ export function HeroSection() {
 
             {/* Right column — collage image */}
             <div className="lg:max-w-[38%] w-full">
-              <div className="relative rounded-2xl overflow-hidden" style={{ aspectRatio: "1/1" }}>
+              <div className="relative rounded-2xl overflow-hidden max-h-72 lg:max-h-none" style={{ aspectRatio: "1/1" }}>
                 <Image
                   src="/images/photos/collage2.jpg"
                   alt="BAK Transport Wien — Umzugshelfer bei der Arbeit"

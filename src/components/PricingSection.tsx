@@ -54,7 +54,7 @@ export function PricingSection() {
           {cards.map((card) => (
             <div
               key={card.title}
-              className="rounded-2xl p-8 relative"
+              className={`rounded-2xl p-5 md:p-8 relative ${card.featured ? "mt-6 md:mt-0" : ""}`}
               style={{
                 backgroundColor: card.featured ? "#C2410C" : "#FFFFFF",
                 border: card.featured ? "none" : "1px solid #E5E7EB",
@@ -74,7 +74,7 @@ export function PricingSection() {
                 {card.forText}
               </p>
 
-              <p className="mt-8" style={{ color: card.featured ? "#FFFFFF" : "#111827", fontSize: "42px", fontWeight: 900, lineHeight: 1 }}>
+              <p className="mt-8 text-3xl md:text-[42px]" style={{ color: card.featured ? "#FFFFFF" : "#111827", fontWeight: 900, lineHeight: 1 }}>
                 {card.price}
                 <span style={{ color: card.featured ? "#FFFFFF" : "#6B7280", fontSize: "14px", fontWeight: 400, marginLeft: "6px" }}>
                   {t.pricing_per}

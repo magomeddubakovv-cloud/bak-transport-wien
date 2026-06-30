@@ -97,7 +97,7 @@ export function RegionsSection() {
                 <a
                   href="tel:+4368110723047"
                   className="flex items-center justify-center gap-2 rounded-md font-bold transition-colors duration-150 hover:bg-[#C2410C]"
-                  style={{ backgroundColor: "#C2410C", color: "#FFFFFF", fontWeight: 700, textDecoration: "none", padding: "10px 16px", fontSize: "15px" }}
+                  style={{ backgroundColor: "#C2410C", color: "#FFFFFF", fontWeight: 700, textDecoration: "none", padding: "12px 16px", fontSize: "15px" }}
                   aria-label="Anrufen"
                 >
                   <Phone size={17} />
@@ -108,7 +108,7 @@ export function RegionsSection() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 rounded-md font-bold transition-colors duration-150 hover:bg-[#16a34a]"
-                  style={{ backgroundColor: "#22C55E", color: "#FFFFFF", fontWeight: 700, textDecoration: "none", padding: "10px 16px", fontSize: "15px" }}
+                  style={{ backgroundColor: "#22C55E", color: "#FFFFFF", fontWeight: 700, textDecoration: "none", padding: "12px 16px", fontSize: "15px" }}
                   aria-label="WhatsApp"
                 >
                   <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">

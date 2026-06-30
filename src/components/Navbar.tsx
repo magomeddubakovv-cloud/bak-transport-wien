@@ -81,7 +81,7 @@ export function Navbar() {
         boxShadow: scrolled ? "0 4px 16px rgba(0,0,0,0.1)" : "0 1px 0 #E5E7EB",
       }}
     >
-      <div ref={navRef} className="max-w-7xl mx-auto pl-0 pr-2 md:px-6 h-full flex items-center justify-between">
+      <div ref={navRef} className="max-w-7xl mx-auto pl-3 pr-2 md:px-6 h-full flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="shrink-0 flex items-center" style={{ lineHeight: 0 }}>
           <Logo variant="dark" size="sm" />
@@ -130,7 +130,7 @@ export function Navbar() {
           {/* Phone button — square on mobile, full width on desktop */}
           <a
             href="tel:+4368110723047"
-            className="flex items-center justify-center rounded-md transition-colors duration-150 hover:bg-[#C2410C] w-[38px] h-[38px] md:w-auto md:h-auto md:px-3 md:py-2 md:gap-2"
+            className="flex items-center justify-center rounded-md transition-colors duration-150 hover:bg-[#C2410C] w-[44px] h-[44px] md:w-auto md:h-auto md:px-3 md:py-2 md:gap-2"
             style={{ backgroundColor: "#C2410C", color: "#FFFFFF", fontWeight: 700, textDecoration: "none", flexShrink: 0 }}
             aria-label={lang === "en" ? "Call Us" : "Anrufen"}
           >
@@ -143,7 +143,7 @@ export function Navbar() {
             href="https://wa.me/4368110723047"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center rounded-md transition-colors duration-150 hover:bg-[#16a34a] w-[38px] h-[38px] md:w-auto md:h-auto md:px-3 md:py-2 md:gap-2"
+            className="flex items-center justify-center rounded-md transition-colors duration-150 hover:bg-[#16a34a] w-[44px] h-[44px] md:w-auto md:h-auto md:px-3 md:py-2 md:gap-2"
             style={{ backgroundColor: "#22C55E", color: "#FFFFFF", fontWeight: 700, textDecoration: "none", flexShrink: 0 }}
             aria-label="WhatsApp"
           >

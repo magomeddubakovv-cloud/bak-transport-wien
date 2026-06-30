@@ -63,9 +63,9 @@ export function Footer() {
   return (
     <footer style={{ backgroundColor: "#1C0F00", color: "#FFFFFF" }}>
       <div className="py-16" style={{ borderBottom: "1px solid rgba(255,255,255,0.1)" }}>
-        <div className="max-w-7xl mx-auto px-4 md:px-6 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
           {/* Column 1 — Brand */}
-          <div className="col-span-2 md:col-span-1">
+          <div className="sm:col-span-2 md:col-span-1">
             <Link href="/" style={{ lineHeight: 0, display: "inline-block" }}>
               <Logo variant="light" size="md" />
             </Link>
@@ -103,7 +103,7 @@ export function Footer() {
               <span itemProp="name" style={{ display: "none" }}>BAK Transport Wien</span>
               <span itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
                 <span itemProp="streetAddress">Zwinzstraße 15</span><br />
-                <span itemProp="postalCode">1010</span>{" "}
+                <span itemProp="postalCode">1160</span>{" "}
                 <span itemProp="addressLocality">Wien</span>
               </span>
               <br />

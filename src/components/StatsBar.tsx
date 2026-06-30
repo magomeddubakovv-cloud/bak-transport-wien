@@ -63,8 +63,7 @@ function AnimatedStat({ config, label, active, hasBorder }: AnimatedStatProps) {
   const display = useCountUp(config, active);
   return (
     <div
-      className="flex flex-col items-center justify-center text-center py-4 md:py-2"
-      style={hasBorder ? { borderRight: "1px solid rgba(255,255,255,0.2)" } : {}}
+      className={`flex flex-col items-center justify-center text-center py-4 md:py-2 ${hasBorder ? "md:border-r md:border-white/20" : ""}`}
     >
       <span className="text-white text-2xl md:text-3xl" style={{ fontWeight: 900, lineHeight: 1 }}>
         {display}

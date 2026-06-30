@@ -27,7 +27,7 @@ export function ProcessSection() {
           <p className="text-[#F97316] text-xs uppercase tracking-widest font-semibold mb-2">
             {t.process_label}
           </p>
-          <h2 className="text-[34px] font-extrabold text-[#1B3A6B]">
+          <h2 className="text-2xl md:text-[34px] font-extrabold text-[#1B3A6B]">
             {t.process_h2}
           </h2>
           <p className="text-[#64748B] mt-3 max-w-2xl mx-auto text-base">
@@ -67,7 +67,7 @@ export function ProcessSection() {
           </div>
 
           {/* Right: Content panel */}
-          <div className="flex-1 bg-[#F8FAFC] rounded-2xl p-8 flex flex-col">
+          <div className="flex-1 bg-[#F8FAFC] rounded-2xl p-5 md:p-8 flex flex-col">
             <p className="text-[#64748B] text-base mb-4">
               {t.process_step} {activeStep.number} {t.process_of} {steps.length}
             </p>
@@ -77,7 +77,7 @@ export function ProcessSection() {
             <span className="inline-block bg-[#F97316]/10 text-[#F97316] rounded-full px-4 py-1 text-[12px] mb-4">
               {activeStep.duration}
             </span>
-            <p className="text-[#E5E7EB] text-[16px] leading-[1.8] flex-1">
+            <p className="text-[#374151] text-[16px] leading-[1.8] flex-1">
               {activeStep.content}
             </p>
 

@@ -9,7 +9,7 @@ export function FinalCTASection() {
   const t = translations[lang];
 
   return (
-    <section className="bg-[#1B3A6B] py-20">
+    <section className="bg-[#1B3A6B] py-12 md:py-20">
       <div className="max-w-6xl mx-auto px-4 text-center">
         <h2 className="text-[22px] md:text-[32px] font-extrabold text-white max-w-3xl mx-auto leading-snug">
           {t.final_cta_h2}
@@ -21,14 +21,14 @@ export function FinalCTASection() {
         <div className="mt-10 flex justify-center gap-4 flex-wrap">
           <a
             href="#kontakt"
-            className="flex items-center justify-center gap-2 bg-white text-[#1B3A6B] rounded-lg px-8 py-4 font-bold text-sm hover:bg-gray-100 transition-colors"
+            className="flex items-center justify-center gap-2 bg-white text-[#1B3A6B] rounded-lg px-8 py-4 font-bold text-sm hover:bg-gray-100 transition-colors w-full sm:w-auto"
           >
             <Mail size={18} />
             {t.final_cta_btn1}
           </a>
           <a
             href="tel:+4368110723047"
-            className="flex items-center justify-center gap-2 bg-transparent border-2 border-white text-white rounded-lg px-8 py-4 font-bold text-sm hover:bg-white/10 transition-colors"
+            className="flex items-center justify-center gap-2 bg-transparent border-2 border-white text-white rounded-lg px-8 py-4 font-bold text-sm hover:bg-white/10 transition-colors w-full sm:w-auto"
           >
             <Phone size={18} />
             {t.final_cta_btn2}

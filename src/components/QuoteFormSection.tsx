@@ -108,7 +108,7 @@ export function QuoteFormSection() {
 
           {/* Right column */}
           <div className="w-full md:w-3/5">
-            <div className="bg-white rounded-2xl p-8 shadow-2xl">
+            <div className="bg-white rounded-2xl p-5 md:p-8 shadow-2xl">
               <form onSubmit={handleSubmit} noValidate>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
                   <div>
@@ -151,7 +151,7 @@ export function QuoteFormSection() {
                           key={size}
                           type="button"
                           onClick={() => setForm((prev) => ({ ...prev, apartmentSize: size }))}
-                          className="px-4 py-2 rounded-lg font-semibold transition-colors duration-150"
+                          className="px-4 py-3 rounded-lg font-semibold transition-colors duration-150"
                           style={{
                             fontSize: "15px",
                             background: isSelected ? "#C2410C" : "transparent",
