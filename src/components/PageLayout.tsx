@@ -12,7 +12,7 @@ export function PageLayout({ children, title, subtitle, label }: PageLayoutProps
   return (
     <>
       <Navbar />
-      <main>
+      <main className="pt-[88px]">
         {/* Page Hero */}
         <section style={{ backgroundColor: "#F9FAFB" }} className="py-12 md:py-20">
           <div className="max-w-7xl mx-auto px-4 md:px-6">
