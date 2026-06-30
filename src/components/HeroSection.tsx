@@ -180,28 +180,17 @@ export function HeroSection() {
               </div>
             </div>
 
-            {/* Right column — stats card */}
-            <div className="lg:max-w-[40%] w-full">
-              <div
-                ref={cardRef}
-                className="rounded-2xl"
-                style={{
-                  backgroundColor: "#FFFFFF",
-                  border: "1px solid #E5E7EB",
-                  borderLeftColor: "#C2410C",
-                  borderLeftWidth: "4px",
-                  padding: "24px",
-                }}
-              >
-                {STAT_CONFIGS.map((stat, i) => (
-                  <AnimatedHeroStat
-                    key={stat.label}
-                    config={stat}
-                    label={stat.label}
-                    active={active}
-                    hasBorder={i < STAT_CONFIGS.length - 1}
-                  />
-                ))}
+            {/* Right column — collage image */}
+            <div className="lg:max-w-[38%] w-full">
+              <div className="relative rounded-2xl overflow-hidden" style={{ aspectRatio: "1/1" }}>
+                <Image
+                  src="/images/photos/collage2.jpg"
+                  alt="BAK Transport Wien — Umzugshelfer bei der Arbeit"
+                  title="BAK Transport Wien — Professionelle Umzüge in Wien"
+                  fill
+                  className="object-cover"
+                  priority
+                />
               </div>
             </div>
           </div>
