@@ -116,7 +116,7 @@ export function HeroSection() {
 
             {/* Right column — collage image */}
             <div className="lg:max-w-[38%] w-full">
-              <div className="relative rounded-2xl overflow-hidden max-h-72 lg:max-h-none" style={{ aspectRatio: "1/1" }}>
+              <div className="relative rounded-2xl overflow-hidden h-64 sm:h-80 lg:h-auto lg:aspect-square">
                 <Image
                   src="/images/photos/collage2.jpg"
                   alt="BAK Transport Wien — Umzugshelfer bei der Arbeit"
