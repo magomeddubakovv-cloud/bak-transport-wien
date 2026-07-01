@@ -10,7 +10,7 @@ const reviews = [
     name: "Gerhard Strobl",
     initial: "G",
     color: "#E8430A",
-    time: "Vor 2 Monaten",
+    time: "Vor 2 Monaten", time_en: "2 months ago",
     text: "Sehr professionelle Umsetzung des Umzugs. Herr Bak war zu allen Terminen sehr pünktlich und hat alle Zusagen eingehalten. Auch das Preis-Leistungs-Verhältnis war perfekt. Die Firma kann ich nur weiterempfehlen!",
     stars: 5,
   },
@@ -18,7 +18,7 @@ const reviews = [
     name: "Christoph Trummer",
     initial: "C",
     color: "#374151",
-    time: "Vor 2 Monaten",
+    time: "Vor 2 Monaten", time_en: "2 months ago",
     text: "Top Service! Der Umzug hat sich zwar aufgrund unvorhersehbarer äußerer Umstände verzögert, aber das Team blieb durchgehend professionell, effizient und lösungsorientiert. Klare Empfehlung.",
     stars: 5,
   },
@@ -26,7 +26,7 @@ const reviews = [
     name: "Josef Ossovsky",
     initial: "J",
     color: "#111827",
-    time: "Vor 3 Monaten",
+    time: "Vor 3 Monaten", time_en: "3 months ago",
     text: "Bin mit der gesamten Abwicklung des Auftrages sehr zufrieden. Sehr höflich und zuvorkommend! Saubere und schnelle Arbeit! Jederzeit gerne wieder!",
     stars: 5,
   },
@@ -34,7 +34,7 @@ const reviews = [
     name: "Maria Huber",
     initial: "M",
     color: "#C2410C",
-    time: "Vor 1 Monat",
+    time: "Vor 1 Monat", time_en: "1 month ago",
     text: "Absolut reibungsloser Ablauf von Anfang bis Ende. Das Team war freundlich, schnell und hat alles sorgfältig behandelt. Kein einziger Kratzer an den Möbeln. Sehr empfehlenswert!",
     stars: 5,
   },
@@ -42,7 +42,7 @@ const reviews = [
     name: "Thomas Weinberger",
     initial: "T",
     color: "#047857",
-    time: "Vor 3 Wochen",
+    time: "Vor 3 Wochen", time_en: "3 weeks ago",
     text: "Firmenumzug mit BAK Transport – lief wie am Schnürchen. Pünktlich, professionell, kein Stress. Preis war fair und transparent. Definitiv wieder!",
     stars: 5,
   },
@@ -50,7 +50,7 @@ const reviews = [
     name: "Sandra Koller",
     initial: "S",
     color: "#7C3AED",
-    time: "Vor 5 Monaten",
+    time: "Vor 5 Monaten", time_en: "5 months ago",
     text: "Die Möbelmontage wurde sehr sauber und schnell erledigt. Alle Möbel wurden perfekt aufgebaut, Verpackungsmaterial wurde mitgenommen. Super Team!",
     stars: 5,
   },
@@ -58,7 +58,7 @@ const reviews = [
     name: "Andreas Fuchs",
     initial: "A",
     color: "#B45309",
-    time: "Vor 2 Wochen",
+    time: "Vor 2 Wochen", time_en: "2 weeks ago",
     text: "Notfallumzug kurzfristig organisiert und perfekt abgewickelt. Innerhalb von 24 Stunden alles erledigt. Das Team hat mich wirklich beeindruckt. Danke BAK Transport!",
     stars: 5,
   },
@@ -66,7 +66,7 @@ const reviews = [
     name: "Elena Müller",
     initial: "E",
     color: "#0369A1",
-    time: "Vor 1 Woche",
+    time: "Vor 1 Woche", time_en: "1 week ago",
     text: "Küchenmontage top erledigt! Alles passt perfekt, Anschlüsse sitzen, keine Macken. Das Team war auch sehr nett und hat den Bereich danach sauber hinterlassen.",
     stars: 5,
   },
@@ -74,7 +74,7 @@ const reviews = [
     name: "Peter Gruber",
     initial: "P",
     color: "#BE185D",
-    time: "Vor 6 Monaten",
+    time: "Vor 6 Monaten", time_en: "6 months ago",
     text: "Umzug von Wien nach München super abgewickelt. Alles pünktlich geliefert, kein einziger Schaden. Für internationale Umzüge absolute Empfehlung!",
     stars: 5,
   },
@@ -82,7 +82,7 @@ const reviews = [
     name: "Katrin Bauer",
     initial: "K",
     color: "#065F46",
-    time: "Vor 4 Monaten",
+    time: "Vor 4 Monaten", time_en: "4 months ago",
     text: "Zweimal mit BAK Transport umgezogen – beide Male perfekt. Freundliches Team, faire Preise, keine Überraschungen auf der Rechnung. Mehr kann man nicht verlangen.",
     stars: 5,
   },
@@ -90,7 +90,7 @@ const reviews = [
     name: "Michael Steiner",
     initial: "M",
     color: "#92400E",
-    time: "Vor 3 Wochen",
+    time: "Vor 3 Wochen", time_en: "3 weeks ago",
     text: "Klaviertransport in den 4. Stock ohne Aufzug – hat geklappt! Profis die wissen was sie tun. Klavier ist heil angekommen, Team war super entspannt und kompetent.",
     stars: 5,
   },
@@ -98,7 +98,7 @@ const reviews = [
     name: "Julia Reiter",
     initial: "J",
     color: "#9D174D",
-    time: "Vor 1 Monat",
+    time: "Vor 1 Monat", time_en: "1 month ago",
     text: "Ich war skeptisch ob ein Umzug in 2 Tagen machbar ist – BAK Transport hat es problemlos geschafft. Sehr organisiert, kein Chaos, alles ordentlich verpackt. Danke!",
     stars: 5,
   },
@@ -106,7 +106,7 @@ const reviews = [
     name: "Robert Langer",
     initial: "R",
     color: "#1D4ED8",
-    time: "Vor 7 Monaten",
+    time: "Vor 7 Monaten", time_en: "7 months ago",
     text: "Tresor transportiert worden – 400 kg, 3. Stock, kein Lift. Das Team hat das mit Spezialausrüstung einwandfrei gelöst. Sehr professionell, absolut weiterempfehlenswert.",
     stars: 5,
   },
@@ -114,7 +114,7 @@ const reviews = [
     name: "Anna Schwarz",
     initial: "A",
     color: "#6D28D9",
-    time: "Vor 2 Wochen",
+    time: "Vor 2 Wochen", time_en: "2 weeks ago",
     text: "Privatumzug innerhalb Wiens sehr angenehm abgewickelt. Das Team hat auf jedes Möbelstück geachtet, alles mit Decken geschützt. Preis genau wie vereinbart – top!",
     stars: 5,
   },
@@ -122,7 +122,7 @@ const reviews = [
     name: "Markus Hofer",
     initial: "M",
     color: "#C2410C",
-    time: "Vor 5 Monaten",
+    time: "Vor 5 Monaten", time_en: "5 months ago",
     text: "Büroumzug am Wochenende damit der Betrieb Montag wieder läuft – hat perfekt funktioniert. Schnell, leise, diskret. Unsere Mitarbeiter haben kaum etwas bemerkt.",
     stars: 5,
   },
@@ -130,7 +130,7 @@ const reviews = [
     name: "Sabine Wagner",
     initial: "S",
     color: "#0F766E",
-    time: "Vor 3 Monaten",
+    time: "Vor 3 Monaten", time_en: "3 months ago",
     text: "IKEA Möbel aufbauen lassen – sehr zügig und sauber gearbeitet. Alle Kartons mitgenommen, keine Schrauben übrig. Werde BAK Transport an alle weiterempfehlen!",
     stars: 5,
   },
@@ -138,7 +138,7 @@ const reviews = [
     name: "Florian Mayr",
     initial: "F",
     color: "#1E3A5F",
-    time: "Vor 6 Wochen",
+    time: "Vor 6 Wochen", time_en: "6 weeks ago",
     text: "Umzug Wien nach Graz mit vollem LKW. Alles kam heil und pünktlich an. Der Preis war fair kalkuliert und blieb auch so. Sehr gute Erfahrung, gerne wieder!",
     stars: 5,
   },
@@ -146,7 +146,7 @@ const reviews = [
     name: "Christine Hofmann",
     initial: "C",
     color: "#7F1D1D",
-    time: "Vor 2 Monaten",
+    time: "Vor 2 Monaten", time_en: "2 months ago",
     text: "Notfallumzug wegen Wasserschaden – innerhalb von 3 Stunden war das Team da. Ruhig, professionell, schnell. In einer stressigen Situation wirklich eine große Hilfe!",
     stars: 5,
   },
@@ -154,7 +154,7 @@ const reviews = [
     name: "David Nowak",
     initial: "D",
     color: "#134E4A",
-    time: "Vor 1 Monat",
+    time: "Vor 1 Monat", time_en: "1 month ago",
     text: "Zweizimmerwohnung in einem Tag komplett umgezogen. Möbel ab- und wieder aufgebaut, alles verpackt. Für den Preis absolut unschlagbar. Sehr zufrieden!",
     stars: 5,
   },
@@ -162,7 +162,7 @@ const reviews = [
     name: "Verena Zimmer",
     initial: "V",
     color: "#4C1D95",
-    time: "Vor 3 Wochen",
+    time: "Vor 3 Wochen", time_en: "3 weeks ago",
     text: "Umzug von Niederösterreich nach Wien perfekt organisiert. Das Team kannte die Strecke gut, war pünktlich und hat alles sicher transportiert. 5 Sterne verdient!",
     stars: 5,
   },
@@ -187,10 +187,11 @@ function GoogleIcon() {
   );
 }
 
-function ReviewCard({ review }: { review: typeof reviews[0] }) {
+function ReviewCard({ review, lang }: { review: typeof reviews[0]; lang: string }) {
   const [expanded, setExpanded] = useState(false);
   const isLong = review.text.length > 150;
   const displayText = !expanded && isLong ? review.text.slice(0, 150) + "…" : review.text;
+  const timeLabel = lang === "en" ? review.time_en : review.time;
 
   return (
     <div
@@ -213,7 +214,7 @@ function ReviewCard({ review }: { review: typeof reviews[0] }) {
           </div>
           <div>
             <p className="font-semibold text-sm" style={{ color: "#111827" }}>{review.name}</p>
-            <p className="text-xs" style={{ color: "#6B7280" }}>{review.time}</p>
+            <p className="text-xs" style={{ color: "#6B7280" }}>{timeLabel}</p>
           </div>
         </div>
 
@@ -227,7 +228,7 @@ function ReviewCard({ review }: { review: typeof reviews[0] }) {
             className="text-xs font-medium"
             style={{ color: "#6B7280" }}
           >
-            {expanded ? "Weniger anzeigen" : "Mehr anzeigen"}
+            {expanded ? (lang === "en" ? "Show less" : "Weniger anzeigen") : (lang === "en" ? "Show more" : "Mehr anzeigen")}
           </button>
         )}
       </div>
@@ -303,7 +304,7 @@ export function ReviewsSection() {
             style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
           >
             {reviews.map((review) => (
-              <ReviewCard key={review.name} review={review} />
+              <ReviewCard key={review.name} review={review} lang={lang} />
             ))}
           </div>
         </div>
