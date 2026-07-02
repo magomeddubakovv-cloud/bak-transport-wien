@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useState, FormEvent } from "react";
 import { useLang } from "@/contexts/LanguageContext";
@@ -49,8 +49,8 @@ function Input({ className = "", style, ...props }: InputProps) {
         ...style,
       }}
       onFocus={(e) => {
-        e.currentTarget.style.borderColor = "#1B3A6B";
-        e.currentTarget.style.boxShadow = "0 0 0 1px #1B3A6B";
+        e.currentTarget.style.borderColor = "#C2410C";
+        e.currentTarget.style.boxShadow = "0 0 0 1px #C2410C";
         props.onFocus?.(e);
       }}
       onBlur={(e) => {
@@ -78,8 +78,8 @@ function Select({ className = "", style, children, ...props }: SelectProps) {
         ...style,
       }}
       onFocus={(e) => {
-        e.currentTarget.style.borderColor = "#1B3A6B";
-        e.currentTarget.style.boxShadow = "0 0 0 1px #1B3A6B";
+        e.currentTarget.style.borderColor = "#C2410C";
+        e.currentTarget.style.boxShadow = "0 0 0 1px #C2410C";
         props.onFocus?.(e);
       }}
       onBlur={(e) => {
@@ -113,7 +113,7 @@ function AddressBlock({ prefix, label, fields, onChange, t }: AddressBlockProps)
 
   return (
     <div className="col-span-2 space-y-4">
-      <p className="font-bold" style={{ color: "#1B3A6B", fontSize: "16px" }}>
+      <p className="font-bold" style={{ color: "#C2410C", fontSize: "16px" }}>
         {label}
       </p>
 
@@ -175,7 +175,7 @@ function AddressBlock({ prefix, label, fields, onChange, t }: AddressBlockProps)
                 value={val}
                 checked={fields.aufzug === val}
                 onChange={() => onChange({ ...fields, aufzug: val })}
-                className="accent-[#1B3A6B]"
+                className="accent-[#C2410C]"
               />
               {val === "ja" ? t.reqform_ja : t.reqform_nein}
             </label>
@@ -254,7 +254,7 @@ export function RequestFormSection() {
   ];
 
   return (
-    <section className="py-20" style={{ backgroundColor: "#1B3A6B" }}>
+    <section className="py-20" style={{ backgroundColor: "#C2410C" }}>
       <div className="max-w-3xl mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-10">
@@ -302,7 +302,7 @@ export function RequestFormSection() {
 
             {/* Details */}
             <div className="space-y-4">
-              <p className="font-bold" style={{ color: "#1B3A6B", fontSize: "16px" }}>
+              <p className="font-bold" style={{ color: "#C2410C", fontSize: "16px" }}>
                 {t.reqform_details}
               </p>
 
@@ -349,7 +349,7 @@ export function RequestFormSection() {
                         style={{
                           fontSize: "16px",
                           border: "1px solid #E2E8F0",
-                          backgroundColor: selected ? "#1B3A6B" : "#FFFFFF",
+                          backgroundColor: selected ? "#C2410C" : "#FFFFFF",
                           color: selected ? "#FFFFFF" : "#374151",
                         }}
                       >
@@ -371,8 +371,8 @@ export function RequestFormSection() {
                   className="w-full rounded-md px-4 py-2.5 outline-none transition-all resize-none"
                   style={{ border: "1px solid #E2E8F0", fontSize: "16px" }}
                   onFocus={(e) => {
-                    e.currentTarget.style.borderColor = "#1B3A6B";
-                    e.currentTarget.style.boxShadow = "0 0 0 1px #1B3A6B";
+                    e.currentTarget.style.borderColor = "#C2410C";
+                    e.currentTarget.style.boxShadow = "0 0 0 1px #C2410C";
                   }}
                   onBlur={(e) => {
                     e.currentTarget.style.borderColor = "#E2E8F0";
@@ -385,7 +385,7 @@ export function RequestFormSection() {
 
             {/* Kontaktdaten */}
             <div className="space-y-4">
-              <p className="font-bold" style={{ color: "#1B3A6B", fontSize: "16px" }}>
+              <p className="font-bold" style={{ color: "#C2410C", fontSize: "16px" }}>
                 {t.reqform_kontakt}
               </p>
 
@@ -431,7 +431,7 @@ export function RequestFormSection() {
                 type="checkbox"
                 checked={datenschutz}
                 onChange={(e) => setDatenschutz(e.target.checked)}
-                className="mt-0.5 accent-[#1B3A6B] shrink-0"
+                className="mt-0.5 accent-[#C2410C] shrink-0"
                 style={{ width: "16px", height: "16px" }}
               />
               <label
@@ -442,7 +442,7 @@ export function RequestFormSection() {
                 {t.reqform_datenschutz}{" "}
                 <a
                   href="/datenschutz"
-                  style={{ color: "#1B3A6B", textDecoration: "underline" }}
+                  style={{ color: "#C2410C", textDecoration: "underline" }}
                 >
                   {t.reqform_datenschutz_link}
                 </a>
@@ -456,7 +456,7 @@ export function RequestFormSection() {
               disabled={status === "sending"}
               className="w-full rounded-lg text-white font-bold transition-opacity hover:opacity-90"
               style={{
-                backgroundColor: "#F97316",
+                backgroundColor: "#C2410C",
                 paddingTop: "16px",
                 paddingBottom: "16px",
                 fontSize: "18px",

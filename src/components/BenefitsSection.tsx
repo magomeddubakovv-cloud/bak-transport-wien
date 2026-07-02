@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { Clock, Calendar, BadgeEuro, Shield } from "lucide-react";
 import { useLang } from "@/contexts/LanguageContext";
@@ -34,7 +34,7 @@ export function BenefitsSection() {
           </p>
           <h2
             className="font-extrabold"
-            style={{ color: "#1B3A6B", fontSize: "clamp(26px, 4vw, 36px)" }}
+            style={{ color: "#C2410C", fontSize: "clamp(26px, 4vw, 36px)" }}
           >
             {t.benefits_h2}
           </h2>
@@ -62,7 +62,7 @@ export function BenefitsSection() {
               {card.icon}
               <h3
                 className="font-bold mt-4"
-                style={{ color: "#1B3A6B", fontSize: "20px" }}
+                style={{ color: "#C2410C", fontSize: "20px" }}
               >
                 {card.title}
               </h3>

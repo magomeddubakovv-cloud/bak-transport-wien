@@ -17,7 +17,7 @@ export function AnnouncementBar() {
   return (
     <div
       className="w-full flex items-center justify-between gap-4 px-4 py-2 text-sm"
-      style={{ backgroundColor: "#1E3A5F", color: "#FFFFFF" }}
+      style={{ backgroundColor: "#C2410C", color: "#FFFFFF" }}
     >
       <div className="flex-1 text-center text-xs md:text-sm" style={{ lineHeight: 1.5 }}>
         {text}

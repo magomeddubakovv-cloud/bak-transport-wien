@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useState } from "react";
 import { cn } from "@/lib/utils";
@@ -24,10 +24,10 @@ export function ProcessSection() {
     <section className="bg-white py-20">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-12">
-          <p className="text-[#F97316] text-xs uppercase tracking-widest font-semibold mb-2">
+          <p className="text-[#C2410C] text-xs uppercase tracking-widest font-semibold mb-2">
             {t.process_label}
           </p>
-          <h2 className="text-2xl md:text-[34px] font-extrabold text-[#1B3A6B]">
+          <h2 className="text-2xl md:text-[34px] font-extrabold text-[#C2410C]">
             {t.process_h2}
           </h2>
           <p className="text-[#64748B] mt-3 max-w-2xl mx-auto text-base">
@@ -45,8 +45,8 @@ export function ProcessSection() {
                 className={cn(
                   "flex items-center gap-4 rounded-lg border p-4 text-left transition-colors cursor-pointer",
                   activeIndex === index
-                    ? "bg-[#1B3A6B] border-[#1B3A6B] text-white"
-                    : "bg-white border-[#E2E8F0] text-[#0F172A] hover:border-[#1B3A6B]"
+                    ? "bg-[#C2410C] border-[#C2410C] text-white"
+                    : "bg-white border-[#E2E8F0] text-[#0F172A] hover:border-[#C2410C]"
                 )}
               >
                 <span
@@ -54,7 +54,7 @@ export function ProcessSection() {
                     "flex items-center justify-center w-8 h-8 rounded-full text-lg font-bold shrink-0",
                     activeIndex === index
                       ? "bg-white/20 text-white"
-                      : "bg-[#F8FAFC] text-[#1B3A6B]"
+                      : "bg-[#F8FAFC] text-[#C2410C]"
                   )}
                 >
                   {step.number}
@@ -71,10 +71,10 @@ export function ProcessSection() {
             <p className="text-[#64748B] text-base mb-4">
               {t.process_step} {activeStep.number} {t.process_of} {steps.length}
             </p>
-            <h3 className="text-[24px] font-bold text-[#1B3A6B] mb-3">
+            <h3 className="text-[24px] font-bold text-[#C2410C] mb-3">
               {activeStep.title}
             </h3>
-            <span className="inline-block bg-[#F97316]/10 text-[#F97316] rounded-full px-4 py-1 text-[12px] mb-4">
+            <span className="inline-block bg-[#C2410C]/10 text-[#C2410C] rounded-full px-4 py-1 text-[12px] mb-4">
               {activeStep.duration}
             </span>
             <p className="text-[#374151] text-[16px] leading-[1.8] flex-1">
@@ -86,7 +86,7 @@ export function ProcessSection() {
               <button
                 onClick={() => setActiveIndex((i) => Math.max(0, i - 1))}
                 disabled={activeIndex === 0}
-                className="border border-[#E2E8F0] text-[#64748B] rounded-lg px-5 py-2 text-sm font-medium hover:border-[#1B3A6B] hover:text-[#1B3A6B] disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+                className="border border-[#E2E8F0] text-[#64748B] rounded-lg px-5 py-2 text-sm font-medium hover:border-[#C2410C] hover:text-[#C2410C] disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
               >
                 {t.process_prev}
               </button>
@@ -95,7 +95,7 @@ export function ProcessSection() {
                   setActiveIndex((i) => Math.min(steps.length - 1, i + 1))
                 }
                 disabled={activeIndex === steps.length - 1}
-                className="border border-[#E2E8F0] text-[#64748B] rounded-lg px-5 py-2 text-sm font-medium hover:border-[#1B3A6B] hover:text-[#1B3A6B] disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+                className="border border-[#E2E8F0] text-[#64748B] rounded-lg px-5 py-2 text-sm font-medium hover:border-[#C2410C] hover:text-[#C2410C] disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
               >
                 {t.process_next}
               </button>

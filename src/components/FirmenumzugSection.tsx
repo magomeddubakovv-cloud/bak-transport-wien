@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import Image from "next/image";
 import { useLang } from "@/contexts/LanguageContext";
@@ -38,7 +38,7 @@ export function FirmenumzugSection() {
           <div className="md:w-[55%] mt-8 md:mt-0">
             <h2
               className="font-extrabold mb-6 text-2xl md:text-[32px] leading-tight"
-              style={{ color: "#1B3A6B" }}
+              style={{ color: "#C2410C" }}
             >
               {t.firmen_h2}
             </h2>
@@ -66,8 +66,8 @@ export function FirmenumzugSection() {
             <div className="mt-8 flex flex-wrap gap-3 items-center">
               <a
                 href="tel:+436764429652"
-                className="inline-flex items-center justify-center rounded-lg border px-5 py-2.5 text-sm font-medium transition-colors hover:bg-[#1B3A6B] hover:text-white"
-                style={{ borderColor: "#1B3A6B", color: "#1B3A6B" }}
+                className="inline-flex items-center justify-center rounded-lg border px-5 py-2.5 text-sm font-medium transition-colors hover:bg-[#C2410C] hover:text-white"
+                style={{ borderColor: "#C2410C", color: "#C2410C" }}
               >
                 {t.firmen_btn_call}
               </a>

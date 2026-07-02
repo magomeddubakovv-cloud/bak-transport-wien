@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import Image from "next/image";
 import { useLang } from "@/contexts/LanguageContext";
@@ -27,7 +27,7 @@ export function QuickFactsSection() {
         {/* Heading */}
         <h2
           className="font-bold text-center mb-6"
-          style={{ color: "#1B3A6B", fontSize: "22px" }}
+          style={{ color: "#C2410C", fontSize: "22px" }}
         >
           {t.quickfacts_h2}
         </h2>

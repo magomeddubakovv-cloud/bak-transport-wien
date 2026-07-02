@@ -56,7 +56,7 @@ const reviews = [
     stars: 5,
   },
   {
-    name: "Elena Müller", initial: "E", color: "#0369A1",
+    name: "Elena Müller", initial: "E", color: "#C2410C",
     time: "Vor 1 Woche", time_en: "1 week ago",
     text: "Küchenmontage top erledigt! Alles passt perfekt, Anschlüsse sitzen, keine Macken. Das Team war auch sehr nett und hat den Bereich danach sauber hinterlassen.",
     text_en: "Kitchen installation done perfectly! Everything fits perfectly, connections are secure, no dents. The team was also very nice and left the area clean afterwards.",
@@ -91,7 +91,7 @@ const reviews = [
     stars: 5,
   },
   {
-    name: "Robert Langer", initial: "R", color: "#1D4ED8",
+    name: "Robert Langer", initial: "R", color: "#B45309",
     time: "Vor 7 Monaten", time_en: "7 months ago",
     text: "Tresor transportiert worden – 400 kg, 3. Stock, kein Lift. Das Team hat das mit Spezialausrüstung einwandfrei gelöst. Sehr professionell, absolut weiterempfehlenswert.",
     text_en: "Safe transported – 400 kg, 3rd floor, no elevator. The team solved this perfectly with special equipment. Very professional, absolutely recommended.",
@@ -119,7 +119,7 @@ const reviews = [
     stars: 5,
   },
   {
-    name: "Florian Mayr", initial: "F", color: "#1E3A5F",
+    name: "Florian Mayr", initial: "F", color: "#C2410C",
     time: "Vor 6 Wochen", time_en: "6 weeks ago",
     text: "Umzug Wien nach Graz mit vollem LKW. Alles kam heil und pünktlich an. Der Preis war fair kalkuliert und blieb auch so. Sehr gute Erfahrung, gerne wieder!",
     text_en: "Move from Vienna to Graz with a full truck. Everything arrived safely and on time. The price was fairly calculated and stayed that way. Very good experience, would do it again!",

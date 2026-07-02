@@ -12,7 +12,7 @@ export function AsciiLogo() {
         fontFamily: "'Courier New', Courier, monospace",
         fontSize: "clamp(10px, 1.6vw, 16px)",
         lineHeight: 1.25,
-        background: "linear-gradient(90deg, #F07D00 0%, #0F2B5B 100%)",
+        background: "linear-gradient(90deg, #F97316 0%, #C2410C 100%)",
         WebkitBackgroundClip: "text",
         WebkitTextFillColor: "transparent",
         backgroundClip: "text",

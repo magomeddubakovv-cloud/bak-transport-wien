@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useLang } from "@/contexts/LanguageContext";
 import { translations } from "@/i18n/translations";
@@ -10,7 +10,7 @@ export function ContactSection() {
   return (
     <section className="bg-white py-16">
       <div className="max-w-6xl mx-auto px-4 text-center">
-        <h2 className="text-[30px] font-extrabold text-[#1B3A6B]">
+        <h2 className="text-[30px] font-extrabold text-[#C2410C]">
           {t.contact_h2}
         </h2>
         <p className="text-[#64748B] mt-3 max-w-lg mx-auto">
@@ -26,13 +26,13 @@ export function ContactSection() {
         <div className="mt-8 flex justify-center gap-4 flex-wrap">
           <a
             href="tel:+436764429652"
-            className="inline-block bg-[#1B3A6B] text-white rounded-lg px-6 py-3 font-semibold text-sm hover:bg-[#162f57] transition-colors"
+            className="inline-block bg-[#C2410C] text-white rounded-lg px-6 py-3 font-semibold text-sm hover:bg-[#9A3412] transition-colors"
           >
             {t.contact_call_btn}
           </a>
           <a
             href="mailto:office@baktransport.at"
-            className="inline-block border border-[#1B3A6B] text-[#1B3A6B] rounded-lg px-6 py-3 font-semibold text-sm hover:bg-[#1B3A6B] hover:text-white transition-colors"
+            className="inline-block border border-[#C2410C] text-[#C2410C] rounded-lg px-6 py-3 font-semibold text-sm hover:bg-[#C2410C] hover:text-white transition-colors"
           >
             {t.contact_email_btn}
           </a>
