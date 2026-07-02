@@ -179,6 +179,24 @@ export function FirmenumzugPageClient() {
               </div>
             ))}
           </div>
+          <div className="mt-12 flex flex-col sm:flex-row gap-4">
+            <a
+              href="tel:+4368110723047"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-semibold text-base"
+              style={{ backgroundColor: "#C2410C", color: "#FFFFFF", textDecoration: "none" }}
+            >
+              <Phone className="w-5 h-5" />
+              {lang === "en" ? "Call now" : "Jetzt anrufen"}
+            </a>
+            <a
+              href="#kontakt"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-semibold text-base"
+              style={{ border: "2px solid #C2410C", color: "#C2410C", textDecoration: "none" }}
+            >
+              <Mail className="w-5 h-5" />
+              {lang === "en" ? "Request a quote" : "Angebot anfordern"}
+            </a>
+          </div>
         </div>
       </section>
 
