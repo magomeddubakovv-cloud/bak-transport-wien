@@ -12,6 +12,7 @@ const LABELS: Record<string, string> = {
   moebelmontage: "Möbelmontage",
   notfallumzug: "Notfallumzug",
   schwerlasttransport: "Schwerlasttransport",
+  entruempelung: "Entrümpelung",
   regionen: "Regionen",
   wien: "Wien",
   deutschland: "Deutschland",
