@@ -1,7 +1,7 @@
-"use client";
+﻿"use client";
 
 import Image from "next/image";
-import { Check, Mail, Phone, Recycle, ShieldCheck, Sparkles, Truck } from "lucide-react";
+import { Check, Mail, Phone } from "lucide-react";
 import { AblaufSection } from "@/components/AblaufSection";
 import { PageLayout } from "@/components/PageLayout";
 import { useLang } from "@/contexts/LanguageContext";
@@ -36,9 +36,9 @@ const copy = {
     ],
     cardHeading: "Typische Entrümpelungen",
     cards: [
-      { icon: Sparkles, title: "Wohnungsentrümpelung", text: "Komplette Wohnungen, einzelne Zimmer oder kurzfristige Räumungen vor Übergabe." },
-      { icon: Truck, title: "Keller & Dachboden", text: "Schwere, sperrige oder lange gelagerte Gegenstände werden sicher getragen und abtransportiert." },
-      { icon: ShieldCheck, title: "Verlassenschaft", text: "Diskrete und respektvolle Räumung mit klarer Absprache und verlässlichem Zeitplan." },
+      { title: "Wohnungsentrümpelung", text: "Komplette Wohnungen, einzelne Zimmer oder kurzfristige Räumungen vor Übergabe." },
+      { title: "Keller & Dachboden", text: "Schwere, sperrige oder lange gelagerte Gegenstände werden sicher getragen und abtransportiert." },
+      { title: "Verlassenschaft", text: "Diskrete und respektvolle Räumung mit klarer Absprache und verlässlichem Zeitplan." },
     ],
     priceNote: "Endpreis nach kostenloser Besichtigung. Entsorgungsaufwand und Volumen werden transparent kalkuliert.",
     prices: [
@@ -90,9 +90,9 @@ const copy = {
     ],
     cardHeading: "Typical clearance jobs",
     cards: [
-      { icon: Sparkles, title: "Apartment clearance", text: "Entire apartments, individual rooms or urgent clearances before handover." },
-      { icon: Truck, title: "Basement & attic", text: "Heavy, bulky or long-stored items are carried and removed safely." },
-      { icon: ShieldCheck, title: "Estate clearance", text: "Discreet and respectful clearance with clear communication and a reliable schedule." },
+      { title: "Apartment clearance", text: "Entire apartments, individual rooms or urgent clearances before handover." },
+      { title: "Basement & attic", text: "Heavy, bulky or long-stored items are carried and removed safely." },
+      { title: "Estate clearance", text: "Discreet and respectful clearance with clear communication and a reliable schedule." },
     ],
     priceNote: "Final price after free inspection. Disposal effort and volume are calculated transparently.",
     prices: [
@@ -141,7 +141,7 @@ export function EntruempelungPageClient() {
             </div>
             <div className="flex flex-col gap-6">
               <div className="relative rounded-2xl overflow-hidden h-48 md:h-72">
-                <Image src="/images/photos/team.jpg" alt="BAK Transport Team bei Entrümpelung und Abtransport" fill sizes="(max-width: 768px) 100vw, 45vw" className="object-cover object-center" />
+                <Image src="/images/photos/entruempelung.png" alt="BAK Transport Entrümpelung und Abtransport in Wien" fill sizes="(max-width: 768px) 100vw, 45vw" className="object-cover object-center" />
               </div>
               <ul className="space-y-4">
                 {t.checklist.map((item) => (
@@ -162,41 +162,33 @@ export function EntruempelungPageClient() {
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 md:mb-12" style={{ color: "#111827" }}>{t.cardHeading}</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {t.cards.map(({ icon: Icon, title, text }) => (
-              <div key={title} className="bg-white rounded-2xl p-8 shadow-sm" style={{ border: "1px solid #E5E7EB" }}>
-                <Icon className="w-9 h-9 mb-5" style={{ color: "#C2410C" }} />
-                <h3 className="text-xl font-semibold mb-3" style={{ color: "#111827" }}>{title}</h3>
-                <p style={{ color: "#6B7280", lineHeight: "1.75" }}>{text}</p>
+            {t.cards.map((card) => (
+              <div key={card.title} className="bg-white rounded-2xl p-8 shadow-sm" style={{ border: "1px solid #E5E7EB" }}>
+                <div className="w-2 h-8 rounded mb-4" style={{ backgroundColor: "#C2410C" }} />
+                <h3 className="text-xl font-semibold mb-3" style={{ color: "#111827" }}>{card.title}</h3>
+                <p style={{ color: "#6B7280", lineHeight: "1.75" }}>{card.text}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="py-12 md:py-20 bg-white">
+      <section className="py-12 md:py-20" style={{ backgroundColor: "#F9FAFB" }}>
         <div className="max-w-7xl mx-auto px-4 md:px-6">
-          <div className="grid grid-cols-1 md:grid-cols-[0.8fr_1.2fr] gap-10 items-center">
-            <div>
-              <div className="w-12 h-12 rounded-2xl flex items-center justify-center mb-5" style={{ backgroundColor: "#FFF7ED", color: "#C2410C" }}>
-                <Recycle className="w-7 h-7" />
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-4 text-gray-900">{t.ecoHeading}</h2>
+          <p className="text-center mb-12 max-w-3xl mx-auto" style={{ color: "#6B7280", lineHeight: "1.75" }}>{t.ecoText}</p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {t.prices.map((p) => (
+              <div key={p.label} className="rounded-2xl p-8 text-center" style={{ backgroundColor: "#FFFFFF", border: "1px solid #E5E7EB" }}>
+                <div className="text-lg font-semibold mb-2 text-gray-900">{p.label}</div>
+                <div className="text-3xl md:text-4xl font-bold mb-3" style={{ color: "#C2410C" }}>{p.price}</div>
+                <div style={{ color: "#6B7280" }}>{p.detail}</div>
               </div>
-              <h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: "#111827" }}>{t.ecoHeading}</h2>
-              <p style={{ color: "#6B7280", lineHeight: "1.75" }}>{t.ecoText}</p>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
-              {t.prices.map((p) => (
-                <div key={p.label} className="rounded-2xl p-6 text-center" style={{ backgroundColor: "#F9FAFB", border: "1px solid #E5E7EB" }}>
-                  <div className="text-base font-semibold mb-2 text-gray-900">{p.label}</div>
-                  <div className="text-2xl md:text-3xl font-bold mb-3" style={{ color: "#C2410C" }}>{p.price}</div>
-                  <div className="text-sm" style={{ color: "#6B7280" }}>{p.detail}</div>
-                </div>
-              ))}
-            </div>
+            ))}
           </div>
           <p className="text-center mt-8" style={{ color: "#6B7280" }}>{t.priceNote}</p>
         </div>
       </section>
-
       <section className="py-12 md:py-20" style={{ backgroundColor: "#F9FAFB" }}>
         <div className="max-w-4xl mx-auto px-4 md:px-6">
           <h2 className="text-2xl md:text-3xl font-bold mb-10 md:mb-12" style={{ color: "#111827" }}>{t.faqHeading}</h2>
@@ -238,3 +230,6 @@ export function EntruempelungPageClient() {
     </PageLayout>
   );
 }
+
+
+
