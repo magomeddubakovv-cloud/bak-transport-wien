@@ -29,6 +29,7 @@ export function Navbar() {
         { label: t.nav_kuechenmontage, href: "/leistungen/kuechenmontage" },
         { label: t.nav_schwerlasttransport, href: "/leistungen/schwerlasttransport" },
         { label: t.nav_notfallumzug, href: "/leistungen/notfallumzug" },
+        { label: t.nav_entruempelung, href: "/leistungen/entruempelung" },
       ],
     },
     {

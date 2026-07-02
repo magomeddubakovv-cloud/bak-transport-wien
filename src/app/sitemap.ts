@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/leistungen/kuechenmontage`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/leistungen/schwerlasttransport`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/leistungen/notfallumzug`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${base}/leistungen/entruempelung`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     // Regionen — high priority (local SEO pages)
     { url: `${base}/regionen/wien`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${base}/regionen/niederoesterreich`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },

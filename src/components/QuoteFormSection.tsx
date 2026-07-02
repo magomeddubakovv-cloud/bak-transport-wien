@@ -27,7 +27,7 @@ export function QuoteFormSection() {
   const { lang } = useLang();
   const t = translations[lang];
 
-  const MOVE_TYPES = [t.move_type1, t.move_type2, t.move_type3, t.move_type4];
+  const MOVE_TYPES = [t.move_type1, t.move_type2, t.move_type3, t.move_type4, t.move_type5];
   const APARTMENT_SIZES = [t.apt_size1, t.apt_size2, t.apt_size3];
 
   const [form, setForm] = useState<FormState>({
