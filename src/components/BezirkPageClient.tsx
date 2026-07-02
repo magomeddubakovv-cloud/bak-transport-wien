@@ -95,35 +95,21 @@ export function BezirkPageClient({ bezirk }: Props) {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-            {PRICING.map((p, i) => (
+            {PRICING.map((p) => (
               <div key={p.label}
-                className="rounded-2xl p-8 text-center relative"
-                style={{
-                  backgroundColor: i === 1 ? "#1E3A5F" : "#FFFFFF",
-                  border: i === 1 ? "none" : "1px solid #E5E7EB",
-                  color: i === 1 ? "#FFFFFF" : "#111827",
-                }}>
-                {i === 1 && (
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full text-xs font-bold text-white"
-                    style={{ backgroundColor: "#C2410C" }}>
-                    Beliebteste Wahl
-                  </div>
-                )}
-                <div className="text-sm font-semibold mb-1" style={{ color: i === 1 ? "#FED7AA" : "#C2410C" }}>
+                className="rounded-2xl p-8 text-center"
+                style={{ backgroundColor: "#FFFFFF", border: "1px solid #E5E7EB" }}>
+                <div className="text-sm font-semibold mb-1" style={{ color: "#C2410C" }}>
                   {p.label}
                 </div>
-                <div className="text-base mb-1" style={{ color: i === 1 ? "#CBD5E1" : "#6B7280" }}>{p.size}</div>
-                <div className="text-3xl md:text-4xl font-black my-4" style={{ color: i === 1 ? "#FED7AA" : "#C2410C" }}>
+                <div className="text-base mb-1" style={{ color: "#6B7280" }}>{p.size}</div>
+                <div className="text-3xl md:text-4xl font-black my-4" style={{ color: "#C2410C" }}>
                   {p.price}
                 </div>
-                <div className="text-sm" style={{ color: i === 1 ? "#94A3B8" : "#6B7280" }}>{p.detail}</div>
+                <div className="text-sm mb-6" style={{ color: "#6B7280" }}>{p.detail}</div>
                 <a href="/anfrage"
-                  className="mt-6 block w-full py-3 rounded-xl font-semibold text-sm text-center transition-opacity hover:opacity-90"
-                  style={{
-                    backgroundColor: i === 1 ? "#C2410C" : "#1E3A5F",
-                    color: "#FFFFFF",
-                    textDecoration: "none",
-                  }}>
+                  className="block w-full py-3 rounded-xl font-semibold text-sm text-center transition-opacity hover:opacity-90"
+                  style={{ backgroundColor: "#C2410C", color: "#FFFFFF", textDecoration: "none" }}>
                   Jetzt Fixpreis anfragen
                 </a>
               </div>
@@ -154,12 +140,9 @@ export function BezirkPageClient({ bezirk }: Props) {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Fixpreis */}
-            <div className="rounded-2xl p-8" style={{ backgroundColor: "#F0FDF4", border: "2px solid #86EFAC" }}>
-              <div className="flex items-center gap-3 mb-5">
-                <div className="w-8 h-8 rounded-full flex items-center justify-center text-white font-bold text-sm"
-                  style={{ backgroundColor: "#16A34A" }}>✓</div>
-                <h3 className="text-lg font-bold" style={{ color: "#111827" }}>Fixpreis (BAK Transport)</h3>
-              </div>
+            <div className="rounded-2xl p-8 bg-white" style={{ border: "1px solid #E5E7EB" }}>
+              <div className="w-2 h-8 rounded mb-4" style={{ backgroundColor: "#C2410C" }} />
+              <h3 className="text-lg font-bold mb-5" style={{ color: "#111827" }}>Fixpreis (BAK Transport)</h3>
               <ul className="space-y-3">
                 {[
                   "Sie wissen vorher genau, was Sie zahlen",
@@ -168,8 +151,8 @@ export function BezirkPageClient({ bezirk }: Props) {
                   "Keine bösen Überraschungen nach dem Umzug",
                   "Ideal für Budgetplanung",
                 ].map(item => (
-                  <li key={item} className="flex items-start gap-2 text-sm" style={{ color: "#374151" }}>
-                    <Check size={14} className="mt-0.5 shrink-0" style={{ color: "#16A34A" }} />
+                  <li key={item} className="flex items-start gap-2 text-sm" style={{ color: "#6B7280" }}>
+                    <Check size={14} className="mt-0.5 shrink-0" style={{ color: "#C2410C" }} />
                     {item}
                   </li>
                 ))}
@@ -177,12 +160,9 @@ export function BezirkPageClient({ bezirk }: Props) {
             </div>
 
             {/* Stundenlohn */}
-            <div className="rounded-2xl p-8" style={{ backgroundColor: "#FFF7ED", border: "2px solid #FED7AA" }}>
-              <div className="flex items-center gap-3 mb-5">
-                <div className="w-8 h-8 rounded-full flex items-center justify-center text-white font-bold text-sm"
-                  style={{ backgroundColor: "#D97706" }}>!</div>
-                <h3 className="text-lg font-bold" style={{ color: "#111827" }}>Stundenlohn (Vorsicht)</h3>
-              </div>
+            <div className="rounded-2xl p-8" style={{ backgroundColor: "#F9FAFB", border: "1px solid #E5E7EB" }}>
+              <div className="w-2 h-8 rounded mb-4" style={{ backgroundColor: "#9CA3AF" }} />
+              <h3 className="text-lg font-bold mb-5" style={{ color: "#111827" }}>Stundenlohn (Vorsicht)</h3>
               <ul className="space-y-3">
                 {[
                   "Endrechnung oft deutlich höher als erwartet",
@@ -191,8 +171,8 @@ export function BezirkPageClient({ bezirk }: Props) {
                   "Schwer planbar für Budget",
                   "Häufig Streit über geleistete Stunden",
                 ].map(item => (
-                  <li key={item} className="flex items-start gap-2 text-sm" style={{ color: "#374151" }}>
-                    <span className="mt-0.5 shrink-0 font-bold" style={{ color: "#D97706" }}>✗</span>
+                  <li key={item} className="flex items-start gap-2 text-sm" style={{ color: "#6B7280" }}>
+                    <span className="mt-0.5 shrink-0 font-bold" style={{ color: "#9CA3AF" }}>✗</span>
                     {item}
                   </li>
                 ))}
