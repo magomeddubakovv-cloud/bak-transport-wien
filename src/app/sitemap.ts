@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { WIENER_BEZIRKE } from "@/data/wiener-bezirke";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://www.baktransport.at";
@@ -20,6 +21,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/regionen/deutschland`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     { url: `${base}/regionen/schweiz`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     { url: `${base}/regionen/grenzueberschreitend`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
+    // Wiener Bezirke — local SEO pages
+    ...WIENER_BEZIRKE.map(b => ({
+      url: `${base}/regionen/wien/${b.slug}`,
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    })),
     // Unternehmen
     { url: `${base}/ueber-uns`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     { url: `${base}/kontakt`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
