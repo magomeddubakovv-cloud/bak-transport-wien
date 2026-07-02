@@ -83,10 +83,10 @@ export function Navbar() {
         boxShadow: scrolled ? "0 4px 16px rgba(0,0,0,0.1)" : "0 1px 0 #E5E7EB",
       }}
     >
-      <div ref={navRef} className="max-w-7xl mx-auto pl-3 pr-2 md:px-6 h-full flex items-center justify-between">
+      <div ref={navRef} className="max-w-7xl mx-auto pl-2 pr-2 sm:pl-3 md:px-6 h-full flex items-center justify-between gap-2">
         {/* Logo */}
         <Link href="/" className="shrink-0 flex items-center" style={{ lineHeight: 0 }}>
-          <Logo variant="dark" size="sm" />
+          <Logo variant="dark" size="sm" className="w-[124px] sm:w-[150px] md:w-[160px] h-auto" />
         </Link>
 
         {/* Desktop nav with dropdowns */}
@@ -127,12 +127,12 @@ export function Navbar() {
         </nav>
 
         {/* Right side */}
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-1.5 sm:gap-2">
           <LanguageSwitcher />
           {/* Phone button — square on mobile, full width on desktop */}
           <a
             href="tel:+4368110723047"
-            className="flex items-center justify-center rounded-md transition-colors duration-150 hover:bg-[#C2410C] w-[44px] h-[44px] md:w-auto md:h-auto md:px-3 md:py-2 md:gap-2"
+            className="flex items-center justify-center rounded-md transition-colors duration-150 hover:bg-[#C2410C] w-[40px] h-[40px] sm:w-[44px] sm:h-[44px] md:w-auto md:h-auto md:px-3 md:py-2 md:gap-2"
             style={{ backgroundColor: "#C2410C", color: "#FFFFFF", fontWeight: 700, textDecoration: "none", flexShrink: 0 }}
             aria-label={lang === "en" ? "Call Us" : "Anrufen"}
           >
@@ -145,7 +145,7 @@ export function Navbar() {
             href="https://wa.me/4368110723047"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center rounded-md transition-colors duration-150 hover:bg-[#16a34a] w-[44px] h-[44px] md:w-auto md:h-auto md:px-3 md:py-2 md:gap-2"
+            className="flex items-center justify-center rounded-md transition-colors duration-150 hover:bg-[#16a34a] w-[40px] h-[40px] sm:w-[44px] sm:h-[44px] md:w-auto md:h-auto md:px-3 md:py-2 md:gap-2"
             style={{ backgroundColor: "#22C55E", color: "#FFFFFF", fontWeight: 700, textDecoration: "none", flexShrink: 0 }}
             aria-label="WhatsApp"
           >
@@ -157,7 +157,7 @@ export function Navbar() {
 
           {/* Hamburger — mobile only */}
           <button
-            className="md:hidden flex items-center justify-center rounded-md p-2 transition-colors hover:bg-orange-50"
+            className="md:hidden flex items-center justify-center rounded-md p-1.5 sm:p-2 transition-colors hover:bg-orange-50"
             style={{ color: "#374151" }}
             onClick={() => setMenuOpen((v) => !v)}
             aria-label={menuOpen ? "Close menu" : "Open menu"}

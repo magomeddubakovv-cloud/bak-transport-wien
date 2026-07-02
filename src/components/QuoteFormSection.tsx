@@ -69,7 +69,7 @@ export function QuoteFormSection() {
   return (
     <section id="kontakt" className="py-12 md:py-24" style={{ background: "#F9FAFB" }}>
       <div className="max-w-6xl mx-auto px-4 md:px-6">
-        <div className="flex flex-col md:flex-row gap-10 md:gap-16 items-start">
+        <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-start">
           {/* Left column */}
           <div className="w-full md:w-2/5 flex-shrink-0">
             <h2 className="text-2xl md:text-4xl leading-[1.15]" style={{ color: "#111827", fontWeight: 900 }}>
@@ -77,7 +77,7 @@ export function QuoteFormSection() {
             </h2>
             <div className="w-12 h-1 bg-[#C2410C] mt-4" style={{ width: "48px", height: "4px" }} />
 
-            <div className="relative rounded-xl overflow-hidden mt-6 mb-8" style={{ height: "220px" }}>
+            <div className="relative hidden md:block rounded-xl overflow-hidden mt-6 mb-8" style={{ height: "220px" }}>
               <Image src="/images/photos/handshake.jpg" alt="BAK Transport Angebot — Vertrauen und Professionalität" title="BAK Transport Wien — Ihr zuverlässiger Umzugspartner" fill className="object-cover object-center" />
               <div className="absolute inset-0" style={{ background: "rgba(17,24,39,0.3)" }} />
             </div>
@@ -86,7 +86,7 @@ export function QuoteFormSection() {
               {t.form_desc}
             </p>
 
-            <div className="mt-10 space-y-4">
+            <div className="mt-6 md:mt-10 space-y-4">
               <div className="flex items-center gap-3">
                 <Phone size={18} color="#C2410C" />
                 <span style={{ color: "#111827", fontWeight: 600 }}>+43 681 10723047</span>

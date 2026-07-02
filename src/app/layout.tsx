@@ -4,6 +4,7 @@ import "./globals.css";
 import { StructuredData } from "@/components/StructuredData";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import { AnnouncementBar } from "@/components/AnnouncementBar";
+import { MobileActionBar } from "@/components/MobileActionBar";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
 
@@ -150,6 +151,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <LanguageProvider>
           <AnnouncementBar />
           {children}
+          <MobileActionBar />
         </LanguageProvider>
       </body>
     </html>

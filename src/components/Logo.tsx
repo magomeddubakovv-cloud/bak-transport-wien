@@ -3,6 +3,7 @@ import Image from "next/image";
 interface LogoProps {
   variant?: "light" | "dark";
   size?: "sm" | "md" | "lg";
+  className?: string;
 }
 
 const sizes = {
@@ -11,7 +12,7 @@ const sizes = {
   lg: { width: 280, height: 117 },
 };
 
-export function Logo({ variant = "dark", size = "md" }: LogoProps) {
+export function Logo({ variant = "dark", size = "md", className }: LogoProps) {
   const { width, height } = sizes[size];
 
   return (
@@ -20,6 +21,7 @@ export function Logo({ variant = "dark", size = "md" }: LogoProps) {
       alt="BAK Transport Wien"
       width={width}
       height={height}
+      className={className}
       style={{ objectFit: "contain" }}
       priority
     />

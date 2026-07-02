@@ -18,7 +18,7 @@ export function HeroSection() {
 
   return (
     <section
-      className="min-h-screen flex flex-col justify-center"
+      className="min-h-[calc(100svh-88px)] md:min-h-screen flex flex-col justify-center"
       style={{ backgroundColor: "#FFF7ED", position: "relative", overflow: "hidden" }}
     >
       {/* Background photo */}
@@ -42,8 +42,8 @@ export function HeroSection() {
       />
 
       <div className="relative z-10">
-        <div className="max-w-7xl mx-auto px-4 md:px-6 w-full pt-24 pb-28 md:pb-12">
-          <div className="flex flex-col lg:flex-row lg:items-center gap-10 lg:gap-16">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 w-full pt-24 pb-20 md:pb-12">
+          <div className="flex flex-col lg:flex-row lg:items-center gap-8 lg:gap-16">
             {/* Left column */}
             <div className="flex-1 lg:max-w-[60%]">
               <span
@@ -60,7 +60,7 @@ export function HeroSection() {
               </span>
 
               <h1
-                className="mt-4 text-3xl md:text-5xl lg:text-6xl"
+                className="mt-4 text-4xl md:text-5xl lg:text-6xl"
                 style={{ fontWeight: 900, lineHeight: 1.05, letterSpacing: "-1px", color: "#111827" }}
               >
                 BAK Transport.
@@ -116,7 +116,7 @@ export function HeroSection() {
 
             {/* Right column — collage image */}
             <div className="lg:max-w-[38%] w-full">
-              <div className="relative rounded-2xl overflow-hidden h-64 sm:h-80 lg:h-auto lg:aspect-square">
+              <div className="relative rounded-2xl overflow-hidden h-48 sm:h-72 lg:h-auto lg:aspect-square">
                 <Image
                   src="/images/photos/collage2.jpg"
                   alt="BAK Transport Wien — Umzugshelfer bei der Arbeit"
@@ -131,7 +131,7 @@ export function HeroSection() {
 
           {/* Bottom trust bar */}
           <div
-            className="mt-12 pt-8 flex flex-wrap justify-center gap-6 md:gap-12"
+            className="mt-8 md:mt-12 pt-6 md:pt-8 flex flex-wrap justify-center gap-4 md:gap-12"
             style={{ borderTop: "1px solid #FED7AA" }}
           >
             {TRUST_BADGES.map(({ icon: Icon, label }) => (

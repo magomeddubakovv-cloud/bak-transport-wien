@@ -22,7 +22,7 @@ export function AblaufSection({ heading, steps }: AblaufSectionProps) {
           {steps.map((step, i) => (
             <div
               key={i}
-              className="rounded-2xl p-6"
+              className="rounded-2xl p-5 md:p-6"
               style={{ border: "1px solid #E5E7EB", backgroundColor: "#FFFFFF" }}
             >
               <div

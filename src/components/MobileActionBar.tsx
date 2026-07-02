@@ -10,18 +10,18 @@ export function MobileActionBar() {
 
   return (
     <div
-      className="fixed bottom-5 left-4 right-4 z-50 flex md:hidden gap-3"
+      className="fixed bottom-3 left-3 right-3 z-50 flex md:hidden gap-2.5"
       style={{ filter: "drop-shadow(0 8px 24px rgba(0,0,0,0.35))" }}
     >
       <a
         href="tel:+4368110723047"
-        className="flex-1 flex items-center justify-center gap-2 font-bold text-white rounded-2xl"
+        className="flex-1 flex items-center justify-center gap-2 font-bold text-white rounded-xl"
         style={{
           backgroundColor: "#C2410C",
           padding: "15px 0",
-          fontSize: "16px",
+          fontSize: "15px",
           textDecoration: "none",
-          minHeight: "54px",
+          minHeight: "52px",
           letterSpacing: "0.01em",
         }}
       >
@@ -33,13 +33,13 @@ export function MobileActionBar() {
         href="https://wa.me/4368110723047"
         target="_blank"
         rel="noopener noreferrer"
-        className="flex-1 flex items-center justify-center gap-2 font-bold text-white rounded-2xl"
+        className="flex-1 flex items-center justify-center gap-2 font-bold text-white rounded-xl"
         style={{
           backgroundColor: "#22C55E",
           padding: "15px 0",
-          fontSize: "16px",
+          fontSize: "15px",
           textDecoration: "none",
-          minHeight: "54px",
+          minHeight: "52px",
           letterSpacing: "0.01em",
         }}
       >

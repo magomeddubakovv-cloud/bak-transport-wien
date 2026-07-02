@@ -178,7 +178,7 @@ function ReviewCard({ review, lang }: { review: typeof reviews[0]; lang: string 
     <div
       className="flex-shrink-0 flex flex-col justify-between rounded-2xl p-5 bg-white"
       style={{
-        width: "300px",
+        width: "min(300px, calc(100vw - 32px))",
         minHeight: "200px",
         border: "1px solid #E5E7EB",
         boxShadow: "0 2px 12px rgba(0,0,0,0.07)",
@@ -239,7 +239,7 @@ export function ReviewsSection() {
     <section className="py-12 md:py-20" style={{ backgroundColor: "#F9FAFB" }}>
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         {/* Heading */}
-        <div className="flex items-center justify-between mb-8">
+        <div className="flex items-start md:items-center justify-between mb-8 gap-4">
           <div>
             <p className="text-xs uppercase tracking-widest font-bold mb-1" style={{ color: "#C2410C" }}>
               {t.reviews_label}
