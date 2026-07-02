@@ -15,33 +15,33 @@ export function PageLayout({ children, title, subtitle, label }: PageLayoutProps
       <Navbar />
       <main className="pt-[88px]">
         {/* Page Hero */}
-        <section style={{ backgroundColor: "#F9FAFB" }} className="py-12 md:py-20">
+        <section style={{ backgroundColor: "#F9FAFB" }} className="py-8 md:py-20">
           <div className="max-w-7xl mx-auto px-4 md:px-6">
             <Breadcrumb />
             {label && (
               <p
-                className="text-xs uppercase tracking-[4px] font-bold mb-3"
+                className="text-[11px] md:text-xs uppercase tracking-[3px] md:tracking-[4px] font-bold mb-3"
                 style={{ color: "#C2410C" }}
               >
                 {label}
               </p>
             )}
             <h1
-              className="font-black leading-tight text-2xl md:text-4xl lg:text-5xl"
+              className="font-black leading-tight text-3xl md:text-4xl lg:text-5xl"
               style={{ color: "#111827" }}
             >
               {title}
             </h1>
             {subtitle && (
               <p
-                className="mt-4 text-base md:text-lg max-w-2xl"
+                className="mt-3 md:mt-4 text-base md:text-lg max-w-2xl"
                 style={{ color: "#6B7280", lineHeight: 1.7 }}
               >
                 {subtitle}
               </p>
             )}
             <div
-              className="mt-6"
+              className="mt-5 md:mt-6"
               style={{
                 width: "48px",
                 height: "4px",

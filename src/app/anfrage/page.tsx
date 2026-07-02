@@ -21,11 +21,11 @@ const breadcrumbSchema = {
 };
 
 const TRUST = [
-  "Kostenlos & unverbindlich",
-  "Antwort in 60 Minuten",
-  "Fixpreis — keine versteckten Kosten",
+  "Kostenlos",
+  "60 Min Antwort",
+  "Fixpreis",
   "Vollversichert",
-  "Über 1.000 erfolgreiche Umzüge",
+  "1.000+ Umzüge",
 ];
 
 export default function AnfragePage() {
@@ -35,22 +35,22 @@ export default function AnfragePage() {
       <Navbar />
       <main className="pt-[88px]">
         {/* Hero Banner */}
-        <section style={{ backgroundColor: "#C2410C" }} className="py-10 md:py-14">
+        <section style={{ backgroundColor: "#C2410C" }} className="py-8 md:py-14">
           <div className="max-w-7xl mx-auto px-4 md:px-6 text-center">
-            <p className="text-xs uppercase tracking-[4px] font-bold mb-3" style={{ color: "#FED7AA" }}>
+            <p className="text-[11px] md:text-xs uppercase tracking-[3px] md:tracking-[4px] font-bold mb-3" style={{ color: "#FED7AA" }}>
               Kostenloses Angebot
             </p>
-            <h1 className="text-3xl md:text-5xl font-black text-white mb-4 leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-4 leading-tight">
               Ihr persönliches Fixpreis-Angebot
             </h1>
-            <p className="text-base md:text-lg mb-8 max-w-xl mx-auto" style={{ color: "#FFEDD5" }}>
+            <p className="text-base md:text-lg mb-6 md:mb-8 max-w-xl mx-auto" style={{ color: "#FFEDD5" }}>
               Formular ausfüllen — wir melden uns innerhalb von <strong style={{ color: "#FED7AA" }}>60 Minuten</strong> mit Ihrem Angebot.
             </p>
-            <div className="flex flex-wrap justify-center gap-3">
+            <div className="grid grid-cols-2 sm:flex sm:flex-wrap justify-center gap-2.5 sm:gap-3 max-w-xl mx-auto">
               {TRUST.map(item => (
-                <div key={item} className="flex items-center gap-2 rounded-full px-4 py-1.5 text-sm font-medium"
+                <div key={item} className="flex items-center justify-center gap-1.5 rounded-xl px-3 py-2 text-[13px] sm:text-sm font-semibold text-center"
                   style={{ backgroundColor: "rgba(255,255,255,0.1)", color: "#FFEDD5" }}>
-                  <Check size={13} style={{ color: "#FED7AA" }} />
+                  <Check size={13} className="shrink-0" style={{ color: "#FED7AA" }} />
                   {item}
                 </div>
               ))}
@@ -62,22 +62,22 @@ export default function AnfragePage() {
         <QuoteFormSection />
 
         {/* So geht es weiter */}
-        <section className="py-12 md:py-16" style={{ backgroundColor: "#C2410C" }}>
+        <section className="py-10 md:py-16" style={{ backgroundColor: "#C2410C" }}>
           <div className="max-w-4xl mx-auto px-4 md:px-6 text-center">
-            <h2 className="text-2xl md:text-3xl font-bold text-white mb-10">So geht es weiter</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-6 md:mb-10">So geht es weiter</h2>
+            <div className="grid grid-cols-3 gap-3 sm:gap-8">
               {[
                 { step: "1", title: "Anfrage senden", text: "Füllen Sie das Formular aus — dauert nur 2 Minuten." },
                 { step: "2", title: "Wir melden uns", text: "Innerhalb von 60 Minuten erhalten Sie Ihr persönliches Fixpreis-Angebot." },
                 { step: "3", title: "Umzug starten", text: "Nach Ihrer Bestätigung kümmern wir uns um alles weitere." },
               ].map(({ step, title, text }) => (
-                <div key={step} className="flex flex-col items-center">
-                  <div className="w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-lg mb-4"
-                    style={{ backgroundColor: "#C2410C" }}>
+                <div key={step} className="flex flex-col items-center rounded-2xl px-2 py-4 sm:p-0">
+                  <div className="w-9 h-9 sm:w-12 sm:h-12 rounded-full flex items-center justify-center text-white font-bold text-base sm:text-lg mb-3 sm:mb-4"
+                    style={{ backgroundColor: "#FFFFFF", color: "#C2410C" }}>
                     {step}
                   </div>
-                  <h3 className="font-bold text-white mb-2">{title}</h3>
-                  <p className="text-sm" style={{ color: "#FED7AA" }}>{text}</p>
+                  <h3 className="font-bold text-white text-sm sm:text-base mb-1 sm:mb-2 leading-tight">{title}</h3>
+                  <p className="hidden sm:block text-sm" style={{ color: "#FED7AA" }}>{text}</p>
                 </div>
               ))}
             </div>

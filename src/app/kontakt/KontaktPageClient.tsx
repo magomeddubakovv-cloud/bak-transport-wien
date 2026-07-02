@@ -32,9 +32,9 @@ export function KontaktPageClient() {
       <section className="py-12 md:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 md:mb-12" style={{ color: "#111827" }}>{t.kontakt_how_h2}</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 min-[520px]:grid-cols-3 gap-4 md:gap-8">
             {cards.map((card) => (
-              <div key={card.title} className="bg-white rounded-2xl p-8 shadow-sm" style={{ border: "1px solid #E5E7EB" }}>
+              <div key={card.title} className="bg-white rounded-2xl p-5 md:p-8 shadow-sm" style={{ border: "1px solid #E5E7EB" }}>
                 <div className="w-2 h-8 rounded mb-4" style={{ backgroundColor: "#C2410C" }} />
                 <h3 className="text-xl font-semibold mb-3" style={{ color: "#111827" }}>{card.title}</h3>
                 <p style={{ color: "#6B7280", lineHeight: "1.75" }}>{card.text}</p>
@@ -59,9 +59,9 @@ export function KontaktPageClient() {
       <section className="py-12 md:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 md:mb-12" style={{ color: "#111827" }}>{t.kontakt_reach_h2}</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 min-[520px]:grid-cols-3 gap-4 md:gap-8">
             {contacts.map((c) => (
-              <div key={c.title} className="rounded-2xl p-8 text-center" style={{ backgroundColor: "#F9FAFB", border: "1px solid #E5E7EB" }}>
+              <div key={c.title} className="rounded-2xl p-5 md:p-8 text-center" style={{ backgroundColor: "#F9FAFB", border: "1px solid #E5E7EB" }}>
                 <div className="text-4xl mb-4">{c.icon}</div>
                 <h3 className="text-lg font-bold mb-2" style={{ color: "#111827" }}>{c.title}</h3>
                 {c.href ? (
@@ -79,9 +79,9 @@ export function KontaktPageClient() {
         <div className="max-w-7xl mx-auto px-4 md:px-6 text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">{t.kontakt_cta_h2}</h2>
           <p className="mb-8 text-white opacity-90">{t.kontakt_cta_desc}</p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="grid grid-cols-2 sm:flex sm:flex-row gap-3 sm:gap-4 justify-center">
             <a href="mailto:office@baktransport.at" className="inline-block px-8 py-4 rounded-xl font-semibold text-base" style={{ backgroundColor: "#FFFFFF", color: "#C2410C" }}>{t.kontakt_cta_email_btn}</a>
-            <a href="tel:+4368110723047" className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-semibold text-base w-full sm:w-auto" style={{ border: "2px solid #FFFFFF", color: "#FFFFFF" }}><Phone className="w-5 h-5" />{t.kontakt_cta_call_btn}</a>
+            <a href="tel:+4368110723047" className="inline-flex items-center justify-center gap-2 px-4 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold text-sm sm:text-base w-full sm:w-auto" style={{ border: "2px solid #FFFFFF", color: "#FFFFFF" }}><Phone className="w-5 h-5" />{t.kontakt_cta_call_btn}</a>
           </div>
         </div>
       </section>

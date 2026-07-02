@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import Image from "next/image";
 import { Check, Mail, Phone } from "lucide-react";
@@ -130,24 +130,24 @@ export function EntruempelungPageClient() {
 
   return (
     <PageLayout label={t.label} title={t.title} subtitle={t.subtitle}>
-      <section className="py-12 md:py-20 bg-white">
+      <section className="py-10 md:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 md:px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-12 items-start">
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: "#111827" }}>{t.h2}</h2>
               <p className="mb-4" style={{ color: "#6B7280", lineHeight: "1.75" }}>{t.p1}</p>
               <p className="mb-4" style={{ color: "#6B7280", lineHeight: "1.75" }}>{t.p2}</p>
               <p style={{ color: "#6B7280", lineHeight: "1.75" }}>{t.p3}</p>
             </div>
-            <div className="flex flex-col gap-6">
-              <div className="relative rounded-2xl overflow-hidden h-48 md:h-72">
+            <div className="flex flex-col gap-4 md:gap-6">
+              <div className="relative rounded-2xl overflow-hidden h-44 md:h-72">
                 <Image src="/images/photos/entruempelung.png" alt="BAK Transport Entrümpelung und Abtransport in Wien" fill sizes="(max-width: 768px) 100vw, 45vw" className="object-cover object-center" />
               </div>
-              <ul className="space-y-4">
+              <ul className="grid grid-cols-2 gap-3 md:block md:space-y-4">
                 {t.checklist.map((item) => (
-                  <li key={item} className="flex items-center gap-3">
-                    <Check className="w-5 h-5 shrink-0" style={{ color: "#C2410C" }} />
-                    <span style={{ color: "#111827" }}>{item}</span>
+                  <li key={item} className="flex items-start gap-2.5 md:gap-3">
+                    <Check className="w-4 h-4 md:w-5 md:h-5 shrink-0 mt-0.5" style={{ color: "#C2410C" }} />
+                    <span className="text-sm md:text-base leading-snug" style={{ color: "#111827" }}>{item}</span>
                   </li>
                 ))}
               </ul>
@@ -161,9 +161,9 @@ export function EntruempelungPageClient() {
       <section className="py-12 md:py-20" style={{ backgroundColor: "#F9FAFB" }}>
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 md:mb-12" style={{ color: "#111827" }}>{t.cardHeading}</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-8">
             {t.cards.map((card) => (
-              <div key={card.title} className="bg-white rounded-2xl p-8 shadow-sm" style={{ border: "1px solid #E5E7EB" }}>
+              <div key={card.title} className="bg-white rounded-2xl p-5 md:p-8 shadow-sm" style={{ border: "1px solid #E5E7EB" }}>
                 <div className="w-2 h-8 rounded mb-4" style={{ backgroundColor: "#C2410C" }} />
                 <h3 className="text-xl font-semibold mb-3" style={{ color: "#111827" }}>{card.title}</h3>
                 <p style={{ color: "#6B7280", lineHeight: "1.75" }}>{card.text}</p>
@@ -177,9 +177,9 @@ export function EntruempelungPageClient() {
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-4 text-gray-900">{t.ecoHeading}</h2>
           <p className="text-center mb-12 max-w-3xl mx-auto" style={{ color: "#6B7280", lineHeight: "1.75" }}>{t.ecoText}</p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-8">
             {t.prices.map((p) => (
-              <div key={p.label} className="rounded-2xl p-8 text-center" style={{ backgroundColor: "#FFFFFF", border: "1px solid #E5E7EB" }}>
+              <div key={p.label} className="rounded-2xl p-5 md:p-8 text-center" style={{ backgroundColor: "#FFFFFF", border: "1px solid #E5E7EB" }}>
                 <div className="text-lg font-semibold mb-2 text-gray-900">{p.label}</div>
                 <div className="text-3xl md:text-4xl font-bold mb-3" style={{ color: "#C2410C" }}>{p.price}</div>
                 <div style={{ color: "#6B7280" }}>{p.detail}</div>
@@ -221,9 +221,9 @@ export function EntruempelungPageClient() {
         <div className="max-w-7xl mx-auto px-4 md:px-6 text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">{t.ctaHeading}</h2>
           <p className="mb-8 text-white opacity-90">{t.ctaDesc}</p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/anfrage" className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-semibold text-base w-full sm:w-auto" style={{ backgroundColor: "#FFFFFF", color: "#C2410C" }}><Mail className="w-5 h-5" />{t.quote}</a>
-            <a href="tel:+4368110723047" className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-semibold text-base w-full sm:w-auto" style={{ border: "2px solid #FFFFFF", color: "#FFFFFF" }}><Phone className="w-5 h-5" />{t.call}</a>
+          <div className="grid grid-cols-2 sm:flex sm:flex-row gap-3 sm:gap-4 justify-center">
+            <a href="/anfrage" className="inline-flex items-center justify-center gap-2 px-4 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold text-sm sm:text-base w-full sm:w-auto" style={{ backgroundColor: "#FFFFFF", color: "#C2410C" }}><Mail className="w-5 h-5" />{t.quote}</a>
+            <a href="tel:+4368110723047" className="inline-flex items-center justify-center gap-2 px-4 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold text-sm sm:text-base w-full sm:w-auto" style={{ border: "2px solid #FFFFFF", color: "#FFFFFF" }}><Phone className="w-5 h-5" />{t.call}</a>
           </div>
         </div>
       </section>

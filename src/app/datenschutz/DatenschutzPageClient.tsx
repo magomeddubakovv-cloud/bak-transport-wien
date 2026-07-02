@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { PageLayout } from "@/components/PageLayout";
 import { useLang } from "@/contexts/LanguageContext";
