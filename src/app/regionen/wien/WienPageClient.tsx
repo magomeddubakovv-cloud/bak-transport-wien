@@ -31,11 +31,29 @@ export function WienPageClient() {
   ];
 
   const bezirke = [
-    "1. Innere Stadt", "2. Leopoldstadt", "3. Landstraße", "4. Wieden", "5. Margareten",
-    "6. Mariahilf", "7. Neubau", "8. Josefstadt", "9. Alsergrund", "10. Favoriten",
-    "11. Simmering", "12. Meidling", "13. Hietzing", "14. Penzing", "15. Rudolfsheim-Fünfhaus",
-    "16. Ottakring", "17. Hernals", "18. Währing", "19. Döbling", "20. Brigittenau",
-    "21. Floridsdorf", "22. Donaustadt", "23. Liesing",
+    { label: "1. Innere Stadt", slug: "innere-stadt" },
+    { label: "2. Leopoldstadt", slug: "leopoldstadt" },
+    { label: "3. Landstraße", slug: "landstrasse" },
+    { label: "4. Wieden", slug: "wieden" },
+    { label: "5. Margareten", slug: "margareten" },
+    { label: "6. Mariahilf", slug: "mariahilf" },
+    { label: "7. Neubau", slug: "neubau" },
+    { label: "8. Josefstadt", slug: "josefstadt" },
+    { label: "9. Alsergrund", slug: "alsergrund" },
+    { label: "10. Favoriten", slug: "favoriten" },
+    { label: "11. Simmering", slug: "simmering" },
+    { label: "12. Meidling", slug: "meidling" },
+    { label: "13. Hietzing", slug: "hietzing" },
+    { label: "14. Penzing", slug: "penzing" },
+    { label: "15. Rudolfsheim-Fünfhaus", slug: "rudolfsheim-fuenfhaus" },
+    { label: "16. Ottakring", slug: "ottakring" },
+    { label: "17. Hernals", slug: "hernals" },
+    { label: "18. Währing", slug: "waehring" },
+    { label: "19. Döbling", slug: "doebling" },
+    { label: "20. Brigittenau", slug: "brigittenau" },
+    { label: "21. Floridsdorf", slug: "floridsdorf" },
+    { label: "22. Donaustadt", slug: "donaustadt" },
+    { label: "23. Liesing", slug: "liesing" },
   ];
 
   return (
@@ -85,10 +103,11 @@ export function WienPageClient() {
           <p className="mb-8" style={{ color: "#6B7280", lineHeight: "1.75", maxWidth: "700px" }}>{t.wien_page_districts_desc}</p>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
             {bezirke.map((bezirk) => (
-              <div key={bezirk} className="rounded-lg px-3 py-2 text-sm font-medium text-center"
-                style={{ backgroundColor: "#F9FAFB", border: "1px solid #E5E7EB", color: "#374151" }}>
-                {bezirk}
-              </div>
+              <a key={bezirk.slug} href={`/regionen/wien/${bezirk.slug}`}
+                className="rounded-lg px-3 py-2 text-sm font-medium text-center transition-colors hover:border-[#C2410C] hover:text-[#C2410C]"
+                style={{ backgroundColor: "#F9FAFB", border: "1px solid #E5E7EB", color: "#374151", textDecoration: "none" }}>
+                {bezirk.label}
+              </a>
             ))}
           </div>
         </div>
