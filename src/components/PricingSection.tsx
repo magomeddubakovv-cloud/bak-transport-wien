@@ -95,7 +95,7 @@ export function PricingSection() {
               </ul>
 
               <a
-                href="#kontakt"
+                href="/anfrage"
                 className="block text-center rounded-xl py-3 w-full mt-8 font-semibold transition-colors"
                 style={
                   card.featured

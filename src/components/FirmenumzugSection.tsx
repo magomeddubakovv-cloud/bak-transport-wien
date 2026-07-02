@@ -72,7 +72,7 @@ export function FirmenumzugSection() {
                 {t.firmen_btn_call}
               </a>
               <a
-                href="/kontakt"
+                href="/anfrage"
                 className="inline-flex items-center justify-center rounded-lg px-5 py-2.5 text-sm font-medium text-white transition-colors hover:opacity-90"
                 style={{ backgroundColor: "#F97316" }}
               >

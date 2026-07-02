@@ -20,7 +20,7 @@ export function FinalCTASection() {
 
         <div className="mt-10 flex justify-center gap-4 flex-wrap">
           <a
-            href="#kontakt"
+            href="/anfrage"
             className="flex items-center justify-center gap-2 bg-white text-[#1B3A6B] rounded-lg px-8 py-4 font-bold text-sm hover:bg-gray-100 transition-colors w-full sm:w-auto"
           >
             <Mail size={18} />

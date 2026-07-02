@@ -60,7 +60,7 @@ export function PrivatumzugSection() {
                 {t.privat_btn_call}
               </a>
               <a
-                href="/kontakt"
+                href="/anfrage"
                 className="inline-flex items-center justify-center rounded-lg px-5 py-2.5 text-sm font-medium text-white transition-colors hover:opacity-90"
                 style={{ backgroundColor: "#F97316" }}
               >
@@ -74,7 +74,7 @@ export function PrivatumzugSection() {
                 {t.privat_btn_more}
               </Link>
               <Link
-                href="/kontakt"
+                href="/anfrage"
                 className="text-sm font-medium underline underline-offset-4 transition-colors hover:opacity-75"
                 style={{ color: "#1B3A6B" }}
               >

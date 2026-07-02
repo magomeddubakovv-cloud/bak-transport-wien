@@ -19,7 +19,7 @@ export function CTASection() {
         </p>
         <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
           <a
-            href="#kontakt"
+            href="/anfrage"
             className="rounded-xl transition-colors flex items-center justify-center gap-2"
             style={{ backgroundColor: "#FFFFFF", color: "#C2410C", padding: "16px 32px", fontSize: "17px", fontWeight: 800, minHeight: "44px" }}
           >

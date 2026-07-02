@@ -83,7 +83,7 @@ export function HeroSection() {
 
               <div className="mt-8 flex flex-col sm:flex-row gap-4">
                 <a
-                  href="#kontakt"
+                  href="/anfrage"
                   className="rounded-lg font-extrabold transition-colors hover:bg-[#C2410C] flex items-center justify-center gap-2"
                   style={{
                     backgroundColor: "#C2410C",

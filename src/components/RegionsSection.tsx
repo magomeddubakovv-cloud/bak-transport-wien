@@ -87,7 +87,7 @@ export function RegionsSection() {
                 {t.regions_question}
               </p>
               <a
-                href="#kontakt"
+                href="/anfrage"
                 className="hover:underline"
                 style={{ color: "#C2410C", fontWeight: 700, fontSize: "15px" }}
               >
