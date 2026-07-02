@@ -1,0 +1,66 @@
+"use client";
+
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { Home, ChevronRight } from "lucide-react";
+
+const LABELS: Record<string, string> = {
+  leistungen: "Leistungen",
+  privatumzug: "Privatumzug",
+  firmenumzug: "Firmenumzug",
+  kuechenmontage: "Küchenmontage",
+  moebelmontage: "Möbelmontage",
+  notfallumzug: "Notfallumzug",
+  schwerlasttransport: "Schwerlasttransport",
+  regionen: "Regionen",
+  wien: "Wien",
+  deutschland: "Deutschland",
+  schweiz: "Schweiz",
+  oesterreich: "Österreich",
+  niederoesterreich: "Niederösterreich",
+  grenzueberschreitend: "Grenzüberschreitend",
+  "ueber-uns": "Über uns",
+  faq: "FAQ",
+  karriere: "Karriere",
+  kontakt: "Kontakt",
+  impressum: "Impressum",
+  datenschutz: "Datenschutz",
+};
+
+export function Breadcrumb() {
+  const pathname = usePathname();
+  const segments = pathname.split("/").filter(Boolean);
+
+  if (segments.length === 0) return null;
+
+  const crumbs = segments.map((seg, i) => ({
+    label: LABELS[seg] ?? seg,
+    href: "/" + segments.slice(0, i + 1).join("/"),
+  }));
+
+  return (
+    <nav aria-label="Breadcrumb" className="mb-4">
+      <ol className="flex items-center flex-wrap gap-1 text-sm" style={{ color: "#6B7280" }}>
+        <li>
+          <Link href="/" aria-label="Startseite" className="hover:text-[#C2410C] transition-colors">
+            <Home size={14} />
+          </Link>
+        </li>
+        {crumbs.map((crumb, i) => (
+          <li key={crumb.href} className="flex items-center gap-1">
+            <ChevronRight size={14} style={{ color: "#D1D5DB" }} />
+            {i === crumbs.length - 1 ? (
+              <span style={{ color: "#C2410C" }} className="font-semibold">{crumb.label}</span>
+            ) : (
+              <Link href={crumb.href} className="hover:text-[#C2410C] transition-colors">
+                {crumb.label}
+              </Link>
+            )}
+          </li>
+        ))}
+      </ol>
+    </nav>
+  );
+}
+
+export default Breadcrumb;

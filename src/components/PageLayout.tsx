@@ -1,5 +1,6 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { Breadcrumb } from "@/components/Breadcrumb";
 
 interface PageLayoutProps {
   children: React.ReactNode;
@@ -16,6 +17,7 @@ export function PageLayout({ children, title, subtitle, label }: PageLayoutProps
         {/* Page Hero */}
         <section style={{ backgroundColor: "#F9FAFB" }} className="py-12 md:py-20">
           <div className="max-w-7xl mx-auto px-4 md:px-6">
+            <Breadcrumb />
             {label && (
               <p
                 className="text-xs uppercase tracking-[4px] font-bold mb-3"
