@@ -3,6 +3,7 @@
 import { Check, Phone , Mail } from "lucide-react";
 import Image from "next/image";
 import { PageLayout } from "@/components/PageLayout";
+import { AblaufSection } from "@/components/AblaufSection";
 import { useLang } from "@/contexts/LanguageContext";
 import { translations } from "@/i18n/translations";
 
@@ -57,6 +58,15 @@ export function FirmenumzugPageClient() {
           </div>
         </div>
       </section>
+      <AblaufSection
+        heading="So läuft Ihr Firmenumzug ab"
+        steps={[
+          { title: "Begehung & Bedarf", text: "Kostenlose Vor-Ort-Besichtigung mit Inventar, IT-Ausstattung, Zugangssituation und Zeitfenster." },
+          { title: "Fixpreis-Angebot", text: "Transparentes, schriftlich bestätigtes Angebot mit klar definiertem Leistungsumfang." },
+          { title: "Planung", text: "Etappenplan, Halteverbotszone, IT-Reihenfolge und Termin außerhalb der Geschäftszeiten." },
+          { title: "Umzugstag", text: "Strukturierte Umsetzung mit Abnahme vor Ort und direktem Ansprechpartner." },
+        ]}
+      />
       <section className="py-12 md:py-20" style={{ backgroundColor: "#F9FAFB" }}>
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 md:mb-12" style={{ color: "#111827" }}>{t.sub_why_bak}</h2>

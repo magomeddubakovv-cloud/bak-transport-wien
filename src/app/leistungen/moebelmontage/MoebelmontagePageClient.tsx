@@ -3,6 +3,7 @@
 import { Check, Phone , Mail } from "lucide-react";
 import Image from "next/image";
 import { PageLayout } from "@/components/PageLayout";
+import { AblaufSection } from "@/components/AblaufSection";
 import { useLang } from "@/contexts/LanguageContext";
 import { translations } from "@/i18n/translations";
 
@@ -57,6 +58,15 @@ export function MoebelmontagePageClient() {
           </div>
         </div>
       </section>
+      <AblaufSection
+        heading="So läuft Ihre Möbelmontage ab"
+        steps={[
+          { title: "Anfrage stellen", text: "Beschreiben Sie Ihre Möbel, Stückzahl und gewünschten Termin per Telefon oder Formular." },
+          { title: "Fixpreis-Angebot", text: "Sie erhalten innerhalb von 60 Minuten ein transparentes Angebot ohne versteckte Kosten." },
+          { title: "Terminbestätigung", text: "Wir koordinieren Datum und Uhrzeit nach Ihren Wünschen und bestätigen den Einsatz." },
+          { title: "Montage", text: "Unser Team montiert Ihre Möbel professionell, sauber und pünktlich vor Ort." },
+        ]}
+      />
       <section className="py-12 md:py-20" style={{ backgroundColor: "#F9FAFB" }}>
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 md:mb-12" style={{ color: "#111827" }}>{t.sub_why_bak}</h2>

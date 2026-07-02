@@ -3,6 +3,7 @@
 import { Check, Phone , Mail } from "lucide-react";
 import Image from "next/image";
 import { PageLayout } from "@/components/PageLayout";
+import { AblaufSection } from "@/components/AblaufSection";
 import { useLang } from "@/contexts/LanguageContext";
 import { translations } from "@/i18n/translations";
 
@@ -57,6 +58,15 @@ export function KuechenmontagPageClient() {
           </div>
         </div>
       </section>
+      <AblaufSection
+        heading="So läuft Ihre Küchenmontage ab"
+        steps={[
+          { title: "Anfrage stellen", text: "Teilen Sie uns Küchenmodell, Liefertermin und gewünschten Montagetermin mit." },
+          { title: "Fixpreis-Angebot", text: "Innerhalb von 60 Minuten erhalten Sie ein klares Angebot ohne Überraschungen." },
+          { title: "Terminbestätigung", text: "Wir koordinieren den Montagetermin passend zu Ihrer Küchenlieferung." },
+          { title: "Küchenmontage", text: "Fachgerechte Montage inklusive Elektro- und Wasseranschluss nach Absprache." },
+        ]}
+      />
       <section className="py-12 md:py-20" style={{ backgroundColor: "#F9FAFB" }}>
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 md:mb-12" style={{ color: "#111827" }}>{t.sub_why_bak}</h2>

@@ -3,6 +3,7 @@
 import { Check, Phone , Mail } from "lucide-react";
 import Image from "next/image";
 import { PageLayout } from "@/components/PageLayout";
+import { AblaufSection } from "@/components/AblaufSection";
 import { useLang } from "@/contexts/LanguageContext";
 import { translations } from "@/i18n/translations";
 
@@ -57,6 +58,15 @@ export function NotfallumzugPageClient() {
           </div>
         </div>
       </section>
+      <AblaufSection
+        heading="So läuft Ihr Notfallumzug ab"
+        steps={[
+          { title: "Sofortanfrage", text: "Kontaktieren Sie uns per Telefon oder WhatsApp – wir sind sofort erreichbar." },
+          { title: "Blitzschnelle Planung", text: "Wir organisieren alles innerhalb kürzester Zeit: Team, Fahrzeug und Route." },
+          { title: "Soforteinsatz", text: "Unser Team ist innerhalb weniger Stunden bei Ihnen und startet sofort." },
+          { title: "Abschluss", text: "Vollständige Durchführung mit Abnahme vor Ort – schnell, sicher, vollversichert." },
+        ]}
+      />
       <section className="py-12 md:py-20" style={{ backgroundColor: "#F9FAFB" }}>
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 md:mb-12" style={{ color: "#111827" }}>{t.sub_why_bak}</h2>

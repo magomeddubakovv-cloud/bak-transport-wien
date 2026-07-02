@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { StructuredData } from "@/components/StructuredData";
 import { LanguageProvider } from "@/contexts/LanguageContext";
+import { AnnouncementBar } from "@/components/AnnouncementBar";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
 
@@ -147,6 +148,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className="min-h-full flex flex-col">
         <LanguageProvider>
+          <AnnouncementBar />
           {children}
         </LanguageProvider>
       </body>

@@ -3,6 +3,7 @@
 import { Check, Phone , Mail } from "lucide-react";
 import Image from "next/image";
 import { PageLayout } from "@/components/PageLayout";
+import { AblaufSection } from "@/components/AblaufSection";
 import { useLang } from "@/contexts/LanguageContext";
 import { translations } from "@/i18n/translations";
 
@@ -58,6 +59,15 @@ export function PrivatumzugPageClient() {
           </div>
         </div>
       </section>
+      <AblaufSection
+        heading="So läuft Ihr Privatumzug ab"
+        steps={[
+          { title: "Kostenlose Besichtigung", text: "Wir kommen zu Ihnen, schauen uns Wohnung und Möbel an und notieren alle Details." },
+          { title: "Fixpreis-Angebot", text: "Innerhalb von 60 Minuten erhalten Sie ein transparentes Fixpreis-Angebot ohne versteckte Kosten." },
+          { title: "Terminplanung", text: "Wir organisieren Datum, Team und Halteverbotszone – Sie müssen sich um nichts kümmern." },
+          { title: "Umzugstag", text: "Unser vollversichertes Team führt den Umzug schnell und sorgfältig durch." },
+        ]}
+      />
       <section className="py-12 md:py-20" style={{ backgroundColor: "#F9FAFB" }}>
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 md:mb-12" style={{ color: "#111827" }}>{t.sub_why_bak}</h2>

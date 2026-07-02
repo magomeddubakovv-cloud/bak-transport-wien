@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Phone, Menu, X, ChevronDown } from "lucide-react";
 import { Logo } from "@/components/Logo";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import { AnnouncementBar } from "@/components/AnnouncementBar";
 import { useLang } from "@/contexts/LanguageContext";
 import { translations } from "@/i18n/translations";
 

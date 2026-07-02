@@ -3,6 +3,7 @@
 import { Check, Phone , Mail } from "lucide-react";
 import Image from "next/image";
 import { PageLayout } from "@/components/PageLayout";
+import { AblaufSection } from "@/components/AblaufSection";
 import { useLang } from "@/contexts/LanguageContext";
 import { translations } from "@/i18n/translations";
 
@@ -57,6 +58,15 @@ export function SchwerlasttransportPageClient() {
           </div>
         </div>
       </section>
+      <AblaufSection
+        heading="So läuft Ihr Schwerlasttransport ab"
+        steps={[
+          { title: "Anfrage & Besichtigung", text: "Wir begutachten das Transportgut vor Ort und planen den sicheren Ablauf." },
+          { title: "Fixpreis-Angebot", text: "Sie erhalten ein transparentes Angebot mit allen benötigten Hilfsmitteln." },
+          { title: "Vorbereitung", text: "Wir organisieren Spezialfahrzeug, Hebebühne und qualifiziertes Team." },
+          { title: "Transport", text: "Sicherer und professioneller Transport mit vollständiger Versicherungsdeckung." },
+        ]}
+      />
       <section className="py-12 md:py-20" style={{ backgroundColor: "#F9FAFB" }}>
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 md:mb-12" style={{ color: "#111827" }}>{t.sub_why_bak}</h2>
