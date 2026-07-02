@@ -1,11 +1,47 @@
 "use client";
 
-import { Check, Phone , Mail } from "lucide-react";
+import { Check, Phone, Mail, ClipboardList, Monitor, Moon, Wrench, ParkingMeter, Trash2 } from "lucide-react";
 import Image from "next/image";
 import { PageLayout } from "@/components/PageLayout";
 import { AblaufSection } from "@/components/AblaufSection";
 import { useLang } from "@/contexts/LanguageContext";
 import { translations } from "@/i18n/translations";
+
+const SERVICES_DE = [
+  { icon: ClipboardList, title: "Projektmanagement", text: "Ein fixer Ansprechpartner koordiniert Ihren gesamten Firmenumzug — von der ersten Besichtigung bis zur Abnahme." },
+  { icon: Monitor, title: "IT-Umzug", text: "Sicherer Abbau, Transport und Wiederaufbau Ihrer gesamten IT-Infrastruktur. Datensicherheit hat höchste Priorität." },
+  { icon: Moon, title: "Nacht- & Wochenendservice", text: "Umzüge außerhalb der Geschäftszeiten minimieren Betriebsunterbrechungen und schonen Ihren laufenden Betrieb." },
+  { icon: Wrench, title: "Möbelmontage", text: "Professioneller Ab- und Aufbau aller Büromöbel, Regale und Trennwände inklusive." },
+  { icon: ParkingMeter, title: "Halteverbotsorganisation", text: "Wir beantragen alle nötigen Parkverbote und Genehmigungen für Lade- und Entladezonen für Sie." },
+  { icon: Trash2, title: "Entsorgung & Reinigung", text: "Auf Wunsch entsorgen wir alte Möbel fachgerecht und übergeben die Räumlichkeiten besenrein." },
+];
+
+const SERVICES_EN = [
+  { icon: ClipboardList, title: "Project Management", text: "A dedicated contact coordinates your entire office move — from the first inspection to final handover." },
+  { icon: Monitor, title: "IT Relocation", text: "Safe dismantling, transport and reassembly of your entire IT infrastructure. Data security is our top priority." },
+  { icon: Moon, title: "Night & Weekend Service", text: "Moves outside business hours minimize operational disruptions and protect your ongoing operations." },
+  { icon: Wrench, title: "Furniture Assembly", text: "Professional disassembly and reassembly of all office furniture, shelves and partition walls included." },
+  { icon: ParkingMeter, title: "No-Parking Zone", text: "We apply for all necessary parking bans and permits for loading and unloading zones on your behalf." },
+  { icon: Trash2, title: "Disposal & Cleaning", text: "On request, we professionally dispose of old furniture and hand over the premises clean and tidy." },
+];
+
+const FAQS_DE = [
+  { q: "Was kostet ein Firmenumzug in Wien?", a: "Die Kosten hängen von der Bürogröße, Stockwerk und Umfang ab. Für ein Büro bis 100 m² rechnen Sie mit €2.000–4.000, für 100–300 m² mit €4.000–8.000. Nach kostenloser Besichtigung erhalten Sie einen verbindlichen Fixpreis." },
+  { q: "Wie lange dauert ein Firmenumzug?", a: "Je nach Bürogröße dauert ein Firmenumzug 1 bis 3 Tage. Mit unserem Nacht- und Wochenendservice können Betriebsunterbrechungen auf ein Minimum reduziert werden." },
+  { q: "Was ist im Fixpreis enthalten?", a: "Im Fixpreis sind Transport, Verpackungsmaterial, Auf- und Abbau der Möbel sowie die Halteverbotsorganisation enthalten. IT-Umzug und Entsorgung können optional hinzugebucht werden." },
+  { q: "Wie sichern Sie unsere IT beim Umzug ab?", a: "Unsere Mitarbeiter sind im Umgang mit IT-Equipment geschult. Alle Geräte werden fachgerecht verpackt, beschriftet und am Zielort wieder aufgebaut. Auf Wunsch koordinieren wir mit Ihrem IT-Dienstleister." },
+  { q: "Können Sie außerhalb der Geschäftszeiten umziehen?", a: "Ja — wir bieten Nacht-, Wochenend- und Feiertagseinsätze an. So läuft Ihr Betrieb am nächsten Morgen ohne Unterbrechung weiter." },
+  { q: "Sind wir während des Umzugs versichert?", a: "Ja. BAK Transport ist vollversichert. Alle transportierten Gegenstände sind während des gesamten Umzugs durch unsere Versicherung gedeckt." },
+];
+
+const FAQS_EN = [
+  { q: "What does an office move in Vienna cost?", a: "Costs depend on office size, floor level and scope. For offices up to 100 m² expect €2,000–4,000, for 100–300 m² expect €4,000–8,000. After a free inspection you receive a binding fixed price." },
+  { q: "How long does an office move take?", a: "Depending on office size, a move takes 1 to 3 days. With our night and weekend service, business interruptions can be minimized." },
+  { q: "What is included in the fixed price?", a: "The fixed price includes transport, packaging materials, furniture assembly/disassembly and no-parking zone organization. IT relocation and disposal can be added as options." },
+  { q: "How do you protect our IT during the move?", a: "Our staff are trained in handling IT equipment. All devices are professionally packed, labeled and reassembled at the destination. We can coordinate with your IT service provider on request." },
+  { q: "Can you move outside business hours?", a: "Yes — we offer night, weekend and holiday moves. This way your operations continue the next morning without interruption." },
+  { q: "Are we insured during the move?", a: "Yes. BAK Transport is fully insured. All transported items are covered by our insurance throughout the entire move." },
+];
 
 export function FirmenumzugPageClient() {
   const { lang } = useLang();
@@ -25,14 +61,14 @@ export function FirmenumzugPageClient() {
     { label: t.firm_page_p2_label, price: t.firm_page_p2_price, detail: t.firm_page_p2_detail },
     { label: t.firm_page_p3_label, price: t.firm_page_p3_price, detail: t.firm_page_p3_detail },
   ];
-  const faqs = [
-    { q: t.firm_page_faq1_q, a: t.firm_page_faq1_a },
-    { q: t.firm_page_faq2_q, a: t.firm_page_faq2_a },
-    { q: t.firm_page_faq3_q, a: t.firm_page_faq3_a },
-  ];
+
+  const services = lang === "en" ? SERVICES_EN : SERVICES_DE;
+  const faqs = lang === "en" ? FAQS_EN : FAQS_DE;
 
   return (
     <PageLayout label={t.firm_page_label} title={t.firm_page_title} subtitle={t.firm_page_subtitle}>
+
+      {/* Intro */}
       <section className="py-12 md:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
@@ -58,15 +94,8 @@ export function FirmenumzugPageClient() {
           </div>
         </div>
       </section>
-      <AblaufSection
-        heading="So läuft Ihr Firmenumzug ab"
-        steps={[
-          { title: "Begehung & Bedarf", text: "Kostenlose Vor-Ort-Besichtigung mit Inventar, IT-Ausstattung, Zugangssituation und Zeitfenster." },
-          { title: "Fixpreis-Angebot", text: "Transparentes, schriftlich bestätigtes Angebot mit klar definiertem Leistungsumfang." },
-          { title: "Planung", text: "Etappenplan, Halteverbotszone, IT-Reihenfolge und Termin außerhalb der Geschäftszeiten." },
-          { title: "Umzugstag", text: "Strukturierte Umsetzung mit Abnahme vor Ort und direktem Ansprechpartner." },
-        ]}
-      />
+
+      {/* Warum BAK */}
       <section className="py-12 md:py-20" style={{ backgroundColor: "#F9FAFB" }}>
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 md:mb-12" style={{ color: "#111827" }}>{t.sub_why_bak}</h2>
@@ -81,6 +110,47 @@ export function FirmenumzugPageClient() {
           </div>
         </div>
       </section>
+
+      {/* 6 Service Cards */}
+      <section className="py-12 md:py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 md:px-6">
+          <p className="text-xs uppercase tracking-[4px] font-bold mb-3" style={{ color: "#C2410C" }}>
+            {lang === "en" ? "Our Services" : "Unsere Leistungen"}
+          </p>
+          <h2 className="text-2xl md:text-3xl font-bold mb-10 md:mb-12" style={{ color: "#111827" }}>
+            {lang === "en" ? "Everything from a single source" : "Alles aus einer Hand"}
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {services.map((s) => (
+              <div key={s.title} className="rounded-2xl p-6" style={{ border: "1px solid #E5E7EB", backgroundColor: "#FAFAFA" }}>
+                <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-4" style={{ backgroundColor: "#FFF7ED" }}>
+                  <s.icon size={20} style={{ color: "#C2410C" }} />
+                </div>
+                <h3 className="font-semibold text-base mb-2" style={{ color: "#111827" }}>{s.title}</h3>
+                <p className="text-sm" style={{ color: "#6B7280", lineHeight: 1.7 }}>{s.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Ablauf */}
+      <AblaufSection
+        heading={lang === "en" ? "How your office move works" : "So läuft Ihr Firmenumzug ab"}
+        steps={lang === "en" ? [
+          { title: "Inspection & Assessment", text: "Free on-site visit covering inventory, IT equipment, access situation and time window." },
+          { title: "Fixed Price Offer", text: "Transparent, written offer with clearly defined scope of services." },
+          { title: "Planning", text: "Step-by-step plan, no-parking zone, IT sequence and date outside business hours." },
+          { title: "Moving Day", text: "Structured execution with on-site handover and a dedicated contact person." },
+        ] : [
+          { title: "Begehung & Bedarf", text: "Kostenlose Vor-Ort-Besichtigung mit Inventar, IT-Ausstattung, Zugangssituation und Zeitfenster." },
+          { title: "Fixpreis-Angebot", text: "Transparentes, schriftlich bestätigtes Angebot mit klar definiertem Leistungsumfang." },
+          { title: "Planung", text: "Etappenplan, Halteverbotszone, IT-Reihenfolge und Termin außerhalb der Geschäftszeiten." },
+          { title: "Umzugstag", text: "Strukturierte Umsetzung mit Abnahme vor Ort und direktem Ansprechpartner." },
+        ]}
+      />
+
+      {/* Preise */}
       <section className="py-12 md:py-20" style={{ backgroundColor: "#F9FAFB" }}>
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-4 text-gray-900">{t.firm_page_price_h2}</h2>
@@ -96,6 +166,8 @@ export function FirmenumzugPageClient() {
           </div>
         </div>
       </section>
+
+      {/* FAQ */}
       <section className="py-12 md:py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 md:px-6">
           <h2 className="text-2xl md:text-3xl font-bold mb-10 md:mb-12" style={{ color: "#111827" }}>{t.firm_page_faq_h2}</h2>
@@ -109,6 +181,8 @@ export function FirmenumzugPageClient() {
           </div>
         </div>
       </section>
+
+      {/* Weitere Leistungen */}
       <section className="py-12" style={{ backgroundColor: "#F9FAFB" }}>
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <h3 className="text-xl font-bold mb-6" style={{ color: "#111827" }}>{t.sub_more_services}</h3>
@@ -128,6 +202,8 @@ export function FirmenumzugPageClient() {
           </div>
         </div>
       </section>
+
+      {/* CTA */}
       <section className="py-12 md:py-20" style={{ backgroundColor: "#C2410C" }}>
         <div className="max-w-7xl mx-auto px-4 md:px-6 text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">{t.firm_page_cta_h2}</h2>
@@ -138,6 +214,7 @@ export function FirmenumzugPageClient() {
           </div>
         </div>
       </section>
+
     </PageLayout>
   );
 }
