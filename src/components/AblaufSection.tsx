@@ -27,7 +27,7 @@ export function AblaufSection({ heading, steps }: AblaufSectionProps) {
             >
               <div
                 className="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-base mb-4"
-                style={{ backgroundColor: "#1E3A5F" }}
+                style={{ backgroundColor: "#C2410C" }}
               >
                 {i + 1}
               </div>
@@ -46,3 +46,4 @@ export function AblaufSection({ heading, steps }: AblaufSectionProps) {
 }
 
 export default AblaufSection;
+
