@@ -62,22 +62,29 @@ export default function AnfragePage() {
         <QuoteFormSection />
 
         {/* So geht es weiter */}
-        <section className="py-10 md:py-16" style={{ backgroundColor: "#C2410C" }}>
-          <div className="max-w-4xl mx-auto px-4 md:px-6 text-center">
-            <h2 className="text-2xl md:text-3xl font-bold text-white mb-6 md:mb-10">So geht es weiter</h2>
-            <div className="grid grid-cols-3 gap-3 sm:gap-8">
+        <section className="py-8 md:py-16" style={{ backgroundColor: "#C2410C" }}>
+          <div className="max-w-5xl mx-auto px-4 md:px-6">
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-5 md:mb-10 text-center">So geht es weiter</h2>
+            <div className="flex gap-3 overflow-x-auto snap-x snap-mandatory pb-2 sm:grid sm:grid-cols-3 sm:overflow-visible sm:pb-0 sm:gap-5 md:gap-8">
               {[
-                { step: "1", title: "Anfrage senden", text: "Füllen Sie das Formular aus — dauert nur 2 Minuten." },
-                { step: "2", title: "Wir melden uns", text: "Innerhalb von 60 Minuten erhalten Sie Ihr persönliches Fixpreis-Angebot." },
-                { step: "3", title: "Umzug starten", text: "Nach Ihrer Bestätigung kümmern wir uns um alles weitere." },
+                { step: "1", title: "Anfrage senden", text: "Formular ausfüllen — dauert nur 2 Minuten." },
+                { step: "2", title: "Wir melden uns", text: "Sie erhalten rasch Ihr persönliches Fixpreis-Angebot." },
+                { step: "3", title: "Umzug starten", text: "Nach Ihrer Bestätigung kümmern wir uns um alles Weitere." },
               ].map(({ step, title, text }) => (
-                <div key={step} className="flex flex-col items-center rounded-2xl px-2 py-4 sm:p-0">
-                  <div className="w-9 h-9 sm:w-12 sm:h-12 rounded-full flex items-center justify-center text-white font-bold text-base sm:text-lg mb-3 sm:mb-4"
-                    style={{ backgroundColor: "#FFFFFF", color: "#C2410C" }}>
-                    {step}
+                <div
+                  key={step}
+                  className="min-w-[78%] snap-center rounded-2xl bg-white p-5 text-left shadow-xl sm:min-w-0 sm:p-6"
+                >
+                  <div className="mb-4 flex items-center gap-3">
+                    <div
+                      className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-lg font-black"
+                      style={{ backgroundColor: "#C2410C", color: "#FFFFFF" }}
+                    >
+                      {step}
+                    </div>
+                    <h3 className="text-lg font-bold leading-tight" style={{ color: "#111827" }}>{title}</h3>
                   </div>
-                  <h3 className="font-bold text-white text-sm sm:text-base mb-1 sm:mb-2 leading-tight">{title}</h3>
-                  <p className="hidden sm:block text-sm" style={{ color: "#FED7AA" }}>{text}</p>
+                  <p className="text-sm leading-relaxed" style={{ color: "#4B5563" }}>{text}</p>
                 </div>
               ))}
             </div>
