@@ -108,4 +108,43 @@
   from { opacity: 0; transform: translateX(30px); }
   to   { opacity: 1; transform: translateX(0); }
 }
+@media (hover: hover) and (pointer: fine) {
+  a[href],
+  button {
+    transition: background-color 180ms ease, color 180ms ease, border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+  }
 
+  a[href="/anfrage"]:hover,
+  a[href="/kontakt"]:hover,
+  a[href^="mailto:"]:hover,
+  button[type="submit"]:hover {
+    background-color: #9A3412 !important;
+    border-color: #9A3412 !important;
+    color: #FFFFFF !important;
+    box-shadow: 0 10px 22px rgba(154, 52, 18, 0.22);
+    transform: translateY(-1px);
+  }
+
+  a[href^="tel:"]:hover {
+    background-color: #FFF7ED !important;
+    border-color: #FED7AA !important;
+    color: #C2410C !important;
+    box-shadow: 0 10px 22px rgba(194, 65, 12, 0.16);
+    transform: translateY(-1px);
+  }
+
+  a[href^="https://wa.me"]:hover {
+    background-color: #16A34A !important;
+    border-color: #16A34A !important;
+    color: #FFFFFF !important;
+    box-shadow: 0 10px 22px rgba(22, 163, 74, 0.2);
+    transform: translateY(-1px);
+  }
+
+  a[href^="/leistungen/"]:hover,
+  a[href^="/regionen/"]:hover {
+    background-color: #FFF7ED !important;
+    border-color: #C2410C !important;
+    color: #C2410C !important;
+  }
+}
