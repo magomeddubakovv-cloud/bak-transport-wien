@@ -45,7 +45,7 @@ export function PrivatumzugPageClient() {
             </div>
             <div className="flex flex-col gap-6">
               <div className="relative rounded-2xl overflow-hidden h-48 md:h-72">
-                <Image src="/images/photos/privatumzug.jpg" alt="Privatumzug Wien mit BAK Transport" fill sizes="(max-width: 768px) 100vw, 45vw" className="object-cover object-center" />
+                <Image src="/images/photos/privatumzug.png" alt="Privatumzug Wien mit BAK Transport" fill sizes="(max-width: 768px) 100vw, 45vw" className="object-cover object-center" />
               </div>
               <ul className="space-y-4">
                 {checklistItems.map((item) => (

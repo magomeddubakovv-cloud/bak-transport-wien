@@ -49,7 +49,7 @@ export const metadata: Metadata = {
       "Professionelle Umzüge in Wien & Österreich. Privatumzüge, Firmenumzüge, Möbel- & Küchenmontage. Fixpreis, vollversichert, 60 Min Rückmeldung.",
     images: [
       {
-        url: "/images/photos/hero-movers.jpg",
+        url: "/images/photos/hero-movers.png",
         width: 1200,
         height: 630,
         alt: "BAK Transport Wien — Professionelle Umzüge",
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     site: "@baktransport",
     title: "BAK Transport Wien | Umzugsfirma mit Fixpreis",
     description: "Professionelle Umzüge in Wien & Österreich. Fixpreis, vollversichert.",
-    images: ["/images/photos/hero-movers.jpg"],
+    images: ["/images/photos/hero-movers.png"],
   },
   robots: {
     index: true,
@@ -84,7 +84,7 @@ const localBusinessSchema = {
   url: "https://www.baktransport.at",
   telephone: "+4368110723047",
   email: "office@baktransport.at",
-  image: "https://www.baktransport.at/images/photos/hero-movers.jpg",
+  image: "https://www.baktransport.at/images/photos/hero-movers.png",
   logo: "https://www.baktransport.at/images/logo-transparent.png",
   hasMap: "https://maps.google.com/?q=BAK+Transport+Wien",
   address: {

@@ -23,7 +23,7 @@ export function HeroSection() {
     >
       {/* Background photo */}
       <Image
-        src="/images/photos/hero-movers.jpg"
+        src="/images/photos/hero-movers.png"
         alt="BAK Transport — professionelle Umzüge in Wien"
         title="BAK Transport Wien — Professionelle Umzugsfirma"
         fill
