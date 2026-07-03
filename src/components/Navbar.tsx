@@ -5,7 +5,6 @@ import Link from "next/link";
 import { Phone, Menu, X, ChevronDown } from "lucide-react";
 import { Logo } from "@/components/Logo";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
-import { AnnouncementBar } from "@/components/AnnouncementBar";
 import { useLang } from "@/contexts/LanguageContext";
 import { translations } from "@/i18n/translations";
 
@@ -132,7 +131,7 @@ export function Navbar() {
           {/* Phone button — square on mobile, full width on desktop */}
           <a
             href="tel:+4368110723047"
-            className="flex items-center justify-center rounded-md transition-colors duration-150 hover:bg-[#C2410C] w-[40px] h-[40px] sm:w-[44px] sm:h-[44px] md:w-auto md:h-auto md:px-3 md:py-2 md:gap-2"
+            className="flex items-center justify-center rounded-md transition-colors duration-150 hover:bg-[#C2410C] w-[44px] h-[44px] md:w-auto md:h-auto md:px-3 md:py-2 md:gap-2"
             style={{ backgroundColor: "#C2410C", color: "#FFFFFF", fontWeight: 700, textDecoration: "none", flexShrink: 0 }}
             aria-label={lang === "en" ? "Call Us" : "Anrufen"}
           >
@@ -145,7 +144,7 @@ export function Navbar() {
             href="https://wa.me/4368110723047"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center rounded-md transition-colors duration-150 hover:bg-[#16a34a] w-[40px] h-[40px] sm:w-[44px] sm:h-[44px] md:w-auto md:h-auto md:px-3 md:py-2 md:gap-2"
+            className="flex items-center justify-center rounded-md transition-colors duration-150 hover:bg-[#16a34a] w-[44px] h-[44px] md:w-auto md:h-auto md:px-3 md:py-2 md:gap-2"
             style={{ backgroundColor: "#22C55E", color: "#FFFFFF", fontWeight: 700, textDecoration: "none", flexShrink: 0 }}
             aria-label="WhatsApp"
           >
@@ -157,7 +156,7 @@ export function Navbar() {
 
           {/* Hamburger — mobile only */}
           <button
-            className="md:hidden flex items-center justify-center rounded-md p-1.5 sm:p-2 transition-colors hover:bg-orange-50"
+            className="md:hidden flex h-11 w-11 items-center justify-center rounded-md transition-colors hover:bg-orange-50"
             style={{ color: "#374151" }}
             onClick={() => setMenuOpen((v) => !v)}
             aria-label={menuOpen ? "Close menu" : "Open menu"}
@@ -182,7 +181,7 @@ export function Navbar() {
                     key={item.href}
                     href={item.href}
                     onClick={() => setMenuOpen(false)}
-                    className="block py-2.5 pl-3 text-sm transition-colors hover:text-[#C2410C]"
+                    className="block py-3 pl-3 text-base transition-colors hover:text-[#C2410C]"
                     style={{ color: "#4B5563", textDecoration: "none" }}
                   >
                     {item.label}

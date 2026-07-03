@@ -65,20 +65,20 @@ export function Breadcrumb() {
   }));
 
   return (
-    <nav aria-label="Breadcrumb" className="mb-4">
-      <ol className="flex items-center flex-wrap gap-1 text-sm" style={{ color: "#6B7280" }}>
+    <nav aria-label="Breadcrumb" className="mb-5">
+      <ol className="flex items-center flex-wrap gap-x-1.5 gap-y-2 text-sm md:text-[15px]" style={{ color: "#6B7280" }}>
         <li>
-          <Link href="/" aria-label="Startseite" className="hover:text-[#C2410C] transition-colors">
-            <Home size={14} />
+          <Link href="/" aria-label="Startseite" className="inline-flex min-h-8 min-w-8 items-center justify-center rounded-md hover:bg-orange-50 hover:text-[#C2410C] transition-colors">
+            <Home size={15} />
           </Link>
         </li>
         {crumbs.map((crumb, i) => (
           <li key={crumb.href} className="flex items-center gap-1">
-            <ChevronRight size={14} style={{ color: "#D1D5DB" }} />
+            <ChevronRight size={15} style={{ color: "#D1D5DB" }} />
             {i === crumbs.length - 1 ? (
               <span style={{ color: "#C2410C" }} className="font-semibold">{crumb.label}</span>
             ) : (
-              <Link href={crumb.href} className="hover:text-[#C2410C] transition-colors">
+              <Link href={crumb.href} className="inline-flex min-h-8 items-center rounded-md px-1 hover:bg-orange-50 hover:text-[#C2410C] transition-colors">
                 {crumb.label}
               </Link>
             )}

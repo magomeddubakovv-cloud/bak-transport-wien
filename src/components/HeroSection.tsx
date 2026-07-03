@@ -61,7 +61,7 @@ export function HeroSection() {
 
               <h1
                 className="mt-4 text-4xl md:text-5xl lg:text-6xl"
-                style={{ fontWeight: 900, lineHeight: 1.05, letterSpacing: "-1px", color: "#111827" }}
+                style={{ fontWeight: 900, lineHeight: 1.08, letterSpacing: 0, color: "#111827" }}
               >
                 BAK Transport.
                 <br />
@@ -76,7 +76,7 @@ export function HeroSection() {
 
               <p
                 className="max-w-md text-base md:text-lg"
-                style={{ color: "#4B5563", lineHeight: 1.7 }}
+                style={{ color: "#4B5563", lineHeight: 1.75 }}
               >
                 {t.hero_subtext}
               </p>
