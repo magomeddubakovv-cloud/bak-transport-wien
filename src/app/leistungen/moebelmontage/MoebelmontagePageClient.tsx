@@ -1,6 +1,6 @@
 "use client";
 
-import { Check, Mail, MessageCircle } from "lucide-react";
+import { Check, Phone, MessageCircle } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { PageLayout } from "@/components/PageLayout";
@@ -172,49 +172,39 @@ export function MoebelmontagePageClient() {
           </div>
         </div>
       </section>
-      <section className="border-y border-[#E5E7EB] bg-white py-12 md:py-16">
-        <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-8 px-4 md:px-6 lg:grid-cols-[0.95fr_1.35fr]">
+      <section className="border-y border-[#E5E7EB] py-12 md:py-16" style={{ backgroundColor: "#F9FAFB" }}>
+        <div className="mx-auto max-w-7xl px-4 md:px-6">
           <div>
-            <h2 className="text-3xl font-black leading-tight md:text-5xl" style={{ color: "#1E3A5F" }}>
-              Kontaktieren Sie uns
-            </h2>
-            <p className="mt-3 text-xl leading-snug md:text-3xl" style={{ color: "#4B5563" }}>
-              für eine unverbindliche Beratung
+            <p className="text-lg leading-snug md:text-2xl" style={{ color: "#6B7280" }}>
+              Haben Sie ein spezifisches Ziel?
             </p>
-          </div>
-          <div className="grid grid-cols-1 items-center gap-3 sm:grid-cols-2 lg:flex lg:justify-end lg:gap-6">
             <Link
               href="/anfrage"
-              className="inline-flex min-h-14 items-center justify-center gap-2 rounded-xl px-6 py-3 text-base font-bold text-white md:text-lg"
-              style={{ backgroundColor: "#1E3A5F", textDecoration: "none" }}
+              className="mt-3 inline-flex text-lg font-black md:text-xl"
+              style={{ color: "#C2410C", textDecoration: "none" }}
             >
-              <Mail className="h-5 w-5" />
-              Anfrage stellen
+              Fragen Sie uns an →
             </Link>
+          </div>
+          <div className="mt-8 grid grid-cols-1 gap-3 min-[420px]:grid-cols-2 sm:flex sm:flex-wrap">
+            <a
+              href="tel:+4368110723047"
+              className="inline-flex min-h-14 items-center justify-center gap-2 rounded-lg px-6 py-3 text-lg font-black text-white transition hover:bg-[#9A3412]"
+              style={{ backgroundColor: "#C2410C", textDecoration: "none" }}
+            >
+              <Phone className="h-6 w-6" />
+              Anrufen
+            </a>
             <a
               href="https://wa.me/4368110723047"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex min-h-14 items-center justify-center gap-2 rounded-xl px-6 py-3 text-base font-bold text-white md:text-lg"
+              className="inline-flex min-h-14 items-center justify-center gap-2 rounded-lg px-6 py-3 text-lg font-black text-white transition hover:bg-[#16A34A]"
               style={{ backgroundColor: "#25D366", textDecoration: "none" }}
             >
-              <MessageCircle className="h-5 w-5" />
+              <MessageCircle className="h-6 w-6" />
               WhatsApp
             </a>
-            <a
-              href="tel:+4368110723047"
-              className="inline-flex min-h-12 items-center justify-center text-base font-bold md:text-lg"
-              style={{ color: "#1E3A5F", textDecoration: "none" }}
-            >
-              Anrufen →
-            </a>
-            <Link
-              href="/anfrage"
-              className="inline-flex min-h-12 items-center justify-center text-base font-bold md:text-lg"
-              style={{ color: "#F97316", textDecoration: "none" }}
-            >
-              Besichtigung vereinbaren →
-            </Link>
           </div>
         </div>
       </section>
