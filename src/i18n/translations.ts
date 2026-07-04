@@ -785,16 +785,24 @@ const de = {
   moebel_page_p3_price: "ab €480",
   moebel_page_p3_detail: "Schlafzimmer, Wohnzimmer etc.",
   moebel_page_faq_h2: "Häufige Fragen zur Möbelmontage",
-  moebel_page_faq1_q: "Bauen Sie auch IKEA-Möbel auf?",
+  moebel_page_faq1_q: "Was kostet eine Möbelmontage in Wien?",
   moebel_page_faq1_a:
-    "Ja, IKEA ist eine unserer Spezialitäten — wir kennen alle gängigen Serien wie PAX, KALLAX, BESTA und mehr auswendig.",
-  moebel_page_faq2_q: "Entsorgen Sie auch das Verpackungsmaterial?",
+    "Kleine Einzelmöbel liegen meist bei ca. 50–100 €, Zimmermöbel bei ca. 150–300 € und komplette Wohnungen je nach Umfang bei ca. 300–600 €. Ein IKEA-Schrank liegt häufig bei ca. 80–150 €, ein Bett bei ca. 60–120 €.",
+  moebel_page_faq2_q: "Wie lange dauert der Möbelaufbau?",
   moebel_page_faq2_a:
-    "Ja, nach der Montage nehmen wir alle Kartons und Verpackungsreste mit und entsorgen diese fachgerecht.",
-  moebel_page_faq3_q:
-    "Kann ich auch nur einen einzigen Schrank aufbauen lassen?",
+    "Das hängt vom Umfang ab. Einzelne Möbel sind oft in 1–2 Stunden aufgebaut, größere Einrichtungen brauchen meist 2–4 Stunden. Termine sind nach Absprache auch am Wochenende möglich.",
+  moebel_page_faq3_q: "Welche Möbelmarken montieren Sie?",
   moebel_page_faq3_a:
-    "Natürlich. Es gibt keine Mindestauftragsgröße — auch für einzelne Möbelstücke sind wir gerne da.",
+    "Wir montieren Möbel von IKEA, XXXLutz, Mömax, Kika, Leiner, Möbelix und vielen weiteren Herstellern. Unser Team ist auf unterschiedliche Systeme, Beschläge und Aufbauarten vorbereitet.",
+  moebel_page_faq4_q: "Montieren Sie auch IKEA-Möbel?",
+  moebel_page_faq4_a:
+    "Ja. Besonders häufig montieren wir IKEA-Systeme wie PAX, MALM, BILLY, BESTA und KALLAX. Die Kosten liegen je nach Möbel und Aufwand meist bei ca. 60–200 €.",
+  moebel_page_faq5_q: "Bringen Sie Werkzeug und Montagematerial mit?",
+  moebel_page_faq5_a:
+    "Ja. Professionelles Werkzeug, Montagehilfen und übliches Kleinmaterial bringen wir mit. Falls spezielle Dübel oder Sonderteile nötig sind, klären wir das vorab mit Ihnen.",
+  moebel_page_faq6_q: "Ist die Möbelmontage versichert?",
+  moebel_page_faq6_a:
+    "Ja. Unsere Montagearbeiten sind versichert. Wir arbeiten sorgfältig mit Schutz für Boden, Wände und Möbel und stehen für saubere Arbeit gerade.",
   moebel_page_cta_h2: "Möbelmontage anfragen",
 
   // Notfallumzug subpage
@@ -1979,15 +1987,24 @@ const en: typeof de = {
   moebel_page_p3_price: "from €480",
   moebel_page_p3_detail: "bedroom, living room etc.",
   moebel_page_faq_h2: "Frequently Asked Questions: Furniture Assembly",
-  moebel_page_faq1_q: "Do you also assemble IKEA furniture?",
+  moebel_page_faq1_q: "How much does furniture assembly cost in Vienna?",
   moebel_page_faq1_a:
-    "Yes, IKEA is one of our specialities — we know all common series like PAX, KALLAX, BESTA and more by heart.",
-  moebel_page_faq2_q: "Do you also dispose of the packaging material?",
+    "Small individual furniture items usually cost around €50–100, room furniture around €150–300, and complete apartments around €300–600 depending on the scope. An IKEA wardrobe is often around €80–150, a bed around €60–120.",
+  moebel_page_faq2_q: "How long does furniture assembly take?",
   moebel_page_faq2_a:
-    "Yes, after assembly we take all boxes and packaging remains with us and dispose of them properly.",
-  moebel_page_faq3_q: "Can I have just a single wardrobe assembled?",
+    "It depends on the scope. Single items are often assembled in 1–2 hours, while larger room setups usually take 2–4 hours. Weekend appointments are possible by arrangement.",
+  moebel_page_faq3_q: "Which furniture brands can you assemble?",
   moebel_page_faq3_a:
-    "Of course. There is no minimum order size — we are happy to help even for single pieces of furniture.",
+    "We assemble furniture from IKEA, XXXLutz, Mömax, Kika, Leiner, Möbelix and many other manufacturers. Our team is prepared for different systems, fittings and assembly methods.",
+  moebel_page_faq4_q: "Do you also assemble IKEA furniture?",
+  moebel_page_faq4_a:
+    "Yes. We frequently assemble IKEA systems such as PAX, MALM, BILLY, BESTA and KALLAX. Costs are usually around €60–200 depending on the furniture and effort.",
+  moebel_page_faq5_q: "Do you bring tools and assembly materials?",
+  moebel_page_faq5_a:
+    "Yes. We bring professional tools, assembly aids and standard small materials. If special wall plugs or parts are needed, we clarify that with you in advance.",
+  moebel_page_faq6_q: "Is my furniture assembly insured?",
+  moebel_page_faq6_a:
+    "Yes. Our assembly work is insured. We work carefully with protection for floors, walls and furniture and stand behind clean, professional work.",
   moebel_page_cta_h2: "Request Furniture Assembly",
 
   // Notfallumzug subpage
