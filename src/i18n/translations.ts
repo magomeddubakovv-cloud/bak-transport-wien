@@ -206,10 +206,10 @@ const de = {
   footer_copyright: "© 2025 BAK Transport Wien. Alle Rechte vorbehalten.",
 
   // BenefitsSection
-  benefits_label: "Vorteile bei Stahl & Söhne",
+  benefits_label: "Vorteile bei BAK Transport",
   benefits_h2: "Warum Kunden mit uns umziehen",
   benefits_desc:
-    "Stahl & Söhne steht für flexible und professionelle Umzüge in Wien und Umgebung. Wir bieten Ihnen faire Konditionen und eine schnelle Abwicklung.",
+    "BAK Transport steht für flexible und professionelle Umzüge in Wien und Umgebung. Wir bieten Ihnen faire Konditionen und eine schnelle Abwicklung.",
   benefit1_title: "Schnelles Angebot",
   benefit1_text:
     "Der schnellste Weg zum Fixpreis-Umzug in Wien: Rückruf in 60 Minuten, Angebot am selben Tag, keine Überraschungen.",
@@ -274,7 +274,7 @@ const de = {
   process_label: "Ablauf",
   process_h2: "Unser Ablauf in fünf Schritten",
   process_desc:
-    "Alle Umzüge bei Stahl & Söhne folgen einem klaren, bewährten Prozess – von der ersten Kontaktaufnahme bis zur vollständigen Zufriedenheit.",
+    "Alle Umzüge bei BAK Transport folgen einem klaren, bewährten Prozess – von der ersten Kontaktaufnahme bis zur vollständigen Zufriedenheit.",
   process_step: "Schritt",
   process_of: "von",
   process_prev: "← Zurück",
@@ -362,7 +362,7 @@ const de = {
   reqform_email: "E-Mail",
   reqform_email_placeholder: "ihre@email.at",
   reqform_datenschutz:
-    "Ich akzeptiere hiermit, dass meine Daten zum Zwecke der Kontaktaufnahme von der Stahl & Söhne KG verwendet werden dürfen. Weitere Informationen in der",
+    "Ich akzeptiere hiermit, dass meine Daten zum Zwecke der Kontaktaufnahme von BAK Transport verwendet werden dürfen. Weitere Informationen in der",
   reqform_datenschutz_link: "Datenschutzerklärung",
   reqform_submit: "Anfrage senden",
 
@@ -420,6 +420,21 @@ const de = {
   faqpage_q16: "Entsorgen Sie auch alte Möbel beim Umzug?",
   faqpage_a16:
     "Ja. Alte Möbel, Elektrogeräte oder Sperrmüll, die Sie nicht mitnehmen möchten, entsorgen wir im Rahmen unserer Entrümpelungs-Leistung fachgerecht — auf Wunsch direkt im Zuge Ihres Umzugs.",
+  faqpage_intro_h2: "Wer ist BAK Transport?",
+  faqpage_intro_text:
+    "BAK Transport ist ein Umzugs- und Montageunternehmen mit Sitz in Wien. Wir realisieren Privat- und Firmenumzüge sowie Küchen- und Möbelmontagen in Wien und ganz Österreich. Schwerpunkte: transparente Fixpreise nach kostenloser Besichtigung, vollversicherter Transport und termintreue Ausführung.",
+  faqpage_cat1_label: "Umzug in Wien, Termine & Ablauf",
+  faqpage_cat1_subtitle: "Antworten zu Ablauf, Vorlaufzeit und Organisation Ihres Umzugs.",
+  faqpage_cat2_label: "Preise & Kosten",
+  faqpage_cat2_subtitle: "Transparente Preise und was in Ihrem Umzug enthalten ist.",
+  faqpage_cat3_label: "Praktische Vorbereitung",
+  faqpage_cat3_subtitle: "Kartons, Parkplatz und was Sie vor dem Umzugstag wissen sollten.",
+  faqpage_cat4_label: "Möbelmontage & Zusatzleistungen",
+  faqpage_cat4_subtitle: "Möbelmontage, Entrümpelung und weitere Services rund um den Umzug.",
+  faqpage_cat5_label: "Versicherung, Garantie & Vertrauen",
+  faqpage_cat5_subtitle: "Wie wir Ihre Umzugsgüter absichern und woran Sie uns erkennen.",
+  faqpage_cat6_label: "Österreich, Deutschland, Schweiz",
+  faqpage_cat6_subtitle: "Grenzüberschreitende Umzüge außerhalb von Wien.",
   faqpage_cta_h2: "Noch Fragen?",
   faqpage_cta_desc: "Kostenloses Angebot — Rückmeldung in 60 Minuten",
   faqpage_cta_btn1: "Jetzt Angebot anfordern",
@@ -1437,10 +1452,10 @@ const en: typeof de = {
   footer_copyright: "© 2025 BAK Transport Wien. All rights reserved.",
 
   // BenefitsSection
-  benefits_label: "Benefits with Stahl & Söhne",
+  benefits_label: "Benefits with BAK Transport",
   benefits_h2: "Why customers move with us",
   benefits_desc:
-    "Stahl & Söhne stands for flexible and professional moves in Vienna and surroundings. We offer you fair conditions and fast processing.",
+    "BAK Transport stands for flexible and professional moves in Vienna and surroundings. We offer you fair conditions and fast processing.",
   benefit1_title: "Fast Quote",
   benefit1_text:
     "The fastest way to a fixed-price move in Vienna: callback in 60 minutes, quote on the same day, no surprises.",
@@ -1505,7 +1520,7 @@ const en: typeof de = {
   process_label: "Process",
   process_h2: "Our Process in Five Steps",
   process_desc:
-    "All moves at Stahl & Söhne follow a clear, proven process — from the first contact to complete satisfaction.",
+    "All moves at BAK Transport follow a clear, proven process — from the first contact to complete satisfaction.",
   process_step: "Step",
   process_of: "of",
   process_prev: "← Back",
@@ -1592,7 +1607,7 @@ const en: typeof de = {
   reqform_email: "Email",
   reqform_email_placeholder: "your@email.com",
   reqform_datenschutz:
-    "I hereby accept that my data may be used by Stahl & Söhne KG for the purpose of contact. Further information in the",
+    "I hereby accept that my data may be used by BAK Transport for the purpose of contact. Further information in the",
   reqform_datenschutz_link: "Privacy Policy",
   reqform_submit: "Send Request",
 
@@ -1649,6 +1664,21 @@ const en: typeof de = {
   faqpage_q16: "Do you also dispose of old furniture during a move?",
   faqpage_a16:
     "Yes. We properly dispose of old furniture, electrical appliances or bulky waste that you don't want to take with you as part of our decluttering service — on request directly alongside your move.",
+  faqpage_intro_h2: "Who is BAK Transport?",
+  faqpage_intro_text:
+    "BAK Transport is a moving and assembly company based in Vienna. We handle private and corporate moves as well as kitchen and furniture assembly in Vienna and throughout Austria. Our focus: transparent fixed prices after a free on-site inspection, fully insured transport and reliable, on-time execution.",
+  faqpage_cat1_label: "Moving in Vienna, Scheduling & Process",
+  faqpage_cat1_subtitle: "Answers about the process, lead time and organizing your move.",
+  faqpage_cat2_label: "Pricing & Costs",
+  faqpage_cat2_subtitle: "Transparent pricing and what's included in your move.",
+  faqpage_cat3_label: "Practical Preparation",
+  faqpage_cat3_subtitle: "Boxes, parking and what to know before moving day.",
+  faqpage_cat4_label: "Furniture Assembly & Add-on Services",
+  faqpage_cat4_subtitle: "Furniture assembly, decluttering and other services around your move.",
+  faqpage_cat5_label: "Insurance, Guarantee & Trust",
+  faqpage_cat5_subtitle: "How we protect your belongings and how to recognize us.",
+  faqpage_cat6_label: "Austria, Germany, Switzerland",
+  faqpage_cat6_subtitle: "Cross-border moves beyond Vienna.",
   faqpage_cta_h2: "Still have questions?",
   faqpage_cta_desc: "Free quote — response in 60 minutes",
   faqpage_cta_btn1: "Request quote now",
