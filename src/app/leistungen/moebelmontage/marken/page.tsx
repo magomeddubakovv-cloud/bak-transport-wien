@@ -15,19 +15,19 @@ const brandGroups = [
   {
     title: "IKEA Möbelmontage",
     brands: "PAX, BILLY, MALM, BESTA, KALLAX",
-    image: "/images/photos/moebelmontage.png",
+    image: "/images/photos/moebelmarken-bedroom.png",
     text: "IKEA Systeme sind beliebt, aber bei großen Schränken, Schiebetüren und Wandbefestigungen zählt sauberes Ausrichten. Wir montieren die Teile stabil und prüfen Beschläge, Türen und Schubladen.",
   },
   {
     title: "XXXLutz, Mömax, Kika & Leiner",
     brands: "Wohnwände, Betten, Kommoden, Garderoben",
-    image: "/images/photos/privatumzug.png",
+    image: "/images/photos/moebelmarken-office.png",
     text: "Viele Möbelhäuser liefern zerlegt oder vormontiert. Wir übernehmen Aufbau, Abbau vor dem Umzug und Wiederaufbau am neuen Standort inklusive Schutz beim Transport.",
   },
   {
     title: "Büromöbel & Stauraum",
     brands: "Schreibtische, Aktenschränke, Regale, Rollcontainer",
-    image: "/images/photos/firmenumzug.png",
+    image: "/images/photos/moebelmarken-livingroom.png",
     text: "Für Firmen und Homeoffice montieren wir Arbeitsplätze, Schränke und Regalsysteme. Besonders bei Firmenumzügen planen wir Reihenfolge und Wiederaufbau strukturiert.",
   },
 ];
@@ -65,7 +65,7 @@ export default function MoebelmarkenPage() {
             </div>
             <div className="relative h-64 overflow-hidden rounded-2xl md:h-96">
               <Image
-                src="/images/photos/moebelmontage.png"
+                src="/images/photos/moebelmarken-wardrobe.png"
                 alt="BAK Transport Möbelmontage in Wien mit Monteuren und Werkzeug"
                 fill
                 sizes="(max-width: 768px) 100vw, 48vw"
