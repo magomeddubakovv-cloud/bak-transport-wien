@@ -297,7 +297,7 @@ export const WIENER_BEZIRKE: WienerBezirk[] = [
     fullName: "1210 Wien – Floridsdorf",
     beschreibung: "Floridsdorf — links der Donau — ist Wiens nördlichster Bezirk mit viel Platz, breiten Straßen und einem starken Wachstum an Neubauprojekten. Umzüge hier laufen dank guter Zufahrt oft besonders reibungslos.",
     altbau: false,
-    besonderheit: "Rechts der Donau, Neubauprojekte, breite Straßen",
+    besonderheit: "Links der Donau, Neubauprojekte, breite Straßen",
     faq: [
       { q: "Fährt BAK Transport auch in die neuen Wohnprojekte in Floridsdorf?", a: "Ja — wir kennen die neuen Stadtentwicklungsgebiete in Floridsdorf gut und sind mit den Zufahrtsregelungen vertraut." },
       { q: "Was kostet ein Umzug in Floridsdorf?", a: "Ab €650 für kleine Wohnungen. Durch die gute LKW-Zufahrt und wenig Parkprobleme sind Umzüge in Floridsdorf oft besonders effizient." },

@@ -25,6 +25,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: `Umzug ${b.name} Wien | BAK Transport`,
       description: `Zuverlässiger Umzugsservice im ${b.nr} Wien. Fixpreis, vollversichert, über 1.000 erfolgreiche Umzüge.`,
       url: `https://www.baktransport.at/regionen/wien/${b.slug}`,
+      images: [
+        {
+          url: "/images/photos/hero-movers.png",
+          width: 1200,
+          height: 630,
+          alt: `BAK Transport Wien — Umzug ${b.name}`,
+        },
+      ],
     },
   };
 }
@@ -39,9 +47,8 @@ export default async function BezirkPage({ params }: Props) {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "BAK Transport Wien", item: "https://www.baktransport.at" },
-      { "@type": "ListItem", position: 2, name: "Regionen", item: "https://www.baktransport.at/regionen" },
-      { "@type": "ListItem", position: 3, name: "Wien", item: "https://www.baktransport.at/regionen/wien" },
-      { "@type": "ListItem", position: 4, name: `Umzug ${b.name}`, item: `https://www.baktransport.at/regionen/wien/${b.slug}` },
+      { "@type": "ListItem", position: 2, name: "Wien", item: "https://www.baktransport.at/regionen/wien" },
+      { "@type": "ListItem", position: 3, name: `Umzug ${b.name}`, item: `https://www.baktransport.at/regionen/wien/${b.slug}` },
     ],
   };
 

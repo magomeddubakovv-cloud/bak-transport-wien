@@ -14,8 +14,7 @@ const breadcrumbSchema = {
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "BAK Transport Wien", item: "https://www.baktransport.at" },
-    { "@type": "ListItem", position: 2, name: "Leistungen", item: "https://www.baktransport.at/leistungen" },
-    { "@type": "ListItem", position: 3, name: "Privatumzug Wien", item: "https://www.baktransport.at/leistungen/privatumzug" },
+    { "@type": "ListItem", position: 2, name: "Privatumzug Wien", item: "https://www.baktransport.at/leistungen/privatumzug" },
   ],
 };
 

@@ -13,8 +13,7 @@ const breadcrumbSchema = {
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "BAK Transport Wien", item: "https://www.baktransport.at" },
-    { "@type": "ListItem", position: 2, name: "Regionen", item: "https://www.baktransport.at/regionen" },
-    { "@type": "ListItem", position: 3, name: "Schweiz", item: "https://www.baktransport.at/regionen/schweiz" },
+    { "@type": "ListItem", position: 2, name: "Schweiz", item: "https://www.baktransport.at/regionen/schweiz" },
   ],
 };
 

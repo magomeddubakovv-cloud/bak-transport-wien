@@ -18,6 +18,14 @@ export function FaqPageClient() {
     { q: t.faqpage_q6, a: t.faqpage_a6 },
     { q: t.faqpage_q7, a: t.faqpage_a7 },
     { q: t.faqpage_q8, a: t.faqpage_a8 },
+    { q: t.faqpage_q9, a: t.faqpage_a9 },
+    { q: t.faqpage_q10, a: t.faqpage_a10 },
+    { q: t.faqpage_q11, a: t.faqpage_a11 },
+    { q: t.faqpage_q12, a: t.faqpage_a12 },
+    { q: t.faqpage_q13, a: t.faqpage_a13 },
+    { q: t.faqpage_q14, a: t.faqpage_a14 },
+    { q: t.faqpage_q15, a: t.faqpage_a15 },
+    { q: t.faqpage_q16, a: t.faqpage_a16 },
   ];
 
   return (

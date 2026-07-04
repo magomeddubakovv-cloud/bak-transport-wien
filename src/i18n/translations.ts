@@ -396,6 +396,30 @@ const de = {
   faqpage_q8: "Wie läuft eine kostenlose Besichtigung ab?",
   faqpage_a8:
     "Unser Mitarbeiter kommt zu Ihnen, schaut sich alle zu transportierenden Möbel und Gegenstände an und notiert alles Relevante. Das dauert ca. 30 Minuten. Danach erhalten Sie innerhalb von 24 Stunden Ihr Fixpreisangebot.",
+  faqpage_q9: "Wie lange dauert ein Umzug?",
+  faqpage_a9:
+    "Das hängt von Wohnungsgröße und Etage ab: Eine 2-Zimmer-Wohnung ist meist in 3–5 Stunden fertig transportiert, ein Einfamilienhaus kann einen ganzen Tag dauern. Bei der kostenlosen Besichtigung geben wir Ihnen eine realistische Zeiteinschätzung für Ihren Umzug.",
+  faqpage_q10: "Wie viele Umzugskartons brauche ich?",
+  faqpage_a10:
+    "Als Faustregel gilt: ca. 10–15 Kartons pro Zimmer bei durchschnittlicher Einrichtung. Bei der kostenlosen Besichtigung berechnen wir den genauen Bedarf und stellen auf Wunsch passendes Verpackungsmaterial bereit.",
+  faqpage_q11: "Brauche ich für den Umzugswagen eine Halteverbotszone in Wien?",
+  faqpage_a11:
+    "Bei engen Straßen oder wenig Parkplätzen empfehlen wir eine Halteverbotszone, damit der Umzugswagen direkt vor der Tür stehen kann. Wir unterstützen Sie gerne bei der Organisation der nötigen Parkgenehmigung.",
+  faqpage_q12: "Sind Umzugskosten steuerlich absetzbar?",
+  faqpage_a12:
+    "Bei einem beruflich bedingten Umzug, etwa durch einen neuen Job, können die Kosten als Werbungskosten von der Steuer abgesetzt werden. Wir stellen Ihnen dafür eine detaillierte Rechnung aus, die Sie beim Finanzamt einreichen können.",
+  faqpage_q13: "Woran erkenne ich eine seriöse Umzugsfirma?",
+  faqpage_a13:
+    "Achten Sie auf ein schriftliches Fixpreisangebot statt vager Stundensätze, eine Versicherung für Transportschäden sowie klare Firmenangaben und Bewertungen. BAK Transport erfüllt all diese Punkte und liefert Ihnen ein verbindliches Angebot vor Beginn des Umzugs.",
+  faqpage_q14: "Wie viel Trinkgeld gebe ich den Umzugshelfern?",
+  faqpage_a14:
+    "Trinkgeld ist bei uns keine Pflicht, da unser Fixpreis bereits alle Leistungen abdeckt. Über eine kleine Anerkennung für besonders sorgfältige Arbeit freut sich unser Team aber natürlich.",
+  faqpage_q15: "Wie weit im Voraus sollte ich meinen Umzug buchen?",
+  faqpage_a15:
+    "Für Privatumzüge empfehlen wir 2–3 Wochen Vorlauf, bei Firmenumzügen oder in der Hochsaison rund um Monatsende und Sommer besser 4–6 Wochen. Kurzfristige Termine sind über unseren Notfallumzug-Service oft trotzdem möglich.",
+  faqpage_q16: "Entsorgen Sie auch alte Möbel beim Umzug?",
+  faqpage_a16:
+    "Ja. Alte Möbel, Elektrogeräte oder Sperrmüll, die Sie nicht mitnehmen möchten, entsorgen wir im Rahmen unserer Entrümpelungs-Leistung fachgerecht — auf Wunsch direkt im Zuge Ihres Umzugs.",
   faqpage_cta_h2: "Noch Fragen?",
   faqpage_cta_desc: "Kostenloses Angebot — Rückmeldung in 60 Minuten",
   faqpage_cta_btn1: "Jetzt Angebot anfordern",
@@ -1601,6 +1625,30 @@ const en: typeof de = {
   faqpage_q8: "How does a free inspection work?",
   faqpage_a8:
     "Our employee comes to you, looks at all the furniture and items to be transported and notes everything relevant. This takes about 30 minutes. Afterwards you receive your fixed price offer within 24 hours.",
+  faqpage_q9: "How long does a move take?",
+  faqpage_a9:
+    "It depends on the size of the apartment and the floor: a 2-room apartment is usually finished in 3–5 hours, a single-family house can take a full day. During the free inspection we give you a realistic time estimate for your move.",
+  faqpage_q10: "How many moving boxes do I need?",
+  faqpage_a10:
+    "As a rule of thumb: about 10–15 boxes per room for an average household. During the free inspection we calculate the exact amount needed and can provide suitable packing material on request.",
+  faqpage_q11: "Do I need a no-parking zone for the moving truck in Vienna?",
+  faqpage_a11:
+    "On narrow streets or where parking is scarce, we recommend a no-parking zone so the moving truck can park directly outside. We're happy to help you organize the necessary parking permit.",
+  faqpage_q12: "Are moving costs tax-deductible?",
+  faqpage_a12:
+    "For a job-related move, for example due to a new job, the costs can be deducted from tax as income-related expenses. We provide you with a detailed invoice for this that you can submit to the tax office.",
+  faqpage_q13: "How do I recognize a reputable moving company?",
+  faqpage_a13:
+    "Look for a written fixed-price offer instead of vague hourly rates, insurance for transport damage, and clear company details and reviews. BAK Transport meets all of these points and gives you a binding offer before the move begins.",
+  faqpage_q14: "How much tip should I give the moving helpers?",
+  faqpage_a14:
+    "Tipping is not required with us, since our fixed price already covers all services. Our team is of course happy to receive a small token of appreciation for especially careful work.",
+  faqpage_q15: "How far in advance should I book my move?",
+  faqpage_a15:
+    "For private moves we recommend 2–3 weeks' notice; for company moves or during peak season around month-end and summer, 4–6 weeks is better. Short-notice appointments are often still possible through our emergency move service.",
+  faqpage_q16: "Do you also dispose of old furniture during a move?",
+  faqpage_a16:
+    "Yes. We properly dispose of old furniture, electrical appliances or bulky waste that you don't want to take with you as part of our decluttering service — on request directly alongside your move.",
   faqpage_cta_h2: "Still have questions?",
   faqpage_cta_desc: "Free quote — response in 60 minutes",
   faqpage_cta_btn1: "Request quote now",

@@ -59,6 +59,10 @@ const LABELS: Record<string, string> = {
   datenschutz: "Datenschutz",
 };
 
+// Segments that are pure category groupings with no page of their own —
+// linking to them would 404, so they render as plain text instead of a link.
+const NON_LINKABLE = new Set(["leistungen", "regionen"]);
+
 export function Breadcrumb() {
   const pathname = usePathname();
   const segments = pathname.split("/").filter(Boolean);
@@ -66,6 +70,7 @@ export function Breadcrumb() {
   if (segments.length === 0) return null;
 
   const crumbs = segments.map((seg, i) => ({
+    seg,
     label: LABELS[seg] ?? seg,
     href: "/" + segments.slice(0, i + 1).join("/"),
   }));
@@ -83,6 +88,8 @@ export function Breadcrumb() {
             <ChevronRight size={15} style={{ color: "#D1D5DB" }} />
             {i === crumbs.length - 1 ? (
               <span style={{ color: "#C2410C" }} className="font-semibold">{crumb.label}</span>
+            ) : NON_LINKABLE.has(crumb.seg) ? (
+              <span className="inline-flex min-h-8 items-center px-1">{crumb.label}</span>
             ) : (
               <Link href={crumb.href} className="inline-flex min-h-8 items-center rounded-md px-1 hover:bg-orange-50 hover:text-[#C2410C] transition-colors">
                 {crumb.label}
