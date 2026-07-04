@@ -1,6 +1,6 @@
 "use client";
 
-import { Phone } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import { PageLayout } from "@/components/PageLayout";
 import { useLang } from "@/contexts/LanguageContext";
 import { translations } from "@/i18n/translations";
@@ -127,7 +127,7 @@ export function FaqPageClient() {
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">{t.faqpage_cta_h2}</h2>
           <p className="mb-8 text-white opacity-90">{t.faqpage_cta_desc}</p>
           <div className="grid grid-cols-2 sm:flex sm:flex-row gap-3 sm:gap-4 justify-center">
-            <a href="/kontakt" className="inline-block px-8 py-4 rounded-xl font-semibold text-base" style={{ backgroundColor: "#FFFFFF", color: "#C2410C" }}>{t.faqpage_cta_btn1}</a>
+            <a href="/kontakt" className="inline-flex items-center justify-center gap-2 px-4 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold text-sm sm:text-base w-full sm:w-auto" style={{ backgroundColor: "#FFFFFF", color: "#C2410C" }}><Mail className="w-5 h-5" />{t.faqpage_cta_btn1}</a>
             <a href="tel:+4368110723047" className="inline-flex items-center justify-center gap-2 px-4 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold text-sm sm:text-base w-full sm:w-auto" style={{ border: "2px solid #FFFFFF", color: "#FFFFFF" }}><Phone className="w-5 h-5" />{t.faqpage_cta_btn2}</a>
           </div>
         </div>
