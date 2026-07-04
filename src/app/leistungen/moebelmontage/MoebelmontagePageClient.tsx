@@ -9,11 +9,11 @@ import { useLang } from "@/contexts/LanguageContext";
 import { translations } from "@/i18n/translations";
 
 const furnitureBrandLogos = [
-  { name: "IKEA", src: "/images/brand-logos/furniture-ikea.avif", width: 220, height: 92 },
-  { name: "XXXLutz", src: "/images/brand-logos/furniture-xxxlutz.avif", width: 300, height: 92 },
-  { name: "Beliani", src: "/images/brand-logos/furniture-beliani.svg", width: 300, height: 92 },
-  { name: "TEAM 7", src: "/images/brand-logos/furniture-team7.avif", width: 320, height: 92 },
-  { name: "Voglauer", src: "/images/brand-logos/furniture-voglauer.avif", width: 280, height: 92 },
+  { name: "IKEA", src: "/images/brand-logos/furniture-ikea.avif", href: "https://www.ikea.com/at/de/", width: 220, height: 92 },
+  { name: "XXXLutz", src: "/images/brand-logos/furniture-xxxlutz.avif", href: "https://www.xxxlutz.at/", width: 300, height: 92 },
+  { name: "Beliani", src: "/images/brand-logos/furniture-beliani.svg", href: "https://www.beliani.at/", width: 300, height: 92 },
+  { name: "TEAM 7", src: "/images/brand-logos/furniture-team7.avif", href: "https://www.team7-home.com/", width: 320, height: 92 },
+  { name: "Voglauer", src: "/images/brand-logos/furniture-voglauer.avif", href: "https://www.voglauer.com/de/", width: 280, height: 92 },
 ];
 
 export function MoebelmontagePageClient() {
@@ -151,7 +151,15 @@ export function MoebelmontagePageClient() {
           </Link>
           <div className="mt-10 grid grid-cols-2 items-center justify-items-center gap-x-8 gap-y-8 sm:grid-cols-3 lg:grid-cols-5">
             {furnitureBrandLogos.map((brand) => (
-              <div key={brand.name} className="flex h-24 w-full max-w-56 items-center justify-center">
+              <a
+                key={brand.name}
+                href={brand.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`${brand.name} Webseite öffnen`}
+                className="flex h-24 w-full max-w-56 items-center justify-center rounded-xl transition hover:-translate-y-0.5 hover:shadow-sm focus:outline-none focus:ring-2 focus:ring-[#C2410C] focus:ring-offset-4"
+                style={{ textDecoration: "none" }}
+              >
                 <Image
                   src={brand.src}
                   alt={`${brand.name} Logo`}
@@ -159,7 +167,7 @@ export function MoebelmontagePageClient() {
                   height={brand.height}
                   className="max-h-20 w-auto max-w-full object-contain"
                 />
-              </div>
+              </a>
             ))}
           </div>
         </div>
