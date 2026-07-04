@@ -1,6 +1,6 @@
 "use client";
 
-import { Check, Phone , Mail } from "lucide-react";
+import { Check, Mail, MessageCircle } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { PageLayout } from "@/components/PageLayout";
@@ -172,13 +172,49 @@ export function MoebelmontagePageClient() {
           </div>
         </div>
       </section>
-      <section className="py-12 md:py-20" style={{ backgroundColor: "#C2410C" }}>
-        <div className="max-w-7xl mx-auto px-4 md:px-6 text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">{t.moebel_page_cta_h2}</h2>
-          <p className="mb-8 text-white opacity-90">{t.sub_cta_desc}</p>
-          <div className="grid grid-cols-2 sm:flex sm:flex-row gap-3 sm:gap-4 justify-center">
-            <a href="/anfrage" className="inline-flex items-center justify-center gap-2 px-4 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold text-sm sm:text-base w-full sm:w-auto" style={{ backgroundColor: "#FFFFFF", color: "#C2410C" }}><Mail className="w-5 h-5" />{t.sub_cta_btn1}</a>
-            <a href="tel:+4368110723047" className="inline-flex items-center justify-center gap-2 px-4 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold text-sm sm:text-base w-full sm:w-auto" style={{ border: "2px solid #FFFFFF", color: "#FFFFFF" }}><Phone className="w-5 h-5" />{t.sub_cta_btn2}</a>
+      <section className="border-y border-[#E5E7EB] bg-white py-12 md:py-16">
+        <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-8 px-4 md:px-6 lg:grid-cols-[0.95fr_1.35fr]">
+          <div>
+            <h2 className="text-3xl font-black leading-tight md:text-5xl" style={{ color: "#1E3A5F" }}>
+              Kontaktieren Sie uns
+            </h2>
+            <p className="mt-3 text-xl leading-snug md:text-3xl" style={{ color: "#4B5563" }}>
+              für eine unverbindliche Beratung
+            </p>
+          </div>
+          <div className="grid grid-cols-1 items-center gap-3 sm:grid-cols-2 lg:flex lg:justify-end lg:gap-6">
+            <Link
+              href="/anfrage"
+              className="inline-flex min-h-14 items-center justify-center gap-2 rounded-xl px-6 py-3 text-base font-bold text-white md:text-lg"
+              style={{ backgroundColor: "#1E3A5F", textDecoration: "none" }}
+            >
+              <Mail className="h-5 w-5" />
+              Anfrage stellen
+            </Link>
+            <a
+              href="https://wa.me/4368110723047"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex min-h-14 items-center justify-center gap-2 rounded-xl px-6 py-3 text-base font-bold text-white md:text-lg"
+              style={{ backgroundColor: "#25D366", textDecoration: "none" }}
+            >
+              <MessageCircle className="h-5 w-5" />
+              WhatsApp
+            </a>
+            <a
+              href="tel:+4368110723047"
+              className="inline-flex min-h-12 items-center justify-center text-base font-bold md:text-lg"
+              style={{ color: "#1E3A5F", textDecoration: "none" }}
+            >
+              Anrufen →
+            </a>
+            <Link
+              href="/anfrage"
+              className="inline-flex min-h-12 items-center justify-center text-base font-bold md:text-lg"
+              style={{ color: "#F97316", textDecoration: "none" }}
+            >
+              Besichtigung vereinbaren →
+            </Link>
           </div>
         </div>
       </section>
