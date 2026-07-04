@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { Mail, Phone } from "lucide-react";
 import { PageLayout } from "@/components/PageLayout";
@@ -10,25 +11,34 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://www.baktransport.at/leistungen/kuechenmontage/marken" },
 };
 
-const kitchenBrands = [
-  { name: "IKEA", className: "bg-[#0058A3] text-[#FBD914] font-black text-3xl md:text-4xl rounded-full px-8 py-5" },
-  { name: "XXXLutz", className: "bg-white text-[#111827] border-2 border-[#111827] font-black text-3xl md:text-4xl px-7 py-4" },
-  { name: "Mömax", className: "bg-[#C2410C] text-white font-black text-3xl md:text-4xl px-7 py-4" },
-  { name: "kika | Leiner", className: "bg-gradient-to-r from-[#E30613] to-[#009640] text-white font-black text-2xl md:text-3xl px-7 py-5" },
-  { name: "Nolte Küchen", className: "bg-white text-[#111827] border border-[#D1D5DB] font-black text-2xl md:text-3xl px-7 py-5" },
-  { name: "nobilia", className: "bg-[#111827] text-white font-black text-3xl md:text-4xl lowercase px-7 py-5" },
-  { name: "EWE", className: "bg-white text-[#E40046] border border-[#E5E7EB] font-black text-3xl md:text-4xl px-7 py-5" },
-  { name: "Miele", className: "bg-[#8A0D1A] text-white font-black text-2xl md:text-3xl px-7 py-5" },
-  { name: "DAN Küchen", className: "bg-white text-[#111827] border border-[#D1D5DB] font-black text-2xl md:text-3xl px-7 py-5" },
-  { name: "Häcker", className: "bg-[#F9FAFB] text-[#111827] border border-[#D1D5DB] font-black text-2xl md:text-3xl px-7 py-5" },
-  { name: "EWE", className: "bg-[#FEE2E2] text-[#B91C1C] font-black text-3xl px-7 py-5" },
-  { name: "Leicht", className: "bg-white text-[#374151] border border-[#D1D5DB] font-black text-2xl md:text-3xl px-7 py-5" },
+type KitchenBrand = {
+  name: string;
+  logo?: string;
+  className?: string;
+};
+
+const kitchenBrands: KitchenBrand[] = [
+  { name: "IKEA", logo: "/images/brand-logos/ikea.png" },
+  { name: "XXXLutz", logo: "/images/brand-logos/xxxlutz.png" },
+  { name: "Mömax", logo: "/images/brand-logos/moemax.png" },
+  { name: "Kika", className: "bg-[#E30613] text-white" },
+  { name: "Leiner", logo: "/images/brand-logos/leiner-wiki.png" },
+  { name: "TEAM 7", logo: "/images/brand-logos/team7.png" },
+  { name: "Nolte Küchen", logo: "/images/brand-logos/nolte.png" },
+  { name: "nobilia", className: "bg-[#111827] lowercase text-white" },
+  { name: "EWE", logo: "/images/brand-logos/ewe.png" },
+  { name: "Miele", className: "bg-[#8A0D1A] text-white" },
+  { name: "DAN Küchen", logo: "/images/brand-logos/dan.png" },
+  { name: "Häcker", logo: "/images/brand-logos/haecker.png" },
+  { name: "Leicht", className: "bg-white text-[#374151] ring-1 ring-[#D1D5DB]" },
+  { name: "HAKA Küche", className: "bg-white text-[#374151] ring-1 ring-[#D1D5DB]" },
+  { name: "Steininger", className: "bg-[#111827] text-white" },
 ];
 
 const brandDetails = [
   {
-    title: "IKEA, XXXLutz & Mömax",
-    text: "Diese Küchen und Möbelhaus-Systeme werden häufig geliefert und müssen sauber ausgerichtet, verbunden und an den Raum angepasst werden.",
+    title: "IKEA, XXXLutz, Mömax, Kika & Leiner",
+    text: "Diese Möbelhaus-Küchen werden häufig geliefert und müssen sauber ausgerichtet, verbunden und an den Raum angepasst werden.",
     tags: ["IKEA METOD", "XXXLutz", "Mömax", "Kika", "Leiner"],
   },
   {
@@ -37,9 +47,9 @@ const brandDetails = [
     tags: ["Nolte", "Nobilia", "Häcker", "DAN Küchen"],
   },
   {
-    title: "Geräte & Ergänzungen",
-    text: "Auch bei Geräten, Arbeitsplatten, Umbauten oder Wiederaufbau nach Umzug prüfen wir vorab, was möglich ist und was vorbereitet werden muss.",
-    tags: ["Miele", "EWE", "FM Küchen", "Leicht"],
+    title: "Geräte, Premiumküchen & Ergänzungen",
+    text: "Auch bei Geräten, Arbeitsplatten, Umbauten oder Wiederaufbau nach Umzug prüfen wir vorab, was möglich ist und vorbereitet werden muss.",
+    tags: ["Miele", "EWE", "TEAM 7", "Leicht", "HAKA", "Steininger"],
   },
 ];
 
@@ -69,16 +79,28 @@ export default function KuechenmarkenPage() {
             Ob IKEA, XXXLutz, Mömax, Nolte, Nobilia oder DAN: Entscheidend sind vollständige Lieferung, Planunterlagen und saubere Vorbereitung vor dem Montagetermin.
           </p>
 
-          <div className="mt-10 grid grid-cols-2 items-center gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
-            {kitchenBrands.map((brand, index) => (
+          <div className="mt-10 grid grid-cols-2 items-center gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+            {kitchenBrands.map((brand) => (
               <div
-                key={`${brand.name}-${index}`}
-                className="flex min-h-28 items-center justify-center rounded-xl bg-white p-3 shadow-sm"
+                key={brand.name}
+                className="flex min-h-28 items-center justify-center rounded-xl bg-white p-4 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
                 style={{ border: "1px solid #E5E7EB" }}
               >
-                <div className={`flex min-h-16 w-full items-center justify-center text-center leading-none ${brand.className}`}>
-                  {brand.name}
-                </div>
+                {brand.logo ? (
+                  <Image
+                    src={brand.logo}
+                    alt={`${brand.name} Logo`}
+                    width={210}
+                    height={96}
+                    className="max-h-16 w-auto max-w-full object-contain"
+                  />
+                ) : (
+                  <div
+                    className={`flex min-h-16 w-full items-center justify-center rounded-lg px-5 py-4 text-center text-xl font-black leading-none ${brand.className ?? "bg-[#FFF7ED] text-[#C2410C]"}`}
+                  >
+                    {brand.name}
+                  </div>
+                )}
               </div>
             ))}
           </div>
