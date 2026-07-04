@@ -34,10 +34,13 @@ export function Footer() {
   const t = translations[lang];
 
   const leistungen = [
+    { label: lang === "en" ? "Moving Prices" : "Umzug Preise", href: "/leistungen/umzug-preise" },
     { label: t.nav_privatumzug, href: "/leistungen/privatumzug" },
     { label: t.nav_firmenumzug, href: "/leistungen/firmenumzug" },
     { label: t.nav_moebelmontage, href: "/leistungen/moebelmontage" },
+    { label: lang === "en" ? "Furniture Brands" : "Möbelmarken", href: "/leistungen/moebelmontage/marken" },
     { label: t.nav_kuechenmontage, href: "/leistungen/kuechenmontage" },
+    { label: lang === "en" ? "Kitchen Brands" : "Küchenmarken", href: "/leistungen/kuechenmontage/marken" },
     { label: t.nav_schwerlasttransport, href: "/leistungen/schwerlasttransport" },
     { label: t.nav_notfallumzug, href: "/leistungen/notfallumzug" },
     { label: t.nav_entruempelung, href: "/leistungen/entruempelung" },
@@ -53,6 +56,10 @@ export function Footer() {
   ];
 
   const unternehmen = [
+    { label: lang === "en" ? "Advantages" : "Vorteile", href: "/vorteile" },
+    { label: lang === "en" ? "Insurance" : "Versicherung", href: "/versicherung" },
+    { label: lang === "en" ? "Guide" : "Ratgeber", href: "/ratgeber" },
+    { label: lang === "en" ? "Glossary" : "Glossar", href: "/glossar" },
     { label: t.nav_ueber_uns, href: "/ueber-uns" },
     { label: t.nav_kontakt, href: "/kontakt" },
     { label: t.nav_faq, href: "/faq" },

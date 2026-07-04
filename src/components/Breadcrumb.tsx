@@ -6,9 +6,11 @@ import { Home, ChevronRight } from "lucide-react";
 
 const LABELS: Record<string, string> = {
   leistungen: "Leistungen",
+  "umzug-preise": "Umzug Preise",
   privatumzug: "Privatumzug",
   firmenumzug: "Firmenumzug",
   kuechenmontage: "Küchenmontage",
+  marken: "Marken",
   moebelmontage: "Möbelmontage",
   notfallumzug: "Notfallumzug",
   schwerlasttransport: "Schwerlasttransport",
@@ -45,6 +47,10 @@ const LABELS: Record<string, string> = {
   donaustadt: "Donaustadt",
   liesing: "Liesing",
   // Sonstige
+  vorteile: "Vorteile",
+  versicherung: "Versicherung",
+  ratgeber: "Ratgeber",
+  glossar: "Glossar",
   "ueber-uns": "Über uns",
   faq: "FAQ",
   karriere: "Karriere",

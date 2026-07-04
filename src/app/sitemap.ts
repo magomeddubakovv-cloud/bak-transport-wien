@@ -8,10 +8,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     { url: base, lastModified: now, changeFrequency: "weekly", priority: 1.0 },
     // Leistungen — high priority (money pages)
+    { url: `${base}/leistungen/umzug-preise`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${base}/leistungen/privatumzug`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${base}/leistungen/firmenumzug`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${base}/leistungen/moebelmontage`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/leistungen/moebelmontage/marken`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/leistungen/kuechenmontage`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/leistungen/kuechenmontage/marken`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/leistungen/schwerlasttransport`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/leistungen/notfallumzug`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/leistungen/entruempelung`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
@@ -30,6 +33,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     })),
     // Unternehmen
+    { url: `${base}/anfrage`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/vorteile`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${base}/versicherung`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${base}/ratgeber`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
+    { url: `${base}/glossar`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     { url: `${base}/ueber-uns`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     { url: `${base}/kontakt`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/faq`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
