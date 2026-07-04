@@ -1,38 +1,47 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { Mail, Phone } from "lucide-react";
 import { PageLayout } from "@/components/PageLayout";
 
 export const metadata: Metadata = {
-  title: "Küchenmontage Marken Wien | IKEA, Nolte, Nobilia",
+  title: "Küchenmontage Marken Wien | IKEA, XXXLutz, Mömax & mehr",
   description:
-    "Küchenmontage in Wien für IKEA, Nolte, Nobilia, Häcker, DAN Küchen, EWE und weitere Marken. BAK Transport montiert Küchen sauber und planbar.",
+    "Küchenmontage in Wien für IKEA, XXXLutz, Mömax, Kika, Leiner, Nolte, Nobilia, EWE, Miele und weitere Küchenmarken.",
   alternates: { canonical: "https://www.baktransport.at/leistungen/kuechenmontage/marken" },
 };
 
-const brandGroups = [
-  {
-    title: "IKEA Küchenmontage",
-    brands: "METOD, ENHET, KNOXHULT",
-    image: "/images/photos/kuechenmontage.png",
-    text: "IKEA Küchen brauchen saubere Ausrichtung, exakte Schrankverbindung und eine gute Vorbereitung der Arbeitsplatte. Wir prüfen Lieferumfang, Plan und Raummaße vor dem Termin.",
-  },
-  {
-    title: "Nolte, Nobilia & Häcker",
-    brands: "Systemküchen, Hochschränke, Gerätezeilen",
-    image: "/images/photos/kuechenmontage.png",
-    text: "Bei hochwertigen Küchen zählt Präzision: Schränke, Fronten, Sockel, Abschlussleisten und Geräte müssen sauber sitzen. Wir arbeiten planbar und sorgfältig.",
-  },
-  {
-    title: "DAN, EWE, FM & Leicht",
-    brands: "österreichische Küchen, Maßplanung, Umbau",
-    image: "/images/photos/handshake.jpg",
-    text: "Für Küchenumbau, Wiederaufbau nach Umzug oder Ergänzungen klären wir vorab Anschlüsse, Wandzustand, Geräteposition und gewünschte Leistungen.",
-  },
+const kitchenBrands = [
+  { name: "IKEA", className: "bg-[#0058A3] text-[#FBD914] font-black text-3xl md:text-4xl rounded-full px-8 py-5" },
+  { name: "XXXLutz", className: "bg-white text-[#111827] border-2 border-[#111827] font-black text-3xl md:text-4xl px-7 py-4" },
+  { name: "Mömax", className: "bg-[#C2410C] text-white font-black text-3xl md:text-4xl px-7 py-4" },
+  { name: "kika | Leiner", className: "bg-gradient-to-r from-[#E30613] to-[#009640] text-white font-black text-2xl md:text-3xl px-7 py-5" },
+  { name: "Nolte Küchen", className: "bg-white text-[#111827] border border-[#D1D5DB] font-black text-2xl md:text-3xl px-7 py-5" },
+  { name: "nobilia", className: "bg-[#111827] text-white font-black text-3xl md:text-4xl lowercase px-7 py-5" },
+  { name: "EWE", className: "bg-white text-[#E40046] border border-[#E5E7EB] font-black text-3xl md:text-4xl px-7 py-5" },
+  { name: "Miele", className: "bg-[#8A0D1A] text-white font-black text-2xl md:text-3xl px-7 py-5" },
+  { name: "DAN Küchen", className: "bg-white text-[#111827] border border-[#D1D5DB] font-black text-2xl md:text-3xl px-7 py-5" },
+  { name: "Häcker", className: "bg-[#F9FAFB] text-[#111827] border border-[#D1D5DB] font-black text-2xl md:text-3xl px-7 py-5" },
+  { name: "EWE", className: "bg-[#FEE2E2] text-[#B91C1C] font-black text-3xl px-7 py-5" },
+  { name: "Leicht", className: "bg-white text-[#374151] border border-[#D1D5DB] font-black text-2xl md:text-3xl px-7 py-5" },
 ];
 
-const brands = ["IKEA", "Nolte", "Nobilia", "Häcker", "DAN Küchen", "EWE", "FM Küchen", "Leicht", "Alno", "Kika", "XXXLutz", "Mömax"];
+const brandDetails = [
+  {
+    title: "IKEA, XXXLutz & Mömax",
+    text: "Diese Küchen und Möbelhaus-Systeme werden häufig geliefert und müssen sauber ausgerichtet, verbunden und an den Raum angepasst werden.",
+    tags: ["IKEA METOD", "XXXLutz", "Mömax", "Kika", "Leiner"],
+  },
+  {
+    title: "Nolte, Nobilia, Häcker & DAN",
+    text: "Bei Systemküchen zählen präzise Ausrichtung, Frontbild, Sockel, Abschlussleisten und die richtige Reihenfolge bei der Montage.",
+    tags: ["Nolte", "Nobilia", "Häcker", "DAN Küchen"],
+  },
+  {
+    title: "Geräte & Ergänzungen",
+    text: "Auch bei Geräten, Arbeitsplatten, Umbauten oder Wiederaufbau nach Umzug prüfen wir vorab, was möglich ist und was vorbereitet werden muss.",
+    tags: ["Miele", "EWE", "FM Küchen", "Leicht"],
+  },
+];
 
 const checklist = [
   "Küchenplan oder Bestellunterlagen",
@@ -45,64 +54,55 @@ export default function KuechenmarkenPage() {
   return (
     <PageLayout
       label="Küchenmarken"
-      title="Küchenmontage in Wien für IKEA, Nolte, Nobilia und mehr"
-      subtitle="BAK Transport montiert Küchen planbar, sauber und mit Blick auf Anschlüsse, Geräte, Arbeitsplatte, Schränke und Wandabschluss."
+      title="Küchenmontage in Wien für IKEA, XXXLutz, Mömax und mehr"
+      subtitle="BAK Transport montiert Küchen vieler Hersteller und Möbelhäuser: sauber geplant, präzise ausgerichtet und mit klarem Fixpreis-Angebot."
     >
       <section className="bg-white py-12 md:py-20">
-        <div className="mx-auto max-w-7xl px-4 md:px-6">
-          <div className="grid grid-cols-1 gap-10 md:grid-cols-[1.05fr_0.95fr] md:items-center">
-            <div className="relative order-2 h-64 overflow-hidden rounded-2xl md:order-1 md:h-96">
-              <Image
-                src="/images/photos/kuechenmontage.png"
-                alt="BAK Transport Küchenmontage in Wien mit Monteuren in oranger Arbeitskleidung"
-                fill
-                sizes="(max-width: 768px) 100vw, 48vw"
-                className="object-cover"
-                priority
-              />
-            </div>
-            <div className="order-1 md:order-2">
-              <p className="text-lg leading-[1.8]" style={{ color: "#374151" }}>
-                Küchenmontage ist präziser als normale Möbelmontage. Schränke müssen ausgerichtet, Arbeitsplatten angepasst und Geräte sauber integriert werden.
-              </p>
-              <div className="mt-6 flex flex-wrap gap-2">
-                {brands.map((brand) => (
-                  <span key={brand} className="rounded-full px-4 py-2 text-sm font-bold" style={{ backgroundColor: "#FFF7ED", color: "#C2410C" }}>
-                    {brand}
-                  </span>
-                ))}
+        <div className="mx-auto max-w-7xl px-4 text-center md:px-6">
+          <p className="text-sm font-bold uppercase tracking-[0.16em]" style={{ color: "#C2410C" }}>
+            Hersteller & Küchenhäuser
+          </p>
+          <h2 className="mx-auto mt-3 max-w-5xl text-2xl font-black leading-tight md:text-4xl" style={{ color: "#111827" }}>
+            Wir montieren Ihre Küchen von unter anderem folgenden Herstellern:
+          </h2>
+          <p className="mx-auto mt-4 max-w-3xl text-base leading-[1.8] md:text-lg" style={{ color: "#6B7280" }}>
+            Ob IKEA, XXXLutz, Mömax, Nolte, Nobilia oder DAN: Entscheidend sind vollständige Lieferung, Planunterlagen und saubere Vorbereitung vor dem Montagetermin.
+          </p>
+
+          <div className="mt-10 grid grid-cols-2 items-center gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
+            {kitchenBrands.map((brand, index) => (
+              <div
+                key={`${brand.name}-${index}`}
+                className="flex min-h-28 items-center justify-center rounded-xl bg-white p-3 shadow-sm"
+                style={{ border: "1px solid #E5E7EB" }}
+              >
+                <div className={`flex min-h-16 w-full items-center justify-center text-center leading-none ${brand.className}`}>
+                  {brand.name}
+                </div>
               </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
 
       <section className="py-12 md:py-20" style={{ backgroundColor: "#F9FAFB" }}>
         <div className="mx-auto max-w-7xl px-4 md:px-6">
-          <div className="mb-8 md:mb-12">
-            <p className="text-sm font-bold uppercase tracking-[0.16em]" style={{ color: "#C2410C" }}>
-              Küchenmarken & Systeme
-            </p>
-            <h2 className="mt-3 text-2xl font-black md:text-4xl" style={{ color: "#111827" }}>
-              Erfahrung mit gängigen Küchenmarken
-            </h2>
-          </div>
           <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
-            {brandGroups.map((group) => (
-              <article key={group.title} className="overflow-hidden rounded-2xl bg-white shadow-sm" style={{ border: "1px solid #E5E7EB" }}>
-                <div className="relative h-48">
-                  <Image src={group.image} alt={`${group.title} mit BAK Transport Wien`} fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover" />
-                </div>
-                <div className="p-6">
-                  <p className="text-xs font-bold uppercase tracking-[0.16em]" style={{ color: "#C2410C" }}>
-                    {group.brands}
-                  </p>
-                  <h2 className="mt-3 text-xl font-bold" style={{ color: "#111827" }}>
-                    {group.title}
-                  </h2>
-                  <p className="mt-3 leading-[1.7]" style={{ color: "#6B7280" }}>
-                    {group.text}
-                  </p>
+            {brandDetails.map((group) => (
+              <article key={group.title} className="rounded-2xl bg-white p-6 shadow-sm" style={{ border: "1px solid #E5E7EB" }}>
+                <div className="mb-5 h-1 w-12 rounded-full" style={{ backgroundColor: "#C2410C" }} />
+                <h2 className="text-xl font-black" style={{ color: "#111827" }}>
+                  {group.title}
+                </h2>
+                <p className="mt-3 leading-[1.75]" style={{ color: "#6B7280" }}>
+                  {group.text}
+                </p>
+                <div className="mt-5 flex flex-wrap gap-2">
+                  {group.tags.map((tag) => (
+                    <span key={tag} className="rounded-full px-3 py-1.5 text-xs font-bold" style={{ backgroundColor: "#FFF7ED", color: "#C2410C" }}>
+                      {tag}
+                    </span>
+                  ))}
                 </div>
               </article>
             ))}
