@@ -2,10 +2,19 @@
 
 import { Check, Phone , Mail } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { PageLayout } from "@/components/PageLayout";
 import { AblaufSection } from "@/components/AblaufSection";
 import { useLang } from "@/contexts/LanguageContext";
 import { translations } from "@/i18n/translations";
+
+const furnitureBrandLogos = [
+  { name: "IKEA", src: "/images/brand-logos/furniture-ikea.avif", width: 220, height: 92 },
+  { name: "XXXLutz", src: "/images/brand-logos/furniture-xxxlutz.avif", width: 300, height: 92 },
+  { name: "Beliani", src: "/images/brand-logos/furniture-beliani.svg", width: 300, height: 92 },
+  { name: "TEAM 7", src: "/images/brand-logos/furniture-team7.avif", width: 320, height: 92 },
+  { name: "Voglauer", src: "/images/brand-logos/furniture-voglauer.avif", width: 280, height: 92 },
+];
 
 export function MoebelmontagePageClient() {
   const { lang } = useLang();
@@ -124,6 +133,33 @@ export function MoebelmontagePageClient() {
                 style={{ backgroundColor: "#FFFFFF", border: "1px solid #E5E7EB", color: "#C2410C", textDecoration: "none" }}>
                 {link.label}
               </a>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section className="bg-white py-14 md:py-20">
+        <div className="mx-auto max-w-7xl px-4 text-center md:px-6">
+          <h2 className="mx-auto max-w-5xl text-2xl font-black leading-tight md:text-4xl" style={{ color: "#111827" }}>
+            Wir montieren Ihre Möbel von unter anderem folgenden Herstellern:
+          </h2>
+          <Link
+            href="/leistungen/moebelmontage/marken"
+            className="mt-6 inline-flex items-center justify-center text-base font-bold md:text-lg"
+            style={{ color: "#C2410C", textDecoration: "none" }}
+          >
+            Alle Möbelmarken im Detail ansehen →
+          </Link>
+          <div className="mt-10 grid grid-cols-2 items-center justify-items-center gap-x-8 gap-y-8 sm:grid-cols-3 lg:grid-cols-5">
+            {furnitureBrandLogos.map((brand) => (
+              <div key={brand.name} className="flex h-24 w-full max-w-56 items-center justify-center">
+                <Image
+                  src={brand.src}
+                  alt={`${brand.name} Logo`}
+                  width={brand.width}
+                  height={brand.height}
+                  className="max-h-20 w-auto max-w-full object-contain"
+                />
+              </div>
             ))}
           </div>
         </div>
