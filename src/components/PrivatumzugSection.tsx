@@ -53,7 +53,9 @@ export function PrivatumzugSection() {
             {/* Button row */}
             <div className="mt-8 flex flex-wrap gap-3 items-center">
               <a
-                href="tel:+436764429652"
+                href="https://calendly.com/baktransport/besichtigung-in-wien-umgebung"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-lg border px-5 py-2.5 text-sm font-medium transition-colors hover:bg-[#C2410C] hover:text-white"
                 style={{ borderColor: "#C2410C", color: "#C2410C" }}
               >

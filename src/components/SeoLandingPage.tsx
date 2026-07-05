@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CheckCircle2, Mail, Phone } from "lucide-react";
+import { CheckCircle2, Mail, Calendar } from "lucide-react";
 import { PageLayout } from "@/components/PageLayout";
 
 interface SeoSection {
@@ -100,12 +100,14 @@ export function SeoLandingPage({
                   Angebot anfragen
                 </Link>
                 <a
-                  href="tel:+4368110723047"
+                  href="https://calendly.com/baktransport/besichtigung-in-wien-umgebung"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl border-2 px-5 py-3 font-bold"
                   style={{ borderColor: "#C2410C", color: "#C2410C", textDecoration: "none" }}
                 >
-                  <Phone className="h-5 w-5" />
-                  Anrufen
+                  <Calendar className="h-5 w-5" />
+                  Termin buchen
                 </a>
               </div>
             </div>

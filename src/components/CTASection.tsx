@@ -1,6 +1,6 @@
 "use client";
 
-import { Mail, Phone } from "lucide-react";
+import { Mail, Calendar } from "lucide-react";
 import { useLang } from "@/contexts/LanguageContext";
 import { translations } from "@/i18n/translations";
 
@@ -27,11 +27,13 @@ export function CTASection() {
             {t.cta_btn1}
           </a>
           <a
-            href="tel:+4368110723047"
+            href="https://calendly.com/baktransport/besichtigung-in-wien-umgebung"
+            target="_blank"
+            rel="noopener noreferrer"
             className="rounded-xl transition-colors flex items-center justify-center gap-2"
             style={{ border: "2px solid #FFFFFF", color: "#FFFFFF", padding: "16px 32px", fontSize: "17px", fontWeight: 700, minHeight: "44px" }}
           >
-            <Phone size={20} />
+            <Calendar size={20} />
             {t.kontakt_cta_call_btn}
           </a>
         </div>

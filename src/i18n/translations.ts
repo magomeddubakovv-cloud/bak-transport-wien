@@ -32,7 +32,7 @@ const de = {
   hero_subtext:
     "Wir transportieren, was Ihnen wichtig ist — pünktlich, professionell und zum Fixpreis. Privatumzüge, Firmenumzüge, Möbelmontage in ganz Wien und Österreich.",
   hero_cta_quote: "Jetzt Angebot anfragen",
-  hero_cta_call: "Uns anrufen",
+  hero_cta_call: "Termin buchen",
   hero_badge1: "Eigene LKW-Flotte",
   hero_badge2: "€100.000 versichert",
   hero_badge3: "60 Min Rückmeldung",
@@ -230,7 +230,7 @@ const de = {
   contact_item1: "Privatumzug und Firmenumzug",
   contact_item2: "Küchenmontage und Möbelmontage",
   contact_item3: "Umzugsanfrage online",
-  contact_call_btn: "Jetzt anrufen",
+  contact_call_btn: "Termin buchen",
   contact_email_btn: "E-Mail senden",
 
   // FinalCTASection
@@ -250,7 +250,7 @@ const de = {
     "Unser Team sorgt für eine strukturierte Umzugsabwicklung mit minimaler Betriebsunterbrechung. Auf Wunsch führen wir den Umzug außerhalb Ihrer Geschäftszeiten durch.",
   firmen_p3:
     "Alle Schritte werden vorab definiert, transparent kommuniziert und schriftlich festgehalten – für Planungssicherheit ohne Überraschungen.",
-  firmen_btn_call: "Anrufen",
+  firmen_btn_call: "Termin buchen",
   firmen_btn_contact: "Besichtigung vereinbaren →",
 
   // MobileActionBar
@@ -265,7 +265,7 @@ const de = {
     "Seit Juni 2024 haben wir über 500 Umzüge erfolgreich durchgeführt. Die meisten Umzüge dauern 4–8 Stunden. Unsere Kunden bewerten uns mit 5 von 5 Sternen – schnell, sauber, verlässlich.",
   privat_p3:
     "Die Kosten hängen vom tatsächlichen Aufwand ab (Umfang, Tragewege, Aufzüge, Montage, Schwerlastmöbel). Nach Besichtigung oder Inventarliste erhalten Sie ein kostenloses, unverbindliches Fixangebot – ohne versteckte Kosten.",
-  privat_btn_call: "Anrufen",
+  privat_btn_call: "Termin buchen",
   privat_btn_offer: "Angebot anfordern",
   privat_btn_more: "Mehr erfahren →",
   privat_btn_visit: "Besichtigung vereinbaren →",
@@ -439,7 +439,7 @@ const de = {
   faqpage_cta_h2: "Noch Fragen?",
   faqpage_cta_desc: "Kostenloses Angebot — Rückmeldung in 60 Minuten",
   faqpage_cta_btn1: "Jetzt Angebot anfordern",
-  faqpage_cta_btn2: "Anrufen",
+  faqpage_cta_btn2: "Termin buchen",
 
   // Kontakt page
   kontakt_label: "UNTERNEHMEN",
@@ -473,7 +473,7 @@ const de = {
   kontakt_cta_h2: "Umzug anfragen",
   kontakt_cta_desc: "Kostenloses Angebot — Rückmeldung in 60 Minuten",
   kontakt_cta_email_btn: "E-Mail schreiben",
-  kontakt_cta_call_btn: "Jetzt anrufen",
+  kontakt_cta_call_btn: "Termin buchen",
 
   // Karriere page
   karriere_label: "UNTERNEHMEN",
@@ -526,7 +526,7 @@ const de = {
   karriere_cta_desc:
     "Schicken Sie uns eine kurze E-Mail — wir melden uns schnell.",
   karriere_cta_btn1: "Jetzt bewerben",
-  karriere_cta_btn2: "Anrufen",
+  karriere_cta_btn2: "Termin buchen",
 
   // Ueber-uns page
   ueber_label: "UNTERNEHMEN",
@@ -577,7 +577,7 @@ const de = {
   ueber_cta_h2: "Umzug anfragen",
   ueber_cta_desc: "Kostenloses Angebot — Rückmeldung in 60 Minuten",
   ueber_cta_btn1: "Jetzt Angebot anfordern",
-  ueber_cta_btn2: "Anrufen",
+  ueber_cta_btn2: "Termin buchen",
 
   // Impressum page
   impressum_label: "RECHTLICHES",
@@ -630,7 +630,7 @@ const de = {
   sub_more_services: "Weitere Leistungen von BAK Transport Wien",
   sub_cta_desc: "Kostenloses Angebot — Rückmeldung in 60 Minuten",
   sub_cta_btn1: "Jetzt Angebot anfordern",
-  sub_cta_btn2: "Anrufen",
+  sub_cta_btn2: "Termin buchen",
   sub_price_footnote: "Endpreise nach kostenloser Besichtigung. Fixpreis garantiert.",
 
   // Privatumzug subpage
@@ -1285,7 +1285,7 @@ const en: typeof de = {
   hero_subtext:
     "We transport what matters to you — on time, professionally and at a fixed price. Private moves, office relocations, furniture assembly throughout Vienna and Austria.",
   hero_cta_quote: "Request a Quote Now",
-  hero_cta_call: "Call Us",
+  hero_cta_call: "Book Appointment",
   hero_badge1: "Own Truck Fleet",
   hero_badge2: "€100,000 insured",
   hero_badge3: "60 Min Response",
@@ -1483,7 +1483,7 @@ const en: typeof de = {
   contact_item1: "Private and office moves",
   contact_item2: "Kitchen and furniture assembly",
   contact_item3: "Online moving request",
-  contact_call_btn: "Call now",
+  contact_call_btn: "Book Appointment",
   contact_email_btn: "Send email",
 
   // FinalCTASection
@@ -1503,7 +1503,7 @@ const en: typeof de = {
     "Our team ensures structured move handling with minimal business interruption. On request, we carry out the move outside your business hours.",
   firmen_p3:
     "All steps are defined in advance, communicated transparently and recorded in writing — for planning certainty without surprises.",
-  firmen_btn_call: "Call",
+  firmen_btn_call: "Book Appointment",
   firmen_btn_contact: "Schedule inspection →",
 
   // MobileActionBar
@@ -1518,7 +1518,7 @@ const en: typeof de = {
     "Since June 2024 we have successfully completed over 500 moves. Most moves take 4–8 hours. Our customers rate us 5 out of 5 stars — fast, clean, reliable.",
   privat_p3:
     "The cost depends on the actual work involved (scope, carrying distances, elevators, assembly, heavy furniture). After inspection or inventory list you receive a free, non-binding fixed quote — no hidden costs.",
-  privat_btn_call: "Call",
+  privat_btn_call: "Book Appointment",
   privat_btn_offer: "Request quote",
   privat_btn_more: "Learn more →",
   privat_btn_visit: "Schedule inspection →",
@@ -1690,7 +1690,7 @@ const en: typeof de = {
   faqpage_cta_h2: "Still have questions?",
   faqpage_cta_desc: "Free quote — response in 60 minutes",
   faqpage_cta_btn1: "Request quote now",
-  faqpage_cta_btn2: "Call",
+  faqpage_cta_btn2: "Book Appointment",
 
   // Kontakt page
   kontakt_label: "COMPANY",
@@ -1724,7 +1724,7 @@ const en: typeof de = {
   kontakt_cta_h2: "Request a Move",
   kontakt_cta_desc: "Free quote — response in 60 minutes",
   kontakt_cta_email_btn: "Send email",
-  kontakt_cta_call_btn: "Call now",
+  kontakt_cta_call_btn: "Book Appointment",
 
   // Karriere page
   karriere_label: "COMPANY",
@@ -1776,7 +1776,7 @@ const en: typeof de = {
   karriere_cta_h2: "Apply now",
   karriere_cta_desc: "Send us a short email — we will get back to you quickly.",
   karriere_cta_btn1: "Apply now",
-  karriere_cta_btn2: "Call",
+  karriere_cta_btn2: "Book Appointment",
 
   // Ueber-uns page
   ueber_label: "COMPANY",
@@ -1827,7 +1827,7 @@ const en: typeof de = {
   ueber_cta_h2: "Request a Move",
   ueber_cta_desc: "Free quote — response in 60 minutes",
   ueber_cta_btn1: "Request quote now",
-  ueber_cta_btn2: "Call",
+  ueber_cta_btn2: "Book Appointment",
 
   // Impressum page
   impressum_label: "LEGAL",
@@ -1880,7 +1880,7 @@ const en: typeof de = {
   sub_more_services: "More Services from BAK Transport Vienna",
   sub_cta_desc: "Free quote — response in 60 minutes",
   sub_cta_btn1: "Request quote now",
-  sub_cta_btn2: "Call",
+  sub_cta_btn2: "Book Appointment",
   sub_price_footnote: "Final prices after free inspection. Fixed price guaranteed.",
 
   // Privatumzug subpage

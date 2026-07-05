@@ -1,6 +1,6 @@
 "use client";
 
-import { Phone, Mail, Check, MapPin, Clock, Shield, Star } from "lucide-react";
+import { Calendar, Mail, Check, MapPin, Clock, Shield, Star } from "lucide-react";
 import { PageLayout } from "@/components/PageLayout";
 import { AblaufSection } from "@/components/AblaufSection";
 import type { WienerBezirk } from "@/data/wiener-bezirke";
@@ -248,11 +248,11 @@ export function BezirkPageClient({ bezirk }: Props) {
               <Mail className="w-5 h-5" />
               Kostenloses Angebot
             </a>
-            <a href="tel:+4368110723047"
+            <a href="https://calendly.com/baktransport/besichtigung-in-wien-umgebung" target="_blank" rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-semibold text-base w-full sm:w-auto"
               style={{ border: "2px solid #FFFFFF", color: "#FFFFFF", textDecoration: "none" }}>
-              <Phone className="w-5 h-5" />
-              0681 107 23 047
+              <Calendar className="w-5 h-5" />
+              Termin buchen
             </a>
           </div>
         </div>

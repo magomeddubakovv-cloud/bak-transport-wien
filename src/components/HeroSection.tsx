@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Truck, Shield, Clock, Award, Phone, Mail } from "lucide-react";
+import { Truck, Shield, Clock, Award, Calendar, Mail } from "lucide-react";
 import { useLang } from "@/contexts/LanguageContext";
 import { translations } from "@/i18n/translations";
 
@@ -98,7 +98,9 @@ export function HeroSection() {
                   {t.hero_cta_quote}
                 </a>
                 <a
-                  href="tel:+4368110723047"
+                  href="https://calendly.com/baktransport/besichtigung-in-wien-umgebung"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="rounded-lg font-bold border-2 border-[#C2410C] transition-colors hover:bg-orange-50 flex items-center justify-center gap-2"
                   style={{
                     color: "#C2410C",
@@ -108,7 +110,7 @@ export function HeroSection() {
                     minHeight: "44px",
                   }}
                 >
-                  <Phone size={20} />
+                  <Calendar size={20} />
                   {t.hero_cta_call}
                 </a>
               </div>

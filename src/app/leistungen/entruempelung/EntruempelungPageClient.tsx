@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Check, Mail, Phone } from "lucide-react";
+import { Check, Mail, Calendar } from "lucide-react";
 import { AblaufSection } from "@/components/AblaufSection";
 import { PageLayout } from "@/components/PageLayout";
 import { useLang } from "@/contexts/LanguageContext";
@@ -59,7 +59,7 @@ const copy = {
     ctaHeading: "Entrümpelung in Wien anfragen",
     ctaDesc: "Senden Sie uns Fotos oder vereinbaren Sie eine kostenlose Besichtigung. Wir melden uns schnell mit einem klaren Fixpreis.",
     quote: "Angebot anfragen",
-    call: "Anrufen",
+    call: "Termin buchen",
   },
   en: {
     label: "CLEARANCE VIENNA",
@@ -113,7 +113,7 @@ const copy = {
     ctaHeading: "Request clearance in Vienna",
     ctaDesc: "Send us photos or arrange a free inspection. We will respond quickly with a clear fixed price.",
     quote: "Request quote",
-    call: "Call us",
+    call: "Book Appointment",
   },
 } as const;
 
@@ -223,7 +223,7 @@ export function EntruempelungPageClient() {
           <p className="mb-8 text-white opacity-90">{t.ctaDesc}</p>
           <div className="grid grid-cols-2 sm:flex sm:flex-row gap-3 sm:gap-4 justify-center">
             <a href="/anfrage" className="inline-flex items-center justify-center gap-2 px-4 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold text-sm sm:text-base w-full sm:w-auto" style={{ backgroundColor: "#FFFFFF", color: "#C2410C" }}><Mail className="w-5 h-5" />{t.quote}</a>
-            <a href="tel:+4368110723047" className="inline-flex items-center justify-center gap-2 px-4 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold text-sm sm:text-base w-full sm:w-auto" style={{ border: "2px solid #FFFFFF", color: "#FFFFFF" }}><Phone className="w-5 h-5" />{t.call}</a>
+            <a href="https://calendly.com/baktransport/besichtigung-in-wien-umgebung" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-4 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold text-sm sm:text-base w-full sm:w-auto" style={{ border: "2px solid #FFFFFF", color: "#FFFFFF" }}><Calendar className="w-5 h-5" />{t.call}</a>
           </div>
         </div>
       </section>

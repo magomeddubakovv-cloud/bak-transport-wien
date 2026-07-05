@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { Mail, Phone } from "lucide-react";
+import { Mail, Calendar } from "lucide-react";
 import { PageLayout } from "@/components/PageLayout";
 
 export const metadata: Metadata = {
@@ -165,9 +165,9 @@ export default function KuechenmarkenPage() {
               <Mail className="h-5 w-5" />
               Angebot anfragen
             </Link>
-            <a href="tel:+4368110723047" className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl border-2 border-white px-6 py-3 font-bold text-white" style={{ textDecoration: "none" }}>
-              <Phone className="h-5 w-5" />
-              Anrufen
+            <a href="https://calendly.com/baktransport/besichtigung-in-wien-umgebung" target="_blank" rel="noopener noreferrer" className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl border-2 border-white px-6 py-3 font-bold text-white" style={{ textDecoration: "none" }}>
+              <Calendar className="h-5 w-5" />
+              Termin buchen
             </a>
           </div>
         </div>

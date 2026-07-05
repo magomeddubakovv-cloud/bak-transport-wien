@@ -25,7 +25,9 @@ export function ContactSection() {
 
         <div className="mt-8 flex justify-center gap-4 flex-wrap">
           <a
-            href="tel:+436764429652"
+            href="https://calendly.com/baktransport/besichtigung-in-wien-umgebung"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block bg-[#C2410C] text-white rounded-lg px-6 py-3 font-semibold text-sm hover:bg-[#9A3412] transition-colors"
           >
             {t.contact_call_btn}
