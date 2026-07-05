@@ -26,7 +26,7 @@ export function BezirkPageClient({ bezirk }: Props) {
       <section className="py-12 md:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-            <div>
+            <div className="flex flex-col items-center text-center">
               <p className="text-xs uppercase tracking-[3px] font-bold mb-3" style={{ color: "#C2410C" }}>
                 {bezirk.fullName}
               </p>
@@ -40,7 +40,7 @@ export function BezirkPageClient({ bezirk }: Props) {
                 BAK Transport führt täglich Umzüge in ganz Wien durch — mit Fixpreis, erfahrenem Team und
                 vollständiger Versicherungsdeckung. Kein Stundenlohn-Risiko, keine versteckten Kosten.
               </p>
-              <div className="flex flex-wrap gap-3">
+              <div className="flex flex-wrap justify-center gap-3">
                 {[
                   { icon: Shield, text: "Vollversichert" },
                   { icon: Clock, text: "Antwort in 60 Min." },

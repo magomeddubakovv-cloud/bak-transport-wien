@@ -36,7 +36,7 @@ export function SchwerlasttransportPageClient() {
       <section className="py-12 md:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-            <div>
+            <div className="flex flex-col items-center text-center">
               <h2 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: "#111827" }}>{t.schwer_page_h2}</h2>
               <p className="mb-4" style={{ color: "#6B7280", lineHeight: "1.75" }}>{t.schwer_page_p1}</p>
               <p className="mb-4" style={{ color: "#6B7280", lineHeight: "1.75" }}>{t.schwer_page_p2}</p>
