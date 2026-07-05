@@ -1,6 +1,10 @@
+"use client";
+
 import Link from "next/link";
 import { CheckCircle2, Mail, Calendar } from "lucide-react";
 import { PageLayout } from "@/components/PageLayout";
+import { useLang } from "@/contexts/LanguageContext";
+import { translations } from "@/i18n/translations";
 
 interface SeoSection {
   heading: string;
@@ -44,6 +48,9 @@ export function SeoLandingPage({
   faqs = [],
   relatedLinks = [],
 }: SeoLandingPageProps) {
+  const { lang } = useLang();
+  const t = translations[lang];
+
   return (
     <PageLayout label={label} title={title} subtitle={subtitle}>
       <section className="bg-white py-12 md:py-20">
@@ -82,13 +89,13 @@ export function SeoLandingPage({
           <aside className="space-y-5">
             <div className="rounded-2xl p-6 md:p-8" style={{ backgroundColor: "#FFF7ED", border: "1px solid #FED7AA" }}>
               <p className="text-sm font-bold uppercase tracking-[0.16em]" style={{ color: "#C2410C" }}>
-                Kostenloses Angebot
+                {t.seolanding_cta_label}
               </p>
               <h2 className="mt-3 text-2xl font-black leading-tight" style={{ color: "#111827" }}>
-                Fixpreis statt Überraschung
+                {t.seolanding_cta_heading}
               </h2>
               <p className="mt-4 leading-[1.7]" style={{ color: "#6B7280" }}>
-                Schildern Sie kurz Ihr Anliegen. Wir melden uns rasch mit einer klaren Einschätzung und einem verbindlichen Angebot.
+                {t.seolanding_cta_text}
               </p>
               <div className="mt-6 grid grid-cols-1 gap-3">
                 <Link
@@ -97,7 +104,7 @@ export function SeoLandingPage({
                   style={{ backgroundColor: "#C2410C", textDecoration: "none" }}
                 >
                   <Mail className="h-5 w-5" />
-                  Angebot anfragen
+                  {t.seolanding_cta_btn_quote}
                 </Link>
                 <a
                   href="https://calendly.com/baktransport/besichtigung-in-wien-umgebung"
@@ -107,7 +114,7 @@ export function SeoLandingPage({
                   style={{ borderColor: "#C2410C", color: "#C2410C", textDecoration: "none" }}
                 >
                   <Calendar className="h-5 w-5" />
-                  Termin buchen
+                  {t.seolanding_cta_btn_call}
                 </a>
               </div>
             </div>
@@ -115,7 +122,7 @@ export function SeoLandingPage({
             {relatedLinks.length > 0 && (
               <div className="rounded-2xl bg-white p-6" style={{ border: "1px solid #E5E7EB" }}>
                 <h2 className="text-xl font-bold" style={{ color: "#111827" }}>
-                  Passende Seiten
+                  {t.seolanding_related_heading}
                 </h2>
                 <div className="mt-4 flex flex-wrap gap-2">
                   {relatedLinks.map((link) => (
@@ -159,7 +166,7 @@ export function SeoLandingPage({
         <section className="bg-white py-12 md:py-20">
           <div className="mx-auto max-w-4xl px-4 md:px-6">
             <h2 className="text-2xl font-bold md:text-3xl" style={{ color: "#111827" }}>
-              Häufige Fragen
+              {t.seolanding_faq_heading}
             </h2>
             <div className="mt-8 space-y-7">
               {faqs.map((faq) => (
