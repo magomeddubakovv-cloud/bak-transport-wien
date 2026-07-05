@@ -41,6 +41,41 @@ const steps = [
   "Montage sauber und termingerecht durchführen lassen",
 ];
 
+const faqs = [
+  {
+    q: "Für welche Möbelmarken übernehmen Sie die Montage?",
+    a: "Wir montieren Möbel praktisch aller gängigen Marken und Händler — u. a. IKEA, XXXLutz, Mömax, Kika, Leiner, JYSK, Home24, Wayfair, BoConcept, Hülsta, Rolf Benz und Höffner. Ist Ihre Marke nicht dabei, fragen Sie einfach nach.",
+  },
+  {
+    q: "Was kostet die Montage von Möbeln einer bestimmten Marke?",
+    a: "Der Preis richtet sich nach Möbeltyp, Anzahl und Aufwand, nicht direkt nach der Marke. Senden Sie uns Modell und Stückzahl, wir erstellen ein Fixpreis-Angebot ohne versteckte Kosten.",
+  },
+  {
+    q: "Montieren Sie auch komplexe IKEA-Systeme wie PAX-Schränke mit Schiebetüren?",
+    a: "Ja. Gerade bei PAX, BILLY oder KALLAX prüfen wir Wandbefestigung, Ausrichtung und Laufwerke besonders sorgfältig, damit Türen und Schubladen später sauber schließen.",
+  },
+  {
+    q: "Was passiert, wenn die Aufbauanleitung fehlt oder Teile nicht mehr passen?",
+    a: "Kein Problem — unser Team kennt die gängigen Systeme der genannten Marken auch ohne Anleitung. Bei fehlenden oder beschädigten Teilen sagen wir Ihnen vorab Bescheid, bevor wir weitermachen.",
+  },
+  {
+    q: "Bauen Sie auch bestehende Möbel vor einem Umzug ab und am neuen Ort wieder auf?",
+    a: "Ja, das ist eine unserer häufigsten Leistungen — besonders bei Wohnwänden, Betten und Büromöbeln von XXXLutz, Mömax, Kika und Leiner übernehmen wir Abbau, Transportschutz und Wiederaufbau aus einer Hand.",
+  },
+  {
+    q: "Montieren Sie auch Designer- und Markenmöbel wie Rolf Benz oder Hülsta?",
+    a: "Ja. Bei hochwertigen Marken wie Rolf Benz, Hülsta oder BoConcept arbeiten wir besonders vorsichtig, da Oberflächen und Beschläge oft empfindlicher sind als bei Standardmöbeln.",
+  },
+  {
+    q: "Übernehmen Sie auch die Montage von Büromöbeln für Firmen?",
+    a: "Ja, wir montieren Schreibtische, Aktenschränke, Regale und Rollcontainer für Homeoffice und Firmen — bei Firmenumzügen planen wir Reihenfolge und Wiederaufbau strukturiert, damit der Betrieb möglichst wenig gestört wird.",
+  },
+  {
+    q: "Wie schnell kann die Montage nach meiner Anfrage stattfinden?",
+    a: "In der Regel melden wir uns innerhalb kurzer Zeit mit einem Fixpreis-Angebot und einem Terminvorschlag. Je nach Auslastung ist die Montage oft schon innerhalb weniger Tage möglich.",
+  },
+];
+
 export default function MoebelmarkenPage() {
   return (
     <PageLayout
@@ -129,6 +164,29 @@ export default function MoebelmarkenPage() {
                 <p className="font-bold leading-[1.55]" style={{ color: "#111827" }}>
                   {step}
                 </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-12 md:py-20">
+        <div className="mx-auto max-w-4xl px-4 md:px-6">
+          <div className="mb-8 md:mb-12">
+            <p className="text-sm font-bold uppercase tracking-[0.16em]" style={{ color: "#C2410C" }}>
+              Häufige Fragen
+            </p>
+            <h2 className="mt-3 text-2xl font-black md:text-4xl" style={{ color: "#111827" }}>
+              Möbelmontage nach Marke: die wichtigsten Fragen
+            </h2>
+          </div>
+          <div className="space-y-8">
+            {faqs.map((faq) => (
+              <div key={faq.q} style={{ borderBottom: "1px solid #E5E7EB", paddingBottom: "2rem" }}>
+                <p className="mb-2 text-lg font-bold" style={{ color: "#111827" }}>
+                  {faq.q}
+                </p>
+                <p style={{ color: "#6B7280", lineHeight: "1.75" }}>{faq.a}</p>
               </div>
             ))}
           </div>
