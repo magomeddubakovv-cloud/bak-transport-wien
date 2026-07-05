@@ -19,6 +19,7 @@ export function Logo({ variant = "dark", size = "md", className }: LogoProps) {
     <Image
       src={variant === "light" ? "/images/logo-light.png" : "/images/logo-transparent.png"}
       alt="BAK Transport Wien"
+      title="BAK Transport Wien"
       width={width}
       height={height}
       className={className}
