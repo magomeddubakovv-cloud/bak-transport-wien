@@ -842,6 +842,12 @@ const de = {
   moebel_page_faq6_q: "Ist die Möbelmontage versichert?",
   moebel_page_faq6_a:
     "Ja. Unsere Montagearbeiten sind versichert. Wir arbeiten sorgfältig mit Schutz für Boden, Wände und Möbel und stehen für saubere Arbeit gerade.",
+  moebel_page_faq7_q: "Muss ich bei der Möbelmontage zu Hause sein?",
+  moebel_page_faq7_a:
+    "Zwingend notwendig ist es nicht — Sie können z. B. einen Schlüssel hinterlegen oder den Zugang anders organisieren. Für Absprachen vor Ort wie Platzierung und Sonderwünsche empfehlen wir aber, nach Möglichkeit anwesend zu sein.",
+  moebel_page_faq8_q: "Montieren Sie auch gebrauchte Möbel neu, z. B. nach einem Umzug?",
+  moebel_page_faq8_a:
+    "Ja. Wir bauen auch bereits genutzte Möbel nach einem Umzug oder Tausch wieder fachgerecht auf, inklusive Kontrolle auf Transportschäden und fehlende Teile.",
   moebel_page_cta_h2: "Möbelmontage anfragen",
 
   // Notfallumzug subpage
@@ -2083,6 +2089,12 @@ const en: typeof de = {
   moebel_page_faq6_q: "Is my furniture assembly insured?",
   moebel_page_faq6_a:
     "Yes. Our assembly work is insured. We work carefully with protection for floors, walls and furniture and stand behind clean, professional work.",
+  moebel_page_faq7_q: "Do I need to be home during the furniture assembly?",
+  moebel_page_faq7_a:
+    "It's not strictly required — you can, for example, leave us a key or arrange access another way. For on-site decisions such as placement and special requests, we recommend being present if possible.",
+  moebel_page_faq8_q: "Do you also reassemble used furniture, for example after a move?",
+  moebel_page_faq8_a:
+    "Yes. We professionally reassemble furniture that has already been used after a move or exchange, including a check for transport damage and missing parts.",
   moebel_page_cta_h2: "Request Furniture Assembly",
 
   // Notfallumzug subpage

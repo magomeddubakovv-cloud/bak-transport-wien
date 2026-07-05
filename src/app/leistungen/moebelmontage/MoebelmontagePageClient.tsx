@@ -41,6 +41,8 @@ export function MoebelmontagePageClient() {
     { q: t.moebel_page_faq4_q, a: t.moebel_page_faq4_a },
     { q: t.moebel_page_faq5_q, a: t.moebel_page_faq5_a },
     { q: t.moebel_page_faq6_q, a: t.moebel_page_faq6_a },
+    { q: t.moebel_page_faq7_q, a: t.moebel_page_faq7_a },
+    { q: t.moebel_page_faq8_q, a: t.moebel_page_faq8_a },
   ];
 
   return (
