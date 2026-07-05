@@ -851,6 +851,66 @@ const de = {
     "Ja. Wir bauen auch bereits genutzte Möbel nach einem Umzug oder Tausch wieder fachgerecht auf, inklusive Kontrolle auf Transportschäden und fehlende Teile.",
   moebel_page_cta_h2: "Möbelmontage anfragen",
 
+  // Moebelmarken
+  moebelmarken_page_label: "Möbelmarken",
+  moebelmarken_page_title: "Möbelmontage in Wien für IKEA, XXXLutz, Mömax und mehr",
+  moebelmarken_page_subtitle:
+    "BAK Transport montiert Möbel vieler Hersteller und Händler: Schränke, Betten, Regale, Kommoden, Sideboards und Büromöbel.",
+  moebelmarken_page_intro:
+    "Jede Möbelmarke hat eigene Beschläge, Aufbauanleitungen und Systeme. Unser Team schützt Boden und Möbelteile, richtet sauber aus und montiert stabil.",
+  moebelmarken_page_hero_alt: "BAK Transport Möbelmontage in Wien mit Monteuren und Werkzeug",
+  moebelmarken_page_groups_label: "Marken & Möbelgruppen",
+  moebelmarken_page_groups_h2: "Für diese Möbel sind wir regelmäßig im Einsatz",
+  moebelmarken_page_group1_title: "IKEA Möbelmontage",
+  moebelmarken_page_group1_brands: "PAX, BILLY, MALM, BESTA, KALLAX",
+  moebelmarken_page_group1_text:
+    "IKEA Systeme sind beliebt, aber bei großen Schränken, Schiebetüren und Wandbefestigungen zählt sauberes Ausrichten. Wir montieren die Teile stabil und prüfen Beschläge, Türen und Schubladen.",
+  moebelmarken_page_group2_title: "XXXLutz, Mömax, Kika & Leiner",
+  moebelmarken_page_group2_brands: "Wohnwände, Betten, Kommoden, Garderoben",
+  moebelmarken_page_group2_text:
+    "Viele Möbelhäuser liefern zerlegt oder vormontiert. Wir übernehmen Aufbau, Abbau vor dem Umzug und Wiederaufbau am neuen Standort inklusive Schutz beim Transport.",
+  moebelmarken_page_group3_title: "Büromöbel & Stauraum",
+  moebelmarken_page_group3_brands: "Schreibtische, Aktenschränke, Regale, Rollcontainer",
+  moebelmarken_page_group3_text:
+    "Für Firmen und Homeoffice montieren wir Arbeitsplätze, Schränke und Regalsysteme. Besonders bei Firmenumzügen planen wir Reihenfolge und Wiederaufbau strukturiert.",
+  moebelmarken_page_steps_h2: "So läuft die Möbelmontage ab",
+  moebelmarken_page_steps_p:
+    "Je genauer wir Modell, Anzahl und Zustand kennen, desto besser können wir Zeit und Preis planen. Fotos reichen oft schon für eine erste Einschätzung.",
+  moebelmarken_page_step1: "Möbelmodell, Maße und Anzahl kurz senden",
+  moebelmarken_page_step2: "Fotos oder Aufbauanleitung mitschicken",
+  moebelmarken_page_step3: "Fixpreis-Angebot nach Umfang erhalten",
+  moebelmarken_page_step4: "Montage sauber und termingerecht durchführen lassen",
+  moebelmarken_page_faq_label: "Häufige Fragen",
+  moebelmarken_page_faq_h2: "Möbelmontage nach Marke: die wichtigsten Fragen",
+  moebelmarken_page_faq1_q: "Für welche Möbelmarken übernehmen Sie die Montage?",
+  moebelmarken_page_faq1_a:
+    "Wir montieren Möbel praktisch aller gängigen Marken und Händler — u. a. IKEA, XXXLutz, Mömax, Kika, Leiner, JYSK, Home24, Wayfair, BoConcept, Hülsta, Rolf Benz und Höffner. Ist Ihre Marke nicht dabei, fragen Sie einfach nach.",
+  moebelmarken_page_faq2_q: "Was kostet die Montage von Möbeln einer bestimmten Marke?",
+  moebelmarken_page_faq2_a:
+    "Der Preis richtet sich nach Möbeltyp, Anzahl und Aufwand, nicht direkt nach der Marke. Senden Sie uns Modell und Stückzahl, wir erstellen ein Fixpreis-Angebot ohne versteckte Kosten.",
+  moebelmarken_page_faq3_q: "Montieren Sie auch komplexe IKEA-Systeme wie PAX-Schränke mit Schiebetüren?",
+  moebelmarken_page_faq3_a:
+    "Ja. Gerade bei PAX, BILLY oder KALLAX prüfen wir Wandbefestigung, Ausrichtung und Laufwerke besonders sorgfältig, damit Türen und Schubladen später sauber schließen.",
+  moebelmarken_page_faq4_q: "Was passiert, wenn die Aufbauanleitung fehlt oder Teile nicht mehr passen?",
+  moebelmarken_page_faq4_a:
+    "Kein Problem — unser Team kennt die gängigen Systeme der genannten Marken auch ohne Anleitung. Bei fehlenden oder beschädigten Teilen sagen wir Ihnen vorab Bescheid, bevor wir weitermachen.",
+  moebelmarken_page_faq5_q: "Bauen Sie auch bestehende Möbel vor einem Umzug ab und am neuen Ort wieder auf?",
+  moebelmarken_page_faq5_a:
+    "Ja, das ist eine unserer häufigsten Leistungen — besonders bei Wohnwänden, Betten und Büromöbeln von XXXLutz, Mömax, Kika und Leiner übernehmen wir Abbau, Transportschutz und Wiederaufbau aus einer Hand.",
+  moebelmarken_page_faq6_q: "Montieren Sie auch Designer- und Markenmöbel wie Rolf Benz oder Hülsta?",
+  moebelmarken_page_faq6_a:
+    "Ja. Bei hochwertigen Marken wie Rolf Benz, Hülsta oder BoConcept arbeiten wir besonders vorsichtig, da Oberflächen und Beschläge oft empfindlicher sind als bei Standardmöbeln.",
+  moebelmarken_page_faq7_q: "Übernehmen Sie auch die Montage von Büromöbeln für Firmen?",
+  moebelmarken_page_faq7_a:
+    "Ja, wir montieren Schreibtische, Aktenschränke, Regale und Rollcontainer für Homeoffice und Firmen — bei Firmenumzügen planen wir Reihenfolge und Wiederaufbau strukturiert, damit der Betrieb möglichst wenig gestört wird.",
+  moebelmarken_page_faq8_q: "Wie schnell kann die Montage nach meiner Anfrage stattfinden?",
+  moebelmarken_page_faq8_a:
+    "In der Regel melden wir uns innerhalb kurzer Zeit mit einem Fixpreis-Angebot und einem Terminvorschlag. Je nach Auslastung ist die Montage oft schon innerhalb weniger Tage möglich.",
+  moebelmarken_page_cta_h2: "Möbelmontage anfragen",
+  moebelmarken_page_cta_p: "Senden Sie uns Marke, Modell, Fotos und gewünschten Termin. Wir melden uns mit einem klaren Angebot.",
+  moebelmarken_page_cta_btn1: "Angebot anfragen",
+  moebelmarken_page_cta_btn2: "Termin buchen",
+
   // Notfallumzug subpage
   notfall_page_label: "LEISTUNGEN",
   notfall_page_title: "Notfallumzug Wien",
@@ -2098,6 +2158,66 @@ const en: typeof de = {
   moebel_page_faq8_a:
     "Yes. We professionally reassemble furniture that has already been used after a move or exchange, including a check for transport damage and missing parts.",
   moebel_page_cta_h2: "Request Furniture Assembly",
+
+  // Moebelmarken
+  moebelmarken_page_label: "Furniture Brands",
+  moebelmarken_page_title: "Furniture Assembly in Vienna for IKEA, XXXLutz, Mömax and More",
+  moebelmarken_page_subtitle:
+    "BAK Transport assembles furniture from many manufacturers and retailers: wardrobes, beds, shelves, dressers, sideboards and office furniture.",
+  moebelmarken_page_intro:
+    "Every furniture brand has its own fittings, assembly instructions and systems. Our team protects floors and furniture parts, aligns everything precisely and assembles it securely.",
+  moebelmarken_page_hero_alt: "BAK Transport furniture assembly in Vienna with fitters and tools",
+  moebelmarken_page_groups_label: "Brands & Furniture Groups",
+  moebelmarken_page_groups_h2: "We regularly assemble these furniture types",
+  moebelmarken_page_group1_title: "IKEA Furniture Assembly",
+  moebelmarken_page_group1_brands: "PAX, BILLY, MALM, BESTA, KALLAX",
+  moebelmarken_page_group1_text:
+    "IKEA systems are popular, but with large wardrobes, sliding doors and wall fixings, precise alignment is what counts. We assemble the parts securely and check fittings, doors and drawers.",
+  moebelmarken_page_group2_title: "XXXLutz, Mömax, Kika & Leiner",
+  moebelmarken_page_group2_brands: "Wall units, beds, dressers, wardrobes",
+  moebelmarken_page_group2_text:
+    "Many furniture stores deliver items disassembled or pre-assembled. We handle assembly, disassembly before a move and reassembly at the new location, including protection during transport.",
+  moebelmarken_page_group3_title: "Office Furniture & Storage",
+  moebelmarken_page_group3_brands: "Desks, filing cabinets, shelving, mobile pedestals",
+  moebelmarken_page_group3_text:
+    "For companies and home offices we assemble workstations, cabinets and shelving systems. Especially for office relocations, we plan the sequence and reassembly in a structured way.",
+  moebelmarken_page_steps_h2: "How furniture assembly works",
+  moebelmarken_page_steps_p:
+    "The more precisely we know the model, quantity and condition, the better we can plan time and price. Photos are often enough for a first estimate.",
+  moebelmarken_page_step1: "Send us the furniture model, dimensions and quantity",
+  moebelmarken_page_step2: "Send along photos or the assembly instructions",
+  moebelmarken_page_step3: "Receive a fixed-price quote based on the scope",
+  moebelmarken_page_step4: "Have the assembly carried out cleanly and on schedule",
+  moebelmarken_page_faq_label: "Frequently Asked Questions",
+  moebelmarken_page_faq_h2: "Furniture assembly by brand: the most important questions",
+  moebelmarken_page_faq1_q: "Which furniture brands do you assemble?",
+  moebelmarken_page_faq1_a:
+    "We assemble furniture from practically all common brands and retailers — including IKEA, XXXLutz, Mömax, Kika, Leiner, JYSK, Home24, Wayfair, BoConcept, Hülsta, Rolf Benz and Höffner. If your brand isn't listed, just ask.",
+  moebelmarken_page_faq2_q: "What does it cost to assemble furniture from a specific brand?",
+  moebelmarken_page_faq2_a:
+    "The price depends on the furniture type, quantity and effort, not directly on the brand. Send us the model and quantity and we'll create a fixed-price quote with no hidden costs.",
+  moebelmarken_page_faq3_q: "Do you also assemble complex IKEA systems like PAX wardrobes with sliding doors?",
+  moebelmarken_page_faq3_a:
+    "Yes. Especially with PAX, BILLY or KALLAX, we carefully check wall fixing, alignment and runners so that doors and drawers close cleanly afterwards.",
+  moebelmarken_page_faq4_q: "What happens if the assembly instructions are missing or parts no longer fit?",
+  moebelmarken_page_faq4_a:
+    "No problem — our team knows the common systems of the listed brands even without instructions. If parts are missing or damaged, we let you know in advance before continuing.",
+  moebelmarken_page_faq5_q: "Do you also disassemble existing furniture before a move and reassemble it at the new location?",
+  moebelmarken_page_faq5_a:
+    "Yes, this is one of our most common services — especially for wall units, beds and office furniture from XXXLutz, Mömax, Kika and Leiner, we handle disassembly, transport protection and reassembly from a single source.",
+  moebelmarken_page_faq6_q: "Do you also assemble designer and premium furniture like Rolf Benz or Hülsta?",
+  moebelmarken_page_faq6_a:
+    "Yes. With premium brands such as Rolf Benz, Hülsta or BoConcept, we work with extra care, as surfaces and fittings are often more delicate than with standard furniture.",
+  moebelmarken_page_faq7_q: "Do you also assemble office furniture for companies?",
+  moebelmarken_page_faq7_a:
+    "Yes, we assemble desks, filing cabinets, shelving and mobile pedestals for home offices and companies — for office relocations, we plan the sequence and reassembly in a structured way to keep disruption to operations as low as possible.",
+  moebelmarken_page_faq8_q: "How quickly can the assembly take place after my request?",
+  moebelmarken_page_faq8_a:
+    "We usually get back to you within a short time with a fixed-price quote and a suggested appointment. Depending on workload, assembly is often possible within just a few days.",
+  moebelmarken_page_cta_h2: "Request Furniture Assembly",
+  moebelmarken_page_cta_p: "Send us the brand, model, photos and your preferred appointment. We'll get back to you with a clear quote.",
+  moebelmarken_page_cta_btn1: "Request a Quote",
+  moebelmarken_page_cta_btn2: "Book an Appointment",
 
   // Notfallumzug subpage
   notfall_page_label: "SERVICES",
