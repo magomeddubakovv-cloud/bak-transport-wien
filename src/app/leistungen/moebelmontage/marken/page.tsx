@@ -147,7 +147,7 @@ export default function MoebelmarkenPage() {
 
       <section className="bg-white py-12 md:py-20">
         <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 px-4 md:grid-cols-2 md:px-6">
-          <div>
+          <div className="flex flex-col items-center text-center">
             <h2 className="text-2xl font-black md:text-3xl" style={{ color: "#111827" }}>
               So läuft die Möbelmontage ab
             </h2>
