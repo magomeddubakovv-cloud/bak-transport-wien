@@ -15,24 +15,25 @@ type KitchenBrand = {
   name: string;
   logo?: string;
   className?: string;
+  url: string;
 };
 
 const kitchenBrands: KitchenBrand[] = [
-  { name: "IKEA", logo: "/images/brand-logos/ikea.png" },
-  { name: "XXXLutz", logo: "/images/brand-logos/xxxlutz.png" },
-  { name: "Mömax", logo: "/images/brand-logos/moemax.png" },
-  { name: "Kika", className: "bg-[#E30613] text-white" },
-  { name: "Leiner", logo: "/images/brand-logos/leiner-wiki.png" },
-  { name: "TEAM 7", logo: "/images/brand-logos/team7.png" },
-  { name: "Nolte Küchen", logo: "/images/brand-logos/nolte.png" },
-  { name: "nobilia", className: "bg-[#111827] lowercase text-white" },
-  { name: "EWE", logo: "/images/brand-logos/ewe.png" },
-  { name: "Miele", className: "bg-[#8A0D1A] text-white" },
-  { name: "DAN Küchen", logo: "/images/brand-logos/dan.png" },
-  { name: "Häcker", logo: "/images/brand-logos/haecker.png" },
-  { name: "Leicht", className: "bg-white text-[#374151] ring-1 ring-[#D1D5DB]" },
-  { name: "HAKA Küche", className: "bg-white text-[#374151] ring-1 ring-[#D1D5DB]" },
-  { name: "Steininger", className: "bg-[#111827] text-white" },
+  { name: "IKEA", logo: "/images/brand-logos/ikea.png", url: "https://www.ikea.com/at/de/" },
+  { name: "XXXLutz", logo: "/images/brand-logos/xxxlutz.png", url: "https://www.xxxlutz.at/" },
+  { name: "Mömax", logo: "/images/brand-logos/moemax.png", url: "https://www.moemax.at/" },
+  { name: "Kika", className: "bg-[#E30613] text-white", url: "https://www.kika.at/" },
+  { name: "Leiner", logo: "/images/brand-logos/leiner-wiki.png", url: "https://www.leiner.at/" },
+  { name: "TEAM 7", logo: "/images/brand-logos/team7.png", url: "https://www.team7-home.com/de/" },
+  { name: "Nolte Küchen", logo: "/images/brand-logos/nolte.png", url: "https://www.nolte-kuechen.com/" },
+  { name: "nobilia", className: "bg-[#111827] lowercase text-white", url: "https://www.nobilia.de/" },
+  { name: "EWE", logo: "/images/brand-logos/ewe.png", url: "https://www.ewe.at/" },
+  { name: "Miele", className: "bg-[#8A0D1A] text-white", url: "https://www.miele.at/" },
+  { name: "DAN Küchen", logo: "/images/brand-logos/dan.png", url: "https://dan.at/" },
+  { name: "Häcker", logo: "/images/brand-logos/haecker.png", url: "https://www.haecker-kuechen.com/" },
+  { name: "Leicht", className: "bg-white text-[#374151] ring-1 ring-[#D1D5DB]", url: "https://leicht.com/" },
+  { name: "HAKA Küche", className: "bg-white text-[#374151] ring-1 ring-[#D1D5DB]", url: "https://www.haka.at/" },
+  { name: "Steininger", className: "bg-[#111827] text-white", url: "https://www.steiningerdesigners.com/" },
 ];
 
 const brandDetails = [
@@ -81,8 +82,12 @@ export default function KuechenmarkenPage() {
 
           <div className="mt-10 grid grid-cols-2 items-center gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
             {kitchenBrands.map((brand) => (
-              <div
+              <a
                 key={brand.name}
+                href={brand.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                title={`${brand.name} Website öffnen`}
                 className="flex min-h-28 items-center justify-center rounded-xl bg-white p-4 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
                 style={{ border: "1px solid #E5E7EB" }}
               >
@@ -101,7 +106,7 @@ export default function KuechenmarkenPage() {
                     {brand.name}
                   </div>
                 )}
-              </div>
+              </a>
             ))}
           </div>
         </div>
