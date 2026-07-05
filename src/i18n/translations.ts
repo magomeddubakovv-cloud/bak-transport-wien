@@ -1251,6 +1251,38 @@ const de = {
   grenz_page_faq3_a:
     "Für EU-Umzüge nicht. Für Drittländer wie die Schweiz sind spezielle Zolldokumente nötig — wir helfen Ihnen dabei.",
   grenz_page_cta_h2: "Internationalen Umzug anfragen",
+
+  // Kuechenmarken
+  kuechenmarken_label: "Küchenmarken",
+  kuechenmarken_title: "Küchenmontage in Wien für IKEA, XXXLutz, Mömax und mehr",
+  kuechenmarken_subtitle:
+    "BAK Transport montiert Küchen vieler Hersteller und Möbelhäuser: sauber geplant, präzise ausgerichtet und mit klarem Fixpreis-Angebot.",
+  kuechenmarken_eyebrow: "Hersteller & Küchenhäuser",
+  kuechenmarken_h2: "Wir montieren Ihre Küchen von unter anderem folgenden Herstellern:",
+  kuechenmarken_intro:
+    "Ob IKEA, XXXLutz, Mömax, Nolte, Nobilia oder DAN: Entscheidend sind vollständige Lieferung, Planunterlagen und saubere Vorbereitung vor dem Montagetermin.",
+  kuechenmarken_open_website: "{brand} Website öffnen",
+  kuechenmarken_detail1_title: "IKEA, XXXLutz, Mömax, Kika & Leiner",
+  kuechenmarken_detail1_text:
+    "Diese Möbelhaus-Küchen werden häufig geliefert und müssen sauber ausgerichtet, verbunden und an den Raum angepasst werden.",
+  kuechenmarken_detail2_title: "Nolte, Nobilia, Häcker & DAN",
+  kuechenmarken_detail2_text:
+    "Bei Systemküchen zählen präzise Ausrichtung, Frontbild, Sockel, Abschlussleisten und die richtige Reihenfolge bei der Montage.",
+  kuechenmarken_detail3_title: "Geräte, Premiumküchen & Ergänzungen",
+  kuechenmarken_detail3_text:
+    "Auch bei Geräten, Arbeitsplatten, Umbauten oder Wiederaufbau nach Umzug prüfen wir vorab, was möglich ist und vorbereitet werden muss.",
+  kuechenmarken_check1: "Küchenplan oder Bestellunterlagen",
+  kuechenmarken_check2: "Fotos vom Raum und den Anschlüssen",
+  kuechenmarken_check3: "Liefertermin und gewünschter Montagetermin",
+  kuechenmarken_check4: "Liste der Geräte und Sonderwünsche",
+  kuechenmarken_need_h2: "Was wir vor der Küchenmontage brauchen",
+  kuechenmarken_need_text:
+    "Je genauer die Unterlagen sind, desto besser können wir Termin, Zeitaufwand und Fixpreis kalkulieren. Fotos helfen besonders bei Anschlüssen und Wandzustand.",
+  kuechenmarken_cta_h2: "Küchenmontage anfragen",
+  kuechenmarken_cta_text:
+    "Schicken Sie Küchenplan, Fotos und Liefertermin. Wir prüfen den Umfang und melden uns mit einem klaren Angebot.",
+  kuechenmarken_cta_btn1: "Angebot anfragen",
+  kuechenmarken_cta_btn2: "Termin buchen",
 };
 
 const en: typeof de = {
@@ -2495,6 +2527,38 @@ const en: typeof de = {
   grenz_page_faq3_a:
     "Not for EU moves. For third countries like Switzerland special customs documents are required — we will help you with this.",
   grenz_page_cta_h2: "Request International Move",
+
+  // Kuechenmarken
+  kuechenmarken_label: "Kitchen Brands",
+  kuechenmarken_title: "Kitchen Assembly in Vienna for IKEA, XXXLutz, Mömax & More",
+  kuechenmarken_subtitle:
+    "BAK Transport assembles kitchens from many manufacturers and furniture stores: carefully planned, precisely aligned, with a clear fixed-price quote.",
+  kuechenmarken_eyebrow: "Manufacturers & Kitchen Retailers",
+  kuechenmarken_h2: "We assemble your kitchen from, among others, the following manufacturers:",
+  kuechenmarken_intro:
+    "Whether IKEA, XXXLutz, Mömax, Nolte, Nobilia or DAN: what matters is complete delivery, planning documents, and careful preparation before the assembly appointment.",
+  kuechenmarken_open_website: "Open {brand} website",
+  kuechenmarken_detail1_title: "IKEA, XXXLutz, Mömax, Kika & Leiner",
+  kuechenmarken_detail1_text:
+    "These furniture store kitchens are delivered frequently and need to be carefully aligned, connected, and adapted to the room.",
+  kuechenmarken_detail2_title: "Nolte, Nobilia, Häcker & DAN",
+  kuechenmarken_detail2_text:
+    "For modular kitchens, precise alignment, front panel appearance, plinths, trim strips, and the correct assembly sequence all matter.",
+  kuechenmarken_detail3_title: "Appliances, Premium Kitchens & Add-Ons",
+  kuechenmarken_detail3_text:
+    "For appliances, countertops, conversions, or reassembly after a move, we check in advance what's possible and what needs to be prepared.",
+  kuechenmarken_check1: "Kitchen plan or order documents",
+  kuechenmarken_check2: "Photos of the room and connections",
+  kuechenmarken_check3: "Delivery date and desired assembly date",
+  kuechenmarken_check4: "List of appliances and special requests",
+  kuechenmarken_need_h2: "What We Need Before Kitchen Assembly",
+  kuechenmarken_need_text:
+    "The more precise the documents, the better we can calculate the appointment, time required, and fixed price. Photos are especially helpful for connections and wall condition.",
+  kuechenmarken_cta_h2: "Request Kitchen Assembly",
+  kuechenmarken_cta_text:
+    "Send us your kitchen plan, photos, and delivery date. We'll review the scope and get back to you with a clear quote.",
+  kuechenmarken_cta_btn1: "Request Quote",
+  kuechenmarken_cta_btn2: "Book Appointment",
 };
 
 export const translations: Record<LangCode, typeof de> = { de, en };
