@@ -1251,6 +1251,229 @@ const de = {
   grenz_page_faq3_a:
     "Für EU-Umzüge nicht. Für Drittländer wie die Schweiz sind spezielle Zolldokumente nötig — wir helfen Ihnen dabei.",
   grenz_page_cta_h2: "Internationalen Umzug anfragen",
+
+  // SeoLandingPage
+  seolanding_cta_label: "Kostenloses Angebot",
+  seolanding_cta_heading: "Fixpreis statt Überraschung",
+  seolanding_cta_text:
+    "Schildern Sie kurz Ihr Anliegen. Wir melden uns rasch mit einer klaren Einschätzung und einem verbindlichen Angebot.",
+  seolanding_cta_btn_quote: "Angebot anfragen",
+  seolanding_cta_btn_call: "Termin buchen",
+  seolanding_related_heading: "Passende Seiten",
+  seolanding_faq_heading: "Häufige Fragen",
+
+  // Versicherung
+  versicherung_label: "Versicherung & Schutz",
+  versicherung_title: "Umzugsversicherung: sicher transportiert von Tür zu Tür",
+  versicherung_subtitle:
+    "Ihre Möbel, Geräte und persönlichen Gegenstände werden sorgfältig geschützt, geladen und transportiert. Wir erklären vorab, was abgesichert ist und wie wir Schäden vermeiden.",
+  versicherung_intro:
+    "Ein guter Umzug besteht nicht nur aus Tragen und Fahren. Entscheidend ist, dass Möbel geschützt, Wege geprüft und empfindliche Gegenstände richtig vorbereitet werden.",
+  versicherung_section1_heading: "Wie schützt BAK Transport Ihr Eigentum?",
+  versicherung_section1_text:
+    "Wir arbeiten mit Möbeldecken, Schutzfolie, Gurten und einer sauberen Ladeplanung. Schwere und empfindliche Stücke werden getrennt betrachtet und passend gesichert.",
+  versicherung_section1_bullet1: "Möbeldecken und Stretchfolie für empfindliche Oberflächen",
+  versicherung_section1_bullet2: "Gurte und Transportsicherung im LKW",
+  versicherung_section1_bullet3: "vorsichtige Planung bei Stiegenhaus, Lift und engen Türen",
+  versicherung_section1_bullet4: "klare Übergabe vor und nach dem Transport",
+  versicherung_section2_heading: "Warum die Besichtigung wichtig ist",
+  versicherung_section2_text:
+    "Bei der Besichtigung erkennen wir Risiken früh: enge Gänge, empfindliche Böden, schwere Möbel, Glas, Klavier, Tresor oder lange Tragewege. Dadurch planen wir sicherer und fairer.",
+  versicherung_card1_title: "Vorbeugen",
+  versicherung_card1_text:
+    "Schutzmaterial, Planung und erfahrene Helfer reduzieren Schäden schon vor dem ersten Handgriff.",
+  versicherung_card2_title: "Dokumentieren",
+  versicherung_card2_text:
+    "Besondere Gegenstände können vorab besprochen und sauber in den Ablauf aufgenommen werden.",
+  versicherung_card3_title: "Absichern",
+  versicherung_card3_text:
+    "Wir arbeiten verantwortungsvoll und erklären Ihnen transparent, wie Ihr Umzug abgesichert ist.",
+  versicherung_faq1_q: "Sind meine Möbel beim Umzug versichert?",
+  versicherung_faq1_a:
+    "Ja, der Transport wird mit Versicherung geplant. Die genauen Bedingungen besprechen wir vor Auftragserteilung.",
+  versicherung_faq2_q: "Muss ich empfindliche Gegenstände selbst verpacken?",
+  versicherung_faq2_a:
+    "Sie können selbst vorbereiten, wir können aber auch Verpackung und Schutzmaterial übernehmen.",
+  versicherung_faq3_q: "Was passiert bei besonders schweren Gegenständen?",
+  versicherung_faq3_a:
+    "Für Klaviere, Tresore oder Maschinen planen wir gesondert mit Hilfsmitteln, Teamgröße und geeignetem Transportweg.",
+  versicherung_related1_label: "Schwerlasttransport",
+  versicherung_related2_label: "Umzug Preise",
+  versicherung_related3_label: "Vorteile",
+
+  // Vorteile
+  vorteile_label: "Warum BAK",
+  vorteile_title: "Warum Kunden BAK Transport für ihren Umzug wählen",
+  vorteile_subtitle:
+    "Ein Umzug braucht Verlässlichkeit, klare Kommunikation und ein Team, das sauber arbeitet. Genau darauf ist BAK Transport ausgerichtet.",
+  vorteile_intro:
+    "Wir wollen, dass Sie vor dem Umzug wissen, was passiert, wer kommt und was es kostet. Deshalb verbinden wir persönliche Beratung mit klarer Organisation und einem verbindlichen Angebot.",
+  vorteile_section1_heading: "Planung statt Chaos",
+  vorteile_section1_text:
+    "Wir prüfen Umfang, Zugang, Parkmöglichkeit und Zeitfenster vorab. So wird der Umzugstag nicht improvisiert, sondern sauber vorbereitet.",
+  vorteile_section2_heading: "Fixpreis und klare Kommunikation",
+  vorteile_section2_text:
+    "Sie erhalten eine klare Einschätzung und wissen, welche Leistung enthalten ist. Rückfragen beantworten wir direkt per Telefon, WhatsApp oder Formular.",
+  vorteile_section2_bullet1: "Rückmeldung in der Regel innerhalb von 60 Minuten",
+  vorteile_section2_bullet2: "kostenlose Besichtigung nach Bedarf",
+  vorteile_section2_bullet3: "Fixpreis nach Umfang statt Überraschungen",
+  vorteile_section2_bullet4: "ein Ansprechpartner für Planung und Ablauf",
+  vorteile_card1_title: "Erfahrenes Team",
+  vorteile_card1_text:
+    "Unsere Helfer wissen, wie Möbel, Kartons und empfindliche Gegenstände sicher getragen werden.",
+  vorteile_card2_title: "Sauberer Schutz",
+  vorteile_card2_text:
+    "Möbeldecken, Folie und Tragesysteme schützen Ihre Einrichtung und den Transportweg.",
+  vorteile_card3_title: "Wien & Österreich",
+  vorteile_card3_text:
+    "Wir fahren in Wien, Niederösterreich, Österreich und bei Bedarf grenzüberschreitend.",
+  vorteile_faq1_q: "Warum nicht einfach den günstigsten Anbieter nehmen?",
+  vorteile_faq1_a:
+    "Der billigste Startpreis ist oft nicht der Endpreis. Wichtiger sind klare Leistung, Versicherung und zuverlässige Planung.",
+  vorteile_faq2_q: "Kann BAK auch kurzfristig helfen?",
+  vorteile_faq2_a:
+    "Ja, je nach Auslastung sind kurzfristige Einsätze und Notfallumzüge möglich.",
+  vorteile_related1_label: "Privatumzug",
+  vorteile_related2_label: "Firmenumzug",
+  vorteile_related3_label: "Kontakt",
+
+  // Glossar
+  glossar_label: "Glossar",
+  glossar_title: "Umzug Glossar: wichtige Begriffe einfach erklärt",
+  glossar_subtitle:
+    "Damit Angebote, Ablauf und Leistungen verständlich bleiben, erklären wir hier die wichtigsten Begriffe rund um Umzug, Transport und Montage.",
+  glossar_intro:
+    "Ein klares Angebot ist leichter zu vergleichen, wenn Begriffe verständlich sind. Dieses Glossar hilft Ihnen, Kosten, Leistungen und Ablauf besser einzuordnen.",
+  glossar_section1_heading: "Warum ein Umzugsglossar sinnvoll ist",
+  glossar_section1_text:
+    "Viele Begriffe klingen ähnlich, bedeuten aber unterschiedliche Leistungen. Wer Fixpreis, Besichtigung, Montage und Versicherung versteht, kann Angebote besser vergleichen.",
+  glossar_term1_title: "Fixpreis",
+  glossar_term1_text:
+    "Ein vorab vereinbarter Preis für den definierten Leistungsumfang. Er schützt vor unerwarteten Zusatzkosten.",
+  glossar_term2_title: "Besichtigung",
+  glossar_term2_text:
+    "Prüfung von Möbelmenge, Zugang, Stockwerk, Lift, Parkmöglichkeit und besonderen Gegenständen vor dem Angebot.",
+  glossar_term3_title: "Halteverbotszone",
+  glossar_term3_text:
+    "Reservierter Ladebereich vor der Adresse, damit der LKW nah stehen kann und Tragewege kurz bleiben.",
+  glossar_term4_title: "Möbelmontage",
+  glossar_term4_text:
+    "Abbau, Transportvorbereitung und Wiederaufbau von Schränken, Betten, Regalen und Büromöbeln.",
+  glossar_term5_title: "Küchenmontage",
+  glossar_term5_text:
+    "Montage von Küchenmöbeln, Arbeitsplatten und Geräten nach Planung und Absprache.",
+  glossar_term6_title: "Transportversicherung",
+  glossar_term6_text:
+    "Absicherung des Transportguts während des Umzugs, abhängig von Leistung und Bedingungen.",
+  glossar_term7_title: "Trageweg",
+  glossar_term7_text:
+    "Die Strecke zwischen Wohnung, Lift, Stiegenhaus und LKW. Lange Tragewege beeinflussen Aufwand und Preis.",
+  glossar_term8_title: "Entrümpelung",
+  glossar_term8_text:
+    "Räumung und Abtransport von Möbeln, Hausrat oder Gegenständen aus Wohnung, Keller, Büro oder Verlassenschaft.",
+  glossar_term9_title: "Schwerlasttransport",
+  glossar_term9_text:
+    "Transport besonders schwerer Stücke wie Tresor, Klavier, Maschine oder großer Möbel.",
+  glossar_related1_label: "Umzug Preise",
+  glossar_related2_label: "Versicherung",
+  glossar_related3_label: "FAQ",
+
+  // Ratgeber
+  ratgeber_label: "Ratgeber",
+  ratgeber_title: "Umzug Ratgeber Wien: Tipps für Planung, Kosten und Ablauf",
+  ratgeber_subtitle:
+    "Hier sammelt BAK Transport praktische Hinweise für Privatumzug, Firmenumzug, Montage, Entrümpelung und regionale Umzüge.",
+  ratgeber_intro:
+    "Ein guter Umzug beginnt nicht am Umzugstag, sondern bei der Vorbereitung. Der Ratgeber bündelt Themen, nach denen Kunden häufig suchen, und führt direkt zu den passenden Leistungen.",
+  ratgeber_section1_heading: "Welche Themen wichtig sind",
+  ratgeber_section1_text:
+    "Die wichtigsten Fragen drehen sich um Kosten, Versicherung, Packen, Halteverbotszone, Möbelmontage, Küche, kurzfristige Termine und Umzüge zwischen Städten oder Ländern.",
+  ratgeber_section1_bullet1: "Umzugskosten realistisch einschätzen",
+  ratgeber_section1_bullet2: "Checkliste für die letzten Tage vor dem Umzug",
+  ratgeber_section1_bullet3: "Möbel richtig vorbereiten und schützen",
+  ratgeber_section1_bullet4: "Küche und Geräte vor der Montage planen",
+  ratgeber_section1_bullet5: "Versicherung und Verantwortung verstehen",
+  ratgeber_section2_heading: "Warum der Ratgeber gut für Google ist",
+  ratgeber_section2_text:
+    "Ratgeberseiten beantworten Suchfragen, bevor der Kunde direkt ein Angebot anfragt. So gewinnt die Website Vertrauen und zusätzliche Einstiege über Google.",
+  ratgeber_card1_title: "Kosten & Preise",
+  ratgeber_card1_text: "Was beeinflusst den Preis und wann lohnt sich ein Fixpreis?",
+  ratgeber_card2_title: "Planung & Checkliste",
+  ratgeber_card2_text: "Welche Aufgaben sollten vor dem Umzug erledigt sein?",
+  ratgeber_card3_title: "Montage & Schutz",
+  ratgeber_card3_text: "Wie Möbel, Küche und empfindliche Gegenstände vorbereitet werden.",
+  ratgeber_faq1_q: "Kommen später einzelne Ratgeberartikel dazu?",
+  ratgeber_faq1_a:
+    "Ja. Diese Übersichtsseite ist die Basis. Danach können einzelne Artikel zu Kosten, Checkliste, Verpackung und Montage ergänzt werden.",
+  ratgeber_faq2_q: "Hilft ein Ratgeber beim Ranking?",
+  ratgeber_faq2_a:
+    "Ja, wenn die Inhalte echte Fragen beantworten und intern sauber auf Leistungsseiten verlinken.",
+  ratgeber_related1_label: "Umzug Preise",
+  ratgeber_related2_label: "Glossar",
+  ratgeber_related3_label: "FAQ",
+
+  // UmzugPreise
+  umzugpreise_label: "Umzug Preise Wien",
+  umzugpreise_title: "Umzug Preise in Wien: klar kalkuliert, fair angeboten",
+  umzugpreise_subtitle:
+    "Was ein Umzug kostet, hängt von Wohnungsgröße, Stockwerk, Zugang, Möbelmenge und Zusatzleistungen ab. Bei BAK Transport erhalten Sie nach Besichtigung einen verbindlichen Fixpreis.",
+  umzugpreise_intro:
+    "Viele Umzugskosten wirken online günstiger, als sie am Ende wirklich sind. Deshalb kalkulieren wir transparent: Besichtigung, Umfang, Team, LKW, Schutzmaterial, Montage und Versicherung werden vorab berücksichtigt.",
+  umzugpreise_section1_heading: "Wovon hängen die Umzugskosten ab?",
+  umzugpreise_section1_text:
+    "Der Preis entsteht nicht nur durch die Quadratmeterzahl. Entscheidend sind auch Tragewege, Lift, Parkmöglichkeit, Möbelmontage, empfindliche Gegenstände und gewünschter Termin.",
+  umzugpreise_section1_bullet1: "Wohnungsgröße und Möbelmenge",
+  umzugpreise_section1_bullet2: "Stockwerk, Lift und Entfernung zum LKW",
+  umzugpreise_section1_bullet3: "Ab- und Aufbau von Möbeln oder Küche",
+  umzugpreise_section1_bullet4: "Halteverbotszone, Verpackung und Schutzmaterial",
+  umzugpreise_section1_bullet5: "Kurzfristiger Termin oder Wochenende",
+  umzugpreise_section2_heading: "Warum Fixpreis besser ist",
+  umzugpreise_section2_text:
+    "Ein Fixpreis schützt Sie vor Überraschungen am Umzugstag. Nach der Besichtigung wissen beide Seiten, was zu tun ist und welche Leistung im Preis enthalten ist.",
+  umzugpreise_section2_bullet1: "klare Leistung vor Start",
+  umzugpreise_section2_bullet2: "keine versteckten Stundenfallen",
+  umzugpreise_section2_bullet3: "bessere Planung für Team und LKW",
+  umzugpreise_section2_bullet4: "schriftliche Bestätigung auf Wunsch",
+  umzugpreise_card1_title: "Kleine Wohnung",
+  umzugpreise_card1_text:
+    "Ideal für kompakte Umzüge mit wenigen Möbeln, Kartons und kurzer Tragedistanz.",
+  umzugpreise_card2_title: "Mittlere Wohnung",
+  umzugpreise_card2_text:
+    "Für Familienwohnungen mit Montage, Schutzfolie und strukturiertem Ablauf.",
+  umzugpreise_card3_title: "Großer Umzug",
+  umzugpreise_card3_text:
+    "Für Haus, Büro oder umfangreiche Transporte mit mehreren Helfern und LKW-Kapazität.",
+  umzugpreise_faq1_q: "Kann ich den Preis telefonisch bekommen?",
+  umzugpreise_faq1_a:
+    "Eine erste Einschätzung ja. Für einen verbindlichen Fixpreis empfehlen wir eine Besichtigung oder eine sehr genaue Foto-/Videobeschreibung.",
+  umzugpreise_faq2_q: "Ist die Versicherung im Preis enthalten?",
+  umzugpreise_faq2_a:
+    "Ja, die Versicherung wird bei der Kalkulation berücksichtigt. Details erklären wir transparent vor Auftragserteilung.",
+  umzugpreise_faq3_q: "Kostet eine Besichtigung extra?",
+  umzugpreise_faq3_a:
+    "Nein, die Besichtigung ist bei BAK Transport kostenlos und dient dazu, fair und realistisch zu kalkulieren.",
+  umzugpreise_related1_label: "Privatumzug Wien",
+  umzugpreise_related2_label: "Firmenumzug Wien",
+  umzugpreise_related3_label: "Versicherung",
+
+  // Anfrage
+  anfrage_hero_badge: "Kostenloses Angebot",
+  anfrage_hero_title: "Ihr persönliches Fixpreis-Angebot",
+  anfrage_hero_subtext_pre: "Formular ausfüllen — wir melden uns innerhalb von ",
+  anfrage_hero_subtext_bold: "60 Minuten",
+  anfrage_hero_subtext_post: " mit Ihrem Angebot.",
+  anfrage_trust1: "Kostenlos",
+  anfrage_trust2: "60 Min Antwort",
+  anfrage_trust3: "Fixpreis",
+  anfrage_trust4: "Vollversichert",
+  anfrage_trust5: "1.000+ Umzüge",
+  anfrage_steps_h2: "So geht es weiter",
+  anfrage_step1_title: "Anfrage senden",
+  anfrage_step1_text: "Formular ausfüllen — dauert nur 2 Minuten.",
+  anfrage_step2_title: "Wir melden uns",
+  anfrage_step2_text: "Sie erhalten rasch Ihr persönliches Fixpreis-Angebot.",
+  anfrage_step3_title: "Umzug starten",
+  anfrage_step3_text: "Nach Ihrer Bestätigung kümmern wir uns um alles Weitere.",
 };
 
 const en: typeof de = {
@@ -2495,6 +2718,229 @@ const en: typeof de = {
   grenz_page_faq3_a:
     "Not for EU moves. For third countries like Switzerland special customs documents are required — we will help you with this.",
   grenz_page_cta_h2: "Request International Move",
+
+  // SeoLandingPage
+  seolanding_cta_label: "Free Quote",
+  seolanding_cta_heading: "Fixed Price, No Surprises",
+  seolanding_cta_text:
+    "Tell us briefly what you need. We'll get back to you quickly with a clear assessment and a binding quote.",
+  seolanding_cta_btn_quote: "Request a Quote",
+  seolanding_cta_btn_call: "Book an Appointment",
+  seolanding_related_heading: "Related Pages",
+  seolanding_faq_heading: "Frequently Asked Questions",
+
+  // Versicherung
+  versicherung_label: "Insurance & Protection",
+  versicherung_title: "Moving Insurance: Safely Transported Door to Door",
+  versicherung_subtitle:
+    "Your furniture, appliances, and personal belongings are carefully protected, loaded, and transported. We explain in advance what is covered and how we prevent damage.",
+  versicherung_intro:
+    "A good move is more than just carrying and driving. What matters is that furniture is protected, routes are checked, and fragile items are properly prepared.",
+  versicherung_section1_heading: "How Does BAK Transport Protect Your Property?",
+  versicherung_section1_text:
+    "We work with furniture blankets, protective film, straps, and careful load planning. Heavy and fragile pieces are handled separately and secured appropriately.",
+  versicherung_section1_bullet1: "Furniture blankets and stretch film for delicate surfaces",
+  versicherung_section1_bullet2: "Straps and transport securing in the truck",
+  versicherung_section1_bullet3: "careful planning for stairwells, elevators, and narrow doors",
+  versicherung_section1_bullet4: "clear handover before and after transport",
+  versicherung_section2_heading: "Why the On-Site Inspection Matters",
+  versicherung_section2_text:
+    "During the inspection we identify risks early: narrow corridors, delicate floors, heavy furniture, glass, pianos, safes, or long carrying distances. This lets us plan more safely and fairly.",
+  versicherung_card1_title: "Prevent",
+  versicherung_card1_text:
+    "Protective materials, planning, and experienced movers reduce damage before the first item is even touched.",
+  versicherung_card2_title: "Document",
+  versicherung_card2_text:
+    "Special items can be discussed in advance and cleanly incorporated into the process.",
+  versicherung_card3_title: "Protect",
+  versicherung_card3_text:
+    "We work responsibly and explain transparently how your move is protected.",
+  versicherung_faq1_q: "Is my furniture insured during the move?",
+  versicherung_faq1_a:
+    "Yes, transport is planned with insurance. We discuss the exact terms before the order is placed.",
+  versicherung_faq2_q: "Do I have to pack fragile items myself?",
+  versicherung_faq2_a:
+    "You can prepare them yourself, but we can also take care of packaging and protective materials.",
+  versicherung_faq3_q: "What happens with especially heavy items?",
+  versicherung_faq3_a:
+    "For pianos, safes, or machinery we plan separately with the right equipment, team size, and suitable transport route.",
+  versicherung_related1_label: "Heavy Transport",
+  versicherung_related2_label: "Moving Prices",
+  versicherung_related3_label: "Advantages",
+
+  // Vorteile
+  vorteile_label: "Why BAK",
+  vorteile_title: "Why Customers Choose BAK Transport for Their Move",
+  vorteile_subtitle:
+    "A move needs reliability, clear communication, and a team that works cleanly. That's exactly what BAK Transport is built around.",
+  vorteile_intro:
+    "We want you to know before the move what will happen, who's coming, and what it costs. That's why we combine personal consultation with clear organization and a binding quote.",
+  vorteile_section1_heading: "Planning Instead of Chaos",
+  vorteile_section1_text:
+    "We check scope, access, parking, and time windows in advance. That way moving day isn't improvised, but properly prepared.",
+  vorteile_section2_heading: "Fixed Price and Clear Communication",
+  vorteile_section2_text:
+    "You receive a clear assessment and know exactly what's included. We answer follow-up questions directly by phone, WhatsApp, or form.",
+  vorteile_section2_bullet1: "Response usually within 60 minutes",
+  vorteile_section2_bullet2: "free on-site inspection as needed",
+  vorteile_section2_bullet3: "fixed price based on scope, no surprises",
+  vorteile_section2_bullet4: "one point of contact for planning and process",
+  vorteile_card1_title: "Experienced Team",
+  vorteile_card1_text:
+    "Our movers know how to safely carry furniture, boxes, and fragile items.",
+  vorteile_card2_title: "Careful Protection",
+  vorteile_card2_text:
+    "Furniture blankets, film, and carrying systems protect your belongings and the transport route.",
+  vorteile_card3_title: "Vienna & Austria",
+  vorteile_card3_text:
+    "We operate in Vienna, Lower Austria, throughout Austria, and across borders when needed.",
+  vorteile_faq1_q: "Why not just choose the cheapest provider?",
+  vorteile_faq1_a:
+    "The lowest starting price is often not the final price. What matters more is clear service, insurance, and reliable planning.",
+  vorteile_faq2_q: "Can BAK help on short notice?",
+  vorteile_faq2_a:
+    "Yes, depending on availability, short-notice assignments and emergency moves are possible.",
+  vorteile_related1_label: "Private Moving",
+  vorteile_related2_label: "Office Moving",
+  vorteile_related3_label: "Contact",
+
+  // Glossar
+  glossar_label: "Glossary",
+  glossar_title: "Moving Glossary: Key Terms Simply Explained",
+  glossar_subtitle:
+    "So that quotes, processes, and services stay easy to understand, we explain the most important terms around moving, transport, and assembly here.",
+  glossar_intro:
+    "A clear quote is easier to compare when the terms are understandable. This glossary helps you make better sense of costs, services, and process.",
+  glossar_section1_heading: "Why a Moving Glossary Is Useful",
+  glossar_section1_text:
+    "Many terms sound similar but mean different services. Anyone who understands fixed price, inspection, assembly, and insurance can compare quotes more easily.",
+  glossar_term1_title: "Fixed Price",
+  glossar_term1_text:
+    "A price agreed upon in advance for the defined scope of service. It protects you from unexpected extra costs.",
+  glossar_term2_title: "On-Site Inspection",
+  glossar_term2_text:
+    "An assessment of the amount of furniture, access, floor, elevator, parking, and special items before the quote is issued.",
+  glossar_term3_title: "No-Parking Zone (Halteverbotszone)",
+  glossar_term3_text:
+    "A reserved loading area in front of the address so the truck can park close by and carrying distances stay short.",
+  glossar_term4_title: "Furniture Assembly",
+  glossar_term4_text:
+    "Disassembly, transport preparation, and reassembly of wardrobes, beds, shelves, and office furniture.",
+  glossar_term5_title: "Kitchen Assembly",
+  glossar_term5_text:
+    "Assembly of kitchen units, worktops, and appliances according to plan and agreement.",
+  glossar_term6_title: "Transport Insurance",
+  glossar_term6_text:
+    "Coverage for the goods being transported during the move, depending on the service and terms.",
+  glossar_term7_title: "Carrying Distance",
+  glossar_term7_text:
+    "The distance between the apartment, elevator, stairwell, and truck. Long carrying distances affect effort and price.",
+  glossar_term8_title: "Clearance",
+  glossar_term8_text:
+    "Clearing and removal of furniture, household items, or belongings from an apartment, cellar, office, or estate.",
+  glossar_term9_title: "Heavy Transport",
+  glossar_term9_text:
+    "Transport of especially heavy items such as safes, pianos, machinery, or large furniture.",
+  glossar_related1_label: "Moving Prices",
+  glossar_related2_label: "Insurance",
+  glossar_related3_label: "FAQ",
+
+  // Ratgeber
+  ratgeber_label: "Guide",
+  ratgeber_title: "Vienna Moving Guide: Tips on Planning, Costs, and Process",
+  ratgeber_subtitle:
+    "Here BAK Transport collects practical advice on private moves, office moves, assembly, clearance, and regional moves.",
+  ratgeber_intro:
+    "A good move doesn't start on moving day, but with preparation. This guide brings together the topics customers search for most and leads directly to the matching services.",
+  ratgeber_section1_heading: "Which Topics Matter",
+  ratgeber_section1_text:
+    "The most important questions revolve around costs, insurance, packing, no-parking zones, furniture assembly, kitchens, short-notice appointments, and moves between cities or countries.",
+  ratgeber_section1_bullet1: "Estimate moving costs realistically",
+  ratgeber_section1_bullet2: "Checklist for the last few days before the move",
+  ratgeber_section1_bullet3: "Prepare and protect furniture properly",
+  ratgeber_section1_bullet4: "Plan the kitchen and appliances before assembly",
+  ratgeber_section1_bullet5: "Understand insurance and responsibility",
+  ratgeber_section2_heading: "Why the Guide Is Good for Google",
+  ratgeber_section2_text:
+    "Guide pages answer search queries before the customer directly requests a quote. This builds trust and brings in additional visitors through Google.",
+  ratgeber_card1_title: "Costs & Prices",
+  ratgeber_card1_text: "What affects the price, and when is a fixed price worth it?",
+  ratgeber_card2_title: "Planning & Checklist",
+  ratgeber_card2_text: "Which tasks should be done before the move?",
+  ratgeber_card3_title: "Assembly & Protection",
+  ratgeber_card3_text: "How furniture, kitchens, and fragile items are prepared.",
+  ratgeber_faq1_q: "Will individual guide articles be added later?",
+  ratgeber_faq1_a:
+    "Yes. This overview page is the foundation. Individual articles on costs, checklists, packing, and assembly can be added afterward.",
+  ratgeber_faq2_q: "Does a guide help with ranking?",
+  ratgeber_faq2_a:
+    "Yes, if the content answers real questions and links cleanly to service pages internally.",
+  ratgeber_related1_label: "Moving Prices",
+  ratgeber_related2_label: "Glossary",
+  ratgeber_related3_label: "FAQ",
+
+  // UmzugPreise
+  umzugpreise_label: "Moving Prices Vienna",
+  umzugpreise_title: "Moving Prices in Vienna: Clearly Calculated, Fairly Offered",
+  umzugpreise_subtitle:
+    "What a move costs depends on apartment size, floor, access, amount of furniture, and additional services. With BAK Transport you receive a binding fixed price after an inspection.",
+  umzugpreise_intro:
+    "Many moving costs look cheaper online than they really are in the end. That's why we calculate transparently: inspection, scope, team, truck, protective materials, assembly, and insurance are all factored in beforehand.",
+  umzugpreise_section1_heading: "What Determines Moving Costs?",
+  umzugpreise_section1_text:
+    "The price isn't determined by square meters alone. Carrying distances, elevators, parking, furniture assembly, fragile items, and the desired date also play a role.",
+  umzugpreise_section1_bullet1: "Apartment size and amount of furniture",
+  umzugpreise_section1_bullet2: "Floor, elevator, and distance to the truck",
+  umzugpreise_section1_bullet3: "Disassembly and reassembly of furniture or kitchen",
+  umzugpreise_section1_bullet4: "No-parking zone, packing, and protective materials",
+  umzugpreise_section1_bullet5: "Short-notice appointment or weekend",
+  umzugpreise_section2_heading: "Why a Fixed Price Is Better",
+  umzugpreise_section2_text:
+    "A fixed price protects you from surprises on moving day. After the inspection, both sides know what needs to be done and what's included in the price.",
+  umzugpreise_section2_bullet1: "clear scope before starting",
+  umzugpreise_section2_bullet2: "no hidden hourly traps",
+  umzugpreise_section2_bullet3: "better planning for team and truck",
+  umzugpreise_section2_bullet4: "written confirmation on request",
+  umzugpreise_card1_title: "Small Apartment",
+  umzugpreise_card1_text:
+    "Ideal for compact moves with little furniture, few boxes, and a short carrying distance.",
+  umzugpreise_card2_title: "Medium Apartment",
+  umzugpreise_card2_text:
+    "For family apartments with assembly, protective film, and a structured process.",
+  umzugpreise_card3_title: "Large Move",
+  umzugpreise_card3_text:
+    "For houses, offices, or extensive transports with multiple movers and truck capacity.",
+  umzugpreise_faq1_q: "Can I get the price over the phone?",
+  umzugpreise_faq1_a:
+    "An initial estimate, yes. For a binding fixed price we recommend an inspection or a very precise photo/video description.",
+  umzugpreise_faq2_q: "Is insurance included in the price?",
+  umzugpreise_faq2_a:
+    "Yes, insurance is factored into the calculation. We explain the details transparently before the order is placed.",
+  umzugpreise_faq3_q: "Does an inspection cost extra?",
+  umzugpreise_faq3_a:
+    "No, the inspection is free with BAK Transport and helps us calculate fairly and realistically.",
+  umzugpreise_related1_label: "Private Moving Vienna",
+  umzugpreise_related2_label: "Office Moving Vienna",
+  umzugpreise_related3_label: "Insurance",
+
+  // Anfrage
+  anfrage_hero_badge: "Free Quote",
+  anfrage_hero_title: "Your Personal Fixed-Price Quote",
+  anfrage_hero_subtext_pre: "Fill out the form — we'll get back to you within ",
+  anfrage_hero_subtext_bold: "60 minutes",
+  anfrage_hero_subtext_post: " with your quote.",
+  anfrage_trust1: "Free",
+  anfrage_trust2: "60 Min Response",
+  anfrage_trust3: "Fixed Price",
+  anfrage_trust4: "Fully Insured",
+  anfrage_trust5: "1,000+ Moves",
+  anfrage_steps_h2: "What Happens Next",
+  anfrage_step1_title: "Send Your Request",
+  anfrage_step1_text: "Fill out the form — it only takes 2 minutes.",
+  anfrage_step2_title: "We Get Back to You",
+  anfrage_step2_text: "You'll quickly receive your personal fixed-price quote.",
+  anfrage_step3_title: "Start Your Move",
+  anfrage_step3_text: "Once you confirm, we take care of everything else.",
 };
 
 export const translations: Record<LangCode, typeof de> = { de, en };
