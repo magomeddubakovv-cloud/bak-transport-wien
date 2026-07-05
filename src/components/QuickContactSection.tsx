@@ -24,7 +24,7 @@ export function QuickContactSection() {
             {t.regions_contact_link}
           </Link>
         </div>
-        <div className="mt-8 grid grid-cols-1 gap-3 min-[420px]:grid-cols-2 sm:flex sm:flex-wrap">
+        <div className="mt-8 flex flex-wrap gap-3">
           <a
             href="tel:+4368110723047"
             className="inline-flex min-h-14 items-center justify-center gap-2 rounded-lg px-6 py-3 text-lg font-black text-white transition hover:bg-[#9A3412]"
