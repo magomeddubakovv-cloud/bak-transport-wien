@@ -325,6 +325,7 @@ const de = {
     "Betriebsumzüge in Wien und Niederösterreich – auf Wunsch außerhalb der Geschäftszeiten.",
   regions_question: "Haben Sie ein spezifisches Ziel?",
   regions_contact_link: "Fragen Sie uns an →",
+  quick_contact_call: "Anrufen",
   regions_area_title: "Unser Einsatzgebiet",
   regions_cross_border: "— Grenzüberschreitende Umzüge auf Anfrage —",
 
@@ -1576,6 +1577,7 @@ const en: typeof de = {
     "Business relocations in Vienna and Lower Austria — on request outside business hours.",
   regions_question: "Do you have a specific destination?",
   regions_contact_link: "Ask us →",
+  quick_contact_call: "Call",
   regions_area_title: "Our Service Area",
   regions_cross_border: "— Cross-border moves on request —",
 

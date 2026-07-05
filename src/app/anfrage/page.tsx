@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { QuoteFormSection } from "@/components/QuoteFormSection";
+import { QuickContactSection } from "@/components/QuickContactSection";
 import { StructuredData } from "@/components/StructuredData";
 import { Check } from "lucide-react";
 
@@ -90,6 +91,7 @@ export default function AnfragePage() {
             </div>
           </div>
         </section>
+        <QuickContactSection />
       </main>
       <Footer />
     </>

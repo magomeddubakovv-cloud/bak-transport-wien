@@ -11,6 +11,7 @@ import { PricingSection } from "@/components/PricingSection";
 import { FAQSection } from "@/components/FAQSection";
 import { CTASection } from "@/components/CTASection";
 import { ReviewsSection } from "@/components/ReviewsSection";
+import { QuickContactSection } from "@/components/QuickContactSection";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
@@ -133,6 +134,7 @@ export default function Home() {
         <PricingSection />
         <FAQSection />
         <CTASection />
+        <QuickContactSection />
       </main>
       <Footer />
     </>

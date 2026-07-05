@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Breadcrumb } from "@/components/Breadcrumb";
+import { QuickContactSection } from "@/components/QuickContactSection";
 
 interface PageLayoutProps {
   children: React.ReactNode;
@@ -52,6 +53,7 @@ export function PageLayout({ children, title, subtitle, label }: PageLayoutProps
           </div>
         </section>
         {children}
+        <QuickContactSection />
       </main>
       <Footer />
     </>
