@@ -37,6 +37,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/vorteile`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/versicherung`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/ratgeber`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
+    { url: `${base}/ratgeber/meldezettel-wien`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
+    { url: `${base}/ratgeber/halteverbotszone-wien`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
+    { url: `${base}/ratgeber/altbau-umzug-wien`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     { url: `${base}/glossar`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     { url: `${base}/ueber-uns`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     { url: `${base}/kontakt`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
@@ -44,5 +47,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/karriere`, lastModified: now, changeFrequency: "monthly", priority: 0.4 },
     { url: `${base}/impressum`, lastModified: now, changeFrequency: "yearly", priority: 0.2 },
     { url: `${base}/datenschutz`, lastModified: now, changeFrequency: "yearly", priority: 0.2 },
+    { url: `${base}/agb`, lastModified: now, changeFrequency: "yearly", priority: 0.2 },
   ];
 }

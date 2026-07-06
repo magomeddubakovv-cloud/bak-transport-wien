@@ -44,6 +44,9 @@ export function RatgeberPageClient() {
         { label: t.ratgeber_related1_label, href: "/leistungen/umzug-preise" },
         { label: t.ratgeber_related2_label, href: "/glossar" },
         { label: t.ratgeber_related3_label, href: "/faq" },
+        { label: t.ratgeber_related4_label, href: "/ratgeber/meldezettel-wien" },
+        { label: t.ratgeber_related5_label, href: "/ratgeber/halteverbotszone-wien" },
+        { label: t.ratgeber_related6_label, href: "/ratgeber/altbau-umzug-wien" },
       ]}
     />
   );

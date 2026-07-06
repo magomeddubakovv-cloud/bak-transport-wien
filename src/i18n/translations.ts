@@ -1618,6 +1618,111 @@ const de = {
   ratgeber_related1_label: "Umzug Preise",
   ratgeber_related2_label: "Glossar",
   ratgeber_related3_label: "FAQ",
+  ratgeber_related4_label: "Meldezettel Wien",
+  ratgeber_related5_label: "Halteverbotszone beantragen",
+  ratgeber_related6_label: "Umzug im Altbau",
+
+  // Ratgeber — Meldezettel Wien
+  meldezettel_label: "RATGEBER",
+  meldezettel_title: "Meldezettel Wien – Ummeldung nach dem Umzug",
+  meldezettel_subtitle: "Frist, Unterlagen und Ablauf der Wohnsitz-Ummeldung in Wien",
+  meldezettel_intro:
+    "Nach jedem Umzug in Wien müssen Sie Ihren neuen Wohnsitz behördlich ummelden. Das klingt bürokratisch, ist aber in wenigen Minuten erledigt — wenn Sie wissen, worauf es ankommt. Hier die wichtigsten Fakten zu Frist, Unterlagen und Ablauf.",
+  meldezettel_h1: "Frist: spätestens 3 Tage nach dem Einzug",
+  meldezettel_p1:
+    "Die Frist für die Ummeldung beginnt nicht mit der Vertragsunterschrift oder Schlüsselübergabe, sondern erst mit dem tatsächlichen Einzug. Eine Anmeldung vor dem Einzug ist nicht möglich. Spätestens 3 Tage danach muss die Meldung erfolgen — bei verspäteter oder fehlerhafter Meldung droht laut § 22 Meldegesetz eine Verwaltungsstrafe von bis zu €726.",
+  meldezettel_bullet1: "Anmeldung frühestens am Tag des tatsächlichen Einzugs möglich",
+  meldezettel_bullet2: "Spätestens 3 Tage nach dem Einzug bei einem Meldeservice",
+  meldezettel_bullet3: "Verspätete oder fehlerhafte Meldung: Verwaltungsstrafe bis zu €726",
+  meldezettel_h2: "Diese Unterlagen brauchen Sie",
+  meldezettel_p2:
+    "Der Meldezettel muss vollständig ausgefüllt und sowohl von Ihnen als auch von der Unterkunftgeberin bzw. dem Unterkunftgeber (z. B. Vermieter:in oder Eigentümer:in) unterschrieben sein. Zusätzlich benötigen Sie ein gültiges Ausweisdokument.",
+  meldezettel_h3: "Wo und wie melden Sie sich um?",
+  meldezettel_p3:
+    "In Wien können Sie sich bei jedem Meldeservice ummelden — unabhängig davon, in welchem Bezirk Sie wohnen. Die Ausstellung des Meldezettels ist kostenlos. Auch eine Zustellung per Post ist möglich, allerdings ohne Haftung der Behörde für den Postweg.",
+  meldezettel_card1_title: "Kostenlos",
+  meldezettel_card1_text: "Die Ausstellung des Meldezettels kostet nichts.",
+  meldezettel_card2_title: "Jedes Meldeservice in Wien",
+  meldezettel_card2_text: "Sie müssen nicht zum Amt in Ihrem eigenen Bezirk — jede Meldestelle in Wien nimmt Ihre Ummeldung entgegen.",
+  meldezettel_card3_title: "Pro Person ein Meldezettel",
+  meldezettel_card3_text: "Jede Person, die einzieht, benötigt ein eigenes, vollständig ausgefülltes Formular.",
+  meldezettel_faq1_q: "Muss ich mich schon bei Vertragsunterschrift ummelden?",
+  meldezettel_faq1_a:
+    "Nein. Die Frist beginnt erst mit dem tatsächlichen Einzug, nicht mit der Vertragsunterschrift oder Schlüsselübergabe. Eine Anmeldung vor dem Einzug ist sogar unzulässig.",
+  meldezettel_faq2_q: "Was passiert, wenn ich die Frist verpasse?",
+  meldezettel_faq2_a:
+    "Laut § 22 Meldegesetz drohen bei verspäteter oder fehlerhafter Meldung Verwaltungsstrafen von bis zu €726. Erledigen Sie die Ummeldung daher am besten gleich in der ersten Woche nach dem Einzug.",
+  meldezettel_related1_label: "Halteverbotszone beantragen",
+  meldezettel_related2_label: "Umzug im Altbau",
+  meldezettel_related3_label: "Ratgeber",
+
+  // Ratgeber — Halteverbotszone beantragen
+  halteverbot_label: "RATGEBER",
+  halteverbot_title: "Halteverbotszone für den Umzug in Wien beantragen",
+  halteverbot_subtitle: "Zuständigkeit, Fristen und Kosten der mobilen Halteverbotszone",
+  halteverbot_intro:
+    "Eine eigene Halteverbotszone vor der Tür erspart am Umzugstag lange Tragewege und Parkplatzsuche. BAK Transport übernimmt die Beantragung für Sie — hier erfahren Sie trotzdem, wie der Ablauf offiziell funktioniert.",
+  halteverbot_h1: "Zuständige Behörde: MA 46",
+  halteverbot_p1:
+    "Kurzfristige Halteverbotszonen für Übersiedlungen werden von der Magistratsabteilung 46 (Verkehrsorganisation und technische Verkehrsangelegenheiten) bewilligt. Der Antrag erfolgt schriftlich mit Angabe von Standort, Länge in Metern sowie Datum und Uhrzeit der geplanten Ladetätigkeit.",
+  halteverbot_h2: "Fristen: mindestens 10 Werktage vorher",
+  halteverbot_p2:
+    "Der Antrag muss mindestens 10 Werktage vor dem Übersiedlungstermin bei der MA 46 eingebracht werden. In der Praxis empfiehlt sich mehr Vorlauf, da die Behörde jeden Antrag prüft. Die Verkehrszeichen selbst müssen spätestens 24 Stunden vor Gültigkeitsbeginn aufgestellt sein.",
+  halteverbot_bullet1: "Antrag mindestens 10 Werktage vor dem Termin bei der MA 46",
+  halteverbot_bullet2: "Verkehrszeichen mindestens 24 Stunden vorher aufstellen",
+  halteverbot_bullet3: "Gültigkeitsdauer maximal 5 Werktage bzw. eine Woche, nur während der Ladezeiten",
+  halteverbot_h3: "Kosten im Überblick",
+  halteverbot_p3:
+    "Für die Bewilligung fällt eine Bundesgebühr von €21 zuzüglich €6 pro Beilage (max. €36) sowie eine Verwaltungsabgabe von €37,78 an. Hinzu kommen die Kosten für Beschaffung, Aufstellung und Abbau der Verkehrszeichen.",
+  halteverbot_card1_title: "Wir übernehmen die Beantragung",
+  halteverbot_card1_text: "Bei BAK Transport ist die Halteverbot-Organisation im Fixpreis inklusive — Sie müssen sich um nichts kümmern.",
+  halteverbot_card2_title: "Rechtzeitig planen",
+  halteverbot_card2_text: "Da die Behörde mind. 10 Werktage Vorlauf braucht, sollten Sie den Umzugstermin frühzeitig mit uns abstimmen.",
+  halteverbot_card3_title: "Aufstellung bestätigen lassen",
+  halteverbot_card3_text: "Die Installation der Schilder muss am zuständigen Polizeiwachzimmer bestätigt werden.",
+  halteverbot_faq1_q: "Übernimmt BAK Transport die Beantragung der Halteverbotszone?",
+  halteverbot_faq1_a:
+    "Ja, die Halteverbot-Organisation ist bei unseren Umzugspaketen im Fixpreis inklusive. Wir kümmern uns um Antrag, Schilder und Bestätigung.",
+  halteverbot_faq2_q: "Wie lange gilt eine bewilligte Halteverbotszone?",
+  halteverbot_faq2_a:
+    "Maximal 5 Werktage bzw. eine Woche und nur für den Zeitraum der angegebenen Ladezeiten, zum Beispiel 7 bis 18 Uhr.",
+  halteverbot_related1_label: "Meldezettel Wien",
+  halteverbot_related2_label: "Umzug im Altbau",
+  halteverbot_related3_label: "Ratgeber",
+
+  // Ratgeber — Umzug im Altbau
+  altbau_label: "RATGEBER",
+  altbau_title: "Umzug im Altbau: Was in Wiener Gründerzeithäusern zu beachten ist",
+  altbau_subtitle: "Schmale Stiegenhäuser, fehlende Lifte und Stuckdecken — so gelingt der Altbau-Umzug",
+  altbau_intro:
+    "Wien ist geprägt von Gründerzeithäusern mit hohen Räumen, aufwendigem Stuck und engen Stiegenhäusern. Genau das macht einen Umzug anspruchsvoller als in einem modernen Neubau. Mit der richtigen Planung lässt sich das souverän meistern.",
+  altbau_h1: "Enge Stiegenhäuser und fehlender Lift",
+  altbau_p1:
+    "Viele Altbauten aus der Gründerzeit wurden ohne Personenlift errichtet oder verfügen nur über sehr kleine, alte Aufzüge. Sperrige Möbel müssen dann über enge, oft gewendelte Stiegen getragen werden. Wir demontieren größere Möbelstücke wo nötig und sichern Ecken sowie Geländer mit Schutzmaterial.",
+  altbau_h2: "Möbel- und Außenlift als Alternative",
+  altbau_p2:
+    "Bei besonders sperrigen Stücken oder oberen Stockwerken ohne Lift ist ein Außen- bzw. Möbellift über das Fenster oft die schnellere und schonendere Lösung als der Transport über das Stiegenhaus. Wir prüfen bei der Besichtigung, ob sich das für Ihren Umzug anbietet.",
+  altbau_h3: "Stuckdecken und historische Bausubstanz schützen",
+  altbau_p3:
+    "Hohe Räume, Stuckdecken und alte Türstöcke sind charakteristisch für Wiener Altbauten — und entsprechend empfindlich. Wir polstern Durchgänge, Geländer und Kanten ab, um Beschädigungen an der historischen Bausubstanz zu vermeiden.",
+  altbau_bullet1: "Demontage sperriger Möbel vor dem Transport",
+  altbau_bullet2: "Schutzpolsterung für Stiegenhaus, Geländer und Türstöcke",
+  altbau_bullet3: "Prüfung auf Außen-/Möbellift bei der kostenlosen Besichtigung",
+  altbau_card1_title: "Erfahrung mit Altbauten",
+  altbau_card1_text: "Wir kennen die Eigenheiten Wiener Gründerzeithäuser aus über 1.000 Umzügen.",
+  altbau_card2_title: "Kostenlose Besichtigung",
+  altbau_card2_text: "Vor Ort prüfen wir Stiegenhaus, Türbreiten und Liftmöglichkeiten — für einen realistischen Fixpreis.",
+  altbau_card3_title: "Schutz für historische Bausubstanz",
+  altbau_card3_text: "Polstermaterial für Geländer, Kanten und Durchgänge gehört bei uns zum Standard.",
+  altbau_faq1_q: "Was, wenn mein Möbelstück nicht durchs Stiegenhaus passt?",
+  altbau_faq1_a:
+    "Bei sperrigen Möbeln oder engen Stiegen prüfen wir Alternativen wie Demontage oder einen Außen-/Möbellift über das Fenster.",
+  altbau_faq2_q: "Berechnet BAK Transport einen Aufschlag für Altbauten ohne Lift?",
+  altbau_faq2_a:
+    "Das hängt vom Einzelfall ab — Stockwerk, Stiegenbreite und Möbelmenge fließen in den Fixpreis nach der kostenlosen Besichtigung ein. Überraschungen am Umzugstag gibt es dabei nicht.",
+  altbau_related1_label: "Meldezettel Wien",
+  altbau_related2_label: "Halteverbotszone beantragen",
+  altbau_related3_label: "Ratgeber",
 
   // UmzugPreise
   umzugpreise_label: "Umzug Preise Wien",
@@ -3292,6 +3397,111 @@ const en: typeof de = {
   ratgeber_related1_label: "Moving Prices",
   ratgeber_related2_label: "Glossary",
   ratgeber_related3_label: "FAQ",
+  ratgeber_related4_label: "Vienna Address Registration",
+  ratgeber_related5_label: "No-Parking Zone Permit",
+  ratgeber_related6_label: "Moving in Old Buildings",
+
+  // Ratgeber — Meldezettel Wien
+  meldezettel_label: "GUIDE",
+  meldezettel_title: "Vienna Address Registration (Meldezettel) After a Move",
+  meldezettel_subtitle: "Deadline, documents, and process for re-registering your address in Vienna",
+  meldezettel_intro:
+    "After every move in Vienna, you must officially register your new address. It sounds bureaucratic, but it's done in a few minutes once you know what matters. Here are the key facts on deadlines, documents, and process.",
+  meldezettel_h1: "Deadline: within 3 days of moving in",
+  meldezettel_p1:
+    "The registration deadline does not start with signing the lease or receiving the keys, but only once you actually move in. Registering before moving in is not possible. You must register at the latest 3 days afterward — late or incorrect registration can result in an administrative fine of up to €726 under § 22 of the Registration Act (Meldegesetz).",
+  meldezettel_bullet1: "Registration is possible at the earliest on the day you actually move in",
+  meldezettel_bullet2: "At the latest 3 days after moving in, at any Meldeservice office",
+  meldezettel_bullet3: "Late or incorrect registration: administrative fine of up to €726",
+  meldezettel_h2: "Documents you need",
+  meldezettel_p2:
+    "The Meldezettel (registration form) must be filled out completely and signed by both you and the accommodation provider (e.g. landlord or owner). You also need a valid photo ID.",
+  meldezettel_h3: "Where and how do you register?",
+  meldezettel_p3:
+    "In Vienna, you can register at any Meldeservice office, regardless of which district you live in. Issuing the Meldezettel is free of charge. Submission by post is also possible, though the authority accepts no liability for lost mail.",
+  meldezettel_card1_title: "Free of charge",
+  meldezettel_card1_text: "Issuing the Meldezettel costs nothing.",
+  meldezettel_card2_title: "Any Meldeservice office in Vienna",
+  meldezettel_card2_text: "You don't have to go to the office in your own district — any registration office in Vienna accepts your registration.",
+  meldezettel_card3_title: "One form per person",
+  meldezettel_card3_text: "Every person moving in needs their own, fully completed form.",
+  meldezettel_faq1_q: "Do I need to register as soon as I sign the lease?",
+  meldezettel_faq1_a:
+    "No. The deadline only starts once you actually move in, not when you sign the lease or receive the keys. Registering before moving in isn't even permitted.",
+  meldezettel_faq2_q: "What happens if I miss the deadline?",
+  meldezettel_faq2_a:
+    "Under § 22 of the Meldegesetz, late or incorrect registration can lead to administrative fines of up to €726. It's best to take care of it within the first week after moving in.",
+  meldezettel_related1_label: "No-Parking Zone Permit",
+  meldezettel_related2_label: "Moving in Old Buildings",
+  meldezettel_related3_label: "Guide",
+
+  // Ratgeber — Halteverbotszone beantragen
+  halteverbot_label: "GUIDE",
+  halteverbot_title: "Applying for a No-Parking Zone for Your Move in Vienna",
+  halteverbot_subtitle: "Authority, deadlines, and costs of the temporary no-parking zone",
+  halteverbot_intro:
+    "A dedicated no-parking zone right outside the door saves long carrying distances and time spent searching for parking on moving day. BAK Transport handles the application for you — here's how the official process works.",
+  halteverbot_h1: "Responsible authority: MA 46",
+  halteverbot_p1:
+    "Short-term no-parking zones for moves are approved by Municipal Department 46 (MA 46 – Traffic Organization and Technical Traffic Matters). The application is submitted in writing, stating the location, length in meters, and the date and time of the planned loading activity.",
+  halteverbot_h2: "Deadlines: at least 10 working days in advance",
+  halteverbot_p2:
+    "The application must be submitted to MA 46 at least 10 working days before the moving date. In practice, more lead time is advisable, since the authority reviews every application. The traffic signs themselves must be put up at the latest 24 hours before the zone becomes valid.",
+  halteverbot_bullet1: "Application at least 10 working days before the date, submitted to MA 46",
+  halteverbot_bullet2: "Traffic signs must be installed at least 24 hours in advance",
+  halteverbot_bullet3: "Valid for a maximum of 5 working days or one week, only during the stated loading hours",
+  halteverbot_h3: "Costs at a glance",
+  halteverbot_p3:
+    "Approval incurs a federal fee of €21 plus €6 per attachment (max. €36), as well as an administrative fee of €37.78. On top of that come the costs of obtaining, installing, and removing the traffic signs.",
+  halteverbot_card1_title: "We handle the application",
+  halteverbot_card1_text: "With BAK Transport, no-parking zone organization is included in the fixed price — you don't have to worry about a thing.",
+  halteverbot_card2_title: "Plan ahead",
+  halteverbot_card2_text: "Since the authority needs at least 10 working days of lead time, coordinate your moving date with us early on.",
+  halteverbot_card3_title: "Get the installation confirmed",
+  halteverbot_card3_text: "Putting up the signs must be confirmed at the responsible police station.",
+  halteverbot_faq1_q: "Does BAK Transport handle the no-parking zone application?",
+  halteverbot_faq1_a:
+    "Yes, no-parking zone organization is included in the fixed price of our moving packages. We take care of the application, signage, and confirmation.",
+  halteverbot_faq2_q: "How long is an approved no-parking zone valid?",
+  halteverbot_faq2_a:
+    "A maximum of 5 working days or one week, and only for the stated loading hours, for example 7 a.m. to 6 p.m.",
+  halteverbot_related1_label: "Vienna Address Registration",
+  halteverbot_related2_label: "Moving in Old Buildings",
+  halteverbot_related3_label: "Guide",
+
+  // Ratgeber — Umzug im Altbau
+  altbau_label: "GUIDE",
+  altbau_title: "Moving in Vienna's Old Buildings: What to Watch Out For",
+  altbau_subtitle: "Narrow stairwells, no elevator, and ornate ceilings — how to master a move in a Gründerzeit building",
+  altbau_intro:
+    "Vienna is characterized by Gründerzeit buildings with high ceilings, elaborate stucco work, and narrow stairwells. That's exactly what makes moving more demanding than in a modern new building. With the right planning, it can be handled with confidence.",
+  altbau_h1: "Narrow stairwells and no elevator",
+  altbau_p1:
+    "Many Gründerzeit buildings were built without a passenger elevator, or only have very small, old lifts. Bulky furniture then has to be carried up narrow, often spiral staircases. We disassemble larger furniture where needed and protect corners and railings with padding.",
+  altbau_h2: "Furniture hoist as an alternative",
+  altbau_p2:
+    "For particularly bulky items or upper floors without an elevator, an external furniture hoist through the window is often faster and gentler than carrying items through the stairwell. We check during the on-site inspection whether this makes sense for your move.",
+  altbau_h3: "Protecting stucco ceilings and historic building fabric",
+  altbau_p3:
+    "High ceilings, stucco work, and old door frames are characteristic of Vienna's old buildings — and correspondingly delicate. We pad hallways, railings, and edges to avoid damaging the historic building fabric.",
+  altbau_bullet1: "Disassembly of bulky furniture before transport",
+  altbau_bullet2: "Protective padding for stairwells, railings, and door frames",
+  altbau_bullet3: "Check for a furniture hoist during the free on-site inspection",
+  altbau_card1_title: "Experience with old buildings",
+  altbau_card1_text: "We know the quirks of Vienna's Gründerzeit buildings from over 1,000 moves.",
+  altbau_card2_title: "Free on-site inspection",
+  altbau_card2_text: "We check the stairwell, door widths, and hoist options on site — for a realistic fixed price.",
+  altbau_card3_title: "Protection for historic building fabric",
+  altbau_card3_text: "Padding for railings, edges, and hallways is standard with us.",
+  altbau_faq1_q: "What if my furniture doesn't fit through the stairwell?",
+  altbau_faq1_a:
+    "For bulky furniture or narrow stairs, we look at alternatives such as disassembly or an external furniture hoist through the window.",
+  altbau_faq2_q: "Does BAK Transport charge extra for old buildings without an elevator?",
+  altbau_faq2_a:
+    "That depends on the individual case — floor, staircase width, and volume of furniture are factored into the fixed price after the free on-site inspection. There are no surprises on moving day.",
+  altbau_related1_label: "Vienna Address Registration",
+  altbau_related2_label: "No-Parking Zone Permit",
+  altbau_related3_label: "Guide",
 
   // UmzugPreise
   umzugpreise_label: "Moving Prices Vienna",
