@@ -39,6 +39,10 @@ export function RatgeberPageClient() {
       faqs={[
         { question: t.ratgeber_faq1_q, answer: t.ratgeber_faq1_a },
         { question: t.ratgeber_faq2_q, answer: t.ratgeber_faq2_a },
+        { question: t.ratgeber_faq3_q, answer: t.ratgeber_faq3_a },
+        { question: t.ratgeber_faq4_q, answer: t.ratgeber_faq4_a },
+        { question: t.ratgeber_faq5_q, answer: t.ratgeber_faq5_a },
+        { question: t.ratgeber_faq6_q, answer: t.ratgeber_faq6_a },
       ]}
       relatedLinks={[
         { label: t.ratgeber_related1_label, href: "/leistungen/umzug-preise" },

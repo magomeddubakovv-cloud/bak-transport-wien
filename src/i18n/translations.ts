@@ -1609,12 +1609,24 @@ const de = {
   ratgeber_card2_text: "Welche Aufgaben sollten vor dem Umzug erledigt sein?",
   ratgeber_card3_title: "Montage & Schutz",
   ratgeber_card3_text: "Wie Möbel, Küche und empfindliche Gegenstände vorbereitet werden.",
-  ratgeber_faq1_q: "Kommen später einzelne Ratgeberartikel dazu?",
+  ratgeber_faq1_q: "Wie lange vorher sollte ich meinen Umzug planen?",
   ratgeber_faq1_a:
-    "Ja. Diese Übersichtsseite ist die Basis. Danach können einzelne Artikel zu Kosten, Checkliste, Verpackung und Montage ergänzt werden.",
-  ratgeber_faq2_q: "Hilft ein Ratgeber beim Ranking?",
+    "Idealerweise 4–6 Wochen im Voraus, besonders wenn Sie einen bestimmten Wunschtermin haben. Wird eine Halteverbotszone benötigt, muss diese mindestens 10 Werktage vorher bei der MA 46 beantragt werden — je früher Sie uns kontaktieren, desto einfacher lässt sich das einplanen.",
+  ratgeber_faq2_q: "Muss ich mich nach dem Umzug polizeilich ummelden?",
   ratgeber_faq2_a:
-    "Ja, wenn die Inhalte echte Fragen beantworten und intern sauber auf Leistungsseiten verlinken.",
+    "Ja. Innerhalb von 3 Tagen nach dem tatsächlichen Einzug muss die neue Adresse bei einem Meldeservice gemeldet werden, sonst drohen laut § 22 Meldegesetz Verwaltungsstrafen bis zu €726. Alle Details dazu finden Sie in unserem Ratgeber zum Meldezettel Wien.",
+  ratgeber_faq3_q: "Brauche ich für meinen Umzug eine Halteverbotszone?",
+  ratgeber_faq3_a:
+    "In engen Straßen, Innenstadtbezirken oder wenn direkt vor dem Hauseingang kein Parkplatz garantiert ist, lohnt sich eine Halteverbotszone. Sie sorgt für einen kurzen, sicheren Tragweg und spart am Umzugstag Zeit. Bei BAK Transport ist die Beantragung im Fixpreis inklusive.",
+  ratgeber_faq4_q: "Wie bereite ich meine Möbel am besten auf den Umzug vor?",
+  ratgeber_faq4_a:
+    "Sperrige Möbel wie Schränke oder Betten sollten vor dem Umzug demontiert werden. Kanten, Geländer und Türstöcke lassen sich mit Schutzpolsterung vor Kratzern schützen — besonders wichtig in Altbauwohnungen mit engen Stiegenhäusern. Wir übernehmen Demontage und Schutz auf Wunsch komplett.",
+  ratgeber_faq5_q: "Was passiert mit Möbeln oder Sachen, die ich nicht mitnehmen möchte?",
+  ratgeber_faq5_a:
+    "Nicht benötigte Möbel, Sperrmüll oder ganze Wohnungsauflösungen übernehmen wir im Rahmen unserer Entrümpelung — entweder direkt am Umzugstag oder als eigenständiger Termin.",
+  ratgeber_faq6_q: "Bekomme ich vor dem Umzug eine kostenlose Besichtigung?",
+  ratgeber_faq6_a:
+    "Ja. Bei einer kostenlosen Vor-Ort-Besichtigung prüfen wir Wohnungsgröße, Stiegenhaus, Aufzug und eventuelle Zufahrtsbeschränkungen und erstellen daraus einen verbindlichen Fixpreis ohne versteckte Kosten.",
   ratgeber_related1_label: "Umzug Preise",
   ratgeber_related2_label: "Glossar",
   ratgeber_related3_label: "FAQ",
@@ -3388,12 +3400,24 @@ const en: typeof de = {
   ratgeber_card2_text: "Which tasks should be done before the move?",
   ratgeber_card3_title: "Assembly & Protection",
   ratgeber_card3_text: "How furniture, kitchens, and fragile items are prepared.",
-  ratgeber_faq1_q: "Will individual guide articles be added later?",
+  ratgeber_faq1_q: "How far in advance should I plan my move?",
   ratgeber_faq1_a:
-    "Yes. This overview page is the foundation. Individual articles on costs, checklists, packing, and assembly can be added afterward.",
-  ratgeber_faq2_q: "Does a guide help with ranking?",
+    "Ideally 4–6 weeks in advance, especially if you have a specific preferred date. If a no-parking zone is needed, it must be applied for at least 10 working days ahead with MA 46 — the earlier you contact us, the easier this is to schedule.",
+  ratgeber_faq2_q: "Do I have to register my address with the police after moving?",
   ratgeber_faq2_a:
-    "Yes, if the content answers real questions and links cleanly to service pages internally.",
+    "Yes. Within 3 days of actually moving in, your new address must be registered at a Meldeservice office, otherwise administrative fines of up to €726 apply under §22 of the Meldegesetz. Find all the details in our guide to Vienna address registration (Meldezettel).",
+  ratgeber_faq3_q: "Do I need a no-parking zone for my move?",
+  ratgeber_faq3_a:
+    "A no-parking zone is worthwhile on narrow streets, in inner-city districts, or whenever a parking spot right at the entrance isn't guaranteed. It ensures a short, safe carrying distance and saves time on moving day. With BAK Transport, the application is included in the fixed price.",
+  ratgeber_faq4_q: "How should I prepare my furniture for the move?",
+  ratgeber_faq4_a:
+    "Bulky furniture such as wardrobes or beds should be disassembled before the move. Edges, railings, and door frames can be protected from scratches with padding — especially important in old buildings with narrow stairwells. We handle disassembly and protection for you on request.",
+  ratgeber_faq5_q: "What happens to furniture or items I don't want to take with me?",
+  ratgeber_faq5_a:
+    "We take care of unwanted furniture, bulky waste, or full apartment clearances as part of our decluttering service — either on moving day itself or as a separate appointment.",
+  ratgeber_faq6_q: "Do I get a free on-site inspection before the move?",
+  ratgeber_faq6_a:
+    "Yes. During a free on-site inspection, we check the apartment size, stairwell, elevator, and any access restrictions, then provide a binding fixed price with no hidden costs.",
   ratgeber_related1_label: "Moving Prices",
   ratgeber_related2_label: "Glossary",
   ratgeber_related3_label: "FAQ",
