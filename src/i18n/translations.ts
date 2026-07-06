@@ -24,6 +24,7 @@ const de = {
   nav_karriere: "Karriere",
   nav_impressum: "Impressum",
   nav_datenschutz: "Datenschutz",
+  nav_agb: "AGB",
 
   // Hero
   hero_badge: "WIEN & ÖSTERREICH",
@@ -622,6 +623,48 @@ const de = {
   datenschutz_h5: "5. Kontakt",
   datenschutz_contact:
     "BAK Transport GmbH · Zwinzstraße 15, 1160 Wien · office@baktransport.at · +43 681 10723047",
+
+  // AGB page
+  agb_label: "RECHTLICHES",
+  agb_title: "Allgemeine Geschäftsbedingungen",
+  agb_h1: "1. Geltungsbereich",
+  agb_p1:
+    "Diese Allgemeinen Geschäftsbedingungen (AGB) gelten für alle Verträge zwischen der BAK Transport GmbH, Zwinzstraße 15, 1160 Wien (nachfolgend „BAK Transport“) und ihren Kunden über Umzugs-, Transport-, Möbel- und Küchenmontage- sowie Entrümpelungsleistungen. Abweichende Bedingungen des Kunden werden nicht anerkannt, es sei denn, BAK Transport stimmt ihrer Geltung ausdrücklich schriftlich zu.",
+  agb_h2: "2. Vertragsschluss und Kostenvoranschlag",
+  agb_p2:
+    "Ein Vertrag kommt durch die schriftliche oder mündliche Bestätigung eines Angebots durch den Kunden zustande. Kostenvoranschläge basieren auf den bei der Besichtigung oder telefonischen Aufnahme angegebenen Informationen. Weicht der tatsächliche Leistungsumfang wesentlich davon ab, kann der Preis nach vorheriger Information des Kunden angepasst werden.",
+  agb_h3: "3. Leistungsumfang und Fixpreis",
+  agb_p3:
+    "Der vereinbarte Fixpreis gilt für den im Angebot beschriebenen Leistungsumfang. Zusatzleistungen (z. B. Einlagerung, zusätzliche Etagen ohne Lift, Sonderobjekte) werden gesondert verrechnet, sofern sie nicht im Angebot enthalten sind.",
+  agb_h4: "4. Zahlungsbedingungen",
+  agb_p4:
+    "Sofern nicht anders vereinbart, ist der Rechnungsbetrag am Tag der Leistungserbringung in bar, per Karte oder per Banküberweisung fällig. Bei Zahlungsverzug behält sich BAK Transport das Recht vor, gesetzliche Verzugszinsen zu verrechnen.",
+  agb_h5: "5. Pflichten des Kunden",
+  agb_p5:
+    "Der Kunde stellt sicher, dass am Leistungstag ein ausreichender Zugang (Parkmöglichkeit, Lift, Halteverbotszone) gewährleistet ist und wertvolle oder zerbrechliche Gegenstände vorab gesondert gekennzeichnet werden. Für Schäden, die durch unrichtige oder unvollständige Angaben des Kunden entstehen, haftet BAK Transport nicht.",
+  agb_h6: "6. Haftung und Versicherung",
+  agb_p6:
+    "BAK Transport haftet für Schäden am Transportgut im Rahmen der gesetzlichen Bestimmungen und der abgeschlossenen Transportversicherung. Für Schäden an nicht fachgerecht durch den Kunden selbst vorbereiteten Gegenständen (z. B. unzureichend verpackte Elektronik) sowie für leichte Fahrlässigkeit wird die Haftung, soweit gesetzlich zulässig, ausgeschlossen.",
+  agb_h7: "7. Stornierung und Terminänderung",
+  agb_p7:
+    "Terminverschiebungen sind bis 48 Stunden vor dem vereinbarten Termin kostenfrei möglich. Bei späteren Absagen oder Nichterscheinen des Kunden kann BAK Transport eine angemessene Ausfallpauschale in Rechnung stellen.",
+  agb_h8: "8. Höhere Gewalt",
+  agb_p8:
+    "Bei Ereignissen höherer Gewalt (z. B. Unwetter, behördliche Anordnungen, Verkehrssperren) verschiebt sich der vereinbarte Termin um die Dauer der Behinderung, ohne dass daraus Ansprüche gegen BAK Transport entstehen.",
+  agb_h9: "9. Datenschutz",
+  agb_p9:
+    "Informationen zur Verarbeitung personenbezogener Daten finden Sie in unserer Datenschutzerklärung.",
+  agb_h10: "10. Schlussbestimmungen",
+  agb_p10:
+    "Es gilt österreichisches Recht unter Ausschluss des UN-Kaufrechts. Erfüllungsort und Gerichtsstand ist, soweit gesetzlich zulässig, Wien. Sollte eine Bestimmung dieser AGB unwirksam sein, bleibt die Wirksamkeit der übrigen Bestimmungen davon unberührt.",
+  agb_notice:
+    "Hinweis: Dies ist ein vorläufiger Entwurf und ersetzt keine rechtliche Beratung. Bitte vor Veröffentlichung von einer Rechtsanwältin/einem Rechtsanwalt prüfen lassen.",
+
+  // Consent banner
+  consent_text:
+    "Mit der weiteren Nutzung dieser Website stimmen Sie unseren Allgemeinen Geschäftsbedingungen (AGB) zu.",
+  consent_link: "AGB lesen",
+  consent_accept: "Akzeptieren",
 
   // Shared subpage strings
   sub_why_bak: "Warum BAK Transport?",
@@ -1664,6 +1707,7 @@ const en: typeof de = {
   nav_karriere: "Careers",
   nav_impressum: "Legal Notice",
   nav_datenschutz: "Privacy Policy",
+  nav_agb: "Terms & Conditions",
 
   // Hero
   hero_badge: "VIENNA & AUSTRIA",
@@ -2259,6 +2303,48 @@ const en: typeof de = {
   datenschutz_h5: "5. Contact",
   datenschutz_contact:
     "BAK Transport GmbH · Zwinzstraße 15, 1160 Vienna · office@baktransport.at · +43 681 10723047",
+
+  // AGB page
+  agb_label: "LEGAL",
+  agb_title: "Terms and Conditions",
+  agb_h1: "1. Scope",
+  agb_p1:
+    "These Terms and Conditions (T&Cs) apply to all contracts between BAK Transport GmbH, Zwinzstraße 15, 1160 Vienna (\"BAK Transport\") and its customers for moving, transport, furniture and kitchen assembly, and clearance services. Deviating terms proposed by the customer are not recognized unless BAK Transport expressly agrees to them in writing.",
+  agb_h2: "2. Conclusion of Contract and Quotes",
+  agb_p2:
+    "A contract is formed once the customer confirms an offer in writing or verbally. Quotes are based on the information provided during the on-site inspection or telephone intake. If the actual scope of work deviates significantly from this, the price may be adjusted after informing the customer in advance.",
+  agb_h3: "3. Scope of Services and Fixed Price",
+  agb_p3:
+    "The agreed fixed price applies to the scope of work described in the offer. Additional services (e.g. storage, extra floors without an elevator, special items) are billed separately unless included in the offer.",
+  agb_h4: "4. Payment Terms",
+  agb_p4:
+    "Unless otherwise agreed, the invoice amount is due on the day the service is performed, payable in cash, by card, or by bank transfer. In the event of late payment, BAK Transport reserves the right to charge statutory default interest.",
+  agb_h5: "5. Customer Obligations",
+  agb_p5:
+    "The customer must ensure sufficient access on the day of the move (parking, elevator, no-stopping zone) and must flag valuable or fragile items in advance. BAK Transport is not liable for damages arising from incorrect or incomplete information provided by the customer.",
+  agb_h6: "6. Liability and Insurance",
+  agb_p6:
+    "BAK Transport is liable for damage to transported goods within the scope of statutory provisions and the transport insurance in place. Liability for damage to items not properly prepared by the customer (e.g. inadequately packed electronics) and for slight negligence is excluded to the extent permitted by law.",
+  agb_h7: "7. Cancellation and Rescheduling",
+  agb_p7:
+    "Rescheduling is free of charge up to 48 hours before the agreed appointment. For later cancellations or no-shows by the customer, BAK Transport may charge a reasonable cancellation fee.",
+  agb_h8: "8. Force Majeure",
+  agb_p8:
+    "In the event of force majeure (e.g. severe weather, official orders, road closures), the agreed appointment is postponed for the duration of the disruption, without giving rise to any claims against BAK Transport.",
+  agb_h9: "9. Privacy",
+  agb_p9:
+    "Information on the processing of personal data can be found in our Privacy Policy.",
+  agb_h10: "10. Final Provisions",
+  agb_p10:
+    "Austrian law applies, excluding the UN Convention on Contracts for the International Sale of Goods. To the extent permitted by law, the place of performance and jurisdiction is Vienna. Should any provision of these T&Cs be invalid, the validity of the remaining provisions shall remain unaffected.",
+  agb_notice:
+    "Note: This is a preliminary draft and does not constitute legal advice. Please have it reviewed by a lawyer before publishing.",
+
+  // Consent banner
+  consent_text:
+    "By continuing to use this website, you agree to our Terms and Conditions.",
+  consent_link: "Read T&Cs",
+  consent_accept: "Accept",
 
   // Shared subpage strings
   sub_why_bak: "Why BAK Transport?",

@@ -60,6 +60,7 @@ export function Navbar() {
         { label: t.nav_karriere, href: "/karriere" },
         { label: t.nav_impressum, href: "/impressum" },
         { label: t.nav_datenschutz, href: "/datenschutz" },
+        { label: t.nav_agb, href: "/agb" },
       ],
     },
   ];
