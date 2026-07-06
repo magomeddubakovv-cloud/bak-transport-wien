@@ -1600,9 +1600,9 @@ const de = {
   ratgeber_section1_bullet3: "Möbel richtig vorbereiten und schützen",
   ratgeber_section1_bullet4: "Küche und Geräte vor der Montage planen",
   ratgeber_section1_bullet5: "Versicherung und Verantwortung verstehen",
-  ratgeber_section2_heading: "Warum der Ratgeber gut für Google ist",
+  ratgeber_section2_heading: "Wann lohnt sich professionelle Hilfe beim Umzug?",
   ratgeber_section2_text:
-    "Ratgeberseiten beantworten Suchfragen, bevor der Kunde direkt ein Angebot anfragt. So gewinnt die Website Vertrauen und zusätzliche Einstiege über Google.",
+    "Bei kleinen Wohnungen ohne sperrige Möbel reicht oft ein Umzug mit Freunden. Sobald aber schwere Möbel, ein enges Stiegenhaus ohne Lift, eine Halteverbotszone oder ein straffer Zeitplan dazukommen, lohnt sich professionelle Unterstützung — sie spart Zeit, schont den Rücken und schützt vor Schäden an Möbeln und Bausubstanz.",
   ratgeber_card1_title: "Kosten & Preise",
   ratgeber_card1_text: "Was beeinflusst den Preis und wann lohnt sich ein Fixpreis?",
   ratgeber_card2_title: "Planung & Checkliste",
@@ -3391,9 +3391,9 @@ const en: typeof de = {
   ratgeber_section1_bullet3: "Prepare and protect furniture properly",
   ratgeber_section1_bullet4: "Plan the kitchen and appliances before assembly",
   ratgeber_section1_bullet5: "Understand insurance and responsibility",
-  ratgeber_section2_heading: "Why the Guide Is Good for Google",
+  ratgeber_section2_heading: "When Is Professional Help Worth It?",
   ratgeber_section2_text:
-    "Guide pages answer search queries before the customer directly requests a quote. This builds trust and brings in additional visitors through Google.",
+    "For small apartments without bulky furniture, moving with friends is often enough. But once heavy furniture, a narrow stairwell without an elevator, a no-parking zone, or a tight schedule come into play, professional help pays off — it saves time, spares your back, and protects both your furniture and the building.",
   ratgeber_card1_title: "Costs & Prices",
   ratgeber_card1_text: "What affects the price, and when is a fixed price worth it?",
   ratgeber_card2_title: "Planning & Checklist",
