@@ -177,6 +177,17 @@ export function Navbar() {
     },
   ];
 
+  const flattenGroups = (columns: NavGroup[][]): NavGroup[] => {
+    const maxRows = Math.max(0, ...columns.map((c) => c.length));
+    const result: NavGroup[] = [];
+    for (let row = 0; row < maxRows; row++) {
+      for (const column of columns) {
+        if (column[row]) result.push(column[row]);
+      }
+    }
+    return result;
+  };
+
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 40);
     window.addEventListener("scroll", handleScroll, { passive: true });
@@ -320,25 +331,37 @@ export function Navbar() {
                 <div className="py-3 font-bold text-base border-b" style={{ borderColor: "#E5E7EB", color: "#C2410C" }}>
                   {link.label}
                 </div>
-                {link.columns.flatMap((column) => column.flatMap((group) => group.items)).map((item) => {
-                  const Icon = item.icon;
-                  return (
-                    <a
-                      key={item.href}
-                      href={item.href}
-                      onClick={() => setMenuOpen(false)}
-                      className="flex items-center gap-2.5 py-3 pl-3 text-base transition-colors hover:text-[#C2410C]"
-                      style={{ color: "#4B5563", textDecoration: "none" }}
-                    >
-                      {item.flag ? (
-                        <Icon size={19} className="shrink-0" />
-                      ) : (
-                        <Icon size={17} className="shrink-0" style={{ color: "#C2410C" }} />
-                      )}
-                      {item.label}
-                    </a>
-                  );
-                })}
+                {flattenGroups(link.columns).map((group, groupIdx) => (
+                  <div key={groupIdx} className={groupIdx > 0 ? "mt-2" : ""}>
+                    {group.category && (
+                      <p
+                        className="pl-3 pt-3 pb-1 text-[11px] font-bold uppercase"
+                        style={{ color: "#9CA3AF", letterSpacing: "0.08em" }}
+                      >
+                        {group.category}
+                      </p>
+                    )}
+                    {group.items.map((item) => {
+                      const Icon = item.icon;
+                      return (
+                        <a
+                          key={item.href}
+                          href={item.href}
+                          onClick={() => setMenuOpen(false)}
+                          className="flex items-center gap-2.5 py-3 pl-3 text-base transition-colors hover:text-[#C2410C]"
+                          style={{ color: "#4B5563", textDecoration: "none" }}
+                        >
+                          {item.flag ? (
+                            <Icon size={19} className="shrink-0" />
+                          ) : (
+                            <Icon size={17} className="shrink-0" style={{ color: "#C2410C" }} />
+                          )}
+                          {item.label}
+                        </a>
+                      );
+                    })}
+                  </div>
+                ))}
               </div>
             ))}
             <div className="mt-4 flex flex-col gap-3">
