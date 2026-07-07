@@ -1749,8 +1749,16 @@ const de = {
   umzugpreise_section1_bullet1: "Wohnungsgröße und Möbelmenge",
   umzugpreise_section1_bullet2: "Stockwerk, Lift und Entfernung zum LKW",
   umzugpreise_section1_bullet3: "Ab- und Aufbau von Möbeln oder Küche",
-  umzugpreise_section1_bullet4: "Halteverbotszone, Verpackung und Schutzmaterial",
+  umzugpreise_section1_bullet4: "Halteverbotszone (ca. € 130–200 pro Adresse), Verpackung und Schutzmaterial",
   umzugpreise_section1_bullet5: "Kurzfristiger Termin oder Wochenende",
+  umzugpreise_pricetable_heading: "Was kostet ein Umzug in Wien? Preisübersicht 2026",
+  umzugpreise_pricetable_text:
+    "Wir haben die Preise mehrerer führender Umzugsunternehmen in Wien verglichen, um Ihnen eine realistische Orientierung zu geben. Der finale Preis hängt immer von Zugang, Stockwerk und Zusatzleistungen ab — bei BAK Transport erhalten Sie dafür nach einer kostenlosen Besichtigung einen verbindlichen Fixpreis.",
+  umzugpreise_pricetable_note:
+    "Marktvergleich Wien, Stand 2026, basierend auf öffentlich einsehbaren Preislisten mehrerer Wiener Umzugsunternehmen. Richtwerte für einen Standardumzug ohne Klaviertransport oder Halteverbotszone; abhängig von Stockwerk, Lift und Zufahrt.",
+  umzugpreise_hourly_heading: "Stundensätze im Wiener Marktvergleich",
+  umzugpreise_hourly_text:
+    "Viele Anbieter rechnen nach Stunden ab. Der Satz hängt von Teamgröße und Fahrzeug ab — bei BAK Transport empfehlen wir meist den Fixpreis, damit die Endsumme schon vor dem Umzugstag feststeht.",
   umzugpreise_section2_heading: "Warum Fixpreis besser ist",
   umzugpreise_section2_text:
     "Ein Fixpreis schützt Sie vor Überraschungen am Umzugstag. Nach der Besichtigung wissen beide Seiten, was zu tun ist und welche Leistung im Preis enthalten ist.",
@@ -1760,13 +1768,13 @@ const de = {
   umzugpreise_section2_bullet4: "schriftliche Bestätigung auf Wunsch",
   umzugpreise_card1_title: "Kleine Wohnung",
   umzugpreise_card1_text:
-    "Ideal für kompakte Umzüge mit wenigen Möbeln, Kartons und kurzer Tragedistanz.",
+    "Ab ca. € 350 — ideal für kompakte Umzüge mit wenigen Möbeln, Kartons und kurzer Tragedistanz.",
   umzugpreise_card2_title: "Mittlere Wohnung",
   umzugpreise_card2_text:
-    "Für Familienwohnungen mit Montage, Schutzfolie und strukturiertem Ablauf.",
+    "Ab ca. € 600 — für Familienwohnungen mit Montage, Schutzfolie und strukturiertem Ablauf.",
   umzugpreise_card3_title: "Großer Umzug",
   umzugpreise_card3_text:
-    "Für Haus, Büro oder umfangreiche Transporte mit mehreren Helfern und LKW-Kapazität.",
+    "Ab ca. € 1.500 — für Haus, Büro oder umfangreiche Transporte mit mehreren Helfern und LKW-Kapazität.",
   umzugpreise_faq1_q: "Kann ich den Preis telefonisch bekommen?",
   umzugpreise_faq1_a:
     "Eine erste Einschätzung ja. Für einen verbindlichen Fixpreis empfehlen wir eine Besichtigung oder eine sehr genaue Foto-/Videobeschreibung.",
@@ -1776,6 +1784,9 @@ const de = {
   umzugpreise_faq3_q: "Kostet eine Besichtigung extra?",
   umzugpreise_faq3_a:
     "Nein, die Besichtigung ist bei BAK Transport kostenlos und dient dazu, fair und realistisch zu kalkulieren.",
+  umzugpreise_faq4_q: "Was kostet ein Umzug in Wien im Durchschnitt?",
+  umzugpreise_faq4_a:
+    "Je nach Wohnungsgröße liegt ein Umzug in Wien meist zwischen € 350 für ein Studio und € 2.500 für eine große Wohnung oder ein Haus. Der Durchschnitt für einen kompletten Umzug liegt bei rund € 1.000 bis € 1.200. Den genauen Preis für Ihren Umzug erfahren Sie bei uns nach einer kostenlosen Besichtigung als verbindlichen Fixpreis.",
   umzugpreise_related1_label: "Privatumzug Wien",
   umzugpreise_related2_label: "Firmenumzug Wien",
   umzugpreise_related3_label: "Versicherung",
@@ -3540,8 +3551,16 @@ const en: typeof de = {
   umzugpreise_section1_bullet1: "Apartment size and amount of furniture",
   umzugpreise_section1_bullet2: "Floor, elevator, and distance to the truck",
   umzugpreise_section1_bullet3: "Disassembly and reassembly of furniture or kitchen",
-  umzugpreise_section1_bullet4: "No-parking zone, packing, and protective materials",
+  umzugpreise_section1_bullet4: "No-parking zone (approx. € 130–200 per address), packing, and protective materials",
   umzugpreise_section1_bullet5: "Short-notice appointment or weekend",
+  umzugpreise_pricetable_heading: "What Does a Move in Vienna Cost? 2026 Price Overview",
+  umzugpreise_pricetable_text:
+    "We compared the prices of several leading moving companies in Vienna to give you a realistic point of reference. Your final price always depends on access, floor, and extra services — with BAK Transport you get a binding fixed price after a free on-site inspection.",
+  umzugpreise_pricetable_note:
+    "Vienna market comparison, as of 2026, based on publicly available price lists from several Vienna moving companies. Reference values for a standard move without piano transport or a no-parking zone; actual price depends on floor, elevator, and access.",
+  umzugpreise_hourly_heading: "Hourly Rates in the Vienna Market",
+  umzugpreise_hourly_text:
+    "Many providers charge by the hour. The rate depends on team size and vehicle — at BAK Transport we usually recommend a fixed price so the final total is set before moving day.",
   umzugpreise_section2_heading: "Why a Fixed Price Is Better",
   umzugpreise_section2_text:
     "A fixed price protects you from surprises on moving day. After the inspection, both sides know what needs to be done and what's included in the price.",
@@ -3551,13 +3570,13 @@ const en: typeof de = {
   umzugpreise_section2_bullet4: "written confirmation on request",
   umzugpreise_card1_title: "Small Apartment",
   umzugpreise_card1_text:
-    "Ideal for compact moves with little furniture, few boxes, and a short carrying distance.",
+    "From approx. € 350 — ideal for compact moves with little furniture, few boxes, and a short carrying distance.",
   umzugpreise_card2_title: "Medium Apartment",
   umzugpreise_card2_text:
-    "For family apartments with assembly, protective film, and a structured process.",
+    "From approx. € 600 — for family apartments with assembly, protective film, and a structured process.",
   umzugpreise_card3_title: "Large Move",
   umzugpreise_card3_text:
-    "For houses, offices, or extensive transports with multiple movers and truck capacity.",
+    "From approx. € 1,500 — for houses, offices, or extensive transports with multiple movers and truck capacity.",
   umzugpreise_faq1_q: "Can I get the price over the phone?",
   umzugpreise_faq1_a:
     "An initial estimate, yes. For a binding fixed price we recommend an inspection or a very precise photo/video description.",
@@ -3567,6 +3586,9 @@ const en: typeof de = {
   umzugpreise_faq3_q: "Does an inspection cost extra?",
   umzugpreise_faq3_a:
     "No, the inspection is free with BAK Transport and helps us calculate fairly and realistically.",
+  umzugpreise_faq4_q: "What does a move in Vienna cost on average?",
+  umzugpreise_faq4_a:
+    "Depending on apartment size, a move in Vienna typically costs between € 350 for a studio and € 2,500 for a large apartment or house. The average for a complete move is around € 1,000 to € 1,200. You'll get the exact price for your move from us as a binding fixed price after a free on-site inspection.",
   umzugpreise_related1_label: "Private Moving Vienna",
   umzugpreise_related2_label: "Office Moving Vienna",
   umzugpreise_related3_label: "Insurance",

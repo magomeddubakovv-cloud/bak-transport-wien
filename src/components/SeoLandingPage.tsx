@@ -6,10 +6,17 @@ import { PageLayout } from "@/components/PageLayout";
 import { useLang } from "@/contexts/LanguageContext";
 import { translations } from "@/i18n/translations";
 
+interface SeoTable {
+  headers: string[];
+  rows: string[][];
+  note?: string;
+}
+
 interface SeoSection {
   heading: string;
   text: string;
   bullets?: string[];
+  table?: SeoTable;
 }
 
 interface SeoCard {
@@ -80,6 +87,52 @@ export function SeoLandingPage({
                         </li>
                       ))}
                     </ul>
+                  )}
+                  {section.table && (
+                    <div className="mt-5 overflow-x-auto rounded-xl" style={{ border: "1px solid #E5E7EB" }}>
+                      <table className="w-full text-left text-sm" style={{ borderCollapse: "collapse" }}>
+                        <thead>
+                          <tr style={{ backgroundColor: "#F9FAFB" }}>
+                            {section.table.headers.map((h) => (
+                              <th
+                                key={h}
+                                className="whitespace-nowrap px-4 py-3 font-bold"
+                                style={{ color: "#111827", borderBottom: "1px solid #E5E7EB" }}
+                              >
+                                {h}
+                              </th>
+                            ))}
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {section.table.rows.map((row, i) => (
+                            <tr key={i} style={{ backgroundColor: i % 2 === 1 ? "#FAFAFA" : "#FFFFFF" }}>
+                              {row.map((cell, j) => (
+                                <td
+                                  key={j}
+                                  className="whitespace-nowrap px-4 py-3"
+                                  style={{
+                                    color: j === row.length - 1 ? "#C2410C" : "#374151",
+                                    fontWeight: j === row.length - 1 ? 700 : 400,
+                                    borderTop: "1px solid #E5E7EB",
+                                  }}
+                                >
+                                  {cell}
+                                </td>
+                              ))}
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                      {section.table.note && (
+                        <p
+                          className="px-4 py-3 text-xs leading-[1.6]"
+                          style={{ color: "#9CA3AF", backgroundColor: "#F9FAFB", borderTop: "1px solid #E5E7EB" }}
+                        >
+                          {section.table.note}
+                        </p>
+                      )}
+                    </div>
                   )}
                 </section>
               ))}
