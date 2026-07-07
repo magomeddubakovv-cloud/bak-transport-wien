@@ -17,10 +17,14 @@ export function Navbar() {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const navRef = useRef<HTMLDivElement>(null);
 
-  const NAV_LINKS = [
+  type NavDropdownItem = { label: string; href: string };
+  type NavLink = { label: string; href: string; dropdown: NavDropdownItem[]; columns?: 1 | 2; align?: "left" | "right" };
+
+  const NAV_LINKS: NavLink[] = [
     {
       label: t.nav_leistungen,
       href: "#",
+      columns: 2,
       dropdown: [
         { label: lang === "en" ? "Moving Prices" : "Umzug Preise", href: "/leistungen/umzug-preise" },
         { label: t.nav_privatumzug, href: "/leistungen/privatumzug" },
@@ -49,6 +53,8 @@ export function Navbar() {
     {
       label: t.nav_unternehmen,
       href: "#",
+      columns: 2,
+      align: "right",
       dropdown: [
         { label: lang === "en" ? "Advantages" : "Vorteile", href: "/vorteile" },
         { label: lang === "en" ? "Insurance" : "Versicherung", href: "/versicherung" },
@@ -112,8 +118,14 @@ export function Navbar() {
                 </button>
                 {isOpen && (
                   <div
-                    className="absolute top-full left-0 mt-1 rounded-xl py-2 shadow-2xl z-50"
-                    style={{ backgroundColor: "#FFFFFF", border: "1px solid #E5E7EB", minWidth: "220px" }}
+                    className={`absolute top-full mt-1 rounded-xl py-2 shadow-2xl z-50 ${link.align === "right" ? "right-0" : "left-0"}`}
+                    style={{
+                      backgroundColor: "#FFFFFF",
+                      border: "1px solid #E5E7EB",
+                      minWidth: link.columns === 2 ? "420px" : "220px",
+                      columnCount: link.columns ?? 1,
+                      columnGap: "4px",
+                    }}
                   >
                     {link.dropdown.map((item) => (
                       <a
@@ -121,7 +133,7 @@ export function Navbar() {
                         href={item.href}
                         onClick={() => setOpenDropdown(null)}
                         className="block px-4 py-2.5 text-sm transition-colors hover:bg-orange-50 hover:text-[#C2410C]"
-                        style={{ color: "#374151", textDecoration: "none", fontWeight: 500 }}
+                        style={{ color: "#374151", textDecoration: "none", fontWeight: 500, breakInside: "avoid" }}
                       >
                         {item.label}
                       </a>
