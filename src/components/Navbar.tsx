@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, type ComponentType, type CSSProperties } from "react";
 import Link from "next/link";
 import {
   Phone,
@@ -29,14 +29,47 @@ import {
   Lock,
   ScrollText,
   MapPin,
-  Flag,
   Globe,
-  type LucideIcon,
 } from "lucide-react";
 import { Logo } from "@/components/Logo";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { useLang } from "@/contexts/LanguageContext";
 import { translations } from "@/i18n/translations";
+
+type IconProps = { size?: number; className?: string; style?: CSSProperties };
+
+function FlagAT({ size = 20, className, style }: IconProps) {
+  const height = Math.round((size * 16) / 24);
+  return (
+    <svg width={size} height={height} viewBox="0 0 24 16" className={className} style={{ borderRadius: "2px", display: "block", ...style }}>
+      <rect width="24" height="5.33" y="0" fill="#ED2939" />
+      <rect width="24" height="5.33" y="5.33" fill="#FFFFFF" />
+      <rect width="24" height="5.34" y="10.66" fill="#ED2939" />
+    </svg>
+  );
+}
+
+function FlagDE({ size = 20, className, style }: IconProps) {
+  const height = Math.round((size * 16) / 24);
+  return (
+    <svg width={size} height={height} viewBox="0 0 24 16" className={className} style={{ borderRadius: "2px", display: "block", ...style }}>
+      <rect width="24" height="5.33" y="0" fill="#000000" />
+      <rect width="24" height="5.33" y="5.33" fill="#DD0000" />
+      <rect width="24" height="5.34" y="10.66" fill="#FFCE00" />
+    </svg>
+  );
+}
+
+function FlagCH({ size = 20, className, style }: IconProps) {
+  const side = Math.round((size * 16) / 24);
+  return (
+    <svg width={side} height={side} viewBox="0 0 32 32" className={className} style={{ borderRadius: "2px", display: "block", ...style }}>
+      <rect width="32" height="32" fill="#D52B1E" />
+      <rect x="13" y="6" width="6" height="20" fill="#FFFFFF" />
+      <rect x="6" y="13" width="20" height="6" fill="#FFFFFF" />
+    </svg>
+  );
+}
 
 export function Navbar() {
   const { lang } = useLang();
@@ -47,7 +80,7 @@ export function Navbar() {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const navRef = useRef<HTMLDivElement>(null);
 
-  type NavItem = { label: string; href: string; icon: LucideIcon };
+  type NavItem = { label: string; href: string; icon: ComponentType<IconProps>; flag?: boolean };
   type NavGroup = { category?: string; items: NavItem[] };
   type NavLink = { label: string; href: string; align?: "left" | "right"; columns: NavGroup[][] };
 
@@ -96,9 +129,9 @@ export function Navbar() {
             items: [
               { label: t.nav_wien, href: "/regionen/wien", icon: MapPin },
               { label: t.nav_niederoesterreich, href: "/regionen/niederoesterreich", icon: MapPin },
-              { label: t.nav_oesterreich, href: "/regionen/oesterreich", icon: Flag },
-              { label: t.nav_deutschland, href: "/regionen/deutschland", icon: Flag },
-              { label: t.nav_schweiz, href: "/regionen/schweiz", icon: Flag },
+              { label: t.nav_oesterreich, href: "/regionen/oesterreich", icon: FlagAT, flag: true },
+              { label: t.nav_deutschland, href: "/regionen/deutschland", icon: FlagDE, flag: true },
+              { label: t.nav_schweiz, href: "/regionen/schweiz", icon: FlagCH, flag: true },
               { label: t.nav_grenzueberschreitend, href: "/regionen/grenzueberschreitend", icon: Globe },
             ],
           },
@@ -216,7 +249,11 @@ export function Navbar() {
                                   className="flex items-center gap-2.5 rounded-lg px-3 py-2 text-sm transition-colors hover:bg-orange-50 hover:text-[#C2410C]"
                                   style={{ color: "#374151", textDecoration: "none", fontWeight: 500 }}
                                 >
-                                  <Icon size={16} className="shrink-0" style={{ color: "#C2410C" }} />
+                                  {item.flag ? (
+                                    <Icon size={18} className="shrink-0" />
+                                  ) : (
+                                    <Icon size={16} className="shrink-0" style={{ color: "#C2410C" }} />
+                                  )}
                                   {item.label}
                                 </a>
                               );
@@ -293,7 +330,11 @@ export function Navbar() {
                       className="flex items-center gap-2.5 py-3 pl-3 text-base transition-colors hover:text-[#C2410C]"
                       style={{ color: "#4B5563", textDecoration: "none" }}
                     >
-                      <Icon size={17} className="shrink-0" style={{ color: "#C2410C" }} />
+                      {item.flag ? (
+                        <Icon size={19} className="shrink-0" />
+                      ) : (
+                        <Icon size={17} className="shrink-0" style={{ color: "#C2410C" }} />
+                      )}
                       {item.label}
                     </a>
                   );
