@@ -2,7 +2,37 @@
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
-import { Phone, Menu, X, ChevronDown } from "lucide-react";
+import {
+  Phone,
+  Menu,
+  X,
+  ChevronDown,
+  Calculator,
+  Home,
+  Building2,
+  Sofa,
+  Tag,
+  ChefHat,
+  Award,
+  Weight,
+  Zap,
+  Trash2,
+  Star,
+  ShieldCheck,
+  Users,
+  Briefcase,
+  BookOpen,
+  BookMarked,
+  HelpCircle,
+  Mail,
+  FileText,
+  Lock,
+  ScrollText,
+  MapPin,
+  Flag,
+  Globe,
+  type LucideIcon,
+} from "lucide-react";
 import { Logo } from "@/components/Logo";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { useLang } from "@/contexts/LanguageContext";
@@ -17,56 +47,99 @@ export function Navbar() {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const navRef = useRef<HTMLDivElement>(null);
 
-  type NavDropdownItem = { label: string; href: string };
-  type NavLink = { label: string; href: string; dropdown: NavDropdownItem[]; columns?: 1 | 2; align?: "left" | "right" };
+  type NavItem = { label: string; href: string; icon: LucideIcon };
+  type NavGroup = { category?: string; items: NavItem[] };
+  type NavLink = { label: string; href: string; align?: "left" | "right"; columns: NavGroup[][] };
 
   const NAV_LINKS: NavLink[] = [
     {
       label: t.nav_leistungen,
       href: "#",
-      columns: 2,
-      dropdown: [
-        { label: lang === "en" ? "Moving Prices" : "Umzug Preise", href: "/leistungen/umzug-preise" },
-        { label: t.nav_privatumzug, href: "/leistungen/privatumzug" },
-        { label: t.nav_firmenumzug, href: "/leistungen/firmenumzug" },
-        { label: t.nav_moebelmontage, href: "/leistungen/moebelmontage" },
-        { label: lang === "en" ? "Furniture Brands" : "Möbelmarken", href: "/leistungen/moebelmontage/marken" },
-        { label: t.nav_kuechenmontage, href: "/leistungen/kuechenmontage" },
-        { label: lang === "en" ? "Kitchen Brands" : "Küchenmarken", href: "/leistungen/kuechenmontage/marken" },
-        { label: t.nav_schwerlasttransport, href: "/leistungen/schwerlasttransport" },
-        { label: t.nav_notfallumzug, href: "/leistungen/notfallumzug" },
-        { label: t.nav_entruempelung, href: "/leistungen/entruempelung" },
+      columns: [
+        [
+          {
+            category: lang === "en" ? "MOVING" : "UMZUG",
+            items: [
+              { label: lang === "en" ? "Moving Prices" : "Umzug Preise", href: "/leistungen/umzug-preise", icon: Calculator },
+              { label: t.nav_privatumzug, href: "/leistungen/privatumzug", icon: Home },
+              { label: t.nav_firmenumzug, href: "/leistungen/firmenumzug", icon: Building2 },
+            ],
+          },
+          {
+            category: lang === "en" ? "MORE" : "WEITERE",
+            items: [
+              { label: t.nav_schwerlasttransport, href: "/leistungen/schwerlasttransport", icon: Weight },
+              { label: t.nav_notfallumzug, href: "/leistungen/notfallumzug", icon: Zap },
+              { label: t.nav_entruempelung, href: "/leistungen/entruempelung", icon: Trash2 },
+            ],
+          },
+        ],
+        [
+          {
+            category: lang === "en" ? "ASSEMBLY" : "MONTAGE",
+            items: [
+              { label: t.nav_moebelmontage, href: "/leistungen/moebelmontage", icon: Sofa },
+              { label: lang === "en" ? "Furniture Brands" : "Möbelmarken", href: "/leistungen/moebelmontage/marken", icon: Tag },
+              { label: t.nav_kuechenmontage, href: "/leistungen/kuechenmontage", icon: ChefHat },
+              { label: lang === "en" ? "Kitchen Brands" : "Küchenmarken", href: "/leistungen/kuechenmontage/marken", icon: Award },
+            ],
+          },
+        ],
       ],
     },
     {
       label: t.nav_regionen,
       href: "#",
-      dropdown: [
-        { label: t.nav_wien, href: "/regionen/wien" },
-        { label: t.nav_niederoesterreich, href: "/regionen/niederoesterreich" },
-        { label: t.nav_oesterreich, href: "/regionen/oesterreich" },
-        { label: t.nav_deutschland, href: "/regionen/deutschland" },
-        { label: t.nav_schweiz, href: "/regionen/schweiz" },
-        { label: t.nav_grenzueberschreitend, href: "/regionen/grenzueberschreitend" },
+      columns: [
+        [
+          {
+            items: [
+              { label: t.nav_wien, href: "/regionen/wien", icon: MapPin },
+              { label: t.nav_niederoesterreich, href: "/regionen/niederoesterreich", icon: MapPin },
+              { label: t.nav_oesterreich, href: "/regionen/oesterreich", icon: Flag },
+              { label: t.nav_deutschland, href: "/regionen/deutschland", icon: Flag },
+              { label: t.nav_schweiz, href: "/regionen/schweiz", icon: Flag },
+              { label: t.nav_grenzueberschreitend, href: "/regionen/grenzueberschreitend", icon: Globe },
+            ],
+          },
+        ],
       ],
     },
     {
       label: t.nav_unternehmen,
       href: "#",
-      columns: 2,
       align: "right",
-      dropdown: [
-        { label: lang === "en" ? "Advantages" : "Vorteile", href: "/vorteile" },
-        { label: lang === "en" ? "Insurance" : "Versicherung", href: "/versicherung" },
-        { label: lang === "en" ? "Guide" : "Ratgeber", href: "/ratgeber" },
-        { label: lang === "en" ? "Glossary" : "Glossar", href: "/glossar" },
-        { label: t.nav_ueber_uns, href: "/ueber-uns" },
-        { label: t.nav_kontakt, href: "/kontakt" },
-        { label: t.nav_faq, href: "/faq" },
-        { label: t.nav_karriere, href: "/karriere" },
-        { label: t.nav_impressum, href: "/impressum" },
-        { label: t.nav_datenschutz, href: "/datenschutz" },
-        { label: t.nav_agb, href: "/agb" },
+      columns: [
+        [
+          {
+            category: lang === "en" ? "COMPANY" : "UNTERNEHMEN",
+            items: [
+              { label: lang === "en" ? "Advantages" : "Vorteile", href: "/vorteile", icon: Star },
+              { label: lang === "en" ? "Insurance" : "Versicherung", href: "/versicherung", icon: ShieldCheck },
+              { label: t.nav_ueber_uns, href: "/ueber-uns", icon: Users },
+              { label: t.nav_karriere, href: "/karriere", icon: Briefcase },
+              { label: t.nav_kontakt, href: "/kontakt", icon: Mail },
+            ],
+          },
+        ],
+        [
+          {
+            category: lang === "en" ? "GUIDE & HELP" : "RATGEBER & HILFE",
+            items: [
+              { label: lang === "en" ? "Guide" : "Ratgeber", href: "/ratgeber", icon: BookOpen },
+              { label: lang === "en" ? "Glossary" : "Glossar", href: "/glossar", icon: BookMarked },
+              { label: t.nav_faq, href: "/faq", icon: HelpCircle },
+            ],
+          },
+          {
+            category: lang === "en" ? "LEGAL" : "RECHTLICHES",
+            items: [
+              { label: t.nav_impressum, href: "/impressum", icon: FileText },
+              { label: t.nav_datenschutz, href: "/datenschutz", icon: Lock },
+              { label: t.nav_agb, href: "/agb", icon: ScrollText },
+            ],
+          },
+        ],
       ],
     },
   ];
@@ -118,25 +191,39 @@ export function Navbar() {
                 </button>
                 {isOpen && (
                   <div
-                    className={`absolute top-full mt-1 rounded-xl py-2 shadow-2xl z-50 ${link.align === "right" ? "right-0" : "left-0"}`}
-                    style={{
-                      backgroundColor: "#FFFFFF",
-                      border: "1px solid #E5E7EB",
-                      minWidth: link.columns === 2 ? "420px" : "220px",
-                      columnCount: link.columns ?? 1,
-                      columnGap: "4px",
-                    }}
+                    className={`absolute top-full mt-1.5 flex gap-1 rounded-xl p-3 shadow-2xl z-50 ${link.align === "right" ? "right-0" : "left-0"}`}
+                    style={{ backgroundColor: "#FFFFFF", border: "1px solid #E5E7EB" }}
                   >
-                    {link.dropdown.map((item) => (
-                      <a
-                        key={item.href}
-                        href={item.href}
-                        onClick={() => setOpenDropdown(null)}
-                        className="block px-4 py-2.5 text-sm transition-colors hover:bg-orange-50 hover:text-[#C2410C]"
-                        style={{ color: "#374151", textDecoration: "none", fontWeight: 500, breakInside: "avoid" }}
-                      >
-                        {item.label}
-                      </a>
+                    {link.columns.map((column, colIdx) => (
+                      <div key={colIdx} style={{ minWidth: "224px" }}>
+                        {column.map((group, groupIdx) => (
+                          <div key={groupIdx} className={groupIdx > 0 ? "mt-3" : ""}>
+                            {group.category && (
+                              <p
+                                className="px-3 pb-1.5 text-[11px] font-bold uppercase"
+                                style={{ color: "#9CA3AF", letterSpacing: "0.08em" }}
+                              >
+                                {group.category}
+                              </p>
+                            )}
+                            {group.items.map((item) => {
+                              const Icon = item.icon;
+                              return (
+                                <a
+                                  key={item.href}
+                                  href={item.href}
+                                  onClick={() => setOpenDropdown(null)}
+                                  className="flex items-center gap-2.5 rounded-lg px-3 py-2 text-sm transition-colors hover:bg-orange-50 hover:text-[#C2410C]"
+                                  style={{ color: "#374151", textDecoration: "none", fontWeight: 500 }}
+                                >
+                                  <Icon size={16} className="shrink-0" style={{ color: "#C2410C" }} />
+                                  {item.label}
+                                </a>
+                              );
+                            })}
+                          </div>
+                        ))}
+                      </div>
                     ))}
                   </div>
                 )}
@@ -196,17 +283,21 @@ export function Navbar() {
                 <div className="py-3 font-bold text-base border-b" style={{ borderColor: "#E5E7EB", color: "#C2410C" }}>
                   {link.label}
                 </div>
-                {link.dropdown.map((item) => (
-                  <a
-                    key={item.href}
-                    href={item.href}
-                    onClick={() => setMenuOpen(false)}
-                    className="block py-3 pl-3 text-base transition-colors hover:text-[#C2410C]"
-                    style={{ color: "#4B5563", textDecoration: "none" }}
-                  >
-                    {item.label}
-                  </a>
-                ))}
+                {link.columns.flatMap((column) => column.flatMap((group) => group.items)).map((item) => {
+                  const Icon = item.icon;
+                  return (
+                    <a
+                      key={item.href}
+                      href={item.href}
+                      onClick={() => setMenuOpen(false)}
+                      className="flex items-center gap-2.5 py-3 pl-3 text-base transition-colors hover:text-[#C2410C]"
+                      style={{ color: "#4B5563", textDecoration: "none" }}
+                    >
+                      <Icon size={17} className="shrink-0" style={{ color: "#C2410C" }} />
+                      {item.label}
+                    </a>
+                  );
+                })}
               </div>
             ))}
             <div className="mt-4 flex flex-col gap-3">
