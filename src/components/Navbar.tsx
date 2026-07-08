@@ -145,7 +145,6 @@ export function Navbar() {
       columns: [
         [
           {
-            category: lang === "en" ? "COMPANY" : "UNTERNEHMEN",
             items: [
               { label: lang === "en" ? "Advantages" : "Vorteile", href: "/vorteile", icon: Star },
               { label: lang === "en" ? "Insurance" : "Versicherung", href: "/versicherung", icon: ShieldCheck },
