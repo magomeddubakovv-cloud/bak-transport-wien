@@ -87,13 +87,15 @@ export function Footer() {
 
             <div className="mt-6 flex gap-3">
               {[
-                { Icon: LinkedInIcon, label: "LinkedIn" },
-                { Icon: InstagramIcon, label: "Instagram" },
-                { Icon: FacebookIcon, label: "Facebook" },
-              ].map(({ Icon, label }) => (
+                { Icon: LinkedInIcon, label: "LinkedIn", href: "https://www.linkedin.com/company/bak-transport" },
+                { Icon: InstagramIcon, label: "Instagram", href: "https://www.instagram.com/baktransport" },
+                { Icon: FacebookIcon, label: "Facebook", href: "https://www.facebook.com/baktransport" },
+              ].map(({ Icon, label, href }) => (
                 <a
                   key={label}
-                  href="#"
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label={label}
                   className="rounded-lg p-2.5 transition-colors"
                   style={{ backgroundColor: "rgba(255,255,255,0.12)", color: "#FFFFFF" }}
