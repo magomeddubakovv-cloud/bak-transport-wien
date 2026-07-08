@@ -657,8 +657,6 @@ const de = {
   agb_h10: "10. Schlussbestimmungen",
   agb_p10:
     "Es gilt österreichisches Recht unter Ausschluss des UN-Kaufrechts. Erfüllungsort und Gerichtsstand ist, soweit gesetzlich zulässig, Wien. Sollte eine Bestimmung dieser AGB unwirksam sein, bleibt die Wirksamkeit der übrigen Bestimmungen davon unberührt.",
-  agb_notice:
-    "Hinweis: Dies ist ein vorläufiger Entwurf und ersetzt keine rechtliche Beratung. Bitte vor Veröffentlichung von einer Rechtsanwältin/einem Rechtsanwalt prüfen lassen.",
 
   // Consent banner
   consent_text:
@@ -2465,8 +2463,6 @@ const en: typeof de = {
   agb_h10: "10. Final Provisions",
   agb_p10:
     "Austrian law applies, excluding the UN Convention on Contracts for the International Sale of Goods. To the extent permitted by law, the place of performance and jurisdiction is Vienna. Should any provision of these T&Cs be invalid, the validity of the remaining provisions shall remain unaffected.",
-  agb_notice:
-    "Note: This is a preliminary draft and does not constitute legal advice. Please have it reviewed by a lawyer before publishing.",
 
   // Consent banner
   consent_text:

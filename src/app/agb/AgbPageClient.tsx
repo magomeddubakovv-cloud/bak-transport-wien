@@ -25,12 +25,6 @@ export function AgbPageClient() {
     <PageLayout label={t.agb_label} title={t.agb_title}>
       <section className="py-12 md:py-20 bg-white">
         <div className="max-w-3xl mx-auto px-4 md:px-6" style={{ color: "#374151", lineHeight: "1.8" }}>
-          <p
-            className="mb-8 text-sm italic"
-            style={{ color: "#9CA3AF", borderLeft: "3px solid #E5E7EB", paddingLeft: "12px" }}
-          >
-            {t.agb_notice}
-          </p>
           {sections.map(([heading, body]) => (
             <div key={heading}>
               <h2 className="text-2xl font-bold mb-4" style={{ color: "#111827" }}>{heading}</h2>
