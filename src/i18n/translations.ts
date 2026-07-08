@@ -1753,9 +1753,9 @@ const de = {
   umzugpreise_section1_bullet5: "Kurzfristiger Termin oder Wochenende",
   umzugpreise_pricetable_heading: "Was kostet ein Umzug in Wien? Preisübersicht 2026",
   umzugpreise_pricetable_text:
-    "Wir haben die Preise mehrerer führender Umzugsunternehmen in Wien verglichen, um Ihnen eine realistische Orientierung zu geben. Der finale Preis hängt immer von Zugang, Stockwerk und Zusatzleistungen ab — bei BAK Transport erhalten Sie dafür nach einer kostenlosen Besichtigung einen verbindlichen Fixpreis.",
+    "Der Preis für einen Umzug in Wien hängt vor allem von Wohnungsgröße, Zugang, Stockwerk und gewünschten Zusatzleistungen ab. Die folgende Übersicht zeigt realistische Richtwerte für den Wiener Markt — den genauen Preis für Ihre Wohnung erhalten Sie bei uns nach einer kostenlosen Besichtigung als verbindlichen Fixpreis.",
   umzugpreise_pricetable_note:
-    "Marktvergleich Wien, Stand 2026, basierend auf öffentlich einsehbaren Preislisten mehrerer Wiener Umzugsunternehmen. Richtwerte für einen Standardumzug ohne Klaviertransport oder Halteverbotszone; abhängig von Stockwerk, Lift und Zufahrt.",
+    "Richtwerte für einen Standardumzug ohne Klaviertransport oder Halteverbotszone. Der genaue Preis hängt von Stockwerk, Lift und Zufahrt ab — Details dazu klären wir bei der kostenlosen Besichtigung.",
   umzugpreise_hourly_heading: "Stundensätze im Wiener Marktvergleich",
   umzugpreise_hourly_text:
     "Viele Anbieter rechnen nach Stunden ab. Der Satz hängt von Teamgröße und Fahrzeug ab — bei BAK Transport empfehlen wir meist den Fixpreis, damit die Endsumme schon vor dem Umzugstag feststeht.",
@@ -3555,9 +3555,9 @@ const en: typeof de = {
   umzugpreise_section1_bullet5: "Short-notice appointment or weekend",
   umzugpreise_pricetable_heading: "What Does a Move in Vienna Cost? 2026 Price Overview",
   umzugpreise_pricetable_text:
-    "We compared the prices of several leading moving companies in Vienna to give you a realistic point of reference. Your final price always depends on access, floor, and extra services — with BAK Transport you get a binding fixed price after a free on-site inspection.",
+    "The price for a move in Vienna mainly depends on apartment size, access, floor, and any extra services you need. The overview below shows realistic reference values for the Vienna market — you'll get the exact price for your apartment from us as a binding fixed price after a free on-site inspection.",
   umzugpreise_pricetable_note:
-    "Vienna market comparison, as of 2026, based on publicly available price lists from several Vienna moving companies. Reference values for a standard move without piano transport or a no-parking zone; actual price depends on floor, elevator, and access.",
+    "Reference values for a standard move without piano transport or a no-parking zone. The exact price depends on floor, elevator, and access — we'll clarify the details during the free inspection.",
   umzugpreise_hourly_heading: "Hourly Rates in the Vienna Market",
   umzugpreise_hourly_text:
     "Many providers charge by the hour. The rate depends on team size and vehicle — at BAK Transport we usually recommend a fixed price so the final total is set before moving day.",
