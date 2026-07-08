@@ -3,8 +3,8 @@ import { StructuredData } from "@/components/StructuredData";
 import { WienPageClient } from "./WienPageClient";
 
 export const metadata: Metadata = {
-  title: "Umzug Wien | Alle 23 Bezirke | ab €650 Fixpreis | BAK Transport",
-  description: "✓ Umzugsfirma Wien: BAK Transport führt Umzüge in allen 23 Wiener Bezirken durch. Ortskundig, vollversichert, Fixpreis ab €650. Kostenlose Besichtigung & 60 Min Rückmeldung.",
+  title: "Umzug Wien | Alle 23 Bezirke | ab €550 Fixpreis | BAK Transport",
+  description: "✓ Umzugsfirma Wien: BAK Transport führt Umzüge in allen 23 Wiener Bezirken durch. Ortskundig, vollversichert, Fixpreis ab €550. Kostenlose Besichtigung & 60 Min Rückmeldung.",
   alternates: { canonical: "https://www.baktransport.at/regionen/wien" },
   keywords: [
     "Umzug Wien", "Umzugsfirma Wien", "Umzugsunternehmen Wien",
