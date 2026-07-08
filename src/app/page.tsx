@@ -29,11 +29,6 @@ const websiteSchema = {
   name: "BAK Transport Wien",
   description: "Professionelle Umzugsfirma in Wien mit Fixpreis",
   publisher: { "@id": "https://www.baktransport.at/#business" },
-  potentialAction: {
-    "@type": "SearchAction",
-    target: { "@type": "EntryPoint", urlTemplate: "https://www.baktransport.at/?s={search_term_string}" },
-    "query-input": "required name=search_term_string",
-  },
 };
 
 const faqSchema = {
@@ -96,7 +91,7 @@ const serviceSchema = {
   "@type": "Service",
   name: "Umzugsservice Wien",
   provider: {
-    "@type": "MovingCompany",
+    "@type": ["LocalBusiness", "MovingCompany"],
     name: "BAK Transport Wien",
     telephone: "+4368110723047",
     url: "https://www.baktransport.at",

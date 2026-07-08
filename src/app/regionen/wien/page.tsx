@@ -31,7 +31,7 @@ const serviceSchema = {
   "@type": "Service",
   name: "Umzug Wien — BAK Transport",
   provider: {
-    "@type": "MovingCompany",
+    "@type": ["LocalBusiness", "MovingCompany"],
     name: "BAK Transport Wien",
     aggregateRating: { "@type": "AggregateRating", ratingValue: "5.0", reviewCount: "87", bestRating: "5" },
   },

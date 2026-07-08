@@ -54,7 +54,7 @@ export default async function BezirkPage({ params }: Props) {
 
   const localBusinessSchema = {
     "@context": "https://schema.org",
-    "@type": "MovingCompany",
+    "@type": ["LocalBusiness", "MovingCompany"],
     name: "BAK Transport Wien",
     url: "https://www.baktransport.at",
     telephone: "+4368110723047",

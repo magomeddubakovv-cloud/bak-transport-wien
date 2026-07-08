@@ -109,7 +109,7 @@ export function QuoteFormSection() {
           {/* Right column */}
           <div className="w-full md:w-3/5">
             <div className="bg-white rounded-2xl p-5 md:p-8 shadow-2xl">
-              <form onSubmit={handleSubmit} noValidate>
+              <form onSubmit={handleSubmit}>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
                   <div>
                     <label htmlFor="from" className="block mb-1.5" style={labelStyle}>{t.form_from}</label>
