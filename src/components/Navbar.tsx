@@ -205,10 +205,13 @@ export function Navbar() {
 
   useEffect(() => {
     if (!menuOpen) return;
-    const original = document.body.style.overflow;
+    const originalBody = document.body.style.overflow;
+    const originalHtml = document.documentElement.style.overflow;
     document.body.style.overflow = "hidden";
+    document.documentElement.style.overflow = "hidden";
     return () => {
-      document.body.style.overflow = original;
+      document.body.style.overflow = originalBody;
+      document.documentElement.style.overflow = originalHtml;
     };
   }, [menuOpen]);
 
