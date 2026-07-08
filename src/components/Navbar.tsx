@@ -203,6 +203,15 @@ export function Navbar() {
     return () => document.removeEventListener("mousedown", handleClick);
   }, []);
 
+  useEffect(() => {
+    if (!menuOpen) return;
+    const original = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = original;
+    };
+  }, [menuOpen]);
+
   return (
     <header
       className="fixed top-0 left-0 right-0 z-50 transition-shadow duration-300"
@@ -323,7 +332,7 @@ export function Navbar() {
 
       {/* Mobile dropdown */}
       {menuOpen && (
-        <div className="md:hidden w-full overflow-y-auto max-h-[80vh]" style={{ backgroundColor: "#FFFFFF" }}>
+        <div className="md:hidden w-full overflow-y-auto" style={{ backgroundColor: "#FFFFFF", height: "calc(100dvh - 88px)" }}>
           <nav className="flex flex-col px-6 py-4">
             {NAV_LINKS.map((link) => (
               <div key={link.label}>
