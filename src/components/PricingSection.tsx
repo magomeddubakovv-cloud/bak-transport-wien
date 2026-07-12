@@ -1,14 +1,17 @@
 "use client";
 
+import { useState } from "react";
 import { Check } from "lucide-react";
 import { useLang } from "@/contexts/LanguageContext";
 import { translations } from "@/i18n/translations";
+import { PricingTab } from "@/components/ui/pricing-tab";
 
 export function PricingSection() {
   const { lang } = useLang();
   const t = translations[lang];
+  const [activeTab, setActiveTab] = useState<"umzug" | "montage">("umzug");
 
-  const cards = [
+  const umzugCards = [
     {
       title: "BAK Basis",
       forText: t.p1_for,
@@ -35,10 +38,39 @@ export function PricingSection() {
     },
   ];
 
+  const montageCards = [
+    {
+      title: t.moebel_page_p1_label,
+      forText: t.moebel_page_p1_detail,
+      price: t.moebel_page_p1_price,
+      features: [t.moebel_page_check1, t.moebel_page_check3, t.moebel_page_check4, t.moebel_page_check5],
+      ctaLabel: t.cta_quote_btn,
+      featured: false,
+    },
+    {
+      title: t.moebel_page_p2_label,
+      forText: t.moebel_page_p2_detail,
+      price: t.moebel_page_p2_price,
+      features: [t.moebel_page_check1, t.moebel_page_check2, t.moebel_page_check3, t.moebel_page_check4, t.moebel_page_check5],
+      ctaLabel: t.cta_request_btn,
+      featured: true,
+    },
+    {
+      title: t.moebel_page_p3_label,
+      forText: t.moebel_page_p3_detail,
+      price: t.moebel_page_p3_price,
+      features: [t.moebel_page_check1, t.moebel_page_check2, t.moebel_page_check3, t.moebel_page_check4, t.moebel_page_check6],
+      ctaLabel: t.cta_quote_btn,
+      featured: false,
+    },
+  ];
+
+  const cards = activeTab === "umzug" ? umzugCards : montageCards;
+
   return (
-    <section className="py-12 md:py-24" style={{ backgroundColor: "#F9FAFB" }}>
+    <section className="py-10 md:py-24" style={{ backgroundColor: "#F9FAFB" }}>
       <div className="max-w-7xl mx-auto px-4 md:px-6">
-        <div className="text-center mb-10 md:mb-16">
+        <div className="text-center mb-8 md:mb-16">
           <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "#C2410C" }}>
             {t.pricing_label}
           </p>
@@ -48,9 +80,25 @@ export function PricingSection() {
           <p className="mt-3 text-base md:text-xl" style={{ color: "#6B7280" }}>
             {t.pricing_subtext}
           </p>
+
+          <div
+            className="mx-auto mt-6 flex w-full max-w-xs rounded-full p-1 sm:mt-8 sm:w-fit sm:max-w-none"
+            style={{ backgroundColor: "#F3F4F6" }}
+          >
+            <PricingTab
+              text={t.pricing_tab_umzug}
+              selected={activeTab === "umzug"}
+              onSelect={() => setActiveTab("umzug")}
+            />
+            <PricingTab
+              text={t.pricing_tab_montage}
+              selected={activeTab === "montage"}
+              onSelect={() => setActiveTab("montage")}
+            />
+          </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6">
           {cards.map((card) => (
             <div
               key={card.title}
@@ -110,7 +158,7 @@ export function PricingSection() {
         </div>
 
         <p className="mt-8 text-center" style={{ color: "#6B7280", fontSize: "12px" }}>
-          {t.pricing_footnote}
+          {activeTab === "umzug" ? t.pricing_footnote : t.moebel_page_price_footnote}
         </p>
         <p className="mt-2 text-center" style={{ color: "#6B7280", fontSize: "15px" }}>
           {t.pricing_hourly}

@@ -162,4 +162,108 @@
     border-color: #C2410C !important;
     color: #C2410C !important;
   }
+
+  /* Glow-line accent on every button-style link/button, on top of its own hover color above */
+  a[href="/anfrage"],
+  a[href="/kontakt"],
+  a[href^="mailto:"],
+  a[href^="tel:"],
+  a[href^="https://wa.me"],
+  a[href^="/leistungen/"],
+  a[href^="/regionen/"],
+  button {
+    position: relative;
+    overflow: hidden;
+  }
+
+  a[href="/anfrage"]::before,
+  a[href="/anfrage"]::after,
+  a[href="/kontakt"]::before,
+  a[href="/kontakt"]::after,
+  a[href^="mailto:"]::before,
+  a[href^="mailto:"]::after,
+  a[href^="tel:"]::before,
+  a[href^="tel:"]::after,
+  a[href^="https://wa.me"]::before,
+  a[href^="https://wa.me"]::after,
+  a[href^="/leistungen/"]::before,
+  a[href^="/leistungen/"]::after,
+  a[href^="/regionen/"]::before,
+  a[href^="/regionen/"]::after,
+  button::before,
+  button::after {
+    content: "";
+    position: absolute;
+    left: 12.5%;
+    width: 75%;
+    height: 1px;
+    opacity: 0;
+    transition: opacity 400ms ease;
+    pointer-events: none;
+  }
+
+  a[href="/anfrage"]::before,
+  a[href="/kontakt"]::before,
+  a[href^="mailto:"]::before,
+  a[href^="tel:"]::before,
+  a[href^="https://wa.me"]::before,
+  a[href^="/leistungen/"]::before,
+  a[href^="/regionen/"]::before,
+  button::before {
+    top: 0;
+  }
+
+  a[href="/anfrage"]::after,
+  a[href="/kontakt"]::after,
+  a[href^="mailto:"]::after,
+  a[href^="tel:"]::after,
+  a[href^="https://wa.me"]::after,
+  a[href^="/leistungen/"]::after,
+  a[href^="/regionen/"]::after,
+  button::after {
+    bottom: 0;
+  }
+
+  /* Dark/solid hover backgrounds get a light line */
+  a[href="/anfrage"]::before,
+  a[href="/anfrage"]::after,
+  a[href="/kontakt"]::before,
+  a[href="/kontakt"]::after,
+  a[href^="mailto:"]::before,
+  a[href^="mailto:"]::after,
+  a[href^="https://wa.me"]::before,
+  a[href^="https://wa.me"]::after,
+  button[type="submit"]::before,
+  button[type="submit"]::after {
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.85), transparent);
+  }
+
+  /* Light hover backgrounds get an orange line */
+  a[href^="tel:"]::before,
+  a[href^="tel:"]::after,
+  a[href^="/leistungen/"]::before,
+  a[href^="/leistungen/"]::after,
+  a[href^="/regionen/"]::before,
+  a[href^="/regionen/"]::after {
+    background: linear-gradient(90deg, transparent, rgba(194, 65, 12, 0.7), transparent);
+  }
+
+  a[href="/anfrage"]:hover::before,
+  a[href="/anfrage"]:hover::after,
+  a[href="/kontakt"]:hover::before,
+  a[href="/kontakt"]:hover::after,
+  a[href^="mailto:"]:hover::before,
+  a[href^="mailto:"]:hover::after,
+  a[href^="tel:"]:hover::before,
+  a[href^="tel:"]:hover::after,
+  a[href^="https://wa.me"]:hover::before,
+  a[href^="https://wa.me"]:hover::after,
+  a[href^="/leistungen/"]:hover::before,
+  a[href^="/leistungen/"]:hover::after,
+  a[href^="/regionen/"]:hover::before,
+  a[href^="/regionen/"]:hover::after,
+  button:hover::before,
+  button:hover::after {
+    opacity: 1;
+  }
 }

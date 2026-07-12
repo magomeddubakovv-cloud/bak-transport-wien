@@ -129,6 +129,8 @@ const de = {
   pricing_label: "TRANSPARENTE PREISE",
   pricing_h2: "Keine Überraschungen.",
   pricing_subtext: "Feste Preise. Echter Service.",
+  pricing_tab_umzug: "Umzug",
+  pricing_tab_montage: "Montage & Transport",
   pricing_badge: "Meistgewählt",
   pricing_per: "/Umzug",
   pricing_footnote:
@@ -1938,6 +1940,8 @@ const en: typeof de = {
   pricing_label: "TRANSPARENT PRICES",
   pricing_h2: "No Surprises.",
   pricing_subtext: "Fixed Prices. Real Service.",
+  pricing_tab_umzug: "Moving",
+  pricing_tab_montage: "Assembly & Transport",
   pricing_badge: "Most Popular",
   pricing_per: "/move",
   pricing_footnote:
