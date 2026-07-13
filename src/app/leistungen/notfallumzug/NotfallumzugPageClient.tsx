@@ -1,6 +1,6 @@
 "use client";
 
-import { Check, Calendar, Mail } from "lucide-react";
+import { Check, Calendar, Mail, ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { PageLayout } from "@/components/PageLayout";
 import { AblaufSection } from "@/components/AblaufSection";
@@ -112,7 +112,7 @@ export function NotfallumzugPageClient() {
       <section className="py-12" style={{ backgroundColor: "#F9FAFB" }}>
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <h3 className="text-xl font-bold mb-6" style={{ color: "#111827" }}>{t.sub_more_services}</h3>
-          <div className="flex flex-wrap gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
             {[
               { label: lang === "en" ? "Private Moving Vienna" : "Privatumzug Wien", href: "/leistungen/privatumzug" },
               { label: lang === "en" ? "Office Moving Vienna" : "Firmenumzug Wien", href: "/leistungen/firmenumzug" },
@@ -120,9 +120,10 @@ export function NotfallumzugPageClient() {
               { label: lang === "en" ? "Kitchen Assembly Vienna" : "Küchenmontage Wien", href: "/leistungen/kuechenmontage" },
               { label: lang === "en" ? "Heavy Transport Vienna" : "Schwerlasttransport Wien", href: "/leistungen/schwerlasttransport" },
             ].map((link) => (
-              <a key={link.href} href={link.href} className="px-4 py-2 rounded-lg text-sm font-medium"
+              <a key={link.href} href={link.href} className="group flex items-center justify-between gap-2 rounded-lg px-4 py-3 text-sm font-medium"
                 style={{ backgroundColor: "#FFFFFF", border: "1px solid #E5E7EB", color: "#C2410C", textDecoration: "none" }}>
                 {link.label}
+                <ArrowRight className="w-4 h-4 shrink-0 transition-transform group-hover:translate-x-0.5" />
               </a>
             ))}
           </div>

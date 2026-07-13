@@ -1,6 +1,6 @@
 "use client";
 
-import { Check, Calendar, Mail, ClipboardList, Monitor, Moon, Wrench, ParkingMeter, Trash2 } from "lucide-react";
+import { Check, Calendar, Mail, ClipboardList, Monitor, Moon, Wrench, ParkingMeter, Trash2, ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { PageLayout } from "@/components/PageLayout";
 import { AblaufSection } from "@/components/AblaufSection";

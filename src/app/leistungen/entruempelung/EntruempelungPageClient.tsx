@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Check, Mail, Calendar } from "lucide-react";
+import { Check, Mail, Calendar, ArrowRight } from "lucide-react";
 import { AblaufSection } from "@/components/AblaufSection";
 import { PageLayout } from "@/components/PageLayout";
 import { useLang } from "@/contexts/LanguageContext";
@@ -206,11 +206,12 @@ export function EntruempelungPageClient() {
       <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <h3 className="text-xl font-bold mb-6" style={{ color: "#111827" }}>{t.moreHeading}</h3>
-          <div className="flex flex-wrap gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
             {moreLinks.map((link) => (
-              <a key={link.href} href={link.href} className="px-4 py-2 rounded-lg text-sm font-medium"
+              <a key={link.href} href={link.href} className="group flex items-center justify-between gap-2 rounded-lg px-4 py-3 text-sm font-medium"
                 style={{ backgroundColor: "#FFFFFF", border: "1px solid #E5E7EB", color: "#C2410C", textDecoration: "none" }}>
                 {link.label}
+                <ArrowRight className="w-4 h-4 shrink-0 transition-transform group-hover:translate-x-0.5" />
               </a>
             ))}
           </div>
