@@ -149,10 +149,10 @@
   }
 
   a[href^="https://wa.me"]:hover {
-    background-color: #16A34A !important;
-    border-color: #16A34A !important;
+    background-color: #166534 !important;
+    border-color: #166534 !important;
     color: #FFFFFF !important;
-    box-shadow: 0 10px 22px rgba(22, 163, 74, 0.2);
+    box-shadow: 0 10px 22px rgba(21, 128, 61, 0.2);
     transform: translateY(-1px);
   }
 

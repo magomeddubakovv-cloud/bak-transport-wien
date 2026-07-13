@@ -36,7 +36,7 @@ export function AnnouncementBar() {
           target="_blank"
           rel="noopener noreferrer"
           className="hidden sm:flex items-center gap-1 rounded px-3 py-1 text-xs font-semibold transition-colors"
-          style={{ backgroundColor: "#25D366", color: "#fff" }}
+          style={{ backgroundColor: "#15803D", color: "#fff" }}
         >
           WhatsApp
         </a>

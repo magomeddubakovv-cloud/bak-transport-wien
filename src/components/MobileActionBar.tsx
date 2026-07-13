@@ -35,7 +35,7 @@ export function MobileActionBar() {
         rel="noopener noreferrer"
         className="flex-1 flex items-center justify-center gap-2 font-bold text-white rounded-xl"
         style={{
-          backgroundColor: "#22C55E",
+          backgroundColor: "#15803D",
           padding: "15px 0",
           fontSize: "15px",
           textDecoration: "none",

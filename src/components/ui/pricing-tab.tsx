@@ -17,7 +17,7 @@ export function PricingTab({ text, selected, onSelect }: PricingTabProps) {
       onClick={onSelect}
       className={cn(
         "relative flex-1 whitespace-nowrap px-3 py-2 text-xs font-semibold transition-colors sm:flex-none sm:px-6 sm:text-sm",
-        selected ? "text-white" : "text-[#6B7280]"
+        selected ? "text-white" : "text-[#4B5563]"
       )}
     >
       <span className="relative z-10">{text}</span>

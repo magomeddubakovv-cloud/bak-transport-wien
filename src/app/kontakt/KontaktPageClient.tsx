@@ -78,7 +78,7 @@ export function KontaktPageClient() {
       <section className="py-12 md:py-20" style={{ backgroundColor: "#C2410C" }}>
         <div className="max-w-7xl mx-auto px-4 md:px-6 text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">{t.kontakt_cta_h2}</h2>
-          <p className="mb-8 text-white opacity-90">{t.kontakt_cta_desc}</p>
+          <p className="mb-8 text-white opacity-95">{t.kontakt_cta_desc}</p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
             <a href="mailto:office@baktransport.at" className="inline-block px-8 py-4 rounded-xl font-semibold text-base" style={{ backgroundColor: "#FFFFFF", color: "#C2410C" }}>{t.kontakt_cta_email_btn}</a>
             <a href="https://calendly.com/baktransport/besichtigung-in-wien-umgebung" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-4 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold text-sm sm:text-base w-full sm:w-auto" style={{ border: "2px solid #FFFFFF", color: "#FFFFFF" }}><Calendar className="w-5 h-5" />{t.kontakt_cta_call_btn}</a>
