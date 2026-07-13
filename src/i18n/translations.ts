@@ -1791,6 +1791,54 @@ const de = {
   umzugpreise_related2_label: "Firmenumzug Wien",
   umzugpreise_related3_label: "Versicherung",
 
+  // Transport Wien (SEO-Hub)
+  transportwien_label: "Transport Wien",
+  transportwien_title: "Transport Wien – Ihr Transportunternehmen für Umzug & Möbeltransport",
+  transportwien_subtitle:
+    "Vom Privatumzug bis zum Schwerlasttransport: BAK Transport ist Ihr Transportunternehmen in Wien für private und geschäftliche Transporte – zuverlässig, versichert und zum Fixpreis.",
+  transportwien_intro_p1:
+    "Wer in Wien einen Transport braucht, sucht meist dasselbe: schnelle Rückmeldung, ein faires Angebot und ein Team, dem man seine Möbel anvertrauen kann. BAK Transport ist Ihr Transportunternehmen in Wien mit eigener LKW-Flotte, erfahrenem Team und Fixpreisgarantie – ganz ohne Subunternehmer.",
+  transportwien_intro_p2:
+    "Ob kompletter Umzug, Kleintransport einzelner Möbelstücke, Klaviertransport oder Firmenumzug: Wir übernehmen Transporte jeder Größe in allen 23 Wiener Bezirken sowie österreichweit und international.",
+  transportwien_badge1: "€100.000 Vollversicherung",
+  transportwien_badge2: "Rückmeldung in 60 Minuten",
+  transportwien_badge3: "4,9 Sterne Bewertung",
+  transportwien_badge4: "Alle 23 Wiener Bezirke",
+  transportwien_services_h2: "Alle Transport-Leistungen in Wien im Überblick",
+  transportwien_services_sub:
+    "Von der einzelnen Möbellieferung bis zum kompletten Umzug – wählen Sie die passende Leistung.",
+  transportwien_regions_h2: "Transport in ganz Österreich und international",
+  transportwien_regions_sub:
+    "Wir fahren nicht nur in Wien – auch österreichweit und über die Grenze.",
+  transportwien_card1_title: "Eigene Flotte statt Subunternehmer",
+  transportwien_card1_text:
+    "Alle Fahrzeuge und Teams sind bei uns fest angestellt – kein Fremdpersonal, keine Qualitätsschwankungen.",
+  transportwien_card2_title: "Fixpreis nach Besichtigung",
+  transportwien_card2_text:
+    "Sie erfahren den Preis vor dem Transport – ohne versteckte Stundenfallen oder Überraschungen.",
+  transportwien_card3_title: "Für Privat & Business",
+  transportwien_card3_text:
+    "Vom einzelnen Möbelstück bis zum mehrstöckigen Firmenumzug – wir passen Team und Fahrzeug an Ihren Bedarf an.",
+  transportwien_faq1_q: "Was kostet ein Transport in Wien?",
+  transportwien_faq1_a:
+    "Das hängt stark vom Umfang ab: Ein einzelnes Möbelstück kostet deutlich weniger als ein kompletter Umzug. Kleinere Transporte starten meist ab rund €89 pro Stunde, komplette Umzüge ab ca. €650 als Fixpreis. Eine genaue Übersicht finden Sie auf unserer Preisseite.",
+  transportwien_faq2_q: "Bietet BAK Transport auch Kleintransporte an?",
+  transportwien_faq2_a:
+    "Ja. Auch für den Transport einzelner Möbelstücke, weniger Kartons oder einer Neuanschaffung wie eines Sofas kommen wir mit passendem Fahrzeug und Fahrer vorbei – ohne Mindestauftragswert, der ein kleines Anliegen unwirtschaftlich macht.",
+  transportwien_faq3_q: "Ist BAK Transport eine Spedition?",
+  transportwien_faq3_a:
+    "Nicht im klassischen Sinn einer Spedition mit Zollabwicklung und Palettenfracht. BAK Transport ist ein Transportunternehmen für private und geschäftliche Umzüge sowie Möbel- und Schwerlasttransporte in Wien, Österreich und grenzüberschreitend – direkt mit eigenem Team, ohne Zwischenhändler.",
+  transportwien_faq4_q: "Transport mit oder ohne Fahrer?",
+  transportwien_faq4_a:
+    "Bei uns immer inklusive: Sie buchen keinen Transporter zum Selberfahren, sondern ein eingespieltes Team mit Fahrer, das Be- und Entladen sowie den sicheren Transport übernimmt.",
+  transportwien_faq5_q: "Wie schnell ist ein Transport in Wien möglich?",
+  transportwien_faq5_a:
+    "Reguläre Transporte planen wir nach einer kurzen kostenlosen Besichtigung oder Beschreibung. Für dringende Fälle bieten wir mit unserem Notfallumzug auch eine Lösung innerhalb von 24 Stunden.",
+  transportwien_faq6_q: "Welche Gebiete deckt BAK Transport ab?",
+  transportwien_faq6_a:
+    "Wir fahren in allen 23 Wiener Bezirken, in ganz Niederösterreich und österreichweit sowie grenzüberschreitend nach Deutschland, in die Schweiz und weitere europäische Nachbarländer.",
+  transportwien_cta_h2: "Jetzt Transport in Wien anfragen",
+
   // Anfrage
   anfrage_hero_badge: "Kostenloses Angebot",
   anfrage_hero_title: "Ihr persönliches Fixpreis-Angebot",
@@ -3592,6 +3640,54 @@ const en: typeof de = {
   umzugpreise_related1_label: "Private Moving Vienna",
   umzugpreise_related2_label: "Office Moving Vienna",
   umzugpreise_related3_label: "Insurance",
+
+  // Transport Wien (SEO-Hub)
+  transportwien_label: "Transport Vienna",
+  transportwien_title: "Transport Vienna – Your Transport Company for Moving & Furniture Delivery",
+  transportwien_subtitle:
+    "From private moves to heavy transport: BAK Transport is your transport company in Vienna for private and business transports – reliable, insured, and at a fixed price.",
+  transportwien_intro_p1:
+    "Anyone who needs a transport in Vienna usually wants the same thing: a fast response, a fair quote, and a team you can trust with your furniture. BAK Transport is your transport company in Vienna with its own truck fleet, an experienced team, and a fixed-price guarantee – with no subcontractors.",
+  transportwien_intro_p2:
+    "Whether it's a complete move, a small transport of a single piece of furniture, a piano transport, or an office relocation: we handle transports of any size in all 23 Vienna districts as well as throughout Austria and internationally.",
+  transportwien_badge1: "€100,000 Full Insurance",
+  transportwien_badge2: "Response in 60 Minutes",
+  transportwien_badge3: "4.9 Star Rating",
+  transportwien_badge4: "All 23 Vienna Districts",
+  transportwien_services_h2: "All Transport Services in Vienna at a Glance",
+  transportwien_services_sub:
+    "From a single piece of furniture to a complete move – choose the right service.",
+  transportwien_regions_h2: "Transport Across Austria and Internationally",
+  transportwien_regions_sub:
+    "We don't just drive within Vienna – also throughout Austria and across the border.",
+  transportwien_card1_title: "Our Own Fleet, No Subcontractors",
+  transportwien_card1_text:
+    "All vehicles and teams are directly employed by us – no outside staff, no fluctuating quality.",
+  transportwien_card2_title: "Fixed Price After Inspection",
+  transportwien_card2_text:
+    "You know the price before the transport starts – no hidden hourly traps or surprises.",
+  transportwien_card3_title: "For Private & Business",
+  transportwien_card3_text:
+    "From a single piece of furniture to a multi-floor office relocation – we adapt team and vehicle to your needs.",
+  transportwien_faq1_q: "How much does a transport in Vienna cost?",
+  transportwien_faq1_a:
+    "It depends heavily on scope: a single piece of furniture costs significantly less than a complete move. Smaller transports usually start at around €89 per hour, complete moves from about €650 as a fixed price. You'll find a detailed overview on our pricing page.",
+  transportwien_faq2_q: "Does BAK Transport also handle small transports?",
+  transportwien_faq2_a:
+    "Yes. Even for transporting a single piece of furniture, a few boxes, or a new purchase like a sofa, we'll come by with the right vehicle and driver – with no minimum order value that would make a small job uneconomical.",
+  transportwien_faq3_q: "Is BAK Transport a freight forwarder (Spedition)?",
+  transportwien_faq3_a:
+    "Not in the classic sense of a freight forwarder handling customs and pallet freight. BAK Transport is a transport company for private and business moves as well as furniture and heavy transports in Vienna, Austria, and across borders – directly with our own team, without intermediaries.",
+  transportwien_faq4_q: "Transport with or without a driver?",
+  transportwien_faq4_a:
+    "Always included with us: you're not booking a self-drive van, but a practiced team with a driver who handles loading, unloading, and safe transport.",
+  transportwien_faq5_q: "How quickly can a transport in Vienna be arranged?",
+  transportwien_faq5_a:
+    "We schedule regular transports after a brief free inspection or description. For urgent cases, our emergency move service also offers a solution within 24 hours.",
+  transportwien_faq6_q: "Which areas does BAK Transport cover?",
+  transportwien_faq6_a:
+    "We drive in all 23 Vienna districts, throughout Lower Austria and Austria, as well as across the border to Germany, Switzerland, and other neighboring European countries.",
+  transportwien_cta_h2: "Request Your Transport in Vienna Now",
 
   // Anfrage
   anfrage_hero_badge: "Free Quote",

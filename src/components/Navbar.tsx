@@ -7,6 +7,7 @@ import {
   Menu,
   X,
   ChevronDown,
+  Truck,
   Calculator,
   Home,
   Building2,
@@ -93,6 +94,7 @@ export function Navbar() {
           {
             category: lang === "en" ? "MOVING" : "UMZUG",
             items: [
+              { label: lang === "en" ? "Transport Vienna" : "Transport Wien", href: "/leistungen/transport-wien", icon: Truck },
               { label: lang === "en" ? "Moving Prices" : "Umzug Preise", href: "/leistungen/umzug-preise", icon: Calculator },
               { label: t.nav_privatumzug, href: "/leistungen/privatumzug", icon: Home },
               { label: t.nav_firmenumzug, href: "/leistungen/firmenumzug", icon: Building2 },
@@ -310,8 +312,8 @@ export function Navbar() {
             href="https://wa.me/4368110723047"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center rounded-md transition-colors duration-150 hover:bg-[#16a34a] w-[44px] h-[44px] md:w-auto md:h-auto md:px-3 md:py-2 md:gap-2"
-            style={{ backgroundColor: "#22C55E", color: "#FFFFFF", fontWeight: 700, textDecoration: "none", flexShrink: 0 }}
+            className="flex items-center justify-center rounded-md transition-colors duration-150 hover:bg-[#166534] w-[44px] h-[44px] md:w-auto md:h-auto md:px-3 md:py-2 md:gap-2"
+            style={{ backgroundColor: "#15803D", color: "#FFFFFF", fontWeight: 700, textDecoration: "none", flexShrink: 0 }}
             aria-label="WhatsApp"
           >
             <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
@@ -390,7 +392,7 @@ export function Navbar() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 rounded-md font-bold text-white"
-                style={{ backgroundColor: "#22C55E", padding: "14px 24px", fontSize: "16px", textDecoration: "none" }}
+                style={{ backgroundColor: "#15803D", padding: "14px 24px", fontSize: "16px", textDecoration: "none" }}
                 onClick={() => setMenuOpen(false)}
               >
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">

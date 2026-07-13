@@ -34,6 +34,7 @@ export function Footer() {
   const t = translations[lang];
 
   const leistungen = [
+    { label: lang === "en" ? "Transport Vienna" : "Transport Wien", href: "/leistungen/transport-wien" },
     { label: lang === "en" ? "Moving Prices" : "Umzug Preise", href: "/leistungen/umzug-preise" },
     { label: t.nav_privatumzug, href: "/leistungen/privatumzug" },
     { label: t.nav_firmenumzug, href: "/leistungen/firmenumzug" },
