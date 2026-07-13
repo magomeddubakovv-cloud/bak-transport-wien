@@ -38,7 +38,7 @@ export function BezirkPageClient({ bezirk }: Props) {
               <p className="text-xs uppercase tracking-[3px] font-bold mb-3" style={{ color: "#C2410C" }}>
                 {bezirk.fullName}
               </p>
-              <h2 className="text-2xl md:text-3xl font-bold mb-5" style={{ color: "#111827" }}>
+              <h2 className="text-2xl md:text-3xl font-bold mb-5" style={{ color: "#9A3412" }}>
                 {`${t.bezirk_intro_h2_prefix} ${bezirk.nr} ${t.bezirk_wien}`}
               </h2>
               <p className="mb-4 text-base leading-relaxed" style={{ color: "#6B7280" }}>
@@ -94,7 +94,7 @@ export function BezirkPageClient({ bezirk }: Props) {
       <section className="py-12 md:py-20" style={{ backgroundColor: "#F9FAFB" }}>
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <div className="text-center mb-10">
-            <h2 className="text-2xl md:text-3xl font-bold mb-3" style={{ color: "#111827" }}>
+            <h2 className="text-2xl md:text-3xl font-bold mb-3" style={{ color: "#9A3412" }}>
               {`${t.bezirk_pricing_h2_prefix} ${bezirk.name} ${t.bezirk_wien}`}
             </h2>
             <p style={{ color: "#6B7280" }}>
@@ -142,7 +142,7 @@ export function BezirkPageClient({ bezirk }: Props) {
       {/* Fixpreis vs Stundenlohn */}
       <section className="py-12 md:py-20 bg-white">
         <div className="max-w-5xl mx-auto px-4 md:px-6">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-10" style={{ color: "#111827" }}>
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-10" style={{ color: "#9A3412" }}>
             {t.bezirk_comparison_h2}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -192,7 +192,7 @@ export function BezirkPageClient({ bezirk }: Props) {
       {/* FAQ */}
       <section className="py-12 md:py-20" style={{ backgroundColor: "#F9FAFB" }}>
         <div className="max-w-4xl mx-auto px-4 md:px-6">
-          <h2 className="text-2xl md:text-3xl font-bold mb-10" style={{ color: "#111827" }}>
+          <h2 className="text-2xl md:text-3xl font-bold mb-10" style={{ color: "#9A3412" }}>
             {`${t.bezirk_faq_h2_prefix} ${bezirk.name}`}
           </h2>
           <div className="space-y-6">

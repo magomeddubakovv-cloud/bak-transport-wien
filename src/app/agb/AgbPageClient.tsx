@@ -27,7 +27,7 @@ export function AgbPageClient() {
         <div className="max-w-3xl mx-auto px-4 md:px-6" style={{ color: "#374151", lineHeight: "1.8" }}>
           {sections.map(([heading, body]) => (
             <div key={heading}>
-              <h2 className="text-2xl font-bold mb-4" style={{ color: "#111827" }}>{heading}</h2>
+              <h2 className="text-2xl font-bold mb-4" style={{ color: "#9A3412" }}>{heading}</h2>
               <p className="mb-6">{body}</p>
             </div>
           ))}

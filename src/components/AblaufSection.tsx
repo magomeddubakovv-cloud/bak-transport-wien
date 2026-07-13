@@ -15,7 +15,7 @@ export function AblaufSection({ heading, steps }: AblaufSectionProps) {
         <p className="text-xs md:text-sm uppercase tracking-[0.16em] font-bold mb-3" style={{ color: "#C2410C" }}>
           Ablauf
         </p>
-        <h2 className="text-2xl md:text-3xl font-bold mb-7 md:mb-12" style={{ color: "#111827" }}>
+        <h2 className="text-2xl md:text-3xl font-bold mb-7 md:mb-12" style={{ color: "#9A3412" }}>
           {heading}
         </h2>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">

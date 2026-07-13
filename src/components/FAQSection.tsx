@@ -30,7 +30,7 @@ export function FAQSection() {
           <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "#C2410C" }}>
             {t.faq_label}
           </p>
-          <h2 className="text-2xl md:text-4xl leading-tight" style={{ color: "#111827", fontWeight: 900 }}>
+          <h2 className="text-2xl md:text-4xl leading-tight" style={{ color: "#9A3412", fontWeight: 900 }}>
             {t.faq_h2}
           </h2>
         </div>

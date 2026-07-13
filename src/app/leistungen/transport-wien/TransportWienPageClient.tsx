@@ -173,7 +173,7 @@ export function TransportWienPageClient() {
       {/* Services grid — links to every leistungen page */}
       <section className="py-12 md:py-20" style={{ backgroundColor: "#F9FAFB" }}>
         <div className="max-w-7xl mx-auto px-4 md:px-6">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-3" style={{ color: "#111827" }}>{t.transportwien_services_h2}</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-3" style={{ color: "#9A3412" }}>{t.transportwien_services_h2}</h2>
           <p className="text-center mb-10 md:mb-12" style={{ color: "#6B7280" }}>{t.transportwien_services_sub}</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {services.map((s) => (
@@ -195,7 +195,7 @@ export function TransportWienPageClient() {
       {/* Regions grid — links to every regionen page */}
       <section className="py-12 md:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 md:px-6">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-3" style={{ color: "#111827" }}>{t.transportwien_regions_h2}</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-3" style={{ color: "#9A3412" }}>{t.transportwien_regions_h2}</h2>
           <p className="text-center mb-10 md:mb-12" style={{ color: "#6B7280" }}>{t.transportwien_regions_sub}</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {regions.map((r) => (
@@ -217,7 +217,7 @@ export function TransportWienPageClient() {
       {/* Why us */}
       <section className="py-12 md:py-20" style={{ backgroundColor: "#F9FAFB" }}>
         <div className="max-w-7xl mx-auto px-4 md:px-6">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 md:mb-12" style={{ color: "#111827" }}>{t.sub_why_bak}</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 md:mb-12" style={{ color: "#9A3412" }}>{t.sub_why_bak}</h2>
           <div className="grid grid-cols-1 min-[520px]:grid-cols-3 gap-4 md:gap-8">
             {whyCards.map((card) => (
               <div key={card.title} className="bg-white rounded-2xl p-5 md:p-8 shadow-sm" style={{ border: "1px solid #E5E7EB" }}>
@@ -233,7 +233,7 @@ export function TransportWienPageClient() {
       {/* FAQ */}
       <section className="py-12 md:py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 md:px-6">
-          <h2 className="text-2xl md:text-3xl font-bold mb-10 md:mb-12" style={{ color: "#111827" }}>{t.sub_faq_h2}</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-10 md:mb-12" style={{ color: "#9A3412" }}>{t.sub_faq_h2}</h2>
           <div className="space-y-8">
             {faqs.map((faq) => (
               <div key={faq.q} style={{ borderBottom: "1px solid #E5E7EB", paddingBottom: "2rem" }}>

@@ -77,7 +77,7 @@ export function FaqPageClient() {
             className="rounded-2xl p-6 md:p-8 mb-10"
             style={{ backgroundColor: "#F9FAFB", borderLeft: "4px solid #C2410C" }}
           >
-            <h2 className="text-xl md:text-2xl font-black mb-2" style={{ color: "#111827" }}>
+            <h2 className="text-xl md:text-2xl font-black mb-2" style={{ color: "#9A3412" }}>
               {t.faqpage_intro_h2}
             </h2>
             <p style={{ color: "#6B7280", lineHeight: "1.75" }}>{t.faqpage_intro_text}</p>
@@ -101,7 +101,7 @@ export function FaqPageClient() {
           <div className="space-y-16">
             {categories.map((cat) => (
               <div key={cat.id} id={cat.id} style={{ scrollMarginTop: "100px" }}>
-                <h2 className="text-2xl md:text-3xl font-black mb-2" style={{ color: "#111827" }}>
+                <h2 className="text-2xl md:text-3xl font-black mb-2" style={{ color: "#9A3412" }}>
                   {cat.label}
                 </h2>
                 <p className="mb-6 md:mb-8" style={{ color: "#6B7280" }}>{cat.subtitle}</p>

@@ -31,7 +31,7 @@ export function KontaktPageClient() {
     <PageLayout label={t.kontakt_label} title={t.kontakt_title} subtitle={t.kontakt_subtitle}>
       <section className="py-12 md:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 md:px-6">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 md:mb-12" style={{ color: "#111827" }}>{t.kontakt_how_h2}</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 md:mb-12" style={{ color: "#9A3412" }}>{t.kontakt_how_h2}</h2>
           <div className="grid grid-cols-1 min-[520px]:grid-cols-3 gap-4 md:gap-8">
             {cards.map((card) => (
               <div key={card.title} className="bg-white rounded-2xl p-5 md:p-8 shadow-sm" style={{ border: "1px solid #E5E7EB" }}>
@@ -58,7 +58,7 @@ export function KontaktPageClient() {
       </section>
       <section className="py-12 md:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 md:px-6">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 md:mb-12" style={{ color: "#111827" }}>{t.kontakt_reach_h2}</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 md:mb-12" style={{ color: "#9A3412" }}>{t.kontakt_reach_h2}</h2>
           <div className="grid grid-cols-1 min-[520px]:grid-cols-3 gap-4 md:gap-8">
             {contacts.map((c) => (
               <div key={c.title} className="rounded-2xl p-5 md:p-8 text-center" style={{ backgroundColor: "#F9FAFB", border: "1px solid #E5E7EB" }}>

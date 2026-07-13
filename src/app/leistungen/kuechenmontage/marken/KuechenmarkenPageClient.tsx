@@ -63,7 +63,7 @@ export function KuechenmarkenPageClient() {
           <p className="text-sm font-bold uppercase tracking-[0.16em]" style={{ color: "#C2410C" }}>
             {t.kuechenmarken_eyebrow}
           </p>
-          <h2 className="mx-auto mt-3 max-w-5xl text-2xl font-black leading-tight md:text-4xl" style={{ color: "#111827" }}>
+          <h2 className="mx-auto mt-3 max-w-5xl text-2xl font-black leading-tight md:text-4xl" style={{ color: "#9A3412" }}>
             {t.kuechenmarken_h2}
           </h2>
           <p className="mx-auto mt-4 max-w-3xl text-base leading-[1.8] md:text-lg" style={{ color: "#6B7280" }}>
@@ -108,7 +108,7 @@ export function KuechenmarkenPageClient() {
             {brandDetails.map((group) => (
               <article key={group.title} className="rounded-2xl bg-white p-6 shadow-sm" style={{ border: "1px solid #E5E7EB" }}>
                 <div className="mb-5 h-1 w-12 rounded-full" style={{ backgroundColor: "#C2410C" }} />
-                <h2 className="text-xl font-black" style={{ color: "#111827" }}>
+                <h2 className="text-xl font-black" style={{ color: "#9A3412" }}>
                   {group.title}
                 </h2>
                 <p className="mt-3 leading-[1.75]" style={{ color: "#6B7280" }}>
@@ -130,7 +130,7 @@ export function KuechenmarkenPageClient() {
       <section className="bg-white py-12 md:py-20">
         <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 px-4 md:grid-cols-[0.85fr_1.15fr] md:px-6">
           <div className="flex flex-col items-center text-center">
-            <h2 className="text-2xl font-black md:text-3xl" style={{ color: "#111827" }}>
+            <h2 className="text-2xl font-black md:text-3xl" style={{ color: "#9A3412" }}>
               {t.kuechenmarken_need_h2}
             </h2>
             <p className="mt-4 leading-[1.8]" style={{ color: "#6B7280" }}>

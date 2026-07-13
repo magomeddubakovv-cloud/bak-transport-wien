@@ -134,7 +134,7 @@ export function EntruempelungPageClient() {
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-12 items-start">
             <div className="flex flex-col items-center text-center">
-              <h2 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: "#111827" }}>{t.h2}</h2>
+              <h2 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: "#9A3412" }}>{t.h2}</h2>
               <p className="mb-4" style={{ color: "#6B7280", lineHeight: "1.75" }}>{t.p1}</p>
               <p className="mb-4" style={{ color: "#6B7280", lineHeight: "1.75" }}>{t.p2}</p>
               <p style={{ color: "#6B7280", lineHeight: "1.75" }}>{t.p3}</p>
@@ -160,7 +160,7 @@ export function EntruempelungPageClient() {
 
       <section className="py-12 md:py-20" style={{ backgroundColor: "#F9FAFB" }}>
         <div className="max-w-7xl mx-auto px-4 md:px-6">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 md:mb-12" style={{ color: "#111827" }}>{t.cardHeading}</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 md:mb-12" style={{ color: "#9A3412" }}>{t.cardHeading}</h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-8">
             {t.cards.map((card) => (
               <div key={card.title} className="bg-white rounded-2xl p-5 md:p-8 shadow-sm" style={{ border: "1px solid #E5E7EB" }}>
@@ -191,7 +191,7 @@ export function EntruempelungPageClient() {
       </section>
       <section className="py-12 md:py-20" style={{ backgroundColor: "#F9FAFB" }}>
         <div className="max-w-4xl mx-auto px-4 md:px-6">
-          <h2 className="text-2xl md:text-3xl font-bold mb-10 md:mb-12" style={{ color: "#111827" }}>{t.faqHeading}</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-10 md:mb-12" style={{ color: "#9A3412" }}>{t.faqHeading}</h2>
           <div className="space-y-8">
             {t.faqs.map((faq) => (
               <div key={faq.q} style={{ borderBottom: "1px solid #E5E7EB", paddingBottom: "2rem" }}>

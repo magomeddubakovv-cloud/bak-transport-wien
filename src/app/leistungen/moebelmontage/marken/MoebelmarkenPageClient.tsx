@@ -93,7 +93,7 @@ export function MoebelmarkenPageClient() {
             <p className="text-sm font-bold uppercase tracking-[0.16em]" style={{ color: "#C2410C" }}>
               {t.moebelmarken_page_groups_label}
             </p>
-            <h2 className="mt-3 text-2xl font-black md:text-4xl" style={{ color: "#111827" }}>
+            <h2 className="mt-3 text-2xl font-black md:text-4xl" style={{ color: "#9A3412" }}>
               {t.moebelmarken_page_groups_h2}
             </h2>
           </div>
@@ -107,7 +107,7 @@ export function MoebelmarkenPageClient() {
                   <p className="text-xs font-bold uppercase tracking-[0.16em]" style={{ color: "#C2410C" }}>
                     {group.brands}
                   </p>
-                  <h2 className="mt-3 text-xl font-bold" style={{ color: "#111827" }}>
+                  <h2 className="mt-3 text-xl font-bold" style={{ color: "#9A3412" }}>
                     {group.title}
                   </h2>
                   <p className="mt-3 leading-[1.7]" style={{ color: "#6B7280" }}>
@@ -123,7 +123,7 @@ export function MoebelmarkenPageClient() {
       <section className="bg-white py-12 md:py-20">
         <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 px-4 md:grid-cols-2 md:px-6">
           <div className="flex flex-col items-center text-center">
-            <h2 className="text-2xl font-black md:text-3xl" style={{ color: "#111827" }}>
+            <h2 className="text-2xl font-black md:text-3xl" style={{ color: "#9A3412" }}>
               {t.moebelmarken_page_steps_h2}
             </h2>
             <p className="mt-4 leading-[1.8]" style={{ color: "#6B7280" }}>
@@ -151,7 +151,7 @@ export function MoebelmarkenPageClient() {
             <p className="text-sm font-bold uppercase tracking-[0.16em]" style={{ color: "#C2410C" }}>
               {t.moebelmarken_page_faq_label}
             </p>
-            <h2 className="mt-3 text-2xl font-black md:text-4xl" style={{ color: "#111827" }}>
+            <h2 className="mt-3 text-2xl font-black md:text-4xl" style={{ color: "#9A3412" }}>
               {t.moebelmarken_page_faq_h2}
             </h2>
           </div>

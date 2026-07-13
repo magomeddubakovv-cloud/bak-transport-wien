@@ -62,7 +62,7 @@ export function WienPageClient() {
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
             <div className="flex flex-col items-center text-center">
-              <h2 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: "#111827" }}>{t.wien_page_h2}</h2>
+              <h2 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: "#9A3412" }}>{t.wien_page_h2}</h2>
               <p className="mb-4" style={{ color: "#6B7280", lineHeight: "1.75" }}>{t.wien_page_p1}</p>
               <p className="mb-4" style={{ color: "#6B7280", lineHeight: "1.75" }}>{t.wien_page_p2}</p>
               <p style={{ color: "#6B7280", lineHeight: "1.75" }}>{t.wien_page_p3}</p>
@@ -85,7 +85,7 @@ export function WienPageClient() {
       </section>
       <section className="py-12 md:py-20" style={{ backgroundColor: "#F9FAFB" }}>
         <div className="max-w-7xl mx-auto px-4 md:px-6">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 md:mb-12" style={{ color: "#111827" }}>{t.sub_why_bak}</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 md:mb-12" style={{ color: "#9A3412" }}>{t.sub_why_bak}</h2>
           <div className="grid grid-cols-1 min-[520px]:grid-cols-3 gap-4 md:gap-8">
             {cards.map((card) => (
               <div key={card.title} className="bg-white rounded-2xl p-5 md:p-8 shadow-sm" style={{ border: "1px solid #E5E7EB" }}>
@@ -99,7 +99,7 @@ export function WienPageClient() {
       </section>
       <section className="py-12 md:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 md:px-6">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: "#111827" }}>{t.wien_page_districts_h2}</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: "#9A3412" }}>{t.wien_page_districts_h2}</h2>
           <p className="mb-8" style={{ color: "#6B7280", lineHeight: "1.75", maxWidth: "700px" }}>{t.wien_page_districts_desc}</p>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
             {bezirke.map((bezirk) => (
@@ -129,7 +129,7 @@ export function WienPageClient() {
       </section>
       <section className="py-12 md:py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 md:px-6">
-          <h2 className="text-2xl md:text-3xl font-bold mb-10 md:mb-12" style={{ color: "#111827" }}>{t.wien_page_faq_h2}</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-10 md:mb-12" style={{ color: "#9A3412" }}>{t.wien_page_faq_h2}</h2>
           <div className="space-y-8">
             {faqs.map((faq) => (
               <div key={faq.q} style={{ borderBottom: "1px solid #E5E7EB", paddingBottom: "2rem" }}>

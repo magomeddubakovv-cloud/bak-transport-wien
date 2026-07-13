@@ -244,7 +244,7 @@ export function ReviewsSection() {
             <p className="text-xs uppercase tracking-widest font-bold mb-1" style={{ color: "#C2410C" }}>
               {t.reviews_label}
             </p>
-            <h2 className="text-2xl md:text-3xl font-bold" style={{ color: "#111827" }}>
+            <h2 className="text-2xl md:text-3xl font-bold" style={{ color: "#9A3412" }}>
               {t.reviews_h2}
             </h2>
             <div className="flex items-center gap-2 mt-2">

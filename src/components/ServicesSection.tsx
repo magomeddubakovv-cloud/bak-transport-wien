@@ -53,7 +53,7 @@ export function ServicesSection() {
           <p className="text-xs font-bold uppercase mb-3" style={{ color: "#C2410C", letterSpacing: "4px" }}>
             {t.services_label}
           </p>
-          <h2 className="text-2xl md:text-4xl leading-[1.1]" style={{ color: "#111827", fontWeight: 900 }}>
+          <h2 className="text-2xl md:text-4xl leading-[1.1]" style={{ color: "#9A3412", fontWeight: 900 }}>
             {t.services_h2}
           </h2>
           <p className="mt-4 max-w-xl mx-auto text-base md:text-lg" style={{ color: "#6B7280" }}>

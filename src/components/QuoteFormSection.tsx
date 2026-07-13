@@ -72,7 +72,7 @@ export function QuoteFormSection() {
         <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-start">
           {/* Left column */}
           <div className="w-full md:w-2/5 flex-shrink-0">
-            <h2 className="text-2xl md:text-4xl leading-[1.15]" style={{ color: "#111827", fontWeight: 900 }}>
+            <h2 className="text-2xl md:text-4xl leading-[1.15]" style={{ color: "#9A3412", fontWeight: 900 }}>
               {t.form_h2}
             </h2>
             <div className="w-12 h-1 bg-[#C2410C] mt-4" style={{ width: "48px", height: "4px" }} />

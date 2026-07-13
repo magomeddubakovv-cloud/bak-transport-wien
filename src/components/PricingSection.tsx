@@ -74,7 +74,7 @@ export function PricingSection() {
           <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "#C2410C" }}>
             {t.pricing_label}
           </p>
-          <h2 className="text-2xl md:text-4xl leading-tight" style={{ color: "#111827", fontWeight: 900 }}>
+          <h2 className="text-2xl md:text-4xl leading-tight" style={{ color: "#9A3412", fontWeight: 900 }}>
             {t.pricing_h2}
           </h2>
           <p className="mt-3 text-base md:text-xl" style={{ color: "#6B7280" }}>

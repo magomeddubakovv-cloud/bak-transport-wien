@@ -51,7 +51,7 @@ export function MoebelmontagePageClient() {
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
             <div className="flex flex-col items-center text-center">
-              <h2 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: "#111827" }}>{t.moebel_page_h2}</h2>
+              <h2 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: "#9A3412" }}>{t.moebel_page_h2}</h2>
               <p className="mb-4" style={{ color: "#6B7280", lineHeight: "1.75" }}>{t.moebel_page_p1}</p>
               <p className="mb-4" style={{ color: "#6B7280", lineHeight: "1.75" }}>{t.moebel_page_p2}</p>
               <p style={{ color: "#6B7280", lineHeight: "1.75" }}>{t.moebel_page_p3}</p>
@@ -83,7 +83,7 @@ export function MoebelmontagePageClient() {
       />
       <section className="py-12 md:py-20" style={{ backgroundColor: "#F9FAFB" }}>
         <div className="max-w-7xl mx-auto px-4 md:px-6">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 md:mb-12" style={{ color: "#111827" }}>{t.sub_why_bak}</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 md:mb-12" style={{ color: "#9A3412" }}>{t.sub_why_bak}</h2>
           <div className="grid grid-cols-1 min-[520px]:grid-cols-3 gap-4 md:gap-8">
             {cards.map((card) => (
               <div key={card.title} className="bg-white rounded-2xl p-5 md:p-8 shadow-sm" style={{ border: "1px solid #E5E7EB" }}>
@@ -112,7 +112,7 @@ export function MoebelmontagePageClient() {
       </section>
       <section className="py-12 md:py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 md:px-6">
-          <h2 className="text-2xl md:text-3xl font-bold mb-10 md:mb-12" style={{ color: "#111827" }}>{t.moebel_page_faq_h2}</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-10 md:mb-12" style={{ color: "#9A3412" }}>{t.moebel_page_faq_h2}</h2>
           <div className="space-y-8">
             {faqs.map((faq) => (
               <div key={faq.q} style={{ borderBottom: "1px solid #E5E7EB", paddingBottom: "2rem" }}>
@@ -145,7 +145,7 @@ export function MoebelmontagePageClient() {
       </section>
       <section className="bg-white py-14 md:py-20">
         <div className="mx-auto max-w-7xl px-4 text-center md:px-6">
-          <h2 className="mx-auto max-w-5xl text-2xl font-black leading-tight md:text-4xl" style={{ color: "#111827" }}>
+          <h2 className="mx-auto max-w-5xl text-2xl font-black leading-tight md:text-4xl" style={{ color: "#9A3412" }}>
             Wir montieren Ihre Möbel von unter anderem folgenden Herstellern:
           </h2>
           <Link

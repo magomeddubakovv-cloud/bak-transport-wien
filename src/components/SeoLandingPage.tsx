@@ -70,7 +70,7 @@ export function SeoLandingPage({
             <div className="mt-10 space-y-10">
               {sections.map((section) => (
                 <section key={section.heading}>
-                  <h2 className="text-2xl font-bold md:text-3xl" style={{ color: "#111827" }}>
+                  <h2 className="text-2xl font-bold md:text-3xl" style={{ color: "#9A3412" }}>
                     {section.heading}
                   </h2>
                   <p className="mt-4 leading-[1.8]" style={{ color: "#6B7280" }}>
@@ -144,7 +144,7 @@ export function SeoLandingPage({
               <p className="text-sm font-bold uppercase tracking-[0.16em]" style={{ color: "#C2410C" }}>
                 {t.seolanding_cta_label}
               </p>
-              <h2 className="mt-3 text-2xl font-black leading-tight" style={{ color: "#111827" }}>
+              <h2 className="mt-3 text-2xl font-black leading-tight" style={{ color: "#9A3412" }}>
                 {t.seolanding_cta_heading}
               </h2>
               <p className="mt-4 leading-[1.7]" style={{ color: "#6B7280" }}>
@@ -174,7 +174,7 @@ export function SeoLandingPage({
 
             {relatedLinks.length > 0 && (
               <div className="rounded-2xl bg-white p-6" style={{ border: "1px solid #E5E7EB" }}>
-                <h2 className="text-xl font-bold" style={{ color: "#111827" }}>
+                <h2 className="text-xl font-bold" style={{ color: "#9A3412" }}>
                   {t.seolanding_related_heading}
                 </h2>
                 <div className="mt-4 grid grid-cols-1 gap-2">
@@ -203,7 +203,7 @@ export function SeoLandingPage({
               {cards.map((card) => (
                 <article key={card.title} className="rounded-2xl bg-white p-6 shadow-sm" style={{ border: "1px solid #E5E7EB" }}>
                   <div className="mb-4 h-1 w-12 rounded-full" style={{ backgroundColor: "#C2410C" }} />
-                  <h2 className="text-xl font-bold" style={{ color: "#111827" }}>
+                  <h2 className="text-xl font-bold" style={{ color: "#9A3412" }}>
                     {card.title}
                   </h2>
                   <p className="mt-3 leading-[1.7]" style={{ color: "#6B7280" }}>
@@ -219,7 +219,7 @@ export function SeoLandingPage({
       {faqs.length > 0 && (
         <section className="bg-white py-12 md:py-20">
           <div className="mx-auto max-w-4xl px-4 md:px-6">
-            <h2 className="text-2xl font-bold md:text-3xl" style={{ color: "#111827" }}>
+            <h2 className="text-2xl font-bold md:text-3xl" style={{ color: "#9A3412" }}>
               {t.seolanding_faq_heading}
             </h2>
             <div className="mt-8 space-y-7">
