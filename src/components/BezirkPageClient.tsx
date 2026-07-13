@@ -212,12 +212,12 @@ export function BezirkPageClient({ bezirk }: Props) {
           <h3 className="text-xl font-bold mb-6" style={{ color: "#111827" }}>
             {t.bezirk_other_districts_h3}
           </h3>
-          <div className="flex flex-wrap gap-2">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2">
             {WIENER_BEZIRKE
               .filter(b => b.slug !== bezirk.slug)
               .map(b => (
                 <a key={b.slug} href={`/regionen/wien/${b.slug}`}
-                  className="px-3 py-2 rounded-lg text-sm font-medium transition-colors hover:opacity-80"
+                  className="flex items-center justify-center rounded-lg px-3 py-2 text-sm font-medium text-center transition-colors hover:opacity-80"
                   style={{ backgroundColor: "#F3F4F6", color: "#374151", textDecoration: "none" }}>
                   {b.name}
                 </a>
@@ -232,7 +232,7 @@ export function BezirkPageClient({ bezirk }: Props) {
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">
             {`${t.bezirk_cta_h2_prefix} ${bezirk.name} ${t.bezirk_cta_h2_suffix}`}
           </h2>
-          <p className="mb-8 text-white opacity-90">
+          <p className="mb-8 text-white opacity-95">
             {t.bezirk_cta_desc}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

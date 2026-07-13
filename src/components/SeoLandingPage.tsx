@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { CheckCircle2, Mail, Calendar } from "lucide-react";
+import { CheckCircle2, Mail, Calendar, ArrowRight } from "lucide-react";
 import { PageLayout } from "@/components/PageLayout";
 import { useLang } from "@/contexts/LanguageContext";
 import { translations } from "@/i18n/translations";
@@ -177,15 +177,16 @@ export function SeoLandingPage({
                 <h2 className="text-xl font-bold" style={{ color: "#111827" }}>
                   {t.seolanding_related_heading}
                 </h2>
-                <div className="mt-4 flex flex-wrap gap-2">
+                <div className="mt-4 grid grid-cols-1 gap-2">
                   {relatedLinks.map((link) => (
                     <Link
                       key={link.href}
                       href={link.href}
-                      className="rounded-lg px-3 py-2 text-sm font-semibold"
+                      className="group flex items-center justify-between gap-2 rounded-lg px-3 py-2 text-sm font-semibold"
                       style={{ backgroundColor: "#FFF7ED", color: "#C2410C", textDecoration: "none" }}
                     >
                       {link.label}
+                      <ArrowRight className="h-4 w-4 shrink-0 transition-transform group-hover:translate-x-0.5" />
                     </Link>
                   ))}
                 </div>
