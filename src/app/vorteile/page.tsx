@@ -1,13 +1,28 @@
 import type { Metadata } from "next";
+import { StructuredData } from "@/components/StructuredData";
 import { VorteilePageClient } from "./VorteilePageClient";
 
 export const metadata: Metadata = {
-  title: "Warum BAK Transport? | Vorteile der Umzugsfirma Wien",
+  title: "Vorteile einer seriösen Umzugsfirma | BAK Transport Wien",
   description:
-    "Die Vorteile von BAK Transport Wien: Fixpreis, schnelle Rückmeldung, Versicherung, eigenes Team, LKW-Flotte und saubere Planung.",
+    "✓ Seriöse Umzugsfirma erkennen: Gewerbeberechtigung, Firmenbucheintrag, €100.000 Versicherung, Fixpreis nach Besichtigung. Vorteile von BAK Transport gegenüber Eigenregie & unseriösen Anbietern.",
   alternates: { canonical: "https://www.baktransport.at/vorteile" },
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "BAK Transport Wien", item: "https://www.baktransport.at" },
+    { "@type": "ListItem", position: 2, name: "Vorteile", item: "https://www.baktransport.at/vorteile" },
+  ],
+};
+
 export default function VorteilePage() {
-  return <VorteilePageClient />;
+  return (
+    <>
+      <StructuredData data={breadcrumbSchema} />
+      <VorteilePageClient />
+    </>
+  );
 }

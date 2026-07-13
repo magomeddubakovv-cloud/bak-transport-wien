@@ -1525,6 +1525,21 @@ const de = {
   vorteile_section2_bullet2: "kostenlose Besichtigung nach Bedarf",
   vorteile_section2_bullet3: "Fixpreis nach Umfang statt Überraschungen",
   vorteile_section2_bullet4: "ein Ansprechpartner für Planung und Ablauf",
+  vorteile_section3_heading: "Selbst umziehen oder Profis beauftragen?",
+  vorteile_section3_text:
+    "Viele unterschätzen, wie viel Zeit, Kraft und Organisation ein Umzug in Eigenregie kostet. Ein professionelles Umzugsunternehmen übernimmt genau die Punkte, die am meisten Nerven kosten.",
+  vorteile_section3_bullet1: "Zeitersparnis, weil Kartons, Möbel und Transportwege effizient organisiert werden",
+  vorteile_section3_bullet2: "Weniger körperliche Belastung, vor allem bei schweren oder sperrigen Möbelstücken",
+  vorteile_section3_bullet3: "Versicherter Transport statt persönliches Haftungsrisiko bei Schäden",
+  vorteile_section3_bullet4: "Erfahrung im Umgang mit empfindlichen, wertvollen oder unhandlichen Gegenständen",
+  vorteile_section4_heading: "Woran Sie eine seriöse Umzugsfirma erkennen",
+  vorteile_section4_text:
+    "Nicht jedes Angebot hält, was es verspricht. Diese Punkte zeigen, worauf Sie bei der Auswahl achten sollten – und wo BAK Transport ansetzt.",
+  vorteile_section4_bullet1: "Gültige Gewerbeberechtigung und Eintrag im Firmenbuch statt anonymer Handynummer",
+  vorteile_section4_bullet2: "Transportversicherung bis €100.000 statt vager Zusicherungen",
+  vorteile_section4_bullet3: "Kostenlose Besichtigung vor Ort mit schriftlichem Fixpreis-Angebot statt Schätzung am Telefon",
+  vorteile_section4_bullet4: "Eigenes, geschultes Team statt wechselnder Subunternehmer",
+  vorteile_section4_bullet5: "Feste Firmenadresse und erreichbares Team statt reiner Online-Anonymität",
   vorteile_card1_title: "Erfahrenes Team",
   vorteile_card1_text:
     "Unsere Helfer wissen, wie Möbel, Kartons und empfindliche Gegenstände sicher getragen werden.",
@@ -1534,15 +1549,38 @@ const de = {
   vorteile_card3_title: "Wien & Österreich",
   vorteile_card3_text:
     "Wir fahren in Wien, Niederösterreich, Österreich und bei Bedarf grenzüberschreitend.",
+  vorteile_card4_title: "Volle Transparenz",
+  vorteile_card4_text:
+    "Firmenbucheintrag, Gewerbeberechtigung und ein schriftliches Angebot statt Kleingedrucktem.",
+  vorteile_card5_title: "Flexibler Service",
+  vorteile_card5_text:
+    "Vom reinen Transport bis zum Full-Service mit Ein- und Auspacken – ganz nach Ihrem Bedarf.",
+  vorteile_card6_title: "Schnelle Rückmeldung",
+  vorteile_card6_text:
+    "Anfragen beantworten wir in der Regel innerhalb von 60 Minuten, ohne tagelange Wartezeit.",
   vorteile_faq1_q: "Warum nicht einfach den günstigsten Anbieter nehmen?",
   vorteile_faq1_a:
     "Der billigste Startpreis ist oft nicht der Endpreis. Wichtiger sind klare Leistung, Versicherung und zuverlässige Planung.",
   vorteile_faq2_q: "Kann BAK auch kurzfristig helfen?",
   vorteile_faq2_a:
     "Ja, je nach Auslastung sind kurzfristige Einsätze und Notfallumzüge möglich.",
+  vorteile_faq3_q: "Woran erkenne ich eine seriöse Umzugsfirma in Wien?",
+  vorteile_faq3_a:
+    "An einer gültigen Gewerbeberechtigung, Firmenbucheintrag, einer Transportversicherung, einem schriftlichen Fixpreis-Angebot nach Besichtigung und echten, nachprüfbaren Kundenbewertungen. Seien Sie vorsichtig bei 100 % Vorauskasse, fehlender Firmenadresse oder Druck bei der Vertragsunterzeichnung.",
+  vorteile_faq4_q: "Was kostet eine Umzugsfirma in Wien?",
+  vorteile_faq4_a:
+    "Das hängt von Umfang, Distanz und Zusatzleistungen wie Montage oder Halteverbotszone ab. Eine detaillierte Übersicht mit Richtpreisen finden Sie auf unserer Preisseite.",
+  vorteile_faq5_q: "Ist der Transport bei BAK versichert?",
+  vorteile_faq5_a:
+    "Ja, Ihr Hausrat ist bei uns bis zu €100.000 versichert, damit Sie beim Umzug abgesichert sind.",
+  vorteile_faq6_q: "Übernimmt BAK auch Ein- und Auspacken?",
+  vorteile_faq6_a:
+    "Ja, neben dem reinen Transport bieten wir auf Wunsch auch Verpackungsservice, Montage und Full-Service-Umzüge an.",
   vorteile_related1_label: "Privatumzug",
   vorteile_related2_label: "Firmenumzug",
   vorteile_related3_label: "Kontakt",
+  vorteile_related4_label: "Umzug Preise",
+  vorteile_related5_label: "Versicherung",
 
   // Glossar
   glossar_label: "Glossar",
@@ -3375,6 +3413,21 @@ const en: typeof de = {
   vorteile_section2_bullet2: "free on-site inspection as needed",
   vorteile_section2_bullet3: "fixed price based on scope, no surprises",
   vorteile_section2_bullet4: "one point of contact for planning and process",
+  vorteile_section3_heading: "Move Yourself or Hire Professionals?",
+  vorteile_section3_text:
+    "Many people underestimate how much time, effort, and organization a DIY move takes. A professional moving company takes over exactly the parts that cause the most stress.",
+  vorteile_section3_bullet1: "Time savings, because boxes, furniture, and transport routes are planned and organized efficiently",
+  vorteile_section3_bullet2: "Less physical strain, especially with heavy or bulky furniture",
+  vorteile_section3_bullet3: "Insured transport instead of personal liability risk for damages",
+  vorteile_section3_bullet4: "Experience handling fragile, valuable, or awkward items",
+  vorteile_section4_heading: "How to Recognize a Trustworthy Moving Company",
+  vorteile_section4_text:
+    "Not every offer keeps its promise. Here's what to look for when choosing a mover — and where BAK Transport delivers.",
+  vorteile_section4_bullet1: "Valid trade license and company register entry instead of an anonymous mobile number",
+  vorteile_section4_bullet2: "Transport insurance up to €100,000 instead of vague assurances",
+  vorteile_section4_bullet3: "Free on-site inspection with a written fixed-price quote instead of a phone estimate",
+  vorteile_section4_bullet4: "Own trained team instead of rotating subcontractors",
+  vorteile_section4_bullet5: "Fixed business address and a reachable team instead of pure online anonymity",
   vorteile_card1_title: "Experienced Team",
   vorteile_card1_text:
     "Our movers know how to safely carry furniture, boxes, and fragile items.",
@@ -3384,15 +3437,38 @@ const en: typeof de = {
   vorteile_card3_title: "Vienna & Austria",
   vorteile_card3_text:
     "We operate in Vienna, Lower Austria, throughout Austria, and across borders when needed.",
+  vorteile_card4_title: "Full Transparency",
+  vorteile_card4_text:
+    "Company register entry, trade license, and a written quote instead of fine print.",
+  vorteile_card5_title: "Flexible Service",
+  vorteile_card5_text:
+    "From pure transport to full service with packing and unpacking — tailored to your needs.",
+  vorteile_card6_title: "Fast Response",
+  vorteile_card6_text:
+    "We usually reply to inquiries within 60 minutes, with no multi-day wait.",
   vorteile_faq1_q: "Why not just choose the cheapest provider?",
   vorteile_faq1_a:
     "The lowest starting price is often not the final price. What matters more is clear service, insurance, and reliable planning.",
   vorteile_faq2_q: "Can BAK help on short notice?",
   vorteile_faq2_a:
     "Yes, depending on availability, short-notice assignments and emergency moves are possible.",
+  vorteile_faq3_q: "How can I recognize a trustworthy moving company in Vienna?",
+  vorteile_faq3_a:
+    "By a valid trade license, company register entry, transport insurance, a written fixed-price quote after an inspection, and genuine, verifiable customer reviews. Be cautious of 100% upfront payment, a missing business address, or pressure to sign a contract.",
+  vorteile_faq4_q: "What does a moving company cost in Vienna?",
+  vorteile_faq4_a:
+    "That depends on scope, distance, and extras such as furniture assembly or a no-parking permit zone. You'll find a detailed overview with reference prices on our pricing page.",
+  vorteile_faq5_q: "Is the transport insured with BAK?",
+  vorteile_faq5_a:
+    "Yes, your belongings are insured with us up to €100,000, so you're covered during the move.",
+  vorteile_faq6_q: "Does BAK also handle packing and unpacking?",
+  vorteile_faq6_a:
+    "Yes, besides pure transport we also offer packing service, furniture assembly, and full-service moves on request.",
   vorteile_related1_label: "Private Moving",
   vorteile_related2_label: "Office Moving",
   vorteile_related3_label: "Contact",
+  vorteile_related4_label: "Moving Prices",
+  vorteile_related5_label: "Insurance",
 
   // Glossar
   glossar_label: "Glossary",
