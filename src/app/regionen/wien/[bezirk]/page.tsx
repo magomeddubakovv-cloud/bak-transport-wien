@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: `https://www.baktransport.at/regionen/wien/${b.slug}`,
       images: [
         {
-          url: "/images/photos/hero-movers.png",
+          url: "/images/photos/hero-movers.jpg",
           width: 1200,
           height: 630,
           alt: `BAK Transport Wien — Umzug ${b.name}`,

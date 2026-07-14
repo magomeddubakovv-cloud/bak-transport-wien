@@ -23,13 +23,13 @@ export function HeroSection() {
     >
       {/* Background photo */}
       <Image
-        src="/images/photos/hero-movers.png"
+        src="/images/photos/hero-movers.jpg"
         alt="BAK Transport — professionelle Umzüge in Wien"
         title="BAK Transport Wien — Professionelle Umzugsfirma"
         fill
+        sizes="100vw"
         className="object-cover object-center"
         style={{ opacity: 0.08 }}
-        priority
       />
 
       {/* Gradient overlay */}
@@ -124,6 +124,7 @@ export function HeroSection() {
                   alt="BAK Transport Wien — Umzugshelfer bei der Arbeit"
                   title="BAK Transport Wien — Professionelle Umzüge in Wien"
                   fill
+                  sizes="(min-width: 1024px) 38vw, 100vw"
                   className="object-cover"
                   priority
                 />
