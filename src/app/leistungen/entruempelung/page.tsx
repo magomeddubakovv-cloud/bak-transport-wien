@@ -30,12 +30,7 @@ const serviceSchema = {
   "@type": "Service",
   name: "Entrümpelung Wien",
   serviceType: ["Wohnungsentrümpelung", "Kellerentrümpelung", "Büroentrümpelung", "Verlassenschaftsräumung"],
-  provider: {
-    "@type": ["LocalBusiness", "MovingCompany"],
-    name: "BAK Transport Wien",
-    telephone: "+4368110723047",
-    url: "https://www.baktransport.at",
-  },
+  provider: { "@id": "https://www.baktransport.at/#business" },
   areaServed: { "@type": "City", name: "Wien" },
 };
 

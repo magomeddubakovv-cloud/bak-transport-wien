@@ -90,12 +90,7 @@ const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
   name: "Umzugsservice Wien",
-  provider: {
-    "@type": ["LocalBusiness", "MovingCompany"],
-    name: "BAK Transport Wien",
-    telephone: "+4368110723047",
-    url: "https://www.baktransport.at",
-  },
+  provider: { "@id": "https://www.baktransport.at/#business" },
   areaServed: { "@type": "City", name: "Wien" },
   offers: {
     "@type": "Offer",

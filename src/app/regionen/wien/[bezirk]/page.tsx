@@ -52,24 +52,22 @@ export default async function BezirkPage({ params }: Props) {
     ],
   };
 
-  const localBusinessSchema = {
+  const serviceSchema = {
     "@context": "https://schema.org",
-    "@type": ["LocalBusiness", "MovingCompany"],
-    name: "BAK Transport Wien",
-    url: "https://www.baktransport.at",
-    telephone: "+4368110723047",
+    "@type": "Service",
+    name: `Umzugsservice ${b.name}`,
+    provider: { "@id": "https://www.baktransport.at/#business" },
     areaServed: {
       "@type": "Place",
       name: b.fullName,
     },
-    priceRange: "€€",
     description: `Professioneller Umzugsservice im ${b.nr} Wien – ${b.name}. Fixpreis, vollversichert.`,
   };
 
   return (
     <>
       <StructuredData data={breadcrumbSchema} />
-      <StructuredData data={localBusinessSchema} />
+      <StructuredData data={serviceSchema} />
       <BezirkPageClient bezirk={b} />
     </>
   );

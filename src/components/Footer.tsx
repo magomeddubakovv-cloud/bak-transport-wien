@@ -109,19 +109,12 @@ export function Footer() {
             <address
               className="mt-4 not-italic"
               style={{ color: "rgba(255,255,255,0.65)", fontSize: "14px", lineHeight: 1.7 }}
-              itemScope
-              itemType="https://schema.org/LocalBusiness"
             >
-              <span itemProp="name" style={{ display: "none" }}>BAK Transport Wien</span>
-              <span itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
-                <span itemProp="streetAddress">Zwinzstraße 15</span><br />
-                <span itemProp="postalCode">1160</span>{" "}
-                <span itemProp="addressLocality">Wien</span>
-              </span>
+              Zwinzstraße 15<br />
+              1160 Wien
               <br />
               <a
                 href="tel:+4368110723047"
-                itemProp="telephone"
                 style={{ color: "rgba(255,255,255,0.65)", textDecoration: "none" }}
               >
                 +43 681 10723047
