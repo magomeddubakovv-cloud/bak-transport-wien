@@ -41,6 +41,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/ratgeber/meldezettel-wien`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     { url: `${base}/ratgeber/halteverbotszone-wien`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     { url: `${base}/ratgeber/altbau-umzug-wien`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
+    { url: `${base}/ratgeber/umzugscheckliste-wien`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     { url: `${base}/glossar`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     { url: `${base}/ueber-uns`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     { url: `${base}/kontakt`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },

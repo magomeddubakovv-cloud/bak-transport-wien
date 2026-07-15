@@ -1671,6 +1671,75 @@ const de = {
   ratgeber_related4_label: "Meldezettel Wien",
   ratgeber_related5_label: "Halteverbotszone beantragen",
   ratgeber_related6_label: "Umzug im Altbau",
+  ratgeber_related7_label: "Umzugscheckliste",
+
+  // Ratgeber — Umzugscheckliste
+  checkliste_label: "RATGEBER",
+  checkliste_title: "Umzugscheckliste Wien – Schritt für Schritt zum stressfreien Umzug",
+  checkliste_subtitle:
+    "Die wichtigsten Erledigungen von der Planung bis zur Ummeldung – in der richtigen Reihenfolge",
+  checkliste_intro:
+    "Ein Umzug hat viele kleine Schritte, die leicht übersehen werden. Diese Checkliste zeigt Ihnen, was wann erledigt werden sollte – von den ersten Vorbereitungen bis zur Ummeldung nach dem Einzug.",
+  checkliste_section1_heading: "6–8 Wochen vorher: Planung starten",
+  checkliste_section1_text:
+    "Je früher Sie mit der Planung beginnen, desto entspannter verläuft der Umzug. Sichern Sie sich frühzeitig einen Termin, besonders rund um Monatsende und im Sommer, wenn die Nachfrage am höchsten ist.",
+  checkliste_section1_bullet1: "Umzugstermin mit BAK Transport vereinbaren und kostenlose Besichtigung ausmachen",
+  checkliste_section1_bullet2: "Mietvertrag kündigen bzw. Kündigungsfristen prüfen",
+  checkliste_section1_bullet3: "Bei Bedarf Kindergarten oder Schule über den Wechsel informieren",
+  checkliste_section1_bullet4: "Erste Ausmistung beginnen: was kommt mit, was wird entsorgt oder verschenkt",
+  checkliste_section2_heading: "3–4 Wochen vorher: Organisation",
+  checkliste_section2_text:
+    "Jetzt werden die praktischen Details geklärt – von Kartons bis zur Halteverbotszone vor der neuen und alten Adresse.",
+  checkliste_section2_bullet1: "Umzugskartons und Verpackungsmaterial besorgen",
+  checkliste_section2_bullet2: "Halteverbotszone für den Umzugstag beantragen (übernehmen wir auf Wunsch für Sie)",
+  checkliste_section2_bullet3: "Strom-, Internet- und Gasanbieter über den Adresswechsel informieren",
+  checkliste_section2_bullet4: "Nachsendeauftrag bei der Post einrichten",
+  checkliste_section3_heading: "1 Woche vorher: Feinschliff",
+  checkliste_section3_text:
+    "In der letzten Woche geht es darum, den Überblick zu behalten und wichtige Dinge griffbereit zu halten.",
+  checkliste_section3_bullet1: "Kartons pro Raum beschriften, damit beim Auspacken nichts durcheinandergerät",
+  checkliste_section3_bullet2: "Wichtige Dokumente, Wertsachen und Medikamente separat und griffbereit packen",
+  checkliste_section3_bullet3: "Kühlschrank und Gefrierfach rechtzeitig leeren",
+  checkliste_section3_bullet4: "Letzte Details mit dem Umzugsteam (Parkzeiten, Zugang, Ansprechperson) abstimmen",
+  checkliste_section4_heading: "Am Umzugstag",
+  checkliste_section4_text:
+    "Am Umzugstag selbst übernimmt unser Team den Transport – diese Punkte sollten trotzdem auf Ihrer Liste stehen.",
+  checkliste_section4_bullet1: "Zählerstände (Strom, Gas, Wasser) in der alten Wohnung notieren",
+  checkliste_section4_bullet2: "Übergabeprotokoll mit der Vermieterin bzw. dem Vermieter erstellen",
+  checkliste_section4_bullet3: "Schlüsselübergabe der alten Wohnung organisieren",
+  checkliste_section4_bullet4: "Alle Räume, Keller und Nebenräume ein letztes Mal kontrollieren",
+  checkliste_section5_heading: "Nach dem Umzug",
+  checkliste_section5_text:
+    "Auch nach dem Einzug gibt es noch ein paar behördliche Schritte, die zeitnah erledigt werden sollten.",
+  checkliste_section5_bullet1: "Meldezettel: Ummeldung spätestens 3 Tage nach dem Einzug",
+  checkliste_section5_bullet2: "Adressänderung bei Banken, Versicherungen und Arbeitgeber melden",
+  checkliste_section5_bullet3: "Rundfunkbeitrag (GIS) und wohnsitzrelevante Verträge aktualisieren",
+  checkliste_section5_bullet4: "Neue Nachbarschaft erkunden und ankommen",
+  checkliste_card1_title: "Frühzeitig sichern",
+  checkliste_card1_text:
+    "Umzugstermine rund um Monatsende und im Sommer sind besonders gefragt – je früher gebucht, desto mehr Auswahl.",
+  checkliste_card2_title: "Nichts vergessen",
+  checkliste_card2_text:
+    "Mit einer klaren Checkliste behalten Sie auch in stressigen Wochen den Überblick über alle Erledigungen.",
+  checkliste_card3_title: "Wir übernehmen den Rest",
+  checkliste_card3_text:
+    "Kartons, Halteverbotszone, Möbelmontage – vieles davon können Sie direkt an uns übergeben.",
+  checkliste_faq1_q: "Wie viele Wochen vor dem Umzug sollte ich planen?",
+  checkliste_faq1_a:
+    "Idealerweise beginnen Sie 6–8 Wochen vorher mit der Planung, besonders wenn Ihr Umzug in eine gefragte Zeit wie Monatsende oder Sommer fällt. Kurzfristige Umzüge sind bei BAK Transport ebenfalls möglich, je nach Auslastung.",
+  checkliste_faq2_q: "Was sollte ich am Umzugstag zuerst erledigen?",
+  checkliste_faq2_a:
+    "Notieren Sie zuerst die Zählerstände und klären Sie den Zugang für unser Team, etwa über die Halteverbotszone. Den restlichen Ablauf – Tragen, Transport, Aufbau – übernehmen unsere Umzugshelfer.",
+  checkliste_faq3_q: "Muss ich mich sofort nach dem Einzug ummelden?",
+  checkliste_faq3_a:
+    "Ja, die Ummeldung des Meldezettels muss spätestens 3 Tage nach dem tatsächlichen Einzug erfolgen. Details dazu finden Sie in unserem Ratgeber zum Meldezettel Wien.",
+  checkliste_faq4_q: "Hilft BAK Transport auch beim Packen der Kartons?",
+  checkliste_faq4_a:
+    "Ja, auf Wunsch übernehmen wir Verpackungsservice und Full-Service-Umzüge, sodass Sie sich um weniger einzelne Punkte auf der Checkliste selbst kümmern müssen.",
+  checkliste_related1_label: "Umzug Preise",
+  checkliste_related2_label: "Meldezettel Wien",
+  checkliste_related3_label: "Halteverbotszone beantragen",
+  checkliste_related4_label: "Ratgeber Übersicht",
 
   // Ratgeber — Meldezettel Wien
   meldezettel_label: "RATGEBER",
@@ -3559,6 +3628,74 @@ const en: typeof de = {
   ratgeber_related4_label: "Vienna Address Registration",
   ratgeber_related5_label: "No-Parking Zone Permit",
   ratgeber_related6_label: "Moving in Old Buildings",
+  ratgeber_related7_label: "Moving Checklist",
+
+  // Ratgeber — Moving Checklist
+  checkliste_label: "GUIDE",
+  checkliste_title: "Vienna Moving Checklist – Step by Step to a Stress-Free Move",
+  checkliste_subtitle: "The most important tasks from planning to address registration – in the right order",
+  checkliste_intro:
+    "A move involves many small steps that are easy to overlook. This checklist shows you what to take care of and when – from the first preparations to registering your address after moving in.",
+  checkliste_section1_heading: "6–8 Weeks Before: Start Planning",
+  checkliste_section1_text:
+    "The earlier you start planning, the more relaxed your move will be. Book your moving date early, especially around month-end and in summer, when demand is highest.",
+  checkliste_section1_bullet1: "Schedule a moving date with BAK Transport and arrange a free on-site assessment",
+  checkliste_section1_bullet2: "Terminate your lease or check notice periods",
+  checkliste_section1_bullet3: "Inform daycare or school about the change if needed",
+  checkliste_section1_bullet4: "Start decluttering: decide what moves with you, what gets donated or discarded",
+  checkliste_section2_heading: "3–4 Weeks Before: Get Organized",
+  checkliste_section2_text:
+    "Now the practical details get sorted out – from moving boxes to the no-parking zone at both the old and new address.",
+  checkliste_section2_bullet1: "Get moving boxes and packing materials",
+  checkliste_section2_bullet2: "Apply for a no-parking zone permit for moving day (we can handle this for you)",
+  checkliste_section2_bullet3: "Notify electricity, internet, and gas providers of your address change",
+  checkliste_section2_bullet4: "Set up mail forwarding with the post office",
+  checkliste_section3_heading: "1 Week Before: Final Touches",
+  checkliste_section3_text:
+    "In the final week, it's all about staying organized and keeping important things within reach.",
+  checkliste_section3_bullet1: "Label boxes by room so unpacking goes smoothly",
+  checkliste_section3_bullet2: "Pack important documents, valuables, and medication separately and keep them accessible",
+  checkliste_section3_bullet3: "Empty the fridge and freezer in good time",
+  checkliste_section3_bullet4: "Confirm the final details with your moving team (parking times, access, contact person)",
+  checkliste_section4_heading: "On Moving Day",
+  checkliste_section4_text:
+    "On moving day itself, our team handles the transport – but these points should still be on your list.",
+  checkliste_section4_bullet1: "Note the meter readings (electricity, gas, water) at the old apartment",
+  checkliste_section4_bullet2: "Complete a handover protocol with your landlord",
+  checkliste_section4_bullet3: "Arrange the key handover for the old apartment",
+  checkliste_section4_bullet4: "Do a final check of all rooms, the basement, and storage areas",
+  checkliste_section5_heading: "After the Move",
+  checkliste_section5_text:
+    "Even after moving in, a few administrative steps still need to be taken care of promptly.",
+  checkliste_section5_bullet1: "Meldezettel: register your new address within 3 days of moving in",
+  checkliste_section5_bullet2: "Update your address with banks, insurers, and your employer",
+  checkliste_section5_bullet3: "Update broadcasting fees (GIS) and address-related contracts",
+  checkliste_section5_bullet4: "Explore your new neighborhood and settle in",
+  checkliste_card1_title: "Book Early",
+  checkliste_card1_text:
+    "Moving dates around month-end and in summer are in high demand – the earlier you book, the more choice you have.",
+  checkliste_card2_title: "Never Miss a Step",
+  checkliste_card2_text:
+    "A clear checklist keeps you on top of everything, even during stressful weeks.",
+  checkliste_card3_title: "We Handle the Rest",
+  checkliste_card3_text:
+    "Boxes, no-parking zone permits, furniture assembly – you can hand off much of this directly to us.",
+  checkliste_faq1_q: "How many weeks before the move should I start planning?",
+  checkliste_faq1_a:
+    "Ideally, start planning 6–8 weeks in advance, especially if your move falls during a busy period like month-end or summer. BAK Transport can also handle short-notice moves, depending on availability.",
+  checkliste_faq2_q: "What should I do first on moving day?",
+  checkliste_faq2_a:
+    "First, note the meter readings and make sure access is arranged for our team, for example via the no-parking zone. Our movers take care of the rest – carrying, transport, and setup.",
+  checkliste_faq3_q: "Do I have to register my address right after moving in?",
+  checkliste_faq3_a:
+    "Yes, you must register your new address (Meldezettel) within 3 days of actually moving in. See our guide on Vienna address registration for details.",
+  checkliste_faq4_q: "Does BAK Transport also help with packing boxes?",
+  checkliste_faq4_a:
+    "Yes, we offer packing service and full-service moves on request, so you have fewer individual items on your checklist to handle yourself.",
+  checkliste_related1_label: "Moving Prices",
+  checkliste_related2_label: "Vienna Address Registration",
+  checkliste_related3_label: "No-Parking Zone Permit",
+  checkliste_related4_label: "Guide Overview",
 
   // Ratgeber — Meldezettel Wien
   meldezettel_label: "GUIDE",

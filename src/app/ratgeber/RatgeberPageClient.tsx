@@ -51,6 +51,7 @@ export function RatgeberPageClient() {
         { label: t.ratgeber_related4_label, href: "/ratgeber/meldezettel-wien" },
         { label: t.ratgeber_related5_label, href: "/ratgeber/halteverbotszone-wien" },
         { label: t.ratgeber_related6_label, href: "/ratgeber/altbau-umzug-wien" },
+        { label: t.ratgeber_related7_label, href: "/ratgeber/umzugscheckliste-wien" },
       ]}
     />
   );
