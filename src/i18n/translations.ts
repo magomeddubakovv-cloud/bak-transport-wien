@@ -1205,6 +1205,9 @@ const de = {
   noe_page_faq3_a:
     "Nur minimal — die Entfernung wird eingerechnet, aber der Fixpreis bleibt ein Fixpreis. Keine bösen Überraschungen.",
   noe_page_cta_h2: "Umzug Niederösterreich anfragen",
+  noe_hub_towns_h2: "Umzug in Ihrer Gemeinde",
+  noe_hub_towns_desc:
+    "Diese Orte im Wiener Umland fahren wir besonders häufig an — mit kurzer Anfahrt und Fixpreis ab €680.",
 
   // Deutschland region page
   de_page_label: "REGIONEN",
@@ -1459,6 +1462,17 @@ const de = {
     "Kostenlose Besichtigung — Angebot in 60 Minuten — Umzug zu Ihrem Wunschtermin.",
   bezirk_cta_btn1: "Kostenloses Angebot",
   bezirk_cta_btn2: "Termin buchen",
+  // NÖ Ort pages
+  noe_ort_subtitle_prefix: "Ihr professioneller Umzugspartner in",
+  noe_ort_intro_h2_prefix: "Professioneller Umzugsservice in",
+  noe_ort_intro_p2:
+    "BAK Transport führt regelmäßig Umzüge zwischen Wien und Niederösterreich durch — mit Fixpreis, erfahrenem Team und vollständiger Versicherungsdeckung. Kein Stundenlohn-Risiko, keine versteckten Kosten.",
+  noe_ort_checklist_besichtigung: "Kostenlose Vorab-Besichtigung oder Video-Call",
+  noe_ort_pricing_h2_prefix: "Umzugspreis für",
+  noe_ort_step3_text:
+    "Wir organisieren alles: Team, LKW, Verpackungsmaterial und die optimale Route nach Niederösterreich.",
+  noe_ort_other_h3: "Weitere Orte in Niederösterreich",
+  noe_ort_hub_link: "Alle Orte in Niederösterreich",
   // SeoLandingPage
   seolanding_cta_label: "Kostenloses Angebot",
   seolanding_cta_heading: "Fixpreis statt Überraschung",
@@ -3164,6 +3178,9 @@ const en: typeof de = {
   noe_page_faq3_a:
     "Only minimally — the distance is factored in, but the fixed price remains a fixed price. No unpleasant surprises.",
   noe_page_cta_h2: "Request Move Lower Austria",
+  noe_hub_towns_h2: "Moving to Your Town",
+  noe_hub_towns_desc:
+    "These towns in the Vienna area are ones we serve especially often — short travel distance, fixed price from €680.",
 
   // Deutschland region page
   de_page_label: "REGIONS",
@@ -3417,6 +3434,17 @@ const en: typeof de = {
     "Free inspection — quote within 60 minutes — move on your preferred date.",
   bezirk_cta_btn1: "Free Quote",
   bezirk_cta_btn2: "Book Appointment",
+  // Lower Austria town pages
+  noe_ort_subtitle_prefix: "Your professional moving partner in",
+  noe_ort_intro_h2_prefix: "Professional Moving Service in",
+  noe_ort_intro_p2:
+    "BAK Transport regularly carries out moves between Vienna and Lower Austria — with a fixed price, an experienced team, and full insurance coverage. No hourly-rate risk, no hidden costs.",
+  noe_ort_checklist_besichtigung: "Free inspection in advance or video call",
+  noe_ort_pricing_h2_prefix: "Moving Price for",
+  noe_ort_step3_text:
+    "We organize everything: team, truck, packing materials, and the optimal route to Lower Austria.",
+  noe_ort_other_h3: "Other Towns in Lower Austria",
+  noe_ort_hub_link: "All Towns in Lower Austria",
   // SeoLandingPage
   seolanding_cta_label: "Free Quote",
   seolanding_cta_heading: "Fixed Price, No Surprises",

@@ -5,6 +5,7 @@ import Image from "next/image";
 import { PageLayout } from "@/components/PageLayout";
 import { useLang } from "@/contexts/LanguageContext";
 import { translations } from "@/i18n/translations";
+import { NOE_ORTE } from "@/data/noe-orte";
 
 export function NiederoesterreichPageClient() {
   const { lang } = useLang();
@@ -67,6 +68,21 @@ export function NiederoesterreichPageClient() {
                 <h3 className="text-xl font-semibold mb-3" style={{ color: "#111827" }}>{card.title}</h3>
                 <p style={{ color: "#6B7280", lineHeight: "1.75" }}>{card.text}</p>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section className="py-12 md:py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 md:px-6">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: "#9A3412" }}>{t.noe_hub_towns_h2}</h2>
+          <p className="mb-8" style={{ color: "#6B7280", lineHeight: "1.75", maxWidth: "700px" }}>{t.noe_hub_towns_desc}</p>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+            {NOE_ORTE.map((ort) => (
+              <a key={ort.slug} href={`/regionen/niederoesterreich/${ort.slug}`}
+                className="rounded-lg px-3 py-2 text-sm font-medium text-center transition-colors hover:border-[#C2410C] hover:text-[#C2410C]"
+                style={{ backgroundColor: "#F9FAFB", border: "1px solid #E5E7EB", color: "#374151", textDecoration: "none" }}>
+                {ort.name}
+              </a>
             ))}
           </div>
         </div>

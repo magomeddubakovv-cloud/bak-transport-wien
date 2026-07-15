@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { WIENER_BEZIRKE } from "@/data/wiener-bezirke";
+import { NOE_ORTE } from "@/data/noe-orte";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://www.baktransport.at";
@@ -32,6 +33,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: "monthly" as const,
       priority: 0.8,
+    })),
+    // NÖ Orte — local SEO pages
+    ...NOE_ORTE.map(o => ({
+      url: `${base}/regionen/niederoesterreich/${o.slug}`,
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
     })),
     // Unternehmen
     { url: `${base}/anfrage`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
