@@ -1774,6 +1774,7 @@ const de = {
   meldezettel_related1_label: "Halteverbotszone beantragen",
   meldezettel_related2_label: "Umzug im Altbau",
   meldezettel_related3_label: "Ratgeber",
+  meldezettel_related4_label: "Meldezettel-Formular herunterladen (PDF)",
 
   // Ratgeber — Halteverbotszone beantragen
   halteverbot_label: "RATGEBER",
@@ -3730,6 +3731,7 @@ const en: typeof de = {
   meldezettel_related1_label: "No-Parking Zone Permit",
   meldezettel_related2_label: "Moving in Old Buildings",
   meldezettel_related3_label: "Guide",
+  meldezettel_related4_label: "Download Meldezettel Form (PDF)",
 
   // Ratgeber — Halteverbotszone beantragen
   halteverbot_label: "GUIDE",

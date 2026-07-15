@@ -42,6 +42,11 @@ export function MeldezettelWienPageClient() {
         { label: t.meldezettel_related1_label, href: "/ratgeber/halteverbotszone-wien" },
         { label: t.meldezettel_related2_label, href: "/ratgeber/altbau-umzug-wien" },
         { label: t.meldezettel_related3_label, href: "/ratgeber" },
+        {
+          label: t.meldezettel_related4_label,
+          href: "https://www.wien.gv.at/pdf/ma62/meldezettel.pdf",
+          external: true,
+        },
       ]}
     />
   );
