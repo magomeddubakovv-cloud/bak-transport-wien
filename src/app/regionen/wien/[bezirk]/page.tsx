@@ -64,10 +64,21 @@ export default async function BezirkPage({ params }: Props) {
     description: `Professioneller Umzugsservice im ${b.nr} Wien – ${b.name}. Fixpreis, vollversichert.`,
   };
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: b.faq.map((faq) => ({
+      "@type": "Question",
+      name: faq.q,
+      acceptedAnswer: { "@type": "Answer", text: faq.a },
+    })),
+  };
+
   return (
     <>
       <StructuredData data={breadcrumbSchema} />
       <StructuredData data={serviceSchema} />
+      <StructuredData data={faqSchema} />
       <BezirkPageClient bezirk={b} />
     </>
   );

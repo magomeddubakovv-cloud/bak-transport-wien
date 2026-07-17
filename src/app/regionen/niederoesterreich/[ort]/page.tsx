@@ -64,10 +64,21 @@ export default async function NoeOrtPage({ params }: Props) {
     description: `Professioneller Umzugsservice von Wien nach ${o.name}. Fixpreis, vollversichert.`,
   };
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: o.faq.map((faq) => ({
+      "@type": "Question",
+      name: faq.q,
+      acceptedAnswer: { "@type": "Answer", text: faq.a },
+    })),
+  };
+
   return (
     <>
       <StructuredData data={breadcrumbSchema} />
       <StructuredData data={serviceSchema} />
+      <StructuredData data={faqSchema} />
       <NoeOrtPageClient ort={o} />
     </>
   );
