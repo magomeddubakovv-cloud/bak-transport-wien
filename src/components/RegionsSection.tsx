@@ -1,21 +1,22 @@
 "use client";
 
+import Link from "next/link";
 import { MapPin } from "lucide-react";
 import { useLang } from "@/contexts/LanguageContext";
 import { translations } from "@/i18n/translations";
 
 const areaTags = [
-  { label: "Wien", labelEn: "Vienna", highlight: true },
-  { label: "Niederösterreich", labelEn: "Lower Austria", highlight: false },
-  { label: "Burgenland", labelEn: "Burgenland", highlight: false },
-  { label: "Steiermark", labelEn: "Styria", highlight: false },
-  { label: "Salzburg", labelEn: "Salzburg", highlight: false },
-  { label: "Oberösterreich", labelEn: "Upper Austria", highlight: false },
-  { label: "Tirol", labelEn: "Tyrol", highlight: false },
-  { label: "Vorarlberg", labelEn: "Vorarlberg", highlight: false },
-  { label: "Kärnten", labelEn: "Carinthia", highlight: false },
-  { label: "Deutschland", labelEn: "Germany", highlight: false },
-  { label: "Schweiz", labelEn: "Switzerland", highlight: false },
+  { label: "Wien", labelEn: "Vienna", highlight: true, href: "/regionen/wien" },
+  { label: "Niederösterreich", labelEn: "Lower Austria", highlight: false, href: "/regionen/niederoesterreich" },
+  { label: "Burgenland", labelEn: "Burgenland", highlight: false, href: "/regionen/oesterreich" },
+  { label: "Steiermark", labelEn: "Styria", highlight: false, href: "/regionen/oesterreich" },
+  { label: "Salzburg", labelEn: "Salzburg", highlight: false, href: "/regionen/oesterreich" },
+  { label: "Oberösterreich", labelEn: "Upper Austria", highlight: false, href: "/regionen/oesterreich" },
+  { label: "Tirol", labelEn: "Tyrol", highlight: false, href: "/regionen/oesterreich" },
+  { label: "Vorarlberg", labelEn: "Vorarlberg", highlight: false, href: "/regionen/oesterreich" },
+  { label: "Kärnten", labelEn: "Carinthia", highlight: false, href: "/regionen/oesterreich" },
+  { label: "Deutschland", labelEn: "Germany", highlight: false, href: "/regionen/deutschland" },
+  { label: "Schweiz", labelEn: "Switzerland", highlight: false, href: "/regionen/schweiz" },
 ];
 
 export function RegionsSection() {
@@ -97,18 +98,20 @@ export function RegionsSection() {
 
               <div className="flex flex-wrap gap-2">
                 {areaTags.map((tag) => (
-                  <span
+                  <Link
                     key={tag.label}
-                    className="rounded-full px-4 py-2"
+                    href={tag.href}
+                    className="rounded-full px-4 py-2 transition-opacity hover:opacity-80"
                     style={{
                       backgroundColor: tag.highlight ? "#C2410C" : "#FFFFFF",
                       color: tag.highlight ? "#FFFFFF" : "#374151",
                       fontSize: "14px",
                       border: tag.highlight ? "none" : "1px solid #E5E7EB",
+                      textDecoration: "none",
                     }}
                   >
                     {lang === "en" ? tag.labelEn : tag.label}
-                  </span>
+                  </Link>
                 ))}
               </div>
 
