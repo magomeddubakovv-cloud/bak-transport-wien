@@ -4,7 +4,7 @@ import { UeberUnsPageClient } from "./UeberUnsPageClient";
 
 export const metadata: Metadata = {
   title: "Über uns | Ihr Umzugsunternehmen",
-  description: "BAK Transport Wien: Professionelle Umzüge seit über 10 Jahren. Eigene LKW-Flotte, erfahrenes Team, 5,0★ auf Google, Fixpreisgarantie.",
+  description: "BAK Transport Wien: Professionelle Umzüge seit über 10 Jahren. Eigene LKW-Flotte, erfahrenes Team, 4,5★ auf Google, Fixpreisgarantie.",
   alternates: { canonical: "https://www.baktransport.at/ueber-uns" },
 };
 

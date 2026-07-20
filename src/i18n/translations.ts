@@ -318,7 +318,7 @@ const de = {
   quickfact1: "Rückruf in ca. 60 Minuten, Angebot oft noch am selben Tag",
   quickfact2: "Fixpreis nach Besichtigung — keine versteckten Kosten",
   quickfact3:
-    "über 500 Umzüge seit Juni 2024 · 5,0/5 Sterne bei Google",
+    "über 500 Umzüge seit Juni 2024 · 4,5/5 Sterne bei Google",
   quickfact4: "Grenzüberschreitend: Deutschland · Schweiz",
 
   // RegionsSection
@@ -551,13 +551,13 @@ const de = {
   ueber_p2:
     "Wir arbeiten ausschließlich mit eigenem Personal und eigener Fahrzeugflotte. Keine Subunternehmer, keine Qualitätsverluste. Was Sie sehen, ist was Sie bekommen.",
   ueber_p3:
-    "Unsere Google-Bewertung von 5,0★ spricht für sich — und für unsere Kunden, die uns empfehlen.",
+    "Unsere Google-Bewertung von 4,5★ spricht für sich — und für unsere Kunden, die uns empfehlen.",
   ueber_check1: "Erfahrenes Team mit Leidenschaft",
   ueber_check2: "Eigene LKW-Flotte",
   ueber_check3: "Vollversichert & gewerblich zugelassen",
   ueber_check4: "Fixpreis-Garantie seit Tag 1",
   ueber_check5: "Kundenzufriedenheit über alles",
-  ueber_check6: "5,0★ Bewertung auf Google",
+  ueber_check6: "4,5★ Bewertung auf Google",
   ueber_why_h2: "Warum BAK Transport?",
   ueber_card1_title: "Unser Team",
   ueber_card1_text:
@@ -570,7 +570,7 @@ const de = {
     "Ehrlichkeit, Pünktlichkeit, Sauberkeit. Wir halten, was wir versprechen — und versprechen nur, was wir auch halten können.",
   ueber_stat1_value: "1.000+",
   ueber_stat1_label: "Erfolgreiche Umzüge",
-  ueber_stat2_value: "5,0★",
+  ueber_stat2_value: "4,5★",
   ueber_stat2_label: "Google Bewertung",
   ueber_stat3_value: "24h",
   ueber_stat3_label: "Angebotserstellung",
@@ -1415,7 +1415,7 @@ const de = {
     "BAK Transport führt täglich Umzüge in ganz Wien durch — mit Fixpreis, erfahrenem Team und vollständiger Versicherungsdeckung. Kein Stundenlohn-Risiko, keine versteckten Kosten.",
   bezirk_badge_insured: "Vollversichert",
   bezirk_badge_response: "Antwort in 60 Min.",
-  bezirk_badge_rating: "5,0/5 ★ Kundenbewertung",
+  bezirk_badge_rating: "4,5/5 ★ Kundenbewertung",
   bezirk_checklist_h3: "Was ist im Umzugspreis enthalten?",
   bezirk_checklist_1: "Professionelles Umzugsteam (mind. 2 Mann)",
   bezirk_checklist_2: "LKW mit Hebebühne inklusive",
@@ -1940,7 +1940,7 @@ const de = {
     "Ob kompletter Umzug, Kleintransport einzelner Möbelstücke, Klaviertransport oder Firmenumzug: Wir übernehmen Transporte jeder Größe in allen 23 Wiener Bezirken sowie österreichweit und international.",
   transportwien_badge1: "€100.000 Vollversicherung",
   transportwien_badge2: "Rückmeldung in 60 Minuten",
-  transportwien_badge3: "5,0 Sterne Bewertung",
+  transportwien_badge3: "4,5 Sterne Bewertung",
   transportwien_badge4: "Alle 23 Wiener Bezirke",
   transportwien_services_h2: "Alle Transport-Leistungen in Wien im Überblick",
   transportwien_services_sub:
@@ -2314,7 +2314,7 @@ const en: typeof de = {
   quickfacts_h2: "At a Glance",
   quickfact1: "Callback in approx. 60 minutes, quote often on the same day",
   quickfact2: "Fixed price after inspection — no hidden costs",
-  quickfact3: "over 500 moves since June 2024 · 5.0/5 stars on Google",
+  quickfact3: "over 500 moves since June 2024 · 4.5/5 stars on Google",
   quickfact4: "Cross-border: Germany · Switzerland",
 
   // RegionsSection
@@ -2545,13 +2545,13 @@ const en: typeof de = {
   ueber_p2:
     "We work exclusively with our own staff and vehicle fleet. No subcontractors, no quality losses. What you see is what you get.",
   ueber_p3:
-    "Our Google rating of 5.0★ speaks for itself — and for our customers who recommend us.",
+    "Our Google rating of 4.5★ speaks for itself — and for our customers who recommend us.",
   ueber_check1: "Experienced team with passion",
   ueber_check2: "Own truck fleet",
   ueber_check3: "Fully insured & commercially licensed",
   ueber_check4: "Fixed price guarantee from day 1",
   ueber_check5: "Customer satisfaction above all",
-  ueber_check6: "5.0★ rating on Google",
+  ueber_check6: "4.5★ rating on Google",
   ueber_why_h2: "Why BAK Transport?",
   ueber_card1_title: "Our Team",
   ueber_card1_text:
@@ -2564,7 +2564,7 @@ const en: typeof de = {
     "Honesty, punctuality, cleanliness. We keep what we promise — and only promise what we can deliver.",
   ueber_stat1_value: "1,000+",
   ueber_stat1_label: "Successful Moves",
-  ueber_stat2_value: "5.0★",
+  ueber_stat2_value: "4.5★",
   ueber_stat2_label: "Google Rating",
   ueber_stat3_value: "24h",
   ueber_stat3_label: "Quote Preparation",
@@ -3403,7 +3403,7 @@ const en: typeof de = {
     "BAK Transport carries out moves throughout Vienna every day — with a fixed price, an experienced team, and full insurance coverage. No hourly-rate risk, no hidden costs.",
   bezirk_badge_insured: "Fully Insured",
   bezirk_badge_response: "Response within 60 min.",
-  bezirk_badge_rating: "5.0/5 ★ Customer Rating",
+  bezirk_badge_rating: "4.5/5 ★ Customer Rating",
   bezirk_checklist_h3: "What's Included in the Moving Price?",
   bezirk_checklist_1: "Professional moving team (at least 2 movers)",
   bezirk_checklist_2: "Truck with tail lift included",
@@ -3927,7 +3927,7 @@ const en: typeof de = {
     "Whether it's a complete move, a small transport of a single piece of furniture, a piano transport, or an office relocation: we handle transports of any size in all 23 Vienna districts as well as throughout Austria and internationally.",
   transportwien_badge1: "€100,000 Full Insurance",
   transportwien_badge2: "Response in 60 Minutes",
-  transportwien_badge3: "5.0 Star Rating",
+  transportwien_badge3: "4.5 Star Rating",
   transportwien_badge4: "All 23 Vienna Districts",
   transportwien_services_h2: "All Transport Services in Vienna at a Glance",
   transportwien_services_sub:

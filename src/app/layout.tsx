@@ -105,7 +105,7 @@ const localBusinessSchema = {
   paymentAccepted: "Cash, Bank Transfer",
   aggregateRating: {
     "@type": "AggregateRating",
-    ratingValue: "5.0",
+    ratingValue: "4.5",
     reviewCount: "87",
     bestRating: "5",
     worstRating: "1",

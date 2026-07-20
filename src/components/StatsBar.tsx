@@ -99,7 +99,7 @@ export function StatsBar() {
   const STATS: { config: StatConfig; label: string }[] = [
     { config: { target: 1000, suffix: "+", germanFormat: true }, label: t.stats1 },
     { config: { target: 23, suffix: "" }, label: t.stats2 },
-    { config: { target: 5.0, decimals: 1, suffix: "★", germanFormat: true }, label: t.stats3 },
+    { config: { target: 4.5, decimals: 1, suffix: "★", germanFormat: true }, label: t.stats3 },
     { config: { target: 60, suffix: " Min" }, label: t.stats4 },
   ];
 

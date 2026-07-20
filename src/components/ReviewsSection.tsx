@@ -251,7 +251,7 @@ export function ReviewsSection() {
               <div className="flex gap-0.5">
                 {[1,2,3,4,5].map(i => <StarIcon key={i} />)}
               </div>
-              <span className="text-sm font-semibold" style={{ color: "#111827" }}>5,0</span>
+              <span className="text-sm font-semibold" style={{ color: "#111827" }}>4,5</span>
               <span className="text-sm" style={{ color: "#6B7280" }}>{t.reviews_count}</span>
             </div>
           </div>
