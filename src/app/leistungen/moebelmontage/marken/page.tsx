@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { StructuredData } from "@/components/StructuredData";
 import { MoebelmarkenPageClient } from "./MoebelmarkenPageClient";
 
 export const metadata: Metadata = {
@@ -8,6 +9,21 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://www.baktransport.at/leistungen/moebelmontage/marken" },
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "BAK Transport Wien", item: "https://www.baktransport.at" },
+    { "@type": "ListItem", position: 2, name: "Möbelmontage Wien", item: "https://www.baktransport.at/leistungen/moebelmontage" },
+    { "@type": "ListItem", position: 3, name: "Marken", item: "https://www.baktransport.at/leistungen/moebelmontage/marken" },
+  ],
+};
+
 export default function MoebelmarkenPage() {
-  return <MoebelmarkenPageClient />;
+  return (
+    <>
+      <StructuredData data={breadcrumbSchema} />
+      <MoebelmarkenPageClient />
+    </>
+  );
 }

@@ -15,7 +15,7 @@ import { QuickContactSection } from "@/components/QuickContactSection";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Umzugsfirma Wien mit Fixpreis | BAK Transport",
+  title: "Umzugsfirma Wien mit Fixpreis",
   description:
     "BAK Transport: Privatumzüge, Firmenumzüge und Möbelmontage in Wien. Fixpreis, versichert, kostenlose Besichtigung, Antwort in 60 Minuten.",
   alternates: { canonical: "https://www.baktransport.at" },

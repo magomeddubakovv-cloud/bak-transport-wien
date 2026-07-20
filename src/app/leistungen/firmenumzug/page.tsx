@@ -3,7 +3,7 @@ import { StructuredData } from "@/components/StructuredData";
 import { FirmenumzugPageClient } from "./FirmenumzugPageClient";
 
 export const metadata: Metadata = {
-  title: "Firmenumzug Wien | Büroumzug ohne Betriebsausfall | BAK Transport",
+  title: "Firmenumzug Wien | Büroumzug ohne Betriebsausfall",
   description: "✓ Firmenumzug Wien mit BAK Transport: Strukturierter Büroumzug mit minimaler Ausfallzeit. Auch nachts & am Wochenende. Fixpreis, vollversichert, Rückmeldung in 60 Min.",
   alternates: { canonical: "https://www.baktransport.at/leistungen/firmenumzug" },
 };

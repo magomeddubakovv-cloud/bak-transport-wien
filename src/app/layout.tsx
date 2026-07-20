@@ -56,7 +56,7 @@ export const metadata: Metadata = {
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
-  "@type": ["LocalBusiness", "MovingCompany"],
+  "@type": "MovingCompany",
   "@id": "https://www.baktransport.at/#business",
   name: "BAK Transport Wien",
   alternateName: "BAK Transport",
@@ -67,18 +67,19 @@ const localBusinessSchema = {
   email: "office@baktransport.at",
   image: "https://www.baktransport.at/images/photos/hero-movers.jpg",
   logo: "https://www.baktransport.at/images/logo-transparent.png",
-  hasMap: "https://maps.google.com/?q=BAK+Transport+Wien",
+  hasMap: "https://www.google.com/maps/search/?api=1&query=48.20643,16.30546",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Zwinzstraße 15",
     addressLocality: "Wien",
+    addressRegion: "Wien",
     postalCode: "1160",
     addressCountry: "AT",
   },
   geo: {
     "@type": "GeoCoordinates",
-    latitude: 48.2082,
-    longitude: 16.3738,
+    latitude: 48.20643,
+    longitude: 16.30546,
   },
   openingHoursSpecification: [
     {
@@ -124,8 +125,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <StructuredData data={localBusinessSchema} />
         <meta name="geo.region" content="AT-9" />
         <meta name="geo.placename" content="Wien" />
-        <meta name="geo.position" content="48.2082;16.3738" />
-        <meta name="ICBM" content="48.2082, 16.3738" />
+        <meta name="geo.position" content="48.20643;16.30546" />
+        <meta name="ICBM" content="48.20643, 16.30546" />
       </head>
       <body className="min-h-full flex flex-col">
         <LanguageProvider>

@@ -3,7 +3,7 @@ import { StructuredData } from "@/components/StructuredData";
 import { FaqPageClient } from "./FaqPageClient";
 
 export const metadata: Metadata = {
-  title: "FAQ Umzug Wien | Häufige Fragen | BAK Transport",
+  title: "FAQ Umzug Wien | Häufige Fragen",
   description: "Antworten auf häufige Fragen zum Thema Umzug Wien: Kosten, Ablauf, Versicherung, Bezirke & mehr. BAK Transport Wien beantwortet alle Ihre Fragen.",
   alternates: { canonical: "https://www.baktransport.at/faq" },
 };

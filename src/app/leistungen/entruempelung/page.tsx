@@ -3,7 +3,7 @@ import { StructuredData } from "@/components/StructuredData";
 import { EntruempelungPageClient } from "./EntruempelungPageClient";
 
 export const metadata: Metadata = {
-  title: "Entrümpelung Wien | Wohnung, Keller & Büro | BAK Transport",
+  title: "Entrümpelung Wien | Wohnung, Keller & Büro",
   description:
     "Entrümpelung Wien mit BAK Transport: Wohnung, Keller, Dachboden, Büro und Verlassenschaft. Besichtigung kostenlos, Fixpreis, rasche Termine, saubere Übergabe.",
   alternates: { canonical: "https://www.baktransport.at/leistungen/entruempelung" },

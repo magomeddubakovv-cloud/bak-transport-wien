@@ -12,33 +12,37 @@ interface StatConfig {
   germanFormat?: boolean;
 }
 
+function formatStat(config: StatConfig, value: number): string {
+  const { decimals = 0, suffix, prefix = "", germanFormat = false } = config;
+  let formatted: string;
+  if (germanFormat) {
+    if (decimals > 0) {
+      formatted = value.toFixed(decimals).replace(".", ",");
+    } else {
+      formatted = Math.floor(value).toLocaleString("de-AT");
+    }
+  } else {
+    formatted = decimals > 0 ? value.toFixed(decimals) : String(Math.floor(value));
+  }
+  return prefix + formatted + suffix;
+}
+
 function useCountUp(config: StatConfig, active: boolean) {
-  const [display, setDisplay] = useState("0");
+  // Initialize to the final value so the server-rendered HTML (seen by crawlers
+  // that don't execute JS) always shows the real number, not "0".
+  const [display, setDisplay] = useState(() => formatStat(config, config.target));
   const rafRef = useRef<number>(0);
 
   useEffect(() => {
     if (!active) return;
-    const { target, decimals = 0, suffix, prefix = "", germanFormat = false } = config;
+    const { target } = config;
     const duration = 1800;
     const start = performance.now();
 
     const tick = (now: number) => {
       const elapsed = Math.min((now - start) / duration, 1);
       const eased = 1 - Math.pow(1 - elapsed, 3);
-      const value = eased * target;
-
-      let formatted: string;
-      if (germanFormat) {
-        if (decimals > 0) {
-          formatted = value.toFixed(decimals).replace(".", ",");
-        } else {
-          formatted = Math.floor(value).toLocaleString("de-AT");
-        }
-      } else {
-        formatted = decimals > 0 ? value.toFixed(decimals) : String(Math.floor(value));
-      }
-
-      setDisplay(prefix + formatted + suffix);
+      setDisplay(formatStat(config, eased * target));
 
       if (elapsed < 1) {
         rafRef.current = requestAnimationFrame(tick);

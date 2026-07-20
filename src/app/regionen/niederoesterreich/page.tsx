@@ -3,7 +3,7 @@ import { StructuredData } from "@/components/StructuredData";
 import { NiederoesterreichPageClient } from "./NiederoesterreichPageClient";
 
 export const metadata: Metadata = {
-  title: "Umzug Niederösterreich | Wien & Umland | BAK Transport",
+  title: "Umzug Niederösterreich | Wien & Umland",
   description: "✓ Umzug Niederösterreich mit BAK Transport Wien: St. Pölten, Klosterneuburg, Baden, Wiener Neustadt & mehr. Fixpreis, vollversichert, schnelle Rückmeldung.",
   alternates: { canonical: "https://www.baktransport.at/regionen/niederoesterreich" },
 };

@@ -29,6 +29,7 @@ export function PrivatumzugPageClient() {
     { q: t.priv_page_faq1_q, a: t.priv_page_faq1_a },
     { q: t.priv_page_faq2_q, a: t.priv_page_faq2_a },
     { q: t.priv_page_faq3_q, a: t.priv_page_faq3_a },
+    { q: t.priv_page_faq4_q, a: t.priv_page_faq4_a },
   ];
 
   return (
@@ -41,7 +42,9 @@ export function PrivatumzugPageClient() {
               <p className="mb-4" style={{ color: "#6B7280", lineHeight: "1.75" }}>{t.priv_page_p1}</p>
               <p className="mb-4" style={{ color: "#6B7280", lineHeight: "1.75" }}>{t.priv_page_p2}</p>
               <p className="mb-4" style={{ color: "#6B7280", lineHeight: "1.75" }}>{t.priv_page_p3}</p>
-              <p style={{ color: "#6B7280", lineHeight: "1.75" }}>{t.priv_page_p4}</p>
+              <p className="mb-4" style={{ color: "#6B7280", lineHeight: "1.75" }}>{t.priv_page_p4}</p>
+              <p className="mb-4" style={{ color: "#6B7280", lineHeight: "1.75" }}>{t.priv_page_p5}</p>
+              <p style={{ color: "#6B7280", lineHeight: "1.75" }}>{t.priv_page_p6}</p>
             </div>
             <div className="flex flex-col gap-6">
               <div className="relative rounded-2xl overflow-hidden h-48 md:h-72">
@@ -62,9 +65,9 @@ export function PrivatumzugPageClient() {
       <AblaufSection
         heading="So läuft Ihr Privatumzug ab"
         steps={[
+          { title: "Anfrage", text: "Sie kontaktieren uns telefonisch, per E-Mail oder Formular – Rückmeldung garantiert innerhalb von 60 Minuten." },
           { title: "Kostenlose Besichtigung", text: "Wir kommen zu Ihnen, schauen uns Wohnung und Möbel an und notieren alle Details." },
-          { title: "Fixpreis-Angebot", text: "Innerhalb von 60 Minuten erhalten Sie ein transparentes Fixpreis-Angebot ohne versteckte Kosten." },
-          { title: "Terminplanung", text: "Wir organisieren Datum, Team und Halteverbotszone – Sie müssen sich um nichts kümmern." },
+          { title: "Fixpreis-Angebot", text: "Innerhalb von 24 Stunden nach der Besichtigung erhalten Sie ein verbindliches Fixpreis-Angebot – inklusive Terminplanung und Halteverbotszone." },
           { title: "Umzugstag", text: "Unser vollversichertes Team führt den Umzug schnell und sorgfältig durch." },
         ]}
       />

@@ -3,7 +3,7 @@ import { StructuredData } from "@/components/StructuredData";
 import { SchwerlasttransportPageClient } from "./SchwerlasttransportPageClient";
 
 export const metadata: Metadata = {
-  title: "Schwerlasttransport Wien | Klavier, Tresor & Maschinen | BAK Transport",
+  title: "Schwerlasttransport Wien | Klavier, Tresor & Maschinen",
   description: "✓ Schwerlasttransport Wien: Klaviere, Tresore, Maschinen & Spezialequipment sicher transportiert. BAK Transport – vollversichert, Spezialequipment, Fixpreis.",
   alternates: { canonical: "https://www.baktransport.at/leistungen/schwerlasttransport" },
 };
@@ -17,10 +17,18 @@ const breadcrumbSchema = {
   ],
 };
 
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Schwerlasttransport Wien — BAK Transport",
+  provider: { "@id": "https://www.baktransport.at/#business" },
+};
+
 export default function SchwerlasttransportPage() {
   return (
     <>
       <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={serviceSchema} />
       <SchwerlasttransportPageClient />
     </>
   );

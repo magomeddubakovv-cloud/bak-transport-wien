@@ -178,7 +178,7 @@ export function Footer() {
       <div className="py-6" style={{ borderTop: "1px solid rgba(255,255,255,0.1)" }}>
         <div className="max-w-7xl mx-auto px-4 md:px-6 flex flex-col md:flex-row justify-between items-center gap-2 text-center md:text-left">
           <p style={{ color: "rgba(255,255,255,0.55)", fontSize: "12px" }}>
-            {t.footer_copyright}
+            © {new Date().getFullYear()} {t.footer_copyright_suffix}
           </p>
           <p style={{ color: "rgba(255,255,255,0.55)", fontSize: "12px" }}>
             office@baktransport.at · +43 681 10723047

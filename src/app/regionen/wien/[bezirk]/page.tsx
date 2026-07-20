@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!b) return {};
 
   return {
-    title: `Umzug ${b.name} Wien ${b.nr} | Fixpreis | BAK Transport`,
+    title: `Umzug ${b.name} Wien ${b.nr} | Fixpreis`,
     description: `Professioneller Umzugsservice im ${b.nr} Wien – ${b.name}. Fixpreis ab €650, vollversichert, kostenlose Besichtigung. ✓ Antwort in 60 Minuten.`,
     alternates: { canonical: `https://www.baktransport.at/regionen/wien/${b.slug}` },
     openGraph: {

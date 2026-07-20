@@ -30,6 +30,7 @@ export function HeroSection() {
         sizes="100vw"
         className="object-cover object-center"
         style={{ opacity: 0.08 }}
+        priority
       />
 
       {/* Gradient overlay */}

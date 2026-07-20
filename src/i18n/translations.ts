@@ -206,7 +206,16 @@ const de = {
   footer_leistungen: "Leistungen",
   footer_regionen: "Regionen",
   footer_unternehmen: "Unternehmen",
-  footer_copyright: "© 2025 BAK Transport Wien. Alle Rechte vorbehalten.",
+  footer_copyright_suffix: "BAK Transport Wien. Alle Rechte vorbehalten.",
+
+  // 404 Page
+  notfound_label: "Fehler 404",
+  notfound_title: "Diese Seite konnte nicht gefunden werden",
+  notfound_subtitle:
+    "Der Link ist möglicherweise veraltet oder die Seite wurde verschoben. Nutzen Sie einen der folgenden Links, um weiterzukommen.",
+  notfound_cta_home: "Zur Startseite",
+  notfound_cta_contact: "Kontakt aufnehmen",
+  notfound_popular_heading: "Beliebte Seiten",
 
   // BenefitsSection
   benefits_label: "Vorteile bei BAK Transport",
@@ -688,7 +697,11 @@ const de = {
     "Wir arbeiten in allen 23 Wiener Bezirken und in ganz Niederösterreich. Ob Studio-Appartement oder großes Einfamilienhaus — Sie erhalten nach der kostenlosen Besichtigung einen verbindlichen Fixpreis.",
   priv_page_p3: "Kein Stundenhonorar. Kein Risiko. Nur ein fairer, fester Preis.",
   priv_page_p4:
-    "Als eine der führenden Umzugsfirmen in Wien bietet BAK Transport Privatumzüge in ganz Wien und Umgebung an — zuverlässig, versichert und zum Fixpreis. Unser Umzugsservice Wien umfasst auch das professionelle Verpacken, den Transport und den kompletten Aufbau Ihrer Möbel am neuen Standort.",
+    "BAK Transport bietet Privatumzüge in ganz Wien und Umgebung an — zuverlässig, versichert und zum Fixpreis. Unser Umzugsservice Wien umfasst auch das professionelle Verpacken, den Transport und den kompletten Aufbau Ihrer Möbel am neuen Standort.",
+  priv_page_p5:
+    "Beim Verpacken setzen wir auf robuste Umzugskartons, Möbeldecken, Stretchfolie für Polstermöbel und Spezialkartons für Kleidung, Geschirr und Bilder. Elektrogeräte werden separat gesichert, empfindliche Gegenstände wie Lampen oder Spiegel einzeln gepolstert — so kommt bei Ihnen an, was verpackt wurde, unbeschädigt.",
+  priv_page_p6:
+    "Was Ihren Fixpreis beeinflusst: Wohnfläche und Zimmeranzahl, Etage und Aufzugssituation an beiden Adressen, die Entfernung zwischen alter und neuer Wohnung sowie Zusatzleistungen wie die Organisation einer Halteverbotszone, Möbelmontage oder Entrümpelung. All das besprechen wir bei der kostenlosen Besichtigung — danach kennen Sie den Endpreis, nicht erst am Umzugstag.",
   priv_page_check1: "Kostenlose Vor-Ort-Besichtigung",
   priv_page_check2: "Verbindlicher Fixpreis nach Besichtigung",
   priv_page_check3: "Professionelles Verpacken auf Wunsch",
@@ -726,6 +739,9 @@ const de = {
   priv_page_faq3_q: "Kann ich auch nur einzelne Leistungen buchen?",
   priv_page_faq3_a:
     "Ja. Wir bieten auch Teilleistungen an — z.B. nur Transport ohne Verpackung, oder nur Möbelmontage ohne Umzug. Fragen Sie einfach an.",
+  priv_page_faq4_q: "Was ist im Fixpreis enthalten?",
+  priv_page_faq4_a:
+    "An- und Abfahrt, Be- und Entladen, der Transport selbst sowie De- und Remontage der von uns ab- und aufgebauten Möbel. Verpackungsmaterial und Zusatzleistungen wie Entrümpelung oder Halteverbotszone besprechen wir vorab und weisen sie klar im Angebot aus — keine Überraschungen am Umzugstag.",
   priv_page_cta_h2: "Privatumzug anfragen",
 
   // Firmenumzug subpage
@@ -1508,10 +1524,10 @@ const de = {
     "Besondere Gegenstände können vorab besprochen und sauber in den Ablauf aufgenommen werden.",
   versicherung_card3_title: "Absichern",
   versicherung_card3_text:
-    "Wir arbeiten verantwortungsvoll und erklären Ihnen transparent, wie Ihr Umzug abgesichert ist.",
+    "Ihr Hausrat ist während des Transports bis zu €100.000 vollversichert — transparent und ohne versteckte Ausnahmen.",
   versicherung_faq1_q: "Sind meine Möbel beim Umzug versichert?",
   versicherung_faq1_a:
-    "Ja, der Transport wird mit Versicherung geplant. Die genauen Bedingungen besprechen wir vor Auftragserteilung.",
+    "Ja, Ihr Hausrat ist während des gesamten Transports bis zu €100.000 vollversichert. Die genauen Bedingungen besprechen wir vor Auftragserteilung.",
   versicherung_faq2_q: "Muss ich empfindliche Gegenstände selbst verpacken?",
   versicherung_faq2_a:
     "Sie können selbst vorbereiten, wir können aber auch Verpackung und Schutzmaterial übernehmen.",
@@ -1924,7 +1940,7 @@ const de = {
     "Ob kompletter Umzug, Kleintransport einzelner Möbelstücke, Klaviertransport oder Firmenumzug: Wir übernehmen Transporte jeder Größe in allen 23 Wiener Bezirken sowie österreichweit und international.",
   transportwien_badge1: "€100.000 Vollversicherung",
   transportwien_badge2: "Rückmeldung in 60 Minuten",
-  transportwien_badge3: "4,9 Sterne Bewertung",
+  transportwien_badge3: "5,0 Sterne Bewertung",
   transportwien_badge4: "Alle 23 Wiener Bezirke",
   transportwien_services_h2: "Alle Transport-Leistungen in Wien im Überblick",
   transportwien_services_sub:
@@ -2187,7 +2203,16 @@ const en: typeof de = {
   footer_leistungen: "Services",
   footer_regionen: "Regions",
   footer_unternehmen: "Company",
-  footer_copyright: "© 2025 BAK Transport Wien. All rights reserved.",
+  footer_copyright_suffix: "BAK Transport Wien. All rights reserved.",
+
+  // 404 Page
+  notfound_label: "Error 404",
+  notfound_title: "This page could not be found",
+  notfound_subtitle:
+    "The link may be outdated or the page may have been moved. Use one of the links below to keep going.",
+  notfound_cta_home: "Go to Homepage",
+  notfound_cta_contact: "Get in Touch",
+  notfound_popular_heading: "Popular Pages",
 
   // BenefitsSection
   benefits_label: "Benefits with BAK Transport",
@@ -2666,7 +2691,11 @@ const en: typeof de = {
     "We work in all 23 Viennese districts and throughout Lower Austria. Whether studio apartment or large house — you receive a binding fixed price after the free inspection.",
   priv_page_p3: "No hourly fee. No risk. Just a fair, fixed price.",
   priv_page_p4:
-    "As one of the leading moving companies in Vienna, BAK Transport offers private moves throughout Vienna and surroundings — reliably, insured and at a fixed price. Our moving service Vienna also includes professional packing, transport and the complete assembly of your furniture at the new location.",
+    "BAK Transport offers private moves throughout Vienna and surroundings — reliably, insured and at a fixed price. Our moving service Vienna also includes professional packing, transport and the complete assembly of your furniture at the new location.",
+  priv_page_p5:
+    "For packing, we use sturdy moving boxes, furniture blankets, stretch film for upholstered furniture, and specialty boxes for clothing, dishes and artwork. Electronics are secured separately, and fragile items like lamps or mirrors are individually padded — so what gets packed arrives undamaged.",
+  priv_page_p6:
+    "What affects your fixed price: living space and number of rooms, floor and elevator access at both addresses, the distance between your old and new home, and extra services such as arranging a no-parking zone, furniture assembly, or clearance. We go through all of this during the free inspection — so you know the final price before moving day, not after.",
   priv_page_check1: "Free on-site inspection",
   priv_page_check2: "Binding fixed price after inspection",
   priv_page_check3: "Professional packing on request",
@@ -2703,6 +2732,9 @@ const en: typeof de = {
   priv_page_faq3_q: "Can I also book only individual services?",
   priv_page_faq3_a:
     "Yes. We also offer partial services — e.g. transport only without packing, or just furniture assembly without a move. Simply ask.",
+  priv_page_faq4_q: "What's included in the fixed price?",
+  priv_page_faq4_a:
+    "Travel to and from the site, loading and unloading, the transport itself, and disassembly/reassembly of any furniture we take apart. Packing materials and extras like clearance or a no-parking zone are discussed upfront and listed clearly in the quote — no surprises on moving day.",
   priv_page_cta_h2: "Request Private Move",
 
   // Firmenumzug subpage
@@ -3480,10 +3512,10 @@ const en: typeof de = {
     "Special items can be discussed in advance and cleanly incorporated into the process.",
   versicherung_card3_title: "Protect",
   versicherung_card3_text:
-    "We work responsibly and explain transparently how your move is protected.",
+    "Your belongings are fully insured up to €100,000 during transport — transparent, with no hidden exceptions.",
   versicherung_faq1_q: "Is my furniture insured during the move?",
   versicherung_faq1_a:
-    "Yes, transport is planned with insurance. We discuss the exact terms before the order is placed.",
+    "Yes, your belongings are fully insured up to €100,000 for the entire transport. We discuss the exact terms before the order is placed.",
   versicherung_faq2_q: "Do I have to pack fragile items myself?",
   versicherung_faq2_a:
     "You can prepare them yourself, but we can also take care of packaging and protective materials.",
@@ -3895,7 +3927,7 @@ const en: typeof de = {
     "Whether it's a complete move, a small transport of a single piece of furniture, a piano transport, or an office relocation: we handle transports of any size in all 23 Vienna districts as well as throughout Austria and internationally.",
   transportwien_badge1: "€100,000 Full Insurance",
   transportwien_badge2: "Response in 60 Minutes",
-  transportwien_badge3: "4.9 Star Rating",
+  transportwien_badge3: "5.0 Star Rating",
   transportwien_badge4: "All 23 Vienna Districts",
   transportwien_services_h2: "All Transport Services in Vienna at a Glance",
   transportwien_services_sub:

@@ -3,7 +3,7 @@ import { StructuredData } from "@/components/StructuredData";
 import { NotfallumzugPageClient } from "./NotfallumzugPageClient";
 
 export const metadata: Metadata = {
-  title: "Notfallumzug Wien | Kurzfristig & 24h | BAK Transport",
+  title: "Notfallumzug Wien | Kurzfristig & 24h",
   description: "✓ Notfallumzug Wien: BAK Transport reagiert kurzfristig – oft noch am selben Tag. 24/7 erreichbar, kein Notfallaufschlag, verbindlicher Fixpreis. Jetzt anrufen!",
   alternates: { canonical: "https://www.baktransport.at/leistungen/notfallumzug" },
 };
@@ -17,10 +17,18 @@ const breadcrumbSchema = {
   ],
 };
 
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Notfallumzug Wien — BAK Transport",
+  provider: { "@id": "https://www.baktransport.at/#business" },
+};
+
 export default function NotfallumzugPage() {
   return (
     <>
       <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={serviceSchema} />
       <NotfallumzugPageClient />
     </>
   );

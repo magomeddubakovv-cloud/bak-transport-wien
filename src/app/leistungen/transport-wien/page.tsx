@@ -3,7 +3,7 @@ import { StructuredData } from "@/components/StructuredData";
 import { TransportWienPageClient } from "./TransportWienPageClient";
 
 export const metadata: Metadata = {
-  title: "Transport Wien | Transportunternehmen für Umzug & Möbeltransport | BAK Transport",
+  title: "Transport Wien | Transportunternehmen für Umzug & Möbeltransport",
   description: "✓ Transport Wien: Ihr Transportunternehmen für Privatumzug, Firmenumzug, Möbeltransport, Kleintransporte & Schwerlasttransport. Fixpreis, €100.000 Versicherung, alle 23 Bezirke. Jetzt anfragen!",
   alternates: { canonical: "https://www.baktransport.at/leistungen/transport-wien" },
 };
@@ -17,10 +17,18 @@ const breadcrumbSchema = {
   ],
 };
 
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Transport Wien — BAK Transport",
+  provider: { "@id": "https://www.baktransport.at/#business" },
+};
+
 export default function TransportWienPage() {
   return (
     <>
       <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={serviceSchema} />
       <TransportWienPageClient />
     </>
   );

@@ -3,7 +3,7 @@ import { StructuredData } from "@/components/StructuredData";
 import { KuechenmontagPageClient } from "./KuechenmontagPageClient";
 
 export const metadata: Metadata = {
-  title: "Küchenmontage Wien | IKEA, Nolte, Nobilia ab €380 | BAK Transport",
+  title: "Küchenmontage Wien | IKEA, Nolte, Nobilia ab €380",
   description: "✓ Küchenmontage Wien ab €380 – BAK Transport montiert alle Küchenmarken: IKEA, Nolte, Nobilia, Häcker. Inkl. Elektro- & Wasseranschluss, 2 Jahre Garantie.",
   alternates: { canonical: "https://www.baktransport.at/leistungen/kuechenmontage" },
 };
@@ -17,10 +17,18 @@ const breadcrumbSchema = {
   ],
 };
 
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Küchenmontage Wien — BAK Transport",
+  provider: { "@id": "https://www.baktransport.at/#business" },
+};
+
 export default function KuechenmontagePage() {
   return (
     <>
       <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={serviceSchema} />
       <KuechenmontagPageClient />
     </>
   );

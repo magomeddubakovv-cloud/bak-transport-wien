@@ -3,7 +3,7 @@ import { StructuredData } from "@/components/StructuredData";
 import { VorteilePageClient } from "./VorteilePageClient";
 
 export const metadata: Metadata = {
-  title: "Vorteile einer seriösen Umzugsfirma | BAK Transport Wien",
+  title: "Vorteile einer seriösen Umzugsfirma",
   description:
     "✓ Seriöse Umzugsfirma erkennen: Gewerbeberechtigung, Firmenbucheintrag, €100.000 Versicherung, Fixpreis nach Besichtigung. Vorteile von BAK Transport gegenüber Eigenregie & unseriösen Anbietern.",
   alternates: { canonical: "https://www.baktransport.at/vorteile" },

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { Calendar, Mail, Check, MapPin, Clock, Shield, Star } from "lucide-react";
 import { PageLayout } from "@/components/PageLayout";
 import { AblaufSection } from "@/components/AblaufSection";
@@ -202,17 +203,17 @@ export function NoeOrtPageClient({ ort }: Props) {
             {NOE_ORTE
               .filter(o => o.slug !== ort.slug)
               .map(o => (
-                <a key={o.slug} href={`/regionen/niederoesterreich/${o.slug}`}
+                <Link key={o.slug} href={`/regionen/niederoesterreich/${o.slug}`}
                   className="flex items-center justify-center rounded-lg px-3 py-2 text-sm font-medium text-center transition-colors hover:opacity-80"
                   style={{ backgroundColor: "#F3F4F6", color: "#374151", textDecoration: "none" }}>
                   {o.name}
-                </a>
+                </Link>
               ))}
-            <a href="/regionen/niederoesterreich"
+            <Link href="/regionen/niederoesterreich"
               className="flex items-center justify-center rounded-lg px-3 py-2 text-sm font-medium text-center transition-colors hover:opacity-80"
               style={{ backgroundColor: "#FFF7ED", color: "#C2410C", textDecoration: "none" }}>
               {t.noe_ort_hub_link}
-            </a>
+            </Link>
           </div>
         </div>
       </section>

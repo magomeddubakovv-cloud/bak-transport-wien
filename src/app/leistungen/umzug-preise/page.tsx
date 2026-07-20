@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { StructuredData } from "@/components/StructuredData";
 import { UmzugPreisePageClient } from "./UmzugPreisePageClient";
 
 export const metadata: Metadata = {
@@ -8,6 +9,28 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://www.baktransport.at/leistungen/umzug-preise" },
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "BAK Transport Wien", item: "https://www.baktransport.at" },
+    { "@type": "ListItem", position: 2, name: "Umzug Preise Wien", item: "https://www.baktransport.at/leistungen/umzug-preise" },
+  ],
+};
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Umzug Preise Wien — BAK Transport",
+  provider: { "@id": "https://www.baktransport.at/#business" },
+};
+
 export default function UmzugPreisePage() {
-  return <UmzugPreisePageClient />;
+  return (
+    <>
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={serviceSchema} />
+      <UmzugPreisePageClient />
+    </>
+  );
 }

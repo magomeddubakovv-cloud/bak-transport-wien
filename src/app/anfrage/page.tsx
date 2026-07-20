@@ -3,7 +3,7 @@ import { StructuredData } from "@/components/StructuredData";
 import { AnfragePageClient } from "./AnfragePageClient";
 
 export const metadata: Metadata = {
-  title: "Angebot anfragen | Kostenlos & unverbindlich | BAK Transport Wien",
+  title: "Angebot anfragen | Kostenlos & unverbindlich",
   description: "Jetzt kostenloses Umzugsangebot von BAK Transport Wien anfragen. Fixpreis in 60 Minuten. Privatumzug, Firmenumzug, Möbelmontage — wir melden uns sofort.",
   alternates: { canonical: "https://www.baktransport.at/anfrage" },
 };
