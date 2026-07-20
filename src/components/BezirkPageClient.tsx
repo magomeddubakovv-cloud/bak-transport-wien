@@ -68,7 +68,7 @@ export function BezirkPageClient({ bezirk }: Props) {
               <h3 className="text-lg font-bold mb-6" style={{ color: "#111827" }}>
                 {t.bezirk_checklist_h3}
               </h3>
-              <ul className="space-y-4">
+              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-4">
                 {[
                   t.bezirk_checklist_1,
                   t.bezirk_checklist_2,

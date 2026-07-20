@@ -45,7 +45,7 @@ export function DeutschlandPageClient() {
               <div className="relative rounded-2xl overflow-hidden h-48 md:h-72">
                 <Image src="/images/photos/regionen-transport.png" alt="Umzug nach Deutschland mit BAK Transport" fill sizes="(max-width: 768px) 100vw, 45vw" className="object-cover object-center" />
               </div>
-              <ul className="space-y-4">
+              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-4">
                 {checklistItems.map((item) => (
                   <li key={item} className="flex items-center gap-3">
                     <Check className="w-5 h-5 shrink-0" style={{ color: "#C2410C" }} />
