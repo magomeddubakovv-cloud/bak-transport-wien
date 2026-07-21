@@ -63,7 +63,7 @@ export function NoeOrtPageClient({ ort }: Props) {
               <h3 className="text-lg font-bold mb-6" style={{ color: "#111827" }}>
                 {t.bezirk_checklist_h3}
               </h3>
-              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-4">
+              <ul className="columns-1 sm:columns-2 gap-x-6">
                 {[
                   t.bezirk_checklist_1,
                   t.bezirk_checklist_2,
@@ -73,7 +73,7 @@ export function NoeOrtPageClient({ ort }: Props) {
                   t.noe_ort_checklist_besichtigung,
                   t.bezirk_checklist_8,
                 ].map((item) => (
-                  <li key={item} className="flex items-center gap-3">
+                  <li key={item} className="flex items-center gap-3 mb-4 break-inside-avoid">
                     <Check className="w-5 h-5 shrink-0" style={{ color: "#C2410C" }} />
                     <span style={{ color: "#374151" }}>{item}</span>
                   </li>
