@@ -27,7 +27,7 @@ const jobLocation = {
   "@type": "Place",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Zwinzstraße 15",
+    streetAddress: "Zwinzstraße 15-21",
     addressLocality: "Wien",
     addressRegion: "Wien",
     postalCode: "1160",

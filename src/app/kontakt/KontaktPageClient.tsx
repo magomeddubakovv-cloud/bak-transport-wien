@@ -12,7 +12,7 @@ export function KontaktPageClient() {
   const contacts = [
     { icon: "📞", title: t.kontakt_tel_title, value: "+43 681 10723047", sub: t.kontakt_tel_sub, href: "tel:+4368110723047" },
     { icon: "✉️", title: t.kontakt_email_title, value: "office@baktransport.at", sub: t.kontakt_email_sub, href: "mailto:office@baktransport.at" },
-    { icon: "📍", title: t.kontakt_addr_title, value: "Zwinzstraße 15, 1160 Wien", sub: t.kontakt_addr_sub, href: "https://www.google.com/maps/search/?api=1&query=48.20643,16.30546" },
+    { icon: "📍", title: t.kontakt_addr_title, value: "Zwinzstraße 15-21, 1160 Wien", sub: t.kontakt_addr_sub, href: "https://www.google.com/maps/search/?api=1&query=48.20643,16.30546" },
   ];
 
   const cards = [

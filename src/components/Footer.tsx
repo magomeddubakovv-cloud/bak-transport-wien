@@ -110,7 +110,7 @@ export function Footer() {
               className="mt-4 not-italic"
               style={{ color: "rgba(255,255,255,0.65)", fontSize: "14px", lineHeight: 1.7 }}
             >
-              Zwinzstraße 15<br />
+              Zwinzstraße 15-21<br />
               1160 Wien
               <br />
               <a

@@ -70,7 +70,7 @@ const localBusinessSchema = {
   hasMap: "https://www.google.com/maps/search/?api=1&query=48.20643,16.30546",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Zwinzstraße 15",
+    streetAddress: "Zwinzstraße 15-21",
     addressLocality: "Wien",
     addressRegion: "Wien",
     postalCode: "1160",

@@ -13,7 +13,7 @@ export function ImpressumPageClient() {
       <section className="py-12 md:py-20 bg-white">
         <div className="max-w-3xl mx-auto px-4 md:px-6 prose" style={{ color: "#374151", lineHeight: "1.8" }}>
           <h2 style={{ color: "#111827" }}>{t.impressum_h2_1}</h2>
-          <p><strong>BAK Transport GmbH</strong><br />Zwinzstraße 15<br />1160 Wien<br />Österreich</p>
+          <p><strong>BAK Transport GmbH</strong><br />Zwinzstraße 15-21<br />1160 Wien<br />Österreich</p>
           <p><strong>{t.impressum_tel}</strong> +43 681 10723047<br /><strong>{t.impressum_email_label}</strong> office@baktransport.at</p>
           <p><strong>{t.impressum_subject}</strong> {t.impressum_subject_value}</p>
           <p><strong>{t.impressum_uid}</strong> ATU12345678</p>
