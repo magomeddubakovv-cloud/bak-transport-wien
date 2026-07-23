@@ -3,7 +3,7 @@ import { AgbPageClient } from "./AgbPageClient";
 
 export const metadata: Metadata = {
   title: "AGB | Allgemeine Geschäftsbedingungen",
-  description: "Allgemeine Geschäftsbedingungen der BAK Transport GmbH Wien.",
+  description: "Allgemeine Geschäftsbedingungen von BAK Transport Wien.",
   robots: { index: false, follow: false },
 };
 

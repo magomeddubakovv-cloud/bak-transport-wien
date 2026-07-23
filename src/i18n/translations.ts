@@ -621,7 +621,7 @@ const de = {
   datenschutz_h2: "2. Datenerfassung auf dieser Website",
   datenschutz_responsible_q: "Wer ist verantwortlich für die Datenerfassung?",
   datenschutz_responsible_a:
-    "Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber: BAK Transport GmbH, Zwinzstraße 15-21, 1160 Wien, office@baktransport.at",
+    "Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber: BAK Transport, Zwinzstraße 15-21, 1160 Wien, office@baktransport.at",
   datenschutz_collect_q: "Wie erfassen wir Ihre Daten?",
   datenschutz_collect_a:
     "Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen (z.B. über das Kontaktformular). Andere Daten werden automatisch beim Besuch der Website durch unsere IT-Systeme erfasst (Browserdaten, Zugriffszeitpunkt).",
@@ -633,14 +633,14 @@ const de = {
     "Diese Website wird bei Vercel Inc. gehostet. Details finden Sie in der Datenschutzerklärung von Vercel unter vercel.com/legal/privacy-policy.",
   datenschutz_h5: "5. Kontakt",
   datenschutz_contact:
-    "BAK Transport GmbH · Zwinzstraße 15-21, 1160 Wien · office@baktransport.at · +43 681 10723047",
+    "BAK Transport · Zwinzstraße 15-21, 1160 Wien · office@baktransport.at · +43 681 10723047",
 
   // AGB page
   agb_label: "RECHTLICHES",
   agb_title: "Allgemeine Geschäftsbedingungen",
   agb_h1: "1. Geltungsbereich",
   agb_p1:
-    "Diese Allgemeinen Geschäftsbedingungen (AGB) gelten für alle Verträge zwischen der BAK Transport GmbH, Zwinzstraße 15-21, 1160 Wien (nachfolgend „BAK Transport“) und ihren Kunden über Umzugs-, Transport-, Möbel- und Küchenmontage- sowie Entrümpelungsleistungen. Abweichende Bedingungen des Kunden werden nicht anerkannt, es sei denn, BAK Transport stimmt ihrer Geltung ausdrücklich schriftlich zu.",
+    "Diese Allgemeinen Geschäftsbedingungen (AGB) gelten für alle Verträge zwischen BAK Transport, Zwinzstraße 15-21, 1160 Wien (nachfolgend „BAK Transport“) und ihren Kunden über Umzugs-, Transport-, Möbel- und Küchenmontage- sowie Entrümpelungsleistungen. Abweichende Bedingungen des Kunden werden nicht anerkannt, es sei denn, BAK Transport stimmt ihrer Geltung ausdrücklich schriftlich zu.",
   agb_h2: "2. Vertragsschluss und Kostenvoranschlag",
   agb_p2:
     "Ein Vertrag kommt durch die schriftliche oder mündliche Bestätigung eines Angebots durch den Kunden zustande. Kostenvoranschläge basieren auf den bei der Besichtigung oder telefonischen Aufnahme angegebenen Informationen. Weicht der tatsächliche Leistungsumfang wesentlich davon ab, kann der Preis nach vorheriger Information des Kunden angepasst werden.",
@@ -2615,7 +2615,7 @@ const en: typeof de = {
   datenschutz_h2: "2. Data Collection on This Website",
   datenschutz_responsible_q: "Who is responsible for data collection?",
   datenschutz_responsible_a:
-    "The data processing on this website is carried out by the website operator: BAK Transport GmbH, Zwinzstraße 15-21, 1160 Vienna, office@baktransport.at",
+    "The data processing on this website is carried out by the website operator: BAK Transport, Zwinzstraße 15-21, 1160 Vienna, office@baktransport.at",
   datenschutz_collect_q: "How do we collect your data?",
   datenschutz_collect_a:
     "Your data is collected on the one hand by you providing it to us (e.g. via the contact form). Other data is automatically collected by our IT systems when you visit the website (browser data, access time).",
@@ -2627,14 +2627,14 @@ const en: typeof de = {
     "This website is hosted by Vercel Inc. Details can be found in Vercel's privacy policy at vercel.com/legal/privacy-policy.",
   datenschutz_h5: "5. Contact",
   datenschutz_contact:
-    "BAK Transport GmbH · Zwinzstraße 15-21, 1160 Vienna · office@baktransport.at · +43 681 10723047",
+    "BAK Transport · Zwinzstraße 15-21, 1160 Vienna · office@baktransport.at · +43 681 10723047",
 
   // AGB page
   agb_label: "LEGAL",
   agb_title: "Terms and Conditions",
   agb_h1: "1. Scope",
   agb_p1:
-    "These Terms and Conditions (T&Cs) apply to all contracts between BAK Transport GmbH, Zwinzstraße 15-21, 1160 Vienna (\"BAK Transport\") and its customers for moving, transport, furniture and kitchen assembly, and clearance services. Deviating terms proposed by the customer are not recognized unless BAK Transport expressly agrees to them in writing.",
+    "These Terms and Conditions (T&Cs) apply to all contracts between BAK Transport, Zwinzstraße 15-21, 1160 Vienna (\"BAK Transport\") and its customers for moving, transport, furniture and kitchen assembly, and clearance services. Deviating terms proposed by the customer are not recognized unless BAK Transport expressly agrees to them in writing.",
   agb_h2: "2. Conclusion of Contract and Quotes",
   agb_p2:
     "A contract is formed once the customer confirms an offer in writing or verbally. Quotes are based on the information provided during the on-site inspection or telephone intake. If the actual scope of work deviates significantly from this, the price may be adjusted after informing the customer in advance.",

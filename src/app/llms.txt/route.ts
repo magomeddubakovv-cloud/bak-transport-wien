@@ -54,7 +54,7 @@ BAK Transport ist in allen 23 Wiener Bezirken, Niederösterreich und darüber hi
 
 - [Impressum](${BASE}/impressum): Angaben gemäß § 25 Mediengesetz.
 - [Datenschutz](${BASE}/datenschutz): Datenschutzerklärung gemäß DSGVO.
-- [AGB](${BASE}/agb): Allgemeine Geschäftsbedingungen der BAK Transport GmbH Wien.
+- [AGB](${BASE}/agb): Allgemeine Geschäftsbedingungen von BAK Transport Wien.
 `;
 
 export function GET() {

@@ -3,7 +3,7 @@ import { ImpressumPageClient } from "./ImpressumPageClient";
 
 export const metadata: Metadata = {
   title: "Impressum",
-  description: "Impressum der BAK Transport GmbH Wien – Angaben gemäß § 25 Mediengesetz.",
+  description: "Impressum von BAK Transport Wien – Angaben gemäß § 25 Mediengesetz.",
   robots: { index: false, follow: false },
 };
 

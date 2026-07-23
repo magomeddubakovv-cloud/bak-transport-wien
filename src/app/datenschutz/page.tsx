@@ -3,7 +3,7 @@ import { DatenschutzPageClient } from "./DatenschutzPageClient";
 
 export const metadata: Metadata = {
   title: "Datenschutz | DSGVO",
-  description: "Datenschutzerklärung der BAK Transport GmbH Wien gemäß DSGVO.",
+  description: "Datenschutzerklärung von BAK Transport Wien gemäß DSGVO.",
   robots: { index: false, follow: false },
 };
 
