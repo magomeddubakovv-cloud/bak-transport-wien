@@ -89,8 +89,8 @@ export function Footer() {
             <div className="mt-6 flex gap-3">
               {[
                 { Icon: LinkedInIcon, label: "LinkedIn", href: "https://www.linkedin.com/company/bak-transport" },
-                { Icon: InstagramIcon, label: "Instagram", href: "https://www.instagram.com/baktransport" },
-                { Icon: FacebookIcon, label: "Facebook", href: "https://www.facebook.com/baktransport" },
+                { Icon: InstagramIcon, label: "Instagram", href: "https://www.instagram.com/bak.transport.wien" },
+                { Icon: FacebookIcon, label: "Facebook", href: "https://www.facebook.com/profile.php?id=615920792853341" },
               ].map(({ Icon, label, href }) => (
                 <a
                   key={label}

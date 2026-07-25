@@ -112,8 +112,8 @@ const localBusinessSchema = {
   },
   sameAs: [
     "https://www.linkedin.com/company/bak-transport",
-    "https://www.instagram.com/baktransport",
-    "https://www.facebook.com/baktransport",
+    "https://www.instagram.com/bak.transport.wien",
+    "https://www.facebook.com/profile.php?id=615920792853341",
   ],
 };
 
