@@ -89,7 +89,7 @@ export function KontaktPageClient() {
           <div className="rounded-2xl overflow-hidden shadow-sm" style={{ border: "1px solid #E5E7EB" }}>
             <iframe
               title="BAK Transport Wien — Zwinzstraße 15-21, 1160 Wien"
-              src="https://www.google.com/maps?q=48.20643,16.30546&hl=de&z=15&output=embed"
+              src="https://www.google.com/maps?q=Zwinzstra%C3%9Fe%2015-21%2C%201160%20Wien%2C%20%C3%96sterreich&hl=de&z=15&output=embed"
               width="100%"
               height="400"
               style={{ border: 0, display: "block" }}
