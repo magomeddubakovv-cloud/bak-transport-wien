@@ -21,16 +21,16 @@ export function HeroSection() {
       className="min-h-[calc(100svh-88px)] md:min-h-screen flex flex-col justify-center"
       style={{ backgroundColor: "#FFF7ED", position: "relative", overflow: "hidden" }}
     >
-      {/* Background photo */}
+      {/* Background photo — decorative (opacity 0.08), kept out of the LCP/preload path */}
       <Image
         src="/images/photos/hero-movers.jpg"
-        alt="BAK Transport — professionelle Umzüge in Wien"
-        title="BAK Transport Wien — Professionelle Umzugsfirma"
+        alt=""
+        aria-hidden="true"
         fill
         sizes="100vw"
+        quality={20}
         className="object-cover object-center"
         style={{ opacity: 0.08 }}
-        priority
       />
 
       {/* Gradient overlay */}
