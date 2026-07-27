@@ -1,11 +1,12 @@
 "use client";
 
 import {
-  Shield, Clock, Star, MapPin, Globe, ArrowRight,
+  Shield, Clock, Star, MapPin, ArrowRight,
   Home, Building2, Sofa, ChefHat, Weight, Zap, Trash2, Calculator,
   Mail, Calendar,
 } from "lucide-react";
 import { PageLayout } from "@/components/PageLayout";
+import { FlagDE, FlagCH, FlagEU } from "@/components/FlagIcons";
 import { useLang } from "@/contexts/LanguageContext";
 import { translations } from "@/i18n/translations";
 
@@ -82,6 +83,7 @@ export function TransportWienPageClient() {
 
   const regions = [
     {
+      type: "icon" as const,
       icon: MapPin,
       href: "/regionen/wien",
       label: lang === "en" ? "Vienna (all districts)" : "Wien (alle Bezirke)",
@@ -90,6 +92,7 @@ export function TransportWienPageClient() {
         : "Transport und Umzug in allen 23 Wiener Bezirken, von der Innenstadt bis zu den Außenbezirken.",
     },
     {
+      type: "icon" as const,
       icon: MapPin,
       href: "/regionen/niederoesterreich",
       label: lang === "en" ? "Lower Austria" : "Niederösterreich",
@@ -98,6 +101,7 @@ export function TransportWienPageClient() {
         : "Transporte zwischen Wien und Niederösterreich – von Klosterneuburg bis Wiener Neustadt.",
     },
     {
+      type: "icon" as const,
       icon: MapPin,
       href: "/regionen/oesterreich",
       label: lang === "en" ? "Austria" : "Österreich",
@@ -106,7 +110,8 @@ export function TransportWienPageClient() {
         : "Österreichweite Transporte mit eigener LKW-Flotte, ohne Subunternehmer.",
     },
     {
-      icon: Globe,
+      type: "flag" as const,
+      icon: FlagDE,
       href: "/regionen/deutschland",
       label: lang === "en" ? "Germany" : "Deutschland",
       desc: lang === "en"
@@ -114,7 +119,8 @@ export function TransportWienPageClient() {
         : "Internationale Transporte nach München, Berlin, Hamburg und weitere deutsche Städte.",
     },
     {
-      icon: Globe,
+      type: "flag" as const,
+      icon: FlagCH,
       href: "/regionen/schweiz",
       label: lang === "en" ? "Switzerland" : "Schweiz",
       desc: lang === "en"
@@ -122,7 +128,8 @@ export function TransportWienPageClient() {
         : "Grenzüberschreitender Transport in die Schweiz, inklusive Zollberatung auf Anfrage.",
     },
     {
-      icon: Globe,
+      type: "flag" as const,
+      icon: FlagEU,
       href: "/regionen/grenzueberschreitend",
       label: lang === "en" ? "Cross-Border" : "Grenzüberschreitend",
       desc: lang === "en"
@@ -201,7 +208,9 @@ export function TransportWienPageClient() {
             {regions.map((r) => (
               <a key={r.href} href={r.href} className="group flex flex-col rounded-2xl p-6"
                 style={{ backgroundColor: "#F9FAFB", border: "1px solid #E5E7EB", textDecoration: "none" }}>
-                <r.icon className="w-6 h-6 mb-4" style={{ color: "#C2410C" }} />
+                {r.type === "flag"
+                  ? <r.icon className="w-8 h-6 mb-4 rounded-sm border border-gray-200 shrink-0" />
+                  : <r.icon className="w-6 h-6 mb-4" style={{ color: "#C2410C" }} />}
                 <h3 className="font-semibold mb-2" style={{ color: "#111827" }}>{r.label}</h3>
                 <p className="text-sm mb-4 flex-1" style={{ color: "#6B7280", lineHeight: 1.6 }}>{r.desc}</p>
                 <span className="inline-flex items-center gap-1.5 text-sm font-semibold" style={{ color: "#C2410C" }}>
