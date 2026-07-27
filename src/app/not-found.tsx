@@ -59,7 +59,7 @@ export default function NotFound() {
                   fontSize: "16px",
                   padding: "16px 32px",
                   textDecoration: "none",
-                  minHeight: "44px",
+                  minHeight: "48px",
                 }}
               >
                 <Home size={20} />
@@ -73,7 +73,7 @@ export default function NotFound() {
                   fontSize: "16px",
                   padding: "16px 32px",
                   textDecoration: "none",
-                  minHeight: "44px",
+                  minHeight: "48px",
                 }}
               >
                 <Mail size={20} />

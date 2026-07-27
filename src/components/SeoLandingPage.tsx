@@ -40,6 +40,7 @@ interface SeoLandingPageProps {
   title: string;
   subtitle: string;
   intro: string;
+  afterIntro?: React.ReactNode;
   sections: SeoSection[];
   cards?: SeoCard[];
   faqs?: SeoFaq[];
@@ -51,6 +52,7 @@ export function SeoLandingPage({
   title,
   subtitle,
   intro,
+  afterIntro,
   sections,
   cards = [],
   faqs = [],
@@ -67,6 +69,8 @@ export function SeoLandingPage({
             <p className="text-lg leading-[1.8]" style={{ color: "#374151" }}>
               {intro}
             </p>
+
+            {afterIntro}
 
             <div className="mt-10 space-y-10">
               {sections.map((section) => (

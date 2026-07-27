@@ -1,6 +1,7 @@
 "use client";
 
 import { SeoLandingPage } from "@/components/SeoLandingPage";
+import { PriceCalculator } from "@/components/PriceCalculator";
 import { useLang } from "@/contexts/LanguageContext";
 import { translations } from "@/i18n/translations";
 
@@ -14,6 +15,7 @@ export function UmzugPreisePageClient() {
       title={t.umzugpreise_title}
       subtitle={t.umzugpreise_subtitle}
       intro={t.umzugpreise_intro}
+      afterIntro={<PriceCalculator />}
       sections={[
         {
           heading: t.umzugpreise_pricetable_heading,

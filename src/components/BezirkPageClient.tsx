@@ -1,6 +1,7 @@
 "use client";
 
-import { Calendar, Mail, Check, MapPin, Clock, Shield, Star } from "lucide-react";
+import Link from "next/link";
+import { Calendar, Mail, Check, MapPin, Clock, Shield, Star, ArrowRight } from "lucide-react";
 import { PageLayout } from "@/components/PageLayout";
 import { AblaufSection } from "@/components/AblaufSection";
 import { useLang } from "@/contexts/LanguageContext";
@@ -17,6 +18,15 @@ export function BezirkPageClient({ bezirk }: Props) {
 
   const beschreibung = lang === "en" ? bezirk.beschreibungEn : bezirk.beschreibung;
   const besonderheit = lang === "en" ? bezirk.besonderheitEn : bezirk.besonderheit;
+
+  const RELATED_LINKS = [
+    { label: t.location_related_privatumzug, href: "/leistungen/privatumzug" },
+    { label: t.location_related_firmenumzug, href: "/leistungen/firmenumzug" },
+    { label: t.location_related_moebelmontage, href: "/leistungen/moebelmontage" },
+    { label: t.location_related_preise, href: "/leistungen/umzug-preise" },
+    { label: t.bezirk_related_halteverbot, href: "/ratgeber/halteverbotszone-wien" },
+    { label: t.location_related_altbau, href: "/ratgeber/altbau-umzug-wien" },
+  ];
 
   const PRICING = [
     { label: t.bezirk_price1_label, size: t.bezirk_price1_size, price: t.bezirk_price1_price, detail: t.bezirk_price1_detail },
@@ -206,8 +216,30 @@ export function BezirkPageClient({ bezirk }: Props) {
         </div>
       </section>
 
-      {/* Andere Bezirke */}
+      {/* Passende Leistungen & Ratgeber */}
       <section className="py-12 bg-white">
+        <div className="max-w-7xl mx-auto px-4 md:px-6">
+          <h3 className="text-xl font-bold mb-6" style={{ color: "#111827" }}>
+            {t.location_related_heading}
+          </h3>
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+            {RELATED_LINKS.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="group flex items-center justify-between gap-2 rounded-lg px-4 py-3 text-sm font-semibold"
+                style={{ backgroundColor: "#FFF7ED", color: "#C2410C", textDecoration: "none" }}
+              >
+                {link.label}
+                <ArrowRight className="h-4 w-4 shrink-0 transition-transform group-hover:translate-x-0.5" />
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Andere Bezirke */}
+      <section className="py-12" style={{ backgroundColor: "#F9FAFB" }}>
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <h3 className="text-xl font-bold mb-6" style={{ color: "#111827" }}>
             {t.bezirk_other_districts_h3}
@@ -218,7 +250,7 @@ export function BezirkPageClient({ bezirk }: Props) {
               .map(b => (
                 <a key={b.slug} href={`/regionen/wien/${b.slug}`}
                   className="flex items-center justify-center rounded-lg px-3 py-2 text-sm font-medium text-center transition-colors hover:opacity-80"
-                  style={{ backgroundColor: "#F3F4F6", color: "#374151", textDecoration: "none" }}>
+                  style={{ backgroundColor: "#FFFFFF", color: "#374151", border: "1px solid #E5E7EB", textDecoration: "none" }}>
                   {b.name}
                 </a>
               ))}

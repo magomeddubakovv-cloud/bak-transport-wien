@@ -83,6 +83,22 @@ export function KontaktPageClient() {
           </div>
         </div>
       </section>
+      <section className="py-12 md:py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 md:px-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 md:mb-12" style={{ color: "#9A3412" }}>{t.kontakt_map_h2}</h2>
+          <div className="rounded-2xl overflow-hidden shadow-sm" style={{ border: "1px solid #E5E7EB" }}>
+            <iframe
+              title="BAK Transport Wien — Zwinzstraße 15-21, 1160 Wien"
+              src="https://www.google.com/maps?q=48.20643,16.30546&hl=de&z=15&output=embed"
+              width="100%"
+              height="400"
+              style={{ border: 0, display: "block" }}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+          </div>
+        </div>
+      </section>
       <section className="py-12 md:py-20" style={{ backgroundColor: "#C2410C" }}>
         <div className="max-w-7xl mx-auto px-4 md:px-6 text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">{t.kontakt_cta_h2}</h2>

@@ -21,7 +21,7 @@ export function CTASection() {
           <a
             href="/anfrage"
             className="rounded-xl transition-colors flex items-center justify-center gap-2"
-            style={{ backgroundColor: "#FFFFFF", color: "#C2410C", padding: "16px 32px", fontSize: "17px", fontWeight: 800, minHeight: "44px" }}
+            style={{ backgroundColor: "#FFFFFF", color: "#C2410C", padding: "16px 32px", fontSize: "17px", fontWeight: 800, minHeight: "48px" }}
           >
             <Mail size={20} />
             {t.cta_btn1}
@@ -31,7 +31,7 @@ export function CTASection() {
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-xl transition-colors flex items-center justify-center gap-2"
-            style={{ border: "2px solid #FFFFFF", color: "#FFFFFF", padding: "16px 32px", fontSize: "17px", fontWeight: 700, minHeight: "44px" }}
+            style={{ border: "2px solid #FFFFFF", color: "#FFFFFF", padding: "16px 32px", fontSize: "17px", fontWeight: 700, minHeight: "48px" }}
           >
             <Calendar size={20} />
             {t.kontakt_cta_call_btn}

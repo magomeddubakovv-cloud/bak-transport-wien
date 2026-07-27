@@ -99,6 +99,8 @@ const localBusinessSchema = {
     { "@type": "City", name: "Wien" },
     { "@type": "State", name: "Niederösterreich" },
     { "@type": "Country", name: "Österreich" },
+    { "@type": "Country", name: "Deutschland" },
+    { "@type": "Country", name: "Schweiz" },
   ],
   priceRange: "€€",
   currenciesAccepted: "EUR",
@@ -110,10 +112,23 @@ const localBusinessSchema = {
     bestRating: "5",
     worstRating: "1",
   },
+  review: [
+    { "@type": "Review", author: { "@type": "Person", name: "Gerhard Strobl" }, reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" }, reviewBody: "Sehr professionelle Umsetzung des Umzugs. Herr Bak war zu allen Terminen sehr pünktlich und hat alle Zusagen eingehalten. Auch das Preis-Leistungs-Verhältnis war perfekt. Die Firma kann ich nur weiterempfehlen!" },
+    { "@type": "Review", author: { "@type": "Person", name: "Christoph Trummer" }, reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" }, reviewBody: "Top Service! Der Umzug hat sich zwar aufgrund unvorhersehbarer äußerer Umstände verzögert, aber das Team blieb durchgehend professionell, effizient und lösungsorientiert. Klare Empfehlung." },
+    { "@type": "Review", author: { "@type": "Person", name: "Josef Ossovsky" }, reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" }, reviewBody: "Bin mit der gesamten Abwicklung des Auftrages sehr zufrieden. Sehr höflich und zuvorkommend! Saubere und schnelle Arbeit! Jederzeit gerne wieder!" },
+    { "@type": "Review", author: { "@type": "Person", name: "Maria Huber" }, reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" }, reviewBody: "Absolut reibungsloser Ablauf von Anfang bis Ende. Das Team war freundlich, schnell und hat alles sorgfältig behandelt. Kein einziger Kratzer an den Möbeln. Sehr empfehlenswert!" },
+    { "@type": "Review", author: { "@type": "Person", name: "Thomas Weinberger" }, reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" }, reviewBody: "Firmenumzug mit BAK Transport – lief wie am Schnürchen. Pünktlich, professionell, kein Stress. Preis war fair und transparent. Definitiv wieder!" },
+    { "@type": "Review", author: { "@type": "Person", name: "Sandra Koller" }, reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" }, reviewBody: "Die Möbelmontage wurde sehr sauber und schnell erledigt. Alle Möbel wurden perfekt aufgebaut, Verpackungsmaterial wurde mitgenommen. Super Team!" },
+    { "@type": "Review", author: { "@type": "Person", name: "Andreas Fuchs" }, reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" }, reviewBody: "Notfallumzug kurzfristig organisiert und perfekt abgewickelt. Innerhalb von 24 Stunden alles erledigt. Das Team hat mich wirklich beeindruckt. Danke BAK Transport!" },
+    { "@type": "Review", author: { "@type": "Person", name: "Elena Müller" }, reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" }, reviewBody: "Küchenmontage top erledigt! Alles passt perfekt, Anschlüsse sitzen, keine Macken. Das Team war auch sehr nett und hat den Bereich danach sauber hinterlassen." },
+    { "@type": "Review", author: { "@type": "Person", name: "Peter Gruber" }, reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" }, reviewBody: "Umzug von Wien nach München super abgewickelt. Alles pünktlich geliefert, kein einziger Schaden. Für internationale Umzüge absolute Empfehlung!" },
+    { "@type": "Review", author: { "@type": "Person", name: "Katrin Bauer" }, reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" }, reviewBody: "Zweimal mit BAK Transport umgezogen – beide Male perfekt. Freundliches Team, faire Preise, keine Überraschungen auf der Rechnung. Mehr kann man nicht verlangen." },
+  ],
   sameAs: [
     "https://www.linkedin.com/company/bak-transport",
     "https://www.instagram.com/bak.transport.wien",
     "https://www.facebook.com/profile.php?id=615920792853341",
+    "https://share.google/GTtlYmGCapJhI3A34",
   ],
 };
 

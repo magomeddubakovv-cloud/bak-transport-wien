@@ -92,7 +92,7 @@ export function HeroSection() {
                     fontSize: "16px",
                     padding: "16px 32px",
                     textDecoration: "none",
-                    minHeight: "44px",
+                    minHeight: "48px",
                   }}
                 >
                   <Mail size={20} />
@@ -108,7 +108,7 @@ export function HeroSection() {
                     fontSize: "16px",
                     padding: "16px 32px",
                     textDecoration: "none",
-                    minHeight: "44px",
+                    minHeight: "48px",
                   }}
                 >
                   <Calendar size={20} />
