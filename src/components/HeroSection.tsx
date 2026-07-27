@@ -21,7 +21,8 @@ export function HeroSection() {
       className="min-h-[calc(100svh-88px)] md:min-h-screen flex flex-col justify-center"
       style={{ backgroundColor: "#FFF7ED", position: "relative", overflow: "hidden" }}
     >
-      {/* Background photo — decorative (opacity 0.08), kept out of the LCP/preload path */}
+      {/* Background photo — decorative (opacity 0.08), but full-viewport so Chrome still measures
+          it as the LCP element; keep it preloaded/high-priority and lightweight (low quality) */}
       <Image
         src="/images/photos/hero-movers.jpg"
         alt=""
@@ -31,6 +32,7 @@ export function HeroSection() {
         quality={20}
         className="object-cover object-center"
         style={{ opacity: 0.08 }}
+        priority
       />
 
       {/* Gradient overlay */}
@@ -127,7 +129,6 @@ export function HeroSection() {
                   fill
                   sizes="(min-width: 1024px) 38vw, 100vw"
                   className="object-cover"
-                  priority
                 />
               </div>
             </div>
