@@ -53,3 +53,4 @@ temp/
 *.png
 !public/**/*.png
 !src/app/icon.png
+!src/app/apple-icon.png

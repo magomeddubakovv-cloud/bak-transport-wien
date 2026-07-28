@@ -247,13 +247,18 @@ export function ReviewsSection() {
             <h2 className="text-2xl md:text-3xl font-bold" style={{ color: "#9A3412" }}>
               {t.reviews_h2}
             </h2>
-            <div className="flex items-center gap-2 mt-2">
+            <a
+              href="https://share.google/GTtlYmGCapJhI3A34"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 mt-2 w-fit hover:opacity-80 transition-opacity"
+            >
               <div className="flex gap-0.5">
                 {[1,2,3,4,5].map(i => <StarIcon key={i} />)}
               </div>
               <span className="text-sm font-semibold" style={{ color: "#111827" }}>4,5</span>
-              <span className="text-sm" style={{ color: "#6B7280" }}>{t.reviews_count}</span>
-            </div>
+              <span className="text-sm underline" style={{ color: "#6B7280" }}>{t.reviews_count}</span>
+            </a>
           </div>
 
           {/* Arrow buttons — desktop */}

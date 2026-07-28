@@ -28,6 +28,7 @@ const de = {
 
   // Hero
   hero_badge: "WIEN & ÖSTERREICH",
+  hero_h1_part1: "Umzugsfirma Wien.",
   hero_h1_part2: "Ihr Umzug.",
   hero_h1_part3: "Unser Auftrag.",
   hero_subtext:
@@ -2057,6 +2058,7 @@ const en: typeof de = {
 
   // Hero
   hero_badge: "VIENNA & AUSTRIA",
+  hero_h1_part1: "Moving Company Vienna.",
   hero_h1_part2: "Your Move.",
   hero_h1_part3: "Our Mission.",
   hero_subtext:

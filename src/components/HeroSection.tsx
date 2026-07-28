@@ -22,7 +22,8 @@ export function HeroSection() {
       style={{ backgroundColor: "#FFF7ED", position: "relative", overflow: "hidden" }}
     >
       {/* Background photo — decorative (opacity 0.08), but full-viewport so Chrome still measures
-          it as the LCP element; keep it preloaded/high-priority and lightweight (low quality) */}
+          it as the LCP element; keep it preloaded/high-priority and lightweight (low quality).
+          Next.js 16: `priority` no longer implies fetchPriority="high" — must set both explicitly. */}
       <Image
         src="/images/photos/hero-movers.jpg"
         alt=""
@@ -32,7 +33,8 @@ export function HeroSection() {
         quality={20}
         className="object-cover object-center"
         style={{ opacity: 0.08 }}
-        priority
+        preload
+        fetchPriority="high"
       />
 
       {/* Gradient overlay */}
@@ -66,7 +68,7 @@ export function HeroSection() {
                 className="mt-4 text-4xl md:text-5xl lg:text-6xl"
                 style={{ fontWeight: 900, lineHeight: 1.08, letterSpacing: 0, color: "#111827" }}
               >
-                BAK Transport.
+                {t.hero_h1_part1}
                 <br />
                 {t.hero_h1_part2}{" "}
                 <span style={{ color: "#C2410C" }}>{t.hero_h1_part3}</span>

@@ -84,8 +84,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/kontakt`, lastModified: lastModified("src/app/kontakt"), changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/faq`, lastModified: lastModified("src/app/faq"), changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/karriere`, lastModified: lastModified("src/app/karriere"), changeFrequency: "monthly", priority: 0.4 },
-    { url: `${base}/impressum`, lastModified: lastModified("src/app/impressum"), changeFrequency: "yearly", priority: 0.2 },
-    { url: `${base}/datenschutz`, lastModified: lastModified("src/app/datenschutz"), changeFrequency: "yearly", priority: 0.2 },
-    { url: `${base}/agb`, lastModified: lastModified("src/app/agb"), changeFrequency: "yearly", priority: 0.2 },
+    // /impressum, /datenschutz, /agb are noindex,nofollow — deliberately excluded from the sitemap.
   ];
 }
