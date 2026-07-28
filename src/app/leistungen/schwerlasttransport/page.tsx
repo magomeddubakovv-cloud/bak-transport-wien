@@ -21,7 +21,20 @@ const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
   name: "Schwerlasttransport Wien — BAK Transport",
+  description: "Schwerlasttransport Wien: Klaviere, Tresore, Maschinen & Spezialequipment sicher transportiert. BAK Transport – vollversichert, Spezialequipment, Fixpreis.",
   provider: { "@id": "https://www.baktransport.at/#business" },
+  areaServed: { "@type": "City", name: "Wien" },
+  serviceType: ["Klaviertransport", "Tresortransport", "Maschinentransport"],
+  offers: {
+    "@type": "Offer",
+    priceCurrency: "EUR",
+    price: "280",
+    priceSpecification: {
+      "@type": "PriceSpecification",
+      price: "280",
+      priceCurrency: "EUR",
+    },
+  },
 };
 
 export default function SchwerlasttransportPage() {

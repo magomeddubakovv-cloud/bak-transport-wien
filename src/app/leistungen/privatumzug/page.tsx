@@ -22,7 +22,20 @@ const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
   name: "Privatumzug Wien — BAK Transport",
+  description: "Privatumzug Wien ab €650 – stressfrei & vollversichert. Alle 23 Bezirke, kostenlose Besichtigung vor Ort, verbindlicher Fixpreis, Rückmeldung in 60 Min.",
   provider: { "@id": "https://www.baktransport.at/#business" },
+  areaServed: { "@type": "City", name: "Wien" },
+  serviceType: "Privatumzug",
+  offers: {
+    "@type": "Offer",
+    priceCurrency: "EUR",
+    price: "650",
+    priceSpecification: {
+      "@type": "PriceSpecification",
+      price: "650",
+      priceCurrency: "EUR",
+    },
+  },
 };
 
 const faqSchema = {

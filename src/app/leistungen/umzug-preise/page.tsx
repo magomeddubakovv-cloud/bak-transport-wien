@@ -22,7 +22,20 @@ const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
   name: "Umzug Preise Wien — BAK Transport",
+  description: "Umzug Preise in Wien transparent erklärt: Fixpreis nach Besichtigung, faire Pakete, Versicherung und klare Leistungen mit BAK Transport Wien.",
   provider: { "@id": "https://www.baktransport.at/#business" },
+  areaServed: { "@type": "City", name: "Wien" },
+  serviceType: "Umzug",
+  offers: {
+    "@type": "Offer",
+    priceCurrency: "EUR",
+    price: "650",
+    priceSpecification: {
+      "@type": "PriceSpecification",
+      price: "650",
+      priceCurrency: "EUR",
+    },
+  },
 };
 
 export default function UmzugPreisePage() {

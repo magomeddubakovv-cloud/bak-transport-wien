@@ -21,7 +21,20 @@ const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
   name: "Möbelmontage Wien — BAK Transport",
+  description: "Möbelmontage Wien: BAK Transport baut alle Möbelmarken auf & ab – IKEA, BoConcept, Hülsta & mehr. Auch ohne Umzug buchbar. Fixpreis, schnell & zuverlässig.",
   provider: { "@id": "https://www.baktransport.at/#business" },
+  areaServed: { "@type": "City", name: "Wien" },
+  serviceType: "Möbelmontage",
+  offers: {
+    "@type": "Offer",
+    priceCurrency: "EUR",
+    price: "120",
+    priceSpecification: {
+      "@type": "PriceSpecification",
+      price: "120",
+      priceCurrency: "EUR",
+    },
+  },
 };
 
 const faqSchema = {

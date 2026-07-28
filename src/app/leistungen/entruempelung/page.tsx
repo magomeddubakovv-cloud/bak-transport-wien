@@ -29,9 +29,20 @@ const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
   name: "Entrümpelung Wien",
+  description: "Entrümpelung Wien mit BAK Transport: Wohnung, Keller, Dachboden, Büro und Verlassenschaft. Besichtigung kostenlos, Fixpreis, rasche Termine, saubere Übergabe.",
   serviceType: ["Wohnungsentrümpelung", "Kellerentrümpelung", "Büroentrümpelung", "Verlassenschaftsräumung"],
   provider: { "@id": "https://www.baktransport.at/#business" },
   areaServed: { "@type": "City", name: "Wien" },
+  offers: {
+    "@type": "Offer",
+    priceCurrency: "EUR",
+    price: "280",
+    priceSpecification: {
+      "@type": "PriceSpecification",
+      price: "280",
+      priceCurrency: "EUR",
+    },
+  },
 };
 
 export default function EntruempelungPage() {

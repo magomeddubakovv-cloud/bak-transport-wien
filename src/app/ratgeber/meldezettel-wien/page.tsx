@@ -9,6 +9,16 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://www.baktransport.at/ratgeber/meldezettel-wien" },
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "BAK Transport Wien", item: "https://www.baktransport.at" },
+    { "@type": "ListItem", position: 2, name: "Ratgeber", item: "https://www.baktransport.at/ratgeber" },
+    { "@type": "ListItem", position: 3, name: "Meldezettel Wien", item: "https://www.baktransport.at/ratgeber/meldezettel-wien" },
+  ],
+};
+
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
@@ -56,6 +66,7 @@ const faqSchema = {
 export default function MeldezettelWienPage() {
   return (
     <>
+      <StructuredData data={breadcrumbSchema} />
       <StructuredData data={articleSchema} />
       <StructuredData data={faqSchema} />
       <MeldezettelWienPageClient />

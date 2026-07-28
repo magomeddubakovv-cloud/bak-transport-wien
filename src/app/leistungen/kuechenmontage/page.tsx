@@ -21,7 +21,20 @@ const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
   name: "Küchenmontage Wien — BAK Transport",
+  description: "Küchenmontage Wien ab €380 – BAK Transport montiert alle Küchenmarken: IKEA, Nolte, Nobilia, Häcker. Inkl. Elektro- & Wasseranschluss, 2 Jahre Garantie.",
   provider: { "@id": "https://www.baktransport.at/#business" },
+  areaServed: { "@type": "City", name: "Wien" },
+  serviceType: "Küchenmontage",
+  offers: {
+    "@type": "Offer",
+    priceCurrency: "EUR",
+    price: "380",
+    priceSpecification: {
+      "@type": "PriceSpecification",
+      price: "380",
+      priceCurrency: "EUR",
+    },
+  },
 };
 
 export default function KuechenmontagePage() {

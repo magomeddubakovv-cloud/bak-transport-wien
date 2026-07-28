@@ -21,7 +21,20 @@ const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
   name: "Firmenumzug Wien — BAK Transport",
+  description: "Firmenumzug Wien mit BAK Transport: Strukturierter Büroumzug mit minimaler Ausfallzeit. Auch nachts & am Wochenende. Fixpreis, vollversichert, Rückmeldung in 60 Min.",
   provider: { "@id": "https://www.baktransport.at/#business" },
+  areaServed: { "@type": "City", name: "Wien" },
+  serviceType: "Firmenumzug",
+  offers: {
+    "@type": "Offer",
+    priceCurrency: "EUR",
+    price: "850",
+    priceSpecification: {
+      "@type": "PriceSpecification",
+      price: "850",
+      priceCurrency: "EUR",
+    },
+  },
 };
 
 export default function FirmenumzugPage() {

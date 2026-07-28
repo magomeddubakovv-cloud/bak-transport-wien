@@ -17,6 +17,7 @@ export function NoeOrtPageClient({ ort }: Props) {
   const t = translations[lang];
 
   const beschreibung = lang === "en" ? ort.beschreibungEn : ort.beschreibung;
+  const charakter = lang === "en" ? ort.charakterEn : ort.charakter;
   const besonderheit = lang === "en" ? ort.besonderheitEn : ort.besonderheit;
 
   const RELATED_LINKS = [
@@ -46,6 +47,9 @@ export function NoeOrtPageClient({ ort }: Props) {
               </h2>
               <p className="mb-4 text-base leading-relaxed" style={{ color: "#6B7280" }}>
                 {beschreibung}
+              </p>
+              <p className="mb-4 text-base leading-relaxed" style={{ color: "#6B7280" }}>
+                {charakter}
               </p>
               <p className="mb-6 text-base leading-relaxed" style={{ color: "#6B7280" }}>
                 {t.noe_ort_intro_p2}

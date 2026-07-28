@@ -21,7 +21,10 @@ const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
   name: "Transport Wien — BAK Transport",
+  description: "Transport Wien: Ihr Transportunternehmen für Privatumzug, Firmenumzug, Möbeltransport, Kleintransporte & Schwerlasttransport. Fixpreis, €100.000 Versicherung, alle 23 Bezirke.",
   provider: { "@id": "https://www.baktransport.at/#business" },
+  areaServed: { "@type": "City", name: "Wien" },
+  serviceType: ["Privatumzug", "Firmenumzug", "Möbeltransport", "Kleintransporte", "Schwerlasttransport"],
 };
 
 export default function TransportWienPage() {

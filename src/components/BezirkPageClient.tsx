@@ -17,6 +17,7 @@ export function BezirkPageClient({ bezirk }: Props) {
   const t = translations[lang];
 
   const beschreibung = lang === "en" ? bezirk.beschreibungEn : bezirk.beschreibung;
+  const charakter = lang === "en" ? bezirk.charakterEn : bezirk.charakter;
   const besonderheit = lang === "en" ? bezirk.besonderheitEn : bezirk.besonderheit;
 
   const RELATED_LINKS = [
@@ -53,6 +54,9 @@ export function BezirkPageClient({ bezirk }: Props) {
               </h2>
               <p className="mb-4 text-base leading-relaxed" style={{ color: "#6B7280" }}>
                 {beschreibung}
+              </p>
+              <p className="mb-4 text-base leading-relaxed" style={{ color: "#6B7280" }}>
+                {charakter}
               </p>
               <p className="mb-6 text-base leading-relaxed" style={{ color: "#6B7280" }}>
                 {t.bezirk_intro_p2}

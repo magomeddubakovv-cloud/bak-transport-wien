@@ -4,6 +4,8 @@ export interface NoeOrt {
   fullName: string;
   beschreibung: string;
   beschreibungEn: string;
+  charakter: string;
+  charakterEn: string;
   besonderheit: string;
   besonderheitEn: string;
   faq: { q: string; a: string; qEn: string; aEn: string }[];
@@ -20,6 +22,10 @@ export const NOE_ORTE: NoeOrt[] = [
       "Vösendorf borders directly on Vienna-Liesing and is best known for the SCS (Shopping City Süd) shopping center. Its proximity to the city limits and direct access to the A2 motorway make moves between Vienna and Vösendorf especially straightforward. The direct A2 motorway connection and the short distance to Vienna-Liesing mean short travel routes for us — which benefits our customers through scheduling flexibility and fair prices.",
     besonderheit: "SCS, Autobahnanschluss A2, Wien-Liesing-Nähe",
     besonderheitEn: "SCS shopping center, A2 motorway access, close to Vienna-Liesing",
+    charakter:
+      "Vösendorf ist heute vor allem für die SCS bekannt, hat aber mit dem alten Ortskern rund um die Pfarrkirche auch einen ruhigeren, gewachsenen Teil abseits des Einkaufszentrums. Viele Neubauprojekte sind in den letzten Jahren rund um die Autobahnauffahrt entstanden. Für uns bedeutet das eine Mischung aus modernen Neubauten mit guter Zufahrt und älteren Einfamilienhäusern im historischen Ortskern.",
+    charakterEn:
+      "Vösendorf is best known today for the SCS shopping center, but it also has a quieter, established part around the old parish church, away from the mall. Many new-build projects have sprung up in recent years around the motorway access. For us, that means a mix of modern new builds with good access and older single-family houses in the historic town core.",
     faq: [
       {
         q: "Wie weit ist Vösendorf von Wien entfernt?",
@@ -45,6 +51,12 @@ export const NOE_ORTE: NoeOrt[] = [
         qEn: "Do I benefit from Vösendorf's motorway access when scheduling?",
         aEn: "Yes — thanks to the direct A2 connection and the proximity to Vienna-Liesing, we're often available in Vösendorf at short notice too, since the trip from Vienna or other surrounding towns is quick.",
       },
+      {
+        q: "Gibt es in Vösendorf auch einen ruhigeren Ortskern abseits der SCS?",
+        a: "Ja, rund um die Pfarrkirche hat sich Vösendorf seinen ursprünglichen, ruhigeren Ortscharakter bewahrt. Umzüge dort unterscheiden sich von jenen in den neueren Wohnprojekten nahe der Autobahnauffahrt.",
+        qEn: "Is there also a quieter town core in Vösendorf away from the SCS?",
+        aEn: "Yes, around the parish church Vösendorf has preserved its original, quieter town character. Moves there differ from those in the newer residential projects near the motorway access.",
+      },
     ],
   },
   {
@@ -57,6 +69,10 @@ export const NOE_ORTE: NoeOrt[] = [
       "Brunn am Gebirge lies directly south of Vienna-Liesing on the A2 motorway and, with the BEC (Business & Event Center) office park and numerous residential projects, has become a sought-after location just outside Vienna. Alongside the BEC office park, numerous new residential projects also shape the town — we're therefore just as familiar with corporate moves in the BEC as with private moves into the new residential developments.",
     besonderheit: "A2-Anschluss, Bürostandort BEC, Wien-Liesing-Nähe",
     besonderheitEn: "A2 motorway access, BEC office park, close to Vienna-Liesing",
+    charakter:
+      "Neben dem BEC-Bürostandort hat Brunn am Gebirge auch einen historischen Ortskern mit der Wallfahrtskirche Maria Empfängnis. Am Fuß des Wienerwaldes gelegen, mischen sich hier ältere Einfamilienhäuser mit neuen Wohnanlagen entlang der Anton-Böck-Gasse und Richtung Autobahnauffahrt. Diese Vielfalt an Wohnformen erleben wir bei unseren regelmäßigen Einsätzen in Brunn am Gebirge häufig.",
+    charakterEn:
+      "Alongside the BEC office park, Brunn am Gebirge also has a historic town core with the Maria Empfängnis pilgrimage church. Located at the foot of the Vienna Woods, older single-family houses mix here with new residential complexes along Anton-Böck-Gasse and toward the motorway access. We frequently encounter this variety of housing types during our regular assignments in Brunn am Gebirge.",
     faq: [
       {
         q: "Wie schnell ist BAK Transport in Brunn am Gebirge vor Ort?",
@@ -82,6 +98,12 @@ export const NOE_ORTE: NoeOrt[] = [
         qEn: "Does BAK Transport also move people into the new residential projects in Brunn am Gebirge?",
         aEn: "Yes — alongside corporate moves around the BEC, we also regularly handle private moves into Brunn am Gebirge's newly built residential developments.",
       },
+      {
+        q: "Ist der Ortskern von Brunn am Gebirge anders zu erreichen als das BEC?",
+        a: "Ja, der historische Ortskern rund um die Wallfahrtskirche hat teils engere Gassen als das moderne BEC-Areal mit seiner guten Autobahnanbindung. Wir passen die Fahrzeugwahl entsprechend an.",
+        qEn: "Is the town core of Brunn am Gebirge harder to access than the BEC?",
+        aEn: "Yes, the historic town core around the pilgrimage church has somewhat narrower lanes than the modern BEC area with its good motorway connection. We adjust our vehicle choice accordingly.",
+      },
     ],
   },
   {
@@ -94,6 +116,10 @@ export const NOE_ORTE: NoeOrt[] = [
       "Perchtoldsdorf borders directly on Vienna-Liesing and impresses with its historic town center around the Perchtoldsdorfer Turm tower and numerous heurigen wine taverns. Many buildings here are older and call for an experienced moving team. Around the heurigen wine taverns and the historic town center, older, heritage-protected buildings are common — here we use extra edge and floor protection to safeguard both the building fabric and your furniture.",
     besonderheit: "Historischer Ortskern, Perchtoldsdorfer Turm, Weinbau",
     besonderheitEn: "Historic town center, Perchtoldsdorfer Turm tower, wine-growing",
+    charakter:
+      "Der Perchtoldsdorfer Turm und die umliegenden Heurigenbetriebe prägen den historischen Ortskern, während sich Richtung Wienerwald und Kaltenleutgeben zunehmend Einfamilienhaussiedlungen anschließen. Viele Häuser im Ortskern stehen unter Denkmalschutz, was bei Möbeltransporten besondere Sorgfalt erfordert. Außerhalb des Zentrums sind die Straßen breiter und die Zufahrt unkomplizierter.",
+    charakterEn:
+      "The Perchtoldsdorfer Turm tower and the surrounding heurigen wine taverns shape the historic town core, while single-family home developments increasingly take over toward the Vienna Woods and Kaltenleutgeben. Many buildings in the town core are heritage-protected, which calls for special care during furniture transport. Outside the center, the streets are wider and access is more straightforward.",
     faq: [
       {
         q: "Wie läuft ein Umzug im historischen Ortskern von Perchtoldsdorf ab?",
@@ -119,6 +145,12 @@ export const NOE_ORTE: NoeOrt[] = [
         qEn: "Does BAK Transport have experience with moves near the heurigen in Perchtoldsdorf?",
         aEn: "Yes — many buildings around the heurigen wine taverns are older and heritage-protected. We work with extra protection for stairwells and historic building fabric here.",
       },
+      {
+        q: "Sind die Zufahrtswege außerhalb des historischen Ortskerns von Perchtoldsdorf einfacher?",
+        a: "Ja, Richtung Wienerwald und Kaltenleutgeben sind die Straßen breiter und weniger von historischer Bausubstanz geprägt, was die Zufahrt in der Regel erleichtert.",
+        qEn: "Are the access routes outside Perchtoldsdorf's historic town core easier?",
+        aEn: "Yes, toward the Vienna Woods and Kaltenleutgeben the streets are wider and less shaped by historic building fabric, which generally makes access easier.",
+      },
     ],
   },
   {
@@ -131,6 +163,10 @@ export const NOE_ORTE: NoeOrt[] = [
       "Klosterneuburg sits on the Danube, right on Vienna's northwestern city limit, and is best known for Klosterneuburg Abbey and its vineyards. Its proximity to Vienna-Döbling makes moves in either direction straightforward. The location on the Danube riverbank means longer approach routes along the river for some addresses in Klosterneuburg — we already factor this travel time into our planning.",
     besonderheit: "Stift Klosterneuburg, Donauufer, Weinbau",
     besonderheitEn: "Klosterneuburg Abbey, Danube riverbank, wine-growing",
+    charakter:
+      "Das Stift Klosterneuburg thront über der Stadt, während sich entlang der Donau und in Richtung Weidling und Kierling ruhige Wohngebiete erstrecken. Die Kombination aus historischem Stiftsviertel, dichterer Altstadt und locker bebauten Weinbaulagen sorgt für sehr unterschiedliche Zufahrtssituationen innerhalb derselben Gemeinde. Wir stimmen Fahrzeug und Route deshalb immer auf die genaue Adresse in Klosterneuburg ab.",
+    charakterEn:
+      "Klosterneuburg Abbey towers above the town, while quiet residential areas stretch out along the Danube and toward Weidling and Kierling. The combination of the historic abbey quarter, the denser old town, and loosely built wine-growing areas creates very different access situations within the same municipality. That's why we always tailor vehicle and route to the exact address in Klosterneuburg.",
     faq: [
       {
         q: "Wie weit ist Klosterneuburg von Wien entfernt?",
@@ -156,6 +192,12 @@ export const NOE_ORTE: NoeOrt[] = [
         qEn: "Are there addresses in Klosterneuburg that are harder to reach?",
         aEn: "Addresses directly on the Danube riverbank can mean somewhat longer approach routes. We already factor the route into our planning during the inspection, so the fixed price stays reliable on moving day.",
       },
+      {
+        q: "Unterscheiden sich Umzüge im Stiftsviertel von jenen in Weidling oder Kierling?",
+        a: "Ja — das Stiftsviertel und die Altstadt sind dichter bebaut mit teils engeren Gassen, während es Richtung Weidling und Kierling lockerer und ländlicher wird. Wir passen unsere Planung entsprechend an.",
+        qEn: "Do moves in the abbey quarter differ from those in Weidling or Kierling?",
+        aEn: "Yes — the abbey quarter and old town are more densely built with some narrower lanes, while things become more spread out and rural toward Weidling and Kierling. We adjust our planning accordingly.",
+      },
     ],
   },
   {
@@ -168,6 +210,10 @@ export const NOE_ORTE: NoeOrt[] = [
       "Mödling is the district capital of the eponymous district and lies on the edge of the Vienna Woods, just a few kilometers south of Vienna-Liesing. Its historic old town and good rail connections make Mödling popular among people relocating from Vienna. As the district capital, Mödling combines the historic old town with newer residential areas on the edge of the Vienna Woods — we adapt flexibly to the respective building type for every move.",
     besonderheit: "Bezirkshauptstadt, historische Altstadt, Wienerwald",
     besonderheitEn: "District capital, historic old town, Vienna Woods",
+    charakter:
+      "Der Husarentempel am Anningerberg und der Hauptplatz mit seinen Bürgerhäusern sind die bekanntesten Wahrzeichen Mödlings. Die historische Altstadt mit ihren teils engen Gassen unterscheidet sich deutlich von den lockerer bebauten Wohngebieten Richtung Wienerwald und Gießhübl. Auch die gute Anbindung an die Südbahn macht Mödling für Berufspendler nach Wien attraktiv — entsprechend häufig begleiten wir hier Umzüge aus und nach Wien.",
+    charakterEn:
+      "The Husarentempel on Anningerberg hill and the main square with its historic townhouses are Mödling's best-known landmarks. The historic old town with its sometimes narrow lanes differs markedly from the more loosely built residential areas toward the Vienna Woods and Gießhübl. Good access to the Southern Railway line also makes Mödling attractive for commuters to Vienna — accordingly, we frequently handle moves to and from Vienna here.",
     faq: [
       {
         q: "Wie ist Mödling verkehrstechnisch an Wien angebunden?",
@@ -193,6 +239,12 @@ export const NOE_ORTE: NoeOrt[] = [
         qEn: "Are moves on the edge of the Vienna Woods in Mödling different from those in the old town?",
         aEn: "Yes — toward the Vienna Woods we more often find single-family houses with larger access areas, while the old town has narrower lanes with limited parking. We adjust vehicle size and team strength accordingly.",
       },
+      {
+        q: "Ziehen viele Berufspendler zwischen Wien und Mödling um?",
+        a: "Ja, durch die gute Anbindung an die Südbahn ist Mödling bei Pendlerinnen und Pendlern nach Wien sehr beliebt. Wir begleiten entsprechend häufig Umzüge in beide Richtungen.",
+        qEn: "Do many commuters move between Vienna and Mödling?",
+        aEn: "Yes, thanks to good access to the Southern Railway line, Mödling is very popular among commuters to Vienna. We accordingly handle moves in both directions frequently.",
+      },
     ],
   },
   {
@@ -205,6 +257,10 @@ export const NOE_ORTE: NoeOrt[] = [
       "Baden bei Wien is the district capital of Baden district and known as a spa town with thermal springs, the Rosarium rose garden, and Casino Baden. At around 26 kilometers, it's a bit further from Vienna than the other towns just outside the city. As a spa town, Baden has many historic spa hotels and villas alongside classic residential buildings — we bring particular care to furniture assembly and the transport of delicate furnishings here.",
     besonderheit: "Kurstadt, Rosarium, Casino Baden",
     besonderheitEn: "Spa town, Rosarium, Casino Baden",
+    charakter:
+      "Neben dem Kurpark mit seinen Thermalquellen prägen das barocke Stadtzentrum rund um den Hauptplatz und das Helenental Richtung Wienerwald das Stadtbild Badens. Viele der historischen Kurhotels und Villen wurden in den letzten Jahrzehnten zu Wohngebäuden umgewidmet, was besondere Sorgfalt beim Möbeltransport erfordert. Außerhalb des historischen Zentrums finden sich auch moderne Wohnanlagen mit unkomplizierter Zufahrt.",
+    charakterEn:
+      "Alongside the spa park with its thermal springs, the baroque town center around the main square and the Helenental valley toward the Vienna Woods shape Baden's townscape. Many of the historic spa hotels and villas have been converted into residential buildings over recent decades, which calls for special care during furniture transport. Outside the historic center, modern residential complexes with straightforward access can also be found.",
     faq: [
       {
         q: "Wie weit ist Baden von Wien entfernt?",
@@ -230,6 +286,12 @@ export const NOE_ORTE: NoeOrt[] = [
         qEn: "Does Baden's slightly greater distance affect the move?",
         aEn: "The roughly 26 km are covered quickly and easily via the A2. The somewhat longer approach is already factored into our fixed price from €680 — there are no hidden extra costs.",
       },
+      {
+        q: "Erfordern die alten Kurhotels und Villen in Baden besondere Vorsicht beim Umzug?",
+        a: "Ja, viele dieser Gebäude haben historische Stiegenhäuser und Details, die besonderen Schutz brauchen. Wir arbeiten dort mit zusätzlichem Kanten- und Bodenschutz.",
+        qEn: "Do the old spa hotels and villas in Baden require special care during a move?",
+        aEn: "Yes, many of these buildings have historic stairwells and details that need special protection. We work with additional edge and floor protection there.",
+      },
     ],
   },
   {
@@ -242,6 +304,10 @@ export const NOE_ORTE: NoeOrt[] = [
       "Schwechat borders directly on Vienna-Simmering and is best known as the home of Vienna International Airport. As an important industrial and business location just outside Vienna, Schwechat is one of the most easily reachable towns in Lower Austria. As a major industrial and airport hub, Schwechat sees not only classic residential moves but also a high share of corporate and office moves — both types of moves are part of our everyday work here.",
     besonderheit: "Flughafen Wien, Industriestandort, Wien-Simmering-Nähe",
     besonderheitEn: "Vienna International Airport, industrial hub, close to Vienna-Simmering",
+    charakter:
+      "Neben dem Flughafen Wien und den Industriebetrieben hat Schwechat mit dem historischen Ortskern rund um die Pfarrkirche auch einen ruhigeren, gewachsenen Teil. Entlang der Donau und Richtung Rannersdorf finden sich zudem neuere Wohnsiedlungen. Diese Mischung aus Industriestandort, historischem Kern und Wohngebieten begegnet uns bei Umzügen in Schwechat regelmäßig.",
+    charakterEn:
+      "Alongside Vienna International Airport and its industrial businesses, Schwechat also has a quieter, established part around its historic town core near the parish church. Newer residential developments can also be found along the Danube and toward Rannersdorf. We regularly encounter this mix of industrial hub, historic core, and residential areas during moves in Schwechat.",
     faq: [
       {
         q: "Wie weit ist Schwechat vom Wiener Stadtzentrum entfernt?",
@@ -266,6 +332,12 @@ export const NOE_ORTE: NoeOrt[] = [
         a: "Ja — durch den Industriestandort und den Flughafen Wien haben wir viel Erfahrung mit Büro- und Firmenumzügen in Schwechat, auch außerhalb der regulären Geschäftszeiten.",
         qEn: "Does BAK Transport also carry out corporate moves in Schwechat?",
         aEn: "Yes — thanks to the industrial location and Vienna International Airport, we have extensive experience with office and corporate moves in Schwechat, including outside regular business hours.",
+      },
+      {
+        q: "Gibt es in Schwechat auch ruhige Wohngebiete abseits des Flughafens?",
+        a: "Ja, rund um den historischen Ortskern und Richtung Rannersdorf ist es deutlich ruhiger als in Flughafennähe. Wir kennen beide Seiten von Schwechat gut.",
+        qEn: "Are there also quiet residential areas in Schwechat away from the airport?",
+        aEn: "Yes, around the historic town core and toward Rannersdorf it's noticeably quieter than near the airport. We know both sides of Schwechat well.",
       },
     ],
   },
