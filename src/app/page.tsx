@@ -3,15 +3,7 @@ import { StructuredData } from "@/components/StructuredData";
 import { Navbar } from "@/components/Navbar";
 import { HeroSection } from "@/components/HeroSection";
 import { StatsBar } from "@/components/StatsBar";
-import { ServicesSection } from "@/components/ServicesSection";
-import { WhyUsSection } from "@/components/WhyUsSection";
-import { QuoteFormSection } from "@/components/QuoteFormSection";
-import { RegionsSection } from "@/components/RegionsSection";
-import { PricingSection } from "@/components/PricingSection";
-import { FAQSection } from "@/components/FAQSection";
-import { CTASection } from "@/components/CTASection";
-import { ReviewsSection } from "@/components/ReviewsSection";
-import { QuickContactSection } from "@/components/QuickContactSection";
+import { HomeBelowFold } from "@/components/HomeBelowFold";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
@@ -116,15 +108,7 @@ export default function Home() {
       <main>
         <HeroSection />
         <StatsBar />
-        <ReviewsSection />
-        <ServicesSection />
-        <WhyUsSection />
-        <QuoteFormSection />
-        <RegionsSection />
-        <PricingSection />
-        <FAQSection />
-        <CTASection />
-        <QuickContactSection />
+        <HomeBelowFold />
       </main>
       <Footer />
     </>

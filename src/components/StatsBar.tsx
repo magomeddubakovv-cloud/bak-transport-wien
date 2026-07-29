@@ -61,10 +61,12 @@ interface AnimatedStatProps {
   label: string;
   active: boolean;
   hasBorder: boolean;
+  animate?: boolean;
 }
 
-function AnimatedStat({ config, label, active, hasBorder }: AnimatedStatProps) {
-  const display = useCountUp(config, active);
+function AnimatedStat({ config, label, active, hasBorder, animate = true }: AnimatedStatProps) {
+  const counted = useCountUp(config, active && animate);
+  const display = animate ? counted : formatStat(config, config.target);
   return (
     <div
       className={`flex flex-col items-center justify-center text-center py-4 md:py-2 ${hasBorder ? "md:border-r md:border-white/20" : ""}`}
@@ -96,10 +98,10 @@ export function StatsBar() {
     return () => observer.disconnect();
   }, []);
 
-  const STATS: { config: StatConfig; label: string }[] = [
+  const STATS: { config: StatConfig; label: string; animate?: boolean }[] = [
     { config: { target: 1000, suffix: "+", germanFormat: true }, label: t.stats1 },
     { config: { target: 23, suffix: "" }, label: t.stats2 },
-    { config: { target: 4.5, decimals: 1, suffix: "★", germanFormat: true }, label: t.stats3 },
+    { config: { target: 4.5, decimals: 1, suffix: "★", germanFormat: true }, label: t.stats3, animate: false },
     { config: { target: 60, suffix: " Min" }, label: t.stats4 },
   ];
 
@@ -114,6 +116,7 @@ export function StatsBar() {
               label={stat.label}
               active={active}
               hasBorder={i < STATS.length - 1}
+              animate={stat.animate}
             />
           ))}
         </div>
