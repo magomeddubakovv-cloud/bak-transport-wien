@@ -1,16 +1,24 @@
+import { Mail, Calendar } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { QuickContactSection } from "@/components/QuickContactSection";
+
+interface CtaLink {
+  href: string;
+  label: string;
+}
 
 interface PageLayoutProps {
   children: React.ReactNode;
   title: string;
   subtitle?: string;
   label?: string;
+  primaryCta?: CtaLink;
+  secondaryCta?: CtaLink;
 }
 
-export function PageLayout({ children, title, subtitle, label }: PageLayoutProps) {
+export function PageLayout({ children, title, subtitle, label, primaryCta, secondaryCta }: PageLayoutProps) {
   return (
     <>
       <Navbar />
@@ -50,6 +58,45 @@ export function PageLayout({ children, title, subtitle, label }: PageLayoutProps
                 borderRadius: "2px",
               }}
             />
+            {(primaryCta || secondaryCta) && (
+              <div className="mt-8 flex flex-col sm:flex-row gap-4">
+                {primaryCta && (
+                  <a
+                    href={primaryCta.href}
+                    className="rounded-lg font-extrabold transition-colors hover:bg-[#C2410C] flex items-center justify-center gap-2"
+                    style={{
+                      backgroundColor: "#C2410C",
+                      color: "#FFFFFF",
+                      fontSize: "16px",
+                      padding: "16px 32px",
+                      textDecoration: "none",
+                      minHeight: "48px",
+                    }}
+                  >
+                    <Mail size={20} />
+                    {primaryCta.label}
+                  </a>
+                )}
+                {secondaryCta && (
+                  <a
+                    href={secondaryCta.href}
+                    target={secondaryCta.href.startsWith("http") ? "_blank" : undefined}
+                    rel={secondaryCta.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                    className="rounded-lg font-bold border-2 border-[#C2410C] transition-colors hover:bg-orange-50 flex items-center justify-center gap-2"
+                    style={{
+                      color: "#C2410C",
+                      fontSize: "16px",
+                      padding: "16px 32px",
+                      textDecoration: "none",
+                      minHeight: "48px",
+                    }}
+                  >
+                    <Calendar size={20} />
+                    {secondaryCta.label}
+                  </a>
+                )}
+              </div>
+            )}
           </div>
         </section>
         {children}
