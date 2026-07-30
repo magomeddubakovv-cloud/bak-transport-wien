@@ -154,7 +154,13 @@ export function TransportWienPageClient() {
   ];
 
   return (
-    <PageLayout label={t.transportwien_label} title={t.transportwien_title} subtitle={t.transportwien_subtitle}>
+    <PageLayout
+      label={t.transportwien_label}
+      title={t.transportwien_title}
+      subtitle={t.transportwien_subtitle}
+      primaryCta={{ href: "/anfrage", label: t.sub_cta_btn1 }}
+      secondaryCta={{ href: "https://calendly.com/baktransport/besichtigung-in-wien-umgebung", label: t.sub_cta_btn2 }}
+    >
       {/* Intro + trust badges */}
       <section className="py-12 md:py-20 bg-white">
         <div className="max-w-5xl mx-auto px-4 md:px-6">
