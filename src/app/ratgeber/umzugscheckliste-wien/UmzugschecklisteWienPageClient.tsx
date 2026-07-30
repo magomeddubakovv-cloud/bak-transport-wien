@@ -33,6 +33,7 @@ export function UmzugschecklisteWienPageClient() {
             t.checkliste_section2_bullet2,
             t.checkliste_section2_bullet3,
             t.checkliste_section2_bullet4,
+            t.checkliste_section2_bullet5,
           ],
         },
         {

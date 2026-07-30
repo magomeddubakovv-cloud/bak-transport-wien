@@ -28,6 +28,10 @@ export function AltbauUmzugWienPageClient() {
           text: t.altbau_p3,
           bullets: [t.altbau_bullet1, t.altbau_bullet2, t.altbau_bullet3],
         },
+        {
+          heading: t.altbau_h4,
+          text: t.altbau_p4,
+        },
       ]}
       cards={[
         { title: t.altbau_card1_title, text: t.altbau_card1_text },
@@ -37,6 +41,7 @@ export function AltbauUmzugWienPageClient() {
       faqs={[
         { question: t.altbau_faq1_q, answer: t.altbau_faq1_a },
         { question: t.altbau_faq2_q, answer: t.altbau_faq2_a },
+        { question: t.altbau_faq3_q, answer: t.altbau_faq3_a },
       ]}
       relatedLinks={[
         { label: t.altbau_related1_label, href: "/ratgeber/meldezettel-wien" },

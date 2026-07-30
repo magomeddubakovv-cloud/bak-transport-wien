@@ -28,6 +28,11 @@ export function HalteverbotszoneWienPageClient() {
           heading: t.halteverbot_h3,
           text: t.halteverbot_p3,
         },
+        {
+          heading: t.halteverbot_h4,
+          text: t.halteverbot_p4,
+          bullets: [t.halteverbot_antrag_bullet1, t.halteverbot_antrag_bullet2, t.halteverbot_antrag_bullet3],
+        },
       ]}
       cards={[
         { title: t.halteverbot_card1_title, text: t.halteverbot_card1_text },
@@ -37,6 +42,7 @@ export function HalteverbotszoneWienPageClient() {
       faqs={[
         { question: t.halteverbot_faq1_q, answer: t.halteverbot_faq1_a },
         { question: t.halteverbot_faq2_q, answer: t.halteverbot_faq2_a },
+        { question: t.halteverbot_faq3_q, answer: t.halteverbot_faq3_a },
       ]}
       relatedLinks={[
         { label: t.halteverbot_related1_label, href: "/ratgeber/meldezettel-wien" },

@@ -28,6 +28,10 @@ export function MeldezettelWienPageClient() {
           heading: t.meldezettel_h3,
           text: t.meldezettel_p3,
         },
+        {
+          heading: t.meldezettel_h4,
+          text: t.meldezettel_p4,
+        },
       ]}
       cards={[
         { title: t.meldezettel_card1_title, text: t.meldezettel_card1_text },
@@ -37,6 +41,7 @@ export function MeldezettelWienPageClient() {
       faqs={[
         { question: t.meldezettel_faq1_q, answer: t.meldezettel_faq1_a },
         { question: t.meldezettel_faq2_q, answer: t.meldezettel_faq2_a },
+        { question: t.meldezettel_faq3_q, answer: t.meldezettel_faq3_a },
       ]}
       relatedLinks={[
         { label: t.meldezettel_related1_label, href: "/ratgeber/halteverbotszone-wien" },

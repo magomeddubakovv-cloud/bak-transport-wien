@@ -1732,7 +1732,10 @@ const de = {
   checkliste_section2_bullet1: "Umzugskartons und Verpackungsmaterial besorgen",
   checkliste_section2_bullet2: "Halteverbotszone für den Umzugstag beantragen (übernehmen wir auf Wunsch für Sie)",
   checkliste_section2_bullet3: "Strom-, Internet- und Gasanbieter über den Adresswechsel informieren",
-  checkliste_section2_bullet4: "Nachsendeauftrag bei der Post einrichten",
+  checkliste_section2_bullet4:
+    "Nachsendeauftrag bei der Post einrichten (Mindestlaufzeit 3 Monate, Aktivierung dauert einige Werktage — rechtzeitig beantragen)",
+  checkliste_section2_bullet5:
+    "Sperrmüllabholung bei der MA 48 rechtzeitig anmelden — Wartezeit 6 bis 14 Werktage ab Bestellung",
   checkliste_section3_heading: "1 Woche vorher: Feinschliff",
   checkliste_section3_text:
     "In der letzten Woche geht es darum, den Überblick zu behalten und wichtige Dinge griffbereit zu halten.",
@@ -1791,7 +1794,8 @@ const de = {
     "Die Frist für die Ummeldung beginnt nicht mit der Vertragsunterschrift oder Schlüsselübergabe, sondern erst mit dem tatsächlichen Einzug. Eine Anmeldung vor dem Einzug ist nicht möglich. Spätestens 3 Tage danach muss die Meldung erfolgen — bei verspäteter oder fehlerhafter Meldung droht laut § 22 Meldegesetz eine Verwaltungsstrafe von bis zu €726.",
   meldezettel_bullet1: "Anmeldung frühestens am Tag des tatsächlichen Einzugs möglich",
   meldezettel_bullet2: "Spätestens 3 Tage nach dem Einzug bei einem Meldeservice",
-  meldezettel_bullet3: "Verspätete oder fehlerhafte Meldung: Verwaltungsstrafe bis zu €726",
+  meldezettel_bullet3:
+    "Verspätete oder fehlerhafte Meldung: Verwaltungsstrafe bis zu €726, im Wiederholungsfall bis zu €2.180",
   meldezettel_h2: "Diese Unterlagen brauchen Sie",
   meldezettel_p2:
     "Der Meldezettel muss vollständig ausgefüllt und sowohl von Ihnen als auch von der Unterkunftgeberin bzw. dem Unterkunftgeber (z. B. Vermieter:in oder Eigentümer:in) unterschrieben sein. Zusätzlich benötigen Sie ein gültiges Ausweisdokument.",
@@ -1804,12 +1808,18 @@ const de = {
   meldezettel_card2_text: "Sie müssen nicht zum Amt in Ihrem eigenen Bezirk — jede Meldestelle in Wien nimmt Ihre Ummeldung entgegen.",
   meldezettel_card3_title: "Pro Person ein Meldezettel",
   meldezettel_card3_text: "Jede Person, die einzieht, benötigt ein eigenes, vollständig ausgefülltes Formular.",
+  meldezettel_h4: "Online ummelden oder persönlicher Termin?",
+  meldezettel_p4:
+    "Für die Ummeldung ist ein Termin beim Meldeservice erforderlich, den Sie online buchen können. Volljährige mit ID Austria oder EU-Login können die Ummeldung mittlerweile auch komplett online erledigen — das gilt allerdings nicht für die allererste Anmeldung eines Wohnsitzes in Österreich, die weiterhin einen persönlichen Termin braucht.",
   meldezettel_faq1_q: "Muss ich mich schon bei Vertragsunterschrift ummelden?",
   meldezettel_faq1_a:
     "Nein. Die Frist beginnt erst mit dem tatsächlichen Einzug, nicht mit der Vertragsunterschrift oder Schlüsselübergabe. Eine Anmeldung vor dem Einzug ist sogar unzulässig.",
   meldezettel_faq2_q: "Was passiert, wenn ich die Frist verpasse?",
   meldezettel_faq2_a:
-    "Laut § 22 Meldegesetz drohen bei verspäteter oder fehlerhafter Meldung Verwaltungsstrafen von bis zu €726. Erledigen Sie die Ummeldung daher am besten gleich in der ersten Woche nach dem Einzug.",
+    "Laut § 22 Meldegesetz drohen bei verspäteter oder fehlerhafter Meldung Verwaltungsstrafen von bis zu €726, im Wiederholungsfall bis zu €2.180. Erledigen Sie die Ummeldung daher am besten gleich in der ersten Woche nach dem Einzug.",
+  meldezettel_faq3_q: "Müssen auch Kinder mit angemeldet werden?",
+  meldezettel_faq3_a:
+    "Ja. Kinder und Jugendliche bis 18 Jahre werden von der Person angemeldet, die für ihre Pflege und Erziehung verantwortlich ist. Bei Neugeborenen ist die Anmeldung oft direkt im Zuge der Geburtenanzeige beim Standesamt möglich.",
   meldezettel_related1_label: "Halteverbotszone beantragen",
   meldezettel_related2_label: "Umzug im Altbau",
   meldezettel_related3_label: "Ratgeber",
@@ -1833,6 +1843,12 @@ const de = {
   halteverbot_h3: "Kosten im Überblick",
   halteverbot_p3:
     "Für die Bewilligung fällt eine Bundesgebühr von €21 zuzüglich €6 pro Beilage (max. €36) sowie eine Verwaltungsabgabe von €37,78 an. Hinzu kommen die Kosten für Beschaffung, Aufstellung und Abbau der Verkehrszeichen.",
+  halteverbot_h4: "So stellen Sie den Antrag",
+  halteverbot_p4:
+    "Der Antrag kann online über das Formular der Stadt Wien oder schriftlich per E-Mail, Post bzw. persönlich bei der MA 46 (Verkehrsorganisation und technische Verkehrsangelegenheiten, Niederhofstraße 21, 1120 Wien, Tel. +43 1 95559, post@ma46.wien.gv.at) eingebracht werden. Im Antrag müssen folgende Angaben enthalten sein:",
+  halteverbot_antrag_bullet1: "Name bzw. Firmenbuchnummer und Kontaktdaten",
+  halteverbot_antrag_bullet2: "Genauer Standort und Länge der Zone in Metern",
+  halteverbot_antrag_bullet3: "Datum und Uhrzeit der geplanten Ladetätigkeit",
   halteverbot_card1_title: "Wir übernehmen die Beantragung",
   halteverbot_card1_text: "Bei BAK Transport ist die Halteverbot-Organisation im Fixpreis inklusive — Sie müssen sich um nichts kümmern.",
   halteverbot_card2_title: "Rechtzeitig planen",
@@ -1845,6 +1861,9 @@ const de = {
   halteverbot_faq2_q: "Wie lange gilt eine bewilligte Halteverbotszone?",
   halteverbot_faq2_a:
     "Maximal 5 Werktage bzw. eine Woche und nur für den Zeitraum der angegebenen Ladezeiten, zum Beispiel 7 bis 18 Uhr.",
+  halteverbot_faq3_q: "Was passiert, wenn trotzdem ein fremdes Auto in der Zone parkt?",
+  halteverbot_faq3_a:
+    "Die Polizei kann das Fahrzeug auf Aufforderung entfernen lassen. Die Kosten für das Abschleppen trägt in diesem Fall die Fahrzeughalterin bzw. der Fahrzeughalter — nicht Sie oder BAK Transport.",
   halteverbot_related1_label: "Meldezettel Wien",
   halteverbot_related2_label: "Umzug im Altbau",
   halteverbot_related3_label: "Ratgeber",
@@ -1864,6 +1883,9 @@ const de = {
   altbau_h3: "Stuckdecken und historische Bausubstanz schützen",
   altbau_p3:
     "Hohe Räume, Stuckdecken und alte Türstöcke sind charakteristisch für Wiener Altbauten — und entsprechend empfindlich. Wir polstern Durchgänge, Geländer und Kanten ab, um Beschädigungen an der historischen Bausubstanz zu vermeiden.",
+  altbau_h4: "Was ein Gründerzeithaus ausmacht",
+  altbau_p4:
+    "Als Gründerzeit wird die Bauperiode von rund 1840 bis 1918 bezeichnet. Wiens Bevölkerung wuchs in dieser Zeit von etwa 250.000 auf über 2 Millionen Einwohner, was einen enormen Bauboom mit rund 460.000 neuen Wohnungen auslöste. Charakteristisch sind Deckenhöhen zwischen 3,2 und 4 Metern — der Grund für die hohen, oft schmalen Stiegenhäuser, die einen Umzug heute anspruchsvoller machen als in einem Neubau.",
   altbau_bullet1: "Demontage sperriger Möbel vor dem Transport",
   altbau_bullet2: "Schutzpolsterung für Stiegenhaus, Geländer und Türstöcke",
   altbau_bullet3: "Prüfung auf Außen-/Möbellift bei der kostenlosen Besichtigung",
@@ -1879,6 +1901,9 @@ const de = {
   altbau_faq2_q: "Berechnet BAK Transport einen Aufschlag für Altbauten ohne Lift?",
   altbau_faq2_a:
     "Das hängt vom Einzelfall ab — Stockwerk, Stiegenbreite und Möbelmenge fließen in den Fixpreis nach der kostenlosen Besichtigung ein. Überraschungen am Umzugstag gibt es dabei nicht.",
+  altbau_faq3_q: "Warum gibt es in Wien so viele solcher Altbauten?",
+  altbau_faq3_a:
+    "Wiens Bevölkerung wuchs während der Gründerzeit von rund 250.000 auf über 2 Millionen Einwohner — fast eine Verzehnfachung. Um dieses Wachstum unterzubringen, entstanden zwischen 1840 und 1918 rund 460.000 neue Wohnungen. Deshalb prägen Gründerzeithäuser bis heute die meisten Wiener Innenbezirke.",
   altbau_related1_label: "Meldezettel Wien",
   altbau_related2_label: "Halteverbotszone beantragen",
   altbau_related3_label: "Ratgeber",
@@ -3752,7 +3777,10 @@ const en: typeof de = {
   checkliste_section2_bullet1: "Get moving boxes and packing materials",
   checkliste_section2_bullet2: "Apply for a no-parking zone permit for moving day (we can handle this for you)",
   checkliste_section2_bullet3: "Notify electricity, internet, and gas providers of your address change",
-  checkliste_section2_bullet4: "Set up mail forwarding with the post office",
+  checkliste_section2_bullet4:
+    "Set up mail forwarding with the post office (minimum term 3 months, activation takes a few business days — apply early)",
+  checkliste_section2_bullet5:
+    "Book bulky-waste pickup (Sperrmüll) with MA 48 in good time — wait time is 6 to 14 business days from booking",
   checkliste_section3_heading: "1 Week Before: Final Touches",
   checkliste_section3_text:
     "In the final week, it's all about staying organized and keeping important things within reach.",
@@ -3811,7 +3839,8 @@ const en: typeof de = {
     "The registration deadline does not start with signing the lease or receiving the keys, but only once you actually move in. Registering before moving in is not possible. You must register at the latest 3 days afterward — late or incorrect registration can result in an administrative fine of up to €726 under § 22 of the Registration Act (Meldegesetz).",
   meldezettel_bullet1: "Registration is possible at the earliest on the day you actually move in",
   meldezettel_bullet2: "At the latest 3 days after moving in, at any Meldeservice office",
-  meldezettel_bullet3: "Late or incorrect registration: administrative fine of up to €726",
+  meldezettel_bullet3:
+    "Late or incorrect registration: administrative fine of up to €726, up to €2,180 for repeat offenses",
   meldezettel_h2: "Documents you need",
   meldezettel_p2:
     "The Meldezettel (registration form) must be filled out completely and signed by both you and the accommodation provider (e.g. landlord or owner). You also need a valid photo ID.",
@@ -3824,12 +3853,18 @@ const en: typeof de = {
   meldezettel_card2_text: "You don't have to go to the office in your own district — any registration office in Vienna accepts your registration.",
   meldezettel_card3_title: "One form per person",
   meldezettel_card3_text: "Every person moving in needs their own, fully completed form.",
+  meldezettel_h4: "Register online or in person?",
+  meldezettel_p4:
+    "Registration requires an appointment at the Meldeservice, which you can book online. Adults with an ID Austria or EU login can now complete the registration entirely online — this does not apply, however, to a person's very first registration of a residence in Austria, which still requires an in-person appointment.",
   meldezettel_faq1_q: "Do I need to register as soon as I sign the lease?",
   meldezettel_faq1_a:
     "No. The deadline only starts once you actually move in, not when you sign the lease or receive the keys. Registering before moving in isn't even permitted.",
   meldezettel_faq2_q: "What happens if I miss the deadline?",
   meldezettel_faq2_a:
-    "Under § 22 of the Meldegesetz, late or incorrect registration can lead to administrative fines of up to €726. It's best to take care of it within the first week after moving in.",
+    "Under § 22 of the Meldegesetz, late or incorrect registration can lead to administrative fines of up to €726, up to €2,180 for repeat offenses. It's best to take care of it within the first week after moving in.",
+  meldezettel_faq3_q: "Do children need to be registered too?",
+  meldezettel_faq3_a:
+    "Yes. Children and teenagers under 18 are registered by the person responsible for their care and upbringing. For newborns, registration is often possible directly through the birth registration at the registry office (Standesamt).",
   meldezettel_related1_label: "No-Parking Zone Permit",
   meldezettel_related2_label: "Moving in Old Buildings",
   meldezettel_related3_label: "Guide",
@@ -3853,6 +3888,12 @@ const en: typeof de = {
   halteverbot_h3: "Costs at a glance",
   halteverbot_p3:
     "Approval incurs a federal fee of €21 plus €6 per attachment (max. €36), as well as an administrative fee of €37.78. On top of that come the costs of obtaining, installing, and removing the traffic signs.",
+  halteverbot_h4: "How to submit the application",
+  halteverbot_p4:
+    "The application can be submitted online via the City of Vienna's form, or in writing by email, post, or in person to MA 46 (Traffic Organization and Technical Traffic Affairs, Niederhofstraße 21, 1120 Vienna, phone +43 1 95559, post@ma46.wien.gv.at). The application must include:",
+  halteverbot_antrag_bullet1: "Name or company register number, plus contact details",
+  halteverbot_antrag_bullet2: "Exact location and length of the zone in meters",
+  halteverbot_antrag_bullet3: "Date and time of the planned loading activity",
   halteverbot_card1_title: "We handle the application",
   halteverbot_card1_text: "With BAK Transport, no-parking zone organization is included in the fixed price — you don't have to worry about a thing.",
   halteverbot_card2_title: "Plan ahead",
@@ -3865,6 +3906,9 @@ const en: typeof de = {
   halteverbot_faq2_q: "How long is an approved no-parking zone valid?",
   halteverbot_faq2_a:
     "A maximum of 5 working days or one week, and only for the stated loading hours, for example 7 a.m. to 6 p.m.",
+  halteverbot_faq3_q: "What happens if someone parks in the zone anyway?",
+  halteverbot_faq3_a:
+    "The police can have the vehicle towed on request. The towing costs are charged to the vehicle owner — not to you or BAK Transport.",
   halteverbot_related1_label: "Vienna Address Registration",
   halteverbot_related2_label: "Moving in Old Buildings",
   halteverbot_related3_label: "Guide",
@@ -3884,6 +3928,9 @@ const en: typeof de = {
   altbau_h3: "Protecting stucco ceilings and historic building fabric",
   altbau_p3:
     "High ceilings, stucco work, and old door frames are characteristic of Vienna's old buildings — and correspondingly delicate. We pad hallways, railings, and edges to avoid damaging the historic building fabric.",
+  altbau_h4: "What defines a Gründerzeit building",
+  altbau_p4:
+    "The Gründerzeit refers to the building period from roughly 1840 to 1918. During this time, Vienna's population grew from about 250,000 to over 2 million, triggering a massive building boom of around 460,000 new apartments. Typical ceiling heights range from 3.2 to 4 meters — the reason for the tall, often narrow stairwells that make a move more demanding today than in a new building.",
   altbau_bullet1: "Disassembly of bulky furniture before transport",
   altbau_bullet2: "Protective padding for stairwells, railings, and door frames",
   altbau_bullet3: "Check for a furniture hoist during the free on-site inspection",
@@ -3899,6 +3946,9 @@ const en: typeof de = {
   altbau_faq2_q: "Does BAK Transport charge extra for old buildings without an elevator?",
   altbau_faq2_a:
     "That depends on the individual case — floor, staircase width, and volume of furniture are factored into the fixed price after the free on-site inspection. There are no surprises on moving day.",
+  altbau_faq3_q: "Why are there so many buildings like this in Vienna?",
+  altbau_faq3_a:
+    "Vienna's population grew nearly tenfold during the Gründerzeit, from about 250,000 to over 2 million residents. To house this growth, roughly 460,000 new apartments were built between 1840 and 1918 — which is why Gründerzeit buildings still shape most of Vienna's inner districts today.",
   altbau_related1_label: "Vienna Address Registration",
   altbau_related2_label: "No-Parking Zone Permit",
   altbau_related3_label: "Guide",
