@@ -66,7 +66,13 @@ export function FirmenumzugPageClient() {
   const faqs = lang === "en" ? FAQS_EN : FAQS_DE;
 
   return (
-    <PageLayout label={t.firm_page_label} title={t.firm_page_title} subtitle={t.firm_page_subtitle}>
+    <PageLayout
+      label={t.firm_page_label}
+      title={t.firm_page_title}
+      subtitle={t.firm_page_subtitle}
+      primaryCta={{ href: "/anfrage", label: t.sub_cta_btn1 }}
+      secondaryCta={{ href: "https://calendly.com/baktransport/besichtigung-in-wien-umgebung", label: t.sub_cta_btn2 }}
+    >
 
       {/* Intro */}
       <section className="py-12 md:py-20 bg-white">

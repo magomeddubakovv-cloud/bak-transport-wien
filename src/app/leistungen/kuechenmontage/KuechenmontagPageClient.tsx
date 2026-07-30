@@ -32,7 +32,13 @@ export function KuechenmontagPageClient() {
   ];
 
   return (
-    <PageLayout label={t.kueche_page_label} title={t.kueche_page_title} subtitle={t.kueche_page_subtitle}>
+    <PageLayout
+      label={t.kueche_page_label}
+      title={t.kueche_page_title}
+      subtitle={t.kueche_page_subtitle}
+      primaryCta={{ href: "/anfrage", label: t.sub_cta_btn1 }}
+      secondaryCta={{ href: "https://calendly.com/baktransport/besichtigung-in-wien-umgebung", label: t.sub_cta_btn2 }}
+    >
       <section className="py-12 md:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">

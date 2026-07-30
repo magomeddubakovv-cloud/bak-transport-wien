@@ -129,7 +129,13 @@ export function EntruempelungPageClient() {
   ];
 
   return (
-    <PageLayout label={t.label} title={t.title} subtitle={t.subtitle}>
+    <PageLayout
+      label={t.label}
+      title={t.title}
+      subtitle={t.subtitle}
+      primaryCta={{ href: "/anfrage", label: t.quote }}
+      secondaryCta={{ href: "https://calendly.com/baktransport/besichtigung-in-wien-umgebung", label: t.call }}
+    >
       <section className="py-10 md:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-12 items-start">
